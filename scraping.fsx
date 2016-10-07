@@ -9,6 +9,7 @@ module Parsing =
     open OpenQA.Selenium
     open System
     open System.IO
+    open System.Text.RegularExpressions
 
     let userVoiceItemClass = ".uvIdeaTitle a" // ideas are an anchor inside the uvIdeaTitle
     let nextpageClass = "a.next_page"
@@ -17,6 +18,25 @@ module Parsing =
     
     /// assumes that this is a 'time' html element
     let time (el : IWebElement) = el |> attr "datetime" |> DateTime.Parse
+
+    let markdownLinkRegex = Regex("(\/ideas\/(\S+))\s*")
+    /// attempts to rewrite all urls to uservoice to map to the matching issue document on github.
+    /// This is just a simple regex-replace
+    let rewrite_urls (text : string) = 
+        let rewritten = text.Replace("https://fslang.uservoice.com/forums/245727-f-language/suggestions/", "/ideas/suggestion-")
+        match markdownLinkRegex.Matches(rewritten) with
+        | m when m.Count = 0 -> rewritten 
+        | m -> 
+            m |> Seq.cast<Match>
+            |> Seq.fold (fun s m' -> 
+                            // rewrite the /ideas/suggestion string to [name of link](/ideas/suggestion-XXXX)
+                            let whole = m'.Groups.[0].Value.Trim()
+                            printfn "whole: %s" whole
+                            let file = m'.Groups.[1].Value.Trim()
+                            printfn "file: %s" file
+                            s.Replace(whole, sprintf "[%s](%s.md)" whole file)
+             ) rewritten                
+
     let discoverIdeas () = 
         let rec parseUrlsFromPage address =
             printfn "discovering from %s" address 
@@ -37,7 +57,7 @@ module Parsing =
             let submitter = el |> elementWithin "span" |> read
             let submitted = el |> elementWithin "time" |> read |> DateTime.Parse
             let content = el |> elementWithin "div.typeset" |> read
-            {Submitter = submitter; Submitted = submitted; Content = content}
+            {Submitter = submitter; Submitted = submitted; Content = content |> rewrite_urls }
         
         url address
         let commentBlocks = unreliableElements ".uvIdeaComments li.uvListItem" |> List.mapi parseComment
@@ -54,7 +74,7 @@ module Parsing =
             let votes = voteCount |> elementWithin "strong" |> read |> Int32.Parse
             let title = element "h1.uvIdeaTitle" |> read
             let submitter = element "div.uvUserActionHeader span.fn" |> read
-            let text = defaultArg (someElement "div.uvIdeaDescription div.typeset" |> Option.map read) ""
+            let text = defaultArg (someElement "div.uvIdeaDescription div.typeset" |> Option.map (read >> rewrite_urls)) ""
             let submitted = element "section.uvIdeaSuggestors div.uvUserAction div.uvUserActionHeader span time" |> time
             let comments = parseCommentsFromPage address |> List.rev
             let state = 
@@ -66,7 +86,7 @@ module Parsing =
             let response : Types.Response = 
                 try
                     let responded = element "article.uvUserAction-admin-response time" |> time
-                    let text = element "article.uvUserAction-admin-response .typeset" |> read
+                    let text = element "article.uvUserAction-admin-response .typeset" |> read |> rewrite_urls
                     { Responded = responded
                       Text = text }
                 with | _ -> Unchecked.defaultof<Types.Response>

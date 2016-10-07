@@ -5,6 +5,10 @@ module Types =
         { Submitter : string
           Submitted : DateTime
           Content : string }
+    
+    type Response = 
+        { Responded : DateTime
+          Text : string }
 
     type Idea = 
         {   Number : string
@@ -14,4 +18,5 @@ module Types =
             Text : string
             Votes : int32
             Comments : Comment list
-            Status : string } 
+            Status : string 
+            Response : Response } 

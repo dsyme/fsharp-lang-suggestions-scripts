@@ -6,6 +6,12 @@
 
 {{ idea.Text }}
 
+{% if idea.Response == true %}
+
+## Response by fslang-admin on {{ idea.Response.Responded }}
+
+{{ idea.Response.Text }}
+
 {% for comment in idea.Comments %}
 ## Comment by {{ comment.Submitter }} on {{ comment.Submitted }}
 

@@ -152,7 +152,8 @@ module API =
     let fslangForumId = "245727-f-language"
     let client = UserVoice.Client("fslang", apiKey, apiSecret).LoginAsOwner()
     
-    let toIdea (sugg : IdeasResponse.Suggestion) comments : Types.Idea = 
+    let toIdea (sugg : IdeasResponse.Suggestion) comments : Types.Idea =
+        printfn "%O" (sugg.Response.JsonValue.ToString())
         { Number = string sugg.Id
           Submitter = sugg.Creator.Name
           Submitted = sugg.CreatedAt
@@ -160,7 +161,8 @@ module API =
           Text = defaultArg sugg.Text ""
           Votes = sugg.VoteCount
           Comments = comments 
-          Status = defaultArg (sugg.Status |> Option.map (fun s -> s.Name)) "" }
+          Status = defaultArg (sugg.Status |> Option.map (fun s -> s.Name)) ""
+          Response = Unchecked.defaultof<Types.Response> }
 
     let toComment (c : CommentsResponse.Comment) : Types.Comment = 
         { Submitter = c.Creator.Name

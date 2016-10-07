@@ -14,6 +14,9 @@ module Parsing =
     let nextpageClass = "a.next_page"
     let attr att (el : IWebElement) = el.GetAttribute att
     let href = attr "href"
+    
+    /// assumes that this is a 'time' html element
+    let time (el : IWebElement) = el |> attr "datetime" |> DateTime.Parse
     let discoverIdeas () = 
         let rec parseUrlsFromPage address =
             printfn "discovering from %s" address 
@@ -52,13 +55,21 @@ module Parsing =
             let title = element "h1.uvIdeaTitle" |> read
             let submitter = element "div.uvUserActionHeader span.fn" |> read
             let text = defaultArg (someElement "div.uvIdeaDescription div.typeset" |> Option.map read) ""
-            let submitted = element "section.uvIdeaSuggestors div.uvUserAction div.uvUserActionHeader span time" |> attr "datetime" |> DateTime.Parse
+            let submitted = element "section.uvIdeaSuggestors div.uvUserAction div.uvUserActionHeader span time" |> time
             let comments = parseCommentsFromPage address |> List.rev
             let state = 
                 someElement "span.uvStyle-status" 
                 |> Option.map (attr "class") 
                 |> Option.map (fun s -> s.Split([|' '|], StringSplitOptions.RemoveEmptyEntries) |> Array.last)
                 |> Option.map (fun s -> s.Substring("uvStyle-status-".Length))
+            
+            let response : Types.Response = 
+                try
+                    let responded = element "article.uvUserAction-admin-response time" |> time
+                    let text = element "article.uvUserAction-admin-response .typeset" |> read
+                    { Responded = responded
+                      Text = text }
+                with | _ -> Unchecked.defaultof<Types.Response>
 
             { Number = number
               Submitter = submitter
@@ -67,7 +78,8 @@ module Parsing =
               Votes = votes
               Text = text
               Comments = comments
-              Status = defaultArg state "" } : Types.Idea |> Choice1Of2
+              Status = defaultArg state ""
+              Response = response } : Types.Idea |> Choice1Of2
         with
         | ex -> Choice2Of2 <| sprintf "error accessing %s: %s" address (ex.Message)
 

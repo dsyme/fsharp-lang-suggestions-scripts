@@ -12,6 +12,8 @@
 
 {{ idea.Response.Text }}
 
+{% endif %}
+
 {% for comment in idea.Comments %}
 ## Comment by {{ comment.Submitter }} on {{ comment.Submitted }}
 

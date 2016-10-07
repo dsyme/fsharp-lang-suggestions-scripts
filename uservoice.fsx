@@ -9,21 +9,13 @@ open FSharp.Reflection
 
 let userVoiceItemClass = ".uvIdeaTitle a" // ideas are an anchor inside the uvIdeaTitle
 let nextpageClass = "a.next_page"
-
-
 let attr att (el : IWebElement) = el.GetAttribute att
 let href = attr "href"
-let inline (=>) a b = a, box b
+
 type Comment = 
     { Submitter : string
       Submitted : DateTime
       Content : string }
-      member x.Dict () = 
-        dict [
-            "Submitter" => x.Submitter
-            "Submitted" => x.Submitted
-            "Content" => x.Content
-        ]
 
 type Idea = 
     {   Number : string
@@ -33,16 +25,6 @@ type Idea =
         Text : string
         Votes : int32
         Comments : Comment list } 
-        member x.Dict() = 
-            dict [
-                "Number" => x.Number
-                "Submitter" => x.Submitter
-                "Submitted" => x.Submitted
-                "Title" => x.Title
-                "Text" => x.Text
-                "Votes" => x.Votes
-                "Comments" => (x.Comments |> List.map (fun c -> c.Dict() :> obj) |> Seq.ofList)
-            ] 
 
 let discoverIdeas () = 
     let rec parseUrlsFromPage address =
@@ -123,7 +105,6 @@ let successful, errored =
 
 errored
 |> List.iter (fun bad -> match bad with | Choice2Of2 err -> printfn "%s" err)
-
 
 successful
 |> List.map (fun s -> match s with Choice1Of2 i -> (i |> formatMarkdown))

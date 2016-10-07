@@ -1,4 +1,4 @@
-# Idea {{ idea.Number }}: {{ idea.Title }}
+# Idea {{ idea.Number }}: {{ idea.Title }} #
 
 ## Submitted by {{ idea.Submitter }} on {{ idea.Submitted }}
 

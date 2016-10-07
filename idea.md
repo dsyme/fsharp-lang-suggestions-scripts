@@ -7,7 +7,7 @@
 {{ idea.Text }}
 
 {% for comment in idea.Comments %}
-Comment by {{ comment.Submitter }} on {{ comment.Submitted }}
+## Comment by {{ comment.Submitter }} on {{ comment.Submitted }}
 
 {{ comment.Content }}
 {% endfor %}

@@ -127,7 +127,4 @@ errored
 
 successful
 |> List.map (fun s -> match s with Choice1Of2 i -> (i |> formatMarkdown))
-|> List.iter (saveToDisk __SOURCE_DIRECTORY__)
-
-
-
+|> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))

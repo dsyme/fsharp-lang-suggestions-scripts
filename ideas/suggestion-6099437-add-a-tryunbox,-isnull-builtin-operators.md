@@ -43,7 +43,7 @@ Keystrokes are almost the same, just one less 'Shift' keypress.
 
 ## Comment by Dave Thomas on 7/2/2014 4:34:00 AM
 
-This is really similar to: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6103054-add-option-ofnull-to-help-remove-nulls
+This is really similar to: [/ideas/suggestion-6103054-add-option-ofnull-to-help-remove-nulls](/ideas/suggestion-6103054-add-option-ofnull-to-help-remove-nulls.md)
 I would prefer this as a primitive though.
 Don would a symbol be considered here?
 

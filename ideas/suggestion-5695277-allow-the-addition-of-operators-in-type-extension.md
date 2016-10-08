@@ -13,7 +13,7 @@ static member (+) (foo1, foo2) = foo1.Bar + foo2.Bar
 
 ## Comment by Mauricio Scheffer on 4/9/2014 10:09:00 PM
 
-This seems more concrete than http://fslang.uservoice.com/forums/245727-f-language/suggestions/5666323-operator-overloads-problem-in-f but since it can already be done with inline + static type parameters I wonder what would be the benefit of doing it via type extensions.
+This seems more concrete than [/ideas/suggestion-5666323-operator-overloads-problem-in-f](/ideas/suggestion-5666323-operator-overloads-problem-in-f.md) but since it can already be done with inline + static type parameters I wonder what would be the benefit of doing it via type extensions.
 
 ## Comment by Don Syme on 6/20/2014 2:04:00 PM
 

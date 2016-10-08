@@ -107,9 +107,9 @@ This could be derived from implicits.
 ## Comment by Don Syme on 2/3/2016 1:45:00 PM
 
 See also
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/8509687-add-constraints-as-a-language-construct
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/8393964-interfaces-as-simple-reusable-and-named-sets-of-m
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/6343928-allow-naming-of-member-constraints
+[/ideas/suggestion-8509687-add-constraints-as-a-language-construct](/ideas/suggestion-8509687-add-constraints-as-a-language-construct.md)
+[/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m](/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m.md)
+[/ideas/suggestion-6343928-allow-naming-of-member-constraints](/ideas/suggestion-6343928-allow-naming-of-member-constraints.md)
 These various features tug in different incompatible directions.
 
 ## Comment by bleis-tift on 3/2/2016 6:18:00 PM

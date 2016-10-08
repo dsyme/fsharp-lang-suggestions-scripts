@@ -20,5 +20,5 @@ I'd like to see some serious consideration for this idea as it's not merely dupl
 
 ## Comment by Don Syme on 2/5/2016 5:22:00 AM
 
-This is a duplication of http://fslang.uservoice.com/forums/245727-f-language/suggestions/6536829-implement-ocaml-s-new-match-exception-syntax
+This is a duplication of [/ideas/suggestion-6536829-implement-ocaml-s-new-match-exception-syntax](/ideas/suggestion-6536829-implement-ocaml-s-new-match-exception-syntax.md)
 The idea is a good one.

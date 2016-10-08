@@ -46,4 +46,4 @@ A pull request to allow this might explore the design space and build confidence
 
 ## Comment by Don Syme on 2/3/2016 1:08:00 PM
 
-Closing in favour of http://fslang.uservoice.com/forums/245727-f-language/suggestions/9156844-relax-some-of-the-indentation-rules
+Closing in favour of [/ideas/suggestion-9156844-relax-some-of-the-indentation-rules](/ideas/suggestion-9156844-relax-some-of-the-indentation-rules.md)

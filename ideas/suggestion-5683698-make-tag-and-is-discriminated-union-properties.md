@@ -44,7 +44,7 @@ would not, and thus would not compile
 ## Comment by Loic Denuziere on 5/13/2014 4:40:00 AM
 
 Peter: The thing is, these methods already exist as instance methods, they're just not exposed in F#. Making them static would break backward compatibility for C# code that uses them.
-There is a discussion about a static syntax for instance methods here: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663326-syntax-for-turning-properties-into-functions which would provide the same advantages as you cite, but for all instance methods.
+There is a discussion about a static syntax for instance methods here: [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md) which would provide the same advantages as you cite, but for all instance methods.
 
 ## Comment by Robert Jeppesen on 6/26/2014 4:12:00 PM
 

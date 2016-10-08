@@ -66,4 +66,4 @@ interface I<string> with ...
 ## Comment by Abel on 11/4/2015 7:07:00 PM
 
 Looks like the implementation of this is broken in VS 2015, or at least it works differently now. Generic implementations with different type parameters are still not possible (which is what the user suggested), and calling such an implementation from a .NET library leads to different results between F# 3 and 4.
-See: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663504-allow-to-implement-the-same-interface-at-different, titled "Difference between treatment of ambiguous generic interfaces by F# between VS 2012 and VS 2015 leading to compile errors in the latter"
+See: [/ideas/suggestion-5663504-allow-to-implement-the-same-interface-at-different,](/ideas/suggestion-5663504-allow-to-implement-the-same-interface-at-different,.md) titled "Difference between treatment of ambiguous generic interfaces by F# between VS 2012 and VS 2015 leading to compile errors in the latter"

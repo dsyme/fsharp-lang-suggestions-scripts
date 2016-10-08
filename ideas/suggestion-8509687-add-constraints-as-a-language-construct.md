@@ -32,7 +32,7 @@ F# Language Evolution
 
 ## Comment by exercitus vir on 6/22/2015 3:32:00 PM
 
-Related suggestion: http://fslang.uservoice.com/forums/245727-f-language/suggestions/8393964-interfaces-as-simple-reusable-and-named-sets-of-m?tracking_code=bd9d860150afdb439a2ef3ab649e0374
+Related suggestion: [/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m?tracking_code=bd9d860150afdb439a2ef3ab649e0374](/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m?tracking_code=bd9d860150afdb439a2ef3ab649e0374.md)
 The advantage of that suggestion is that it simplifies the syntax of explicit member constraints, does not require a new keyword (albeit a new operator) and can reuse existing interfaces and its syntax.
 
 ## Comment by Don Syme on 2/4/2016 6:49:00 PM
@@ -41,7 +41,7 @@ This gist shows how to name collections of member constraints today: https://gis
 
 ## Comment by Don Syme on 2/10/2016 11:19:00 AM
 
-Because it is already possible to name sets of constraints using the technique below, I am going to decline this request. Also the request http://fslang.uservoice.com/forums/245727-f-language/suggestions/5762135-support-for-type-classes-or-implicits is overlapping and can be used to cover the general suggestion to have a trait/constraint/type-class facility in the language
+Because it is already possible to name sets of constraints using the technique below, I am going to decline this request. Also the request [/ideas/suggestion-5762135-support-for-type-classes-or-implicits](/ideas/suggestion-5762135-support-for-type-classes-or-implicits.md) is overlapping and can be used to cover the general suggestion to have a trait/constraint/type-class facility in the language
 
 ## Comment by Gauthier Segay on 2/28/2016 7:31:00 AM
 

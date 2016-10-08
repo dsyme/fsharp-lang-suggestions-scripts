@@ -27,4 +27,4 @@ Search for "nested" please.
 
 ## Comment by Don Syme on 1/16/2015 11:12:00 AM
 
-Duplicate: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6085086-nested-types-for-f
+Duplicate: [/ideas/suggestion-6085086-nested-types-for-f](/ideas/suggestion-6085086-nested-types-for-f.md)

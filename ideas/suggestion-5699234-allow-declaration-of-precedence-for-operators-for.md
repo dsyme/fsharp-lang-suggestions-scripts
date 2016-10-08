@@ -42,4 +42,4 @@ Neither are particularly pretty.
 ## Comment by Don Syme on 2/5/2016 6:53:00 AM
 
 This is bag of worms territory :)
-In F# 1.0 we decided against having notational declarations, and we've generally been sticking with this decision, e.g. see here http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663255-allow-infix-notation-on-functions and a few other suggestions. I'm going to decline this suggestion on the same basis.
+In F# 1.0 we decided against having notational declarations, and we've generally been sticking with this decision, e.g. see here [/ideas/suggestion-5663255-allow-infix-notation-on-functions](/ideas/suggestion-5663255-allow-infix-notation-on-functions.md) and a few other suggestions. I'm going to decline this suggestion on the same basis.

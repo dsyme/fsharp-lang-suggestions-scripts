@@ -42,7 +42,7 @@ sprintf "hello %s, you are %i years old" person.name person.age
 
 ## Comment by Don Syme on 2/5/2016 6:20:00 AM
 
-Strucutral subtyping is hard to implement within the constraints of the .NET type system. Any implementation would effectively have to erase to property bags at compile time. See the discussion here for example: http://fslang.uservoice.com/forums/245727-f-language/suggestions/9633858-structural-extensible-records-like-elm-concrete. This representation would also not work particularly well with .NET reflection.
+Strucutral subtyping is hard to implement within the constraints of the .NET type system. Any implementation would effectively have to erase to property bags at compile time. See the discussion here for example: [/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete.](/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete..md) This representation would also not work particularly well with .NET reflection.
 How bad is this? Well, for normal F# use it is quite bad. But for lower-performance information-representation scenarios it may not too bad.
 I'll leave this open as a general placeholder for votes on "better structural subtyping"
 

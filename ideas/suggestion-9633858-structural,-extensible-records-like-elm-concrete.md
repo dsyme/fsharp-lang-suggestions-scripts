@@ -198,7 +198,7 @@ https://github.com/elm-lang/elm-compiler/issues/985
 ## Comment by Don Syme on 2/5/2016 5:17:00 AM
 
 trek42 - I think it is not possible to get both cross-assembly structural typing and subtype-compatible extensibility.
-There is also a lot of overlap between this and http://fslang.uservoice.com/forums/245727-f-language/suggestions/5673015-support-c-like-anonymous-types-in-f and http://fslang.uservoice.com/forums/245727-f-language/suggestions/6148669-add-support-for-structtuple. From the notes below, this is beginning to look a lot like the StructTuple proposal in its compiled form. But I think you _really_ want to be able to add and remove fields and maintain structural compatibility. I don't think that's possible if compiling to tuple types.
+There is also a lot of overlap between this and [/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md) and [/ideas/suggestion-6148669-add-support-for-structtuple.](/ideas/suggestion-6148669-add-support-for-structtuple..md) From the notes below, this is beginning to look a lot like the StructTuple proposal in its compiled form. But I think you _really_ want to be able to add and remove fields and maintain structural compatibility. I don't think that's possible if compiling to tuple types.
 Don't get me wrong - I think this is a great feature - I just think it would have to be completely erased to property bags to actually work in practice. But that would not satisfy typical performance needs.
 
 ## Comment by Don Syme on 2/5/2016 5:18:00 AM

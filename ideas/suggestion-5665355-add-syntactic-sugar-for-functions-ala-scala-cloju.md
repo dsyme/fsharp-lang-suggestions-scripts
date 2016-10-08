@@ -16,7 +16,7 @@ It would be great to have this shorthand so that our anonymous functions are sho
 
 ## Comment by Gustavo Guerra on 3/21/2014 6:13:00 PM
 
-This is the same as this one: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663326-syntax-for-turning-properties-into-functions
+This is the same as this one: [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md)
 (your tittle is actually better, but there's already a bunch of votes there)
 
 ## Comment by Jon Harrop on 3/26/2014 9:50:00 AM

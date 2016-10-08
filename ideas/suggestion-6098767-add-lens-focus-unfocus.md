@@ -25,7 +25,7 @@ Ideally I'd like to be able to focus and unfocus labels similar to the Haskell e
 http://www.scs.stanford.edu/14sp-cs240h/slides/lenses.html
 So in more F# terms I'd write something like:
 let labelALens = Lens.focus <@ myRecord.labelA @>
-Or, with implicit quotation ( http://fslang.uservoice.com/forums/245727-f-language/suggestions/5975797-allow-implicit-quotation-of-expressions-used-as-a )
+Or, with implicit quotation ( [/ideas/suggestion-5975797-allow-implicit-quotation-of-expressions-used-as-a](/ideas/suggestion-5975797-allow-implicit-quotation-of-expressions-used-as-a.md) )
 let labelALens = Lens.focus myRecord.labelA
 Mauricio's code goes from:
 type Car with
@@ -35,7 +35,7 @@ Set = fun v (x: Car) -> { x with Mileage = v } }
 ...to something like:
 type Car with
 member mileage = Lens.focus c.Mileage
-Worth noting: If F# gets hygenic macros ( http://fslang.uservoice.com/forums/245727-f-language/suggestions/5674940-implement-syntactic-macros ) then you could implement lenses that way and no special feature would be necessary. But I'd like lens support even if F# never gets macros!
+Worth noting: If F# gets hygenic macros ( [/ideas/suggestion-5674940-implement-syntactic-macros](/ideas/suggestion-5674940-implement-syntactic-macros.md) ) then you could implement lenses that way and no special feature would be necessary. But I'd like lens support even if F# never gets macros!
 
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
@@ -49,4 +49,4 @@ Also related: "Syntax for turning properties into functions" [/ideas/suggestion-
 
 ## Comment by Don Syme on 2/5/2016 4:07:00 AM
 
-Close enough to http://fslang.uservoice.com/forums/245727-f-language/suggestions/6906132-implement-first-class-lensing-lenses-in-f that I will close as a duplicate
+Close enough to [/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md) that I will close as a duplicate

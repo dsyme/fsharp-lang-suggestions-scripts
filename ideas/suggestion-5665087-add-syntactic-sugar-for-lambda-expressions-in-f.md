@@ -23,7 +23,7 @@ This seems like a significant change to the language/compiler that only gains yo
 
 ## Comment by Mauricio Scheffer on 3/24/2014 9:29:00 PM
 
-Duplicate of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5665087-add-syntactic-sugar-for-lambda-expressions-in-f (it has more votes).
+Duplicate of [/ideas/suggestion-5665087-add-syntactic-sugar-for-lambda-expressions-in-f](/ideas/suggestion-5665087-add-syntactic-sugar-for-lambda-expressions-in-f.md) (it has more votes).
 Personally, I agree with Jack. IMHO this doesn't really buy you anything important.
 
 ## Comment by Bryan Edds on 3/27/2014 10:07:00 PM

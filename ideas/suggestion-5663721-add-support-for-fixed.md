@@ -42,4 +42,4 @@ Something that the CLI supports but is not allowed by C# is fixed pointers to ge
 
 ## Comment by Don Syme on 2/5/2016 8:57:00 AM
 
-See here for a good motivating example: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5670163-fixed-length-arrays and this gist https://gist.github.com/jack-pappas/9725445
+See here for a good motivating example: [/ideas/suggestion-5670163-fixed-length-arrays](/ideas/suggestion-5670163-fixed-length-arrays.md) and this gist https://gist.github.com/jack-pappas/9725445

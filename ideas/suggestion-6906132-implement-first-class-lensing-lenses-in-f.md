@@ -141,7 +141,7 @@ This suggestion was also relevant (and the same idea is mentioned above)
 
 ## Comment by Don Syme on 2/5/2016 4:08:00 AM
 
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/6906132-implement-first-class-lensing-lenses-in-f
+See also [/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md)
 
 ## Comment by Anonymous on 4/20/2016 10:14:00 AM
 

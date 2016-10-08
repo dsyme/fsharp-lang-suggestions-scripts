@@ -19,4 +19,4 @@ Don Syme, F# Language Evolution
 ## Comment by ADMIN
 fsharporg-lang (F# Software Foundation Language Group, F# Software Foundation) on 1/23/2016 11:35:00 AM
 
-Duplicate of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663215-optional-and-named-parameters-on-let-bindings-on-m
+Duplicate of [/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)

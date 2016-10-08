@@ -37,4 +37,4 @@ Don Syme, F# Language Evolution
 
 ## Comment by Don Syme on 2/3/2016 3:09:00 PM
 
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663332-allow-custom-equality-on-record-types
+See also [/ideas/suggestion-5663332-allow-custom-equality-on-record-types](/ideas/suggestion-5663332-allow-custom-equality-on-record-types.md)

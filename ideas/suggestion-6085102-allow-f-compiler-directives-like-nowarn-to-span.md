@@ -9,7 +9,7 @@
 Idea posted here:
 http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3338653-allow-f-compiler-directives-like-nowarn-to-span
 A possibly related issue / suggestion is listed here:
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/5676502-disable-compiler-warnings-per-line
+[/ideas/suggestion-5676502-disable-compiler-warnings-per-line](/ideas/suggestion-5676502-disable-compiler-warnings-per-line.md)
 
 
 ## Comment by exercitus vir on 6/19/2015 5:32:00 PM

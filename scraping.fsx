@@ -25,7 +25,7 @@ module Parsing =
     let rewrite_urls (text : string) =
         let urls = [
             "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
-            "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
+            "http://fslang.uservoice.com/forums/245727-f-language/suggestions/"
         ] 
         let rewritten = urls |> List.fold (fun (s:string) url -> s.Replace(url, "/ideas/suggestion-")) text
         match markdownLinkRegex.Matches(rewritten) with
@@ -156,6 +156,11 @@ module Parsing =
 
     let saveToDisk root (name, markdownString) = 
         System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
+    
+    let sanitize_text (idea : Types.Idea) = 
+        { idea with 
+            Text = rewrite_urls idea.Text
+            Comments = idea.Comments |> List.map (fun c -> { c with Content = rewrite_urls c.Content})}
 
 module Scrape = 
     open Parsing

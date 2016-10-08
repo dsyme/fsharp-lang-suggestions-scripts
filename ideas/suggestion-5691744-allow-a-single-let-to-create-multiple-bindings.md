@@ -92,4 +92,4 @@ Don
 
 ## Comment by Don Syme on 2/5/2016 6:57:00 AM
 
-I will mark this as declined, since it would introduce multiple ways of doing the same thing into the F# language. See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/5681764-make-let-optional which was declined on similar grounds.
+I will mark this as declined, since it would introduce multiple ways of doing the same thing into the F# language. See also [/ideas/suggestion-5681764-make-let-optional](/ideas/suggestion-5681764-make-let-optional.md) which was declined on similar grounds.

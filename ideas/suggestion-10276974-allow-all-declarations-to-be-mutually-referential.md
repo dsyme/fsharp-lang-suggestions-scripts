@@ -107,7 +107,7 @@ Another downvote. although it seems nice, we'd increase complexity in f# librari
 
 ## Comment by Don Syme on 2/3/2016 2:53:00 PM
 
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-allow-the-compiler-to-take-source-code-files-in-an which suggests
+See also [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md) which suggests
 open "Helpers.fs"
 or
 #requires "Helpers.fs"
@@ -118,7 +118,7 @@ Note that F# scripts already have syntactic description of non-cyclic dependenci
 ## Comment by Don Syme on 2/5/2016 5:32:00 AM
 
 Jus to mention that I don't see anything fundamentally "non-F#" about optionally describing file dependencies explicitly within files - indeed we already do this for F# scripting using ``#load``. The file ordering would still exist.
-See http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-allow-the-compiler-to-take-source-code-files-in-an for example
+See [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md) for example
 
 ## Comment by Kurren Nischal on 4/14/2016 3:23:00 AM
 

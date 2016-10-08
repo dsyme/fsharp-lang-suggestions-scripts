@@ -18,7 +18,7 @@ Don Syme, F# Language and Core Library Evolution.
 
 ## Comment by Will Smith on 4/4/2014 3:10:00 AM
 
-similar http://fslang.uservoice.com/forums/245727-f-language/suggestions/5683305-allow-the-syntax-1-x-10
+similar [/ideas/suggestion-5683305-allow-the-syntax-1-x-10](/ideas/suggestion-5683305-allow-the-syntax-1-x-10.md)
 
 ## Comment by Goswin on 4/8/2014 3:52:00 AM
 

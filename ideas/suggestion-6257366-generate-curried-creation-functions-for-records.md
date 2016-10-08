@@ -7,7 +7,7 @@
 ## 7 votes
 
 This suggestion is along the lines of [1], but for records.
-[1]: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663317-allow-to-use-class-constructors-as-functions
+[1]: [/ideas/suggestion-5663317-allow-to-use-class-constructors-as-functions](/ideas/suggestion-5663317-allow-to-use-class-constructors-as-functions.md)
 It can be handy to have curried creation functions for records.
 Say we have a record with a categoryId:
 type Product = { categoryId : int; id : int; name : string }

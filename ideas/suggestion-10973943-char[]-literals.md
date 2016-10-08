@@ -16,4 +16,4 @@ Combining into one suggestion with http://fslang.uservoice.com/forums/245727-f-l
 
 ## Comment by Don Syme on 2/4/2016 4:21:00 PM
 
-Combining into one suggestion with http://fslang.uservoice.com/forums/245727-f-language/suggestions/11109258-allow-string-literal-formats-for-timespan-datetime
+Combining into one suggestion with [/ideas/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime](/ideas/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime.md)

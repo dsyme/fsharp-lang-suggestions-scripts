@@ -68,7 +68,7 @@ An earlier idea of making these things work like interfaces doesn't work well. I
 
 ## Comment by exercitus vir on 6/12/2015 6:32:00 PM
 
-I have incorporated your suggestion in my suggestion for "Interfaces as simple, reusable and named sets of member constraints on statically resolved type parameters": http://fslang.uservoice.com/forums/245727-f-language/suggestions/8393964-interfaces-as-simple-reusable-and-named-sets-of-m
+I have incorporated your suggestion in my suggestion for "Interfaces as simple, reusable and named sets of member constraints on statically resolved type parameters": [/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m](/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m.md)
 
 ## Comment by Jared Hester on 6/22/2015 5:32:00 AM
 
@@ -80,4 +80,4 @@ match quackfn x with
 
 ## Comment by Don Syme on 2/3/2016 12:33:00 PM
 
-Closing in favour of suggestions http://fslang.uservoice.com/forums/245727-f-language/suggestions/8393964-interfaces-as-simple-reusable-and-named-sets-of-m and http://fslang.uservoice.com/forums/245727-f-language/suggestions/8509687-add-constraints-as-a-language-construct
+Closing in favour of suggestions [/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m](/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m.md) and [/ideas/suggestion-8509687-add-constraints-as-a-language-construct](/ideas/suggestion-8509687-add-constraints-as-a-language-construct.md)

@@ -24,7 +24,7 @@ This way you could check various things about types used in a function to valida
 
 ## Comment by Don Syme on 2/4/2016 6:13:00 PM
 
-I've combined this with the suggestion for "blittable" types: http://fslang.uservoice.com/forums/245727-f-language/suggestions/9989010-add-blittable-type-constraints-in-order-to-support
+I've combined this with the suggestion for "blittable" types: [/ideas/suggestion-9989010-add-blittable-type-constraints-in-order-to-support](/ideas/suggestion-9989010-add-blittable-type-constraints-in-order-to-support.md)
 
 ## Comment by exercitus vir on 7/8/2016 2:12:00 PM
 

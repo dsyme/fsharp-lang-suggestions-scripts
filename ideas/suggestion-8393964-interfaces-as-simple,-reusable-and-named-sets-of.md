@@ -18,8 +18,8 @@ type IDuckish = //an interface for duck-like types
 abstract member Quack: unit -> string
 let inline quackLikeADuck (d : ^d when ^d :^ IDuckish) = //note the `:^` instead of `:>`
 d.Quack(); //syntax for invokation also much simpler*
-*The simpflied syntax for member invokations is inspired by this suggestion: http://fslang.uservoice.com/forums/245727-f-language/suggestions/8014059-improve-constraints-and-make-call-syntax-easier-fo
-This suggestion subsumes this suggestion: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6343928-allow-naming-of-member-constraints
+*The simpflied syntax for member invokations is inspired by this suggestion: [/ideas/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo](/ideas/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo.md)
+This suggestion subsumes this suggestion: [/ideas/suggestion-6343928-allow-naming-of-member-constraints](/ideas/suggestion-6343928-allow-naming-of-member-constraints.md)
 
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
@@ -31,7 +31,7 @@ This isn’t an exact duplicate, I know, e.g. it also incorporates http://fslang
 
 Note: This effectively allows simple to use structural subtyping as opposed to nominal subtyping currently provided by interfaces, so you could call this kind of constraint a "structural interface constraint".
 This could also allow efficient extension interfaces* even on sealed types and value-types where if the function is expecting a statically resolved type parameter with a structural interface constraint, then it could just inline the functions of the extension interface.
-*extensions interfaces suggested here: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5665042-allow-extension-interfaces
+*extensions interfaces suggested here: [/ideas/suggestion-5665042-allow-extension-interfaces](/ideas/suggestion-5665042-allow-extension-interfaces.md)
 
 ## Comment by exercitus vir on 6/12/2015 10:29:00 PM
 
@@ -94,7 +94,7 @@ I'm confused about the proposed implementation for this suggestion. It seems lik
 -----------------------------------------------------------------------------------------------------
 ` :> ` is the upcast operator, is ` :^ ` supposed to be static type resolution operator or something like that?
 I think this is a better way to get the properties you're looking for
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/8509687-add-constraints-as-a-language-construct
+[/ideas/suggestion-8509687-add-constraints-as-a-language-construct](/ideas/suggestion-8509687-add-constraints-as-a-language-construct.md)
 
 ## Comment by exercitus vir on 6/22/2015 3:27:00 PM
 
@@ -125,7 +125,7 @@ let inline constraint_func (argA:^a) (argB:^b)
 // ^ this is working ( albeit useless =P )code
 ---------------------------------------------------------------------------------------
 When multiple types need constraints, using interfaces necessitates an interface per distinct type. However, following the syntax of my constraint suggestion, it could easily be defined as one cohesive unit
-( http://fslang.uservoice.com/forums/245727-f-language/suggestions/8509687-add-constraints-as-a-language-construct )
+( [/ideas/suggestion-8509687-add-constraints-as-a-language-construct](/ideas/suggestion-8509687-add-constraints-as-a-language-construct.md) )
 ---------------------------------------------------------------------------------------
 constraint ( ^a-> ^b -> ^c : abc_multplus ) =
 (*.*) when ^a : ( static member (+) : ^a * ^b -> ^b )
@@ -146,4 +146,4 @@ I disagree with the rule you quoted though. This rule applies to nominal interfa
 ## Comment by Don Syme on 2/4/2016 11:31:00 AM
 
 Note that type aliases can be used to name groups of constraints, see https://gist.github.com/dsyme/bfed2eed788c7ba58ccc
-Also, I will close this as a duplicate of http://fslang.uservoice.com/forums/245727-f-language/suggestions/6343928-allow-naming-of-member-constraints. This isn't an exact duplicate, and also incorporates http://fslang.uservoice.com/forums/245727-f-language/suggestions/8014059-improve-constraints-and-make-call-syntax-easier-fo, but they are close enough together that we don't need to track them separately
+Also, I will close this as a duplicate of [/ideas/suggestion-6343928-allow-naming-of-member-constraints.](/ideas/suggestion-6343928-allow-naming-of-member-constraints..md) This isn't an exact duplicate, and also incorporates [/ideas/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo,](/ideas/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo,.md) but they are close enough together that we don't need to track them separately

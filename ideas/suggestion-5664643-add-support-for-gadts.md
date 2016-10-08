@@ -23,7 +23,7 @@ Since OCaml has this I don't see why not F#
 
 ## Comment by Don Syme on 7/4/2014 6:48:00 AM
 
-There are some relevant commments here too: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6062821-add-dependent-types
+There are some relevant commments here too: [/ideas/suggestion-6062821-add-dependent-types](/ideas/suggestion-6062821-add-dependent-types.md)
 
 ## Comment by Don Syme on 2/3/2016 12:45:00 PM
 

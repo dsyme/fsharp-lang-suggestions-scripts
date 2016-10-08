@@ -18,7 +18,7 @@ Please reassign the votes there.
 
 ## Comment by Eamon Nerbonne on 6/21/2014 3:21:00 AM
 
-This would go particularly well with http://fslang.uservoice.com/forums/245727-f-language/suggestions/5673015-support-c-like-anonymous-types-in-f - support for anonymous records. The combination would make records as well supported as tuples.
+This would go particularly well with [/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md) - support for anonymous records. The combination would make records as well supported as tuples.
 
 ## Comment by Eamon Nerbonne on 6/25/2014 8:15:00 AM
 

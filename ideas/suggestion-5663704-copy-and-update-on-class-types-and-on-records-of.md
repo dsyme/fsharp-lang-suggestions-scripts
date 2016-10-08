@@ -42,7 +42,7 @@ Though, I am wondering how multiple constructors would work though in regards to
 
 ## Comment by Don Syme on 2/3/2016 1:16:00 PM
 
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/6124011-easier-to-copy-data-between-records-of-different-t#comments
+See also [/ideas/suggestion-6124011-easier-to-copy-data-between-records-of-different-t#comments](/ideas/suggestion-6124011-easier-to-copy-data-between-records-of-different-t#comments.md)
 
 ## Comment by Don Syme on 2/3/2016 1:16:00 PM
 

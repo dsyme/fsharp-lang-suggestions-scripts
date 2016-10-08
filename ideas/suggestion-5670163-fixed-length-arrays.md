@@ -79,5 +79,5 @@ https://gist.github.com/jack-pappas/9725445
 
 ## Comment by Don Syme on 2/5/2016 8:56:00 AM
 
-Looking at the discussion it seems the last comment by Jack Pappas shows a way to do this, apart from the orthogonal question of support for "fixed", covered here: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663721-add-support-for-fixed
+Looking at the discussion it seems the last comment by Jack Pappas shows a way to do this, apart from the orthogonal question of support for "fixed", covered here: [/ideas/suggestion-5663721-add-support-for-fixed](/ideas/suggestion-5663721-add-support-for-fixed.md)
 So I think we can close this and I'll link across to here for the "fixed" issue

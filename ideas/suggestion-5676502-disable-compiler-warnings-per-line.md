@@ -16,12 +16,12 @@ Close enough to being a duplicate of http://fslang.uservoice.com/forums/245727-f
 
 ## Comment by Robert Nielsen on 6/22/2014 10:49:00 AM
 
-I have posted a vaguely related suggestion: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6085102-allow-f-compiler-directives-like-nowarn-to-span
+I have posted a vaguely related suggestion: [/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span](/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span.md)
 
 ## Comment by exercitus vir on 6/19/2015 6:03:00 PM
 
-This is related: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6085102-allow-f-compiler-directives-like-nowarn-to-span
+This is related: [/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span](/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span.md)
 
 ## Comment by Don Syme on 2/3/2016 2:35:00 PM
 
-Closing as duplicate in favour of http://fslang.uservoice.com/forums/245727-f-language/suggestions/6085102-allow-f-compiler-directives-like-nowarn-to-span
+Closing as duplicate in favour of [/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span](/ideas/suggestion-6085102-allow-f-compiler-directives-like-nowarn-to-span.md)

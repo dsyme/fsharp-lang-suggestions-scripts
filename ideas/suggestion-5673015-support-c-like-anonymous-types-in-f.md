@@ -33,7 +33,7 @@ Swift's solution isn't very good, however, so let's not copy that. in particular
 
 ## Comment by Eamon Nerbonne on 6/21/2014 3:22:00 AM
 
-I think this would go particularly well with destructuring let bindings for records - (http://fslang.uservoice.com/forums/245727-f-language/suggestions/6081483-allow-destructuring-let-bindings-for-records-or-t).
+I think this would go particularly well with destructuring let bindings for records - ([/ideas/suggestion-6081483-allow-destructuring-let-bindings-for-records-or-t).](/ideas/suggestion-6081483-allow-destructuring-let-bindings-for-records-or-t)..md)
 
 ## Comment by Anonymous on 6/21/2014 5:58:00 PM
 
@@ -70,11 +70,11 @@ Essentially I would see this as "syntactic sugar" over defining a type that will
 
 ## Comment by Don Syme on 2/5/2016 5:11:00 AM
 
-See also this suggestion which is somewhat related http://fslang.uservoice.com/forums/245727-f-language/suggestions/8107647-extend-with-keyword-support-to-record-definition
+See also this suggestion which is somewhat related [/ideas/suggestion-8107647-extend-with-keyword-support-to-record-definition](/ideas/suggestion-8107647-extend-with-keyword-support-to-record-definition.md)
 
 ## Comment by Don Syme on 2/5/2016 5:21:00 AM
 
-See also this suggestion on StructTuple compatible with C# tuples: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6148669-add-support-for-structtuple
+See also this suggestion on StructTuple compatible with C# tuples: [/ideas/suggestion-6148669-add-support-for-structtuple](/ideas/suggestion-6148669-add-support-for-structtuple.md)
 
 ## Comment by Yemi Bedu on 6/1/2016 5:08:00 PM
 

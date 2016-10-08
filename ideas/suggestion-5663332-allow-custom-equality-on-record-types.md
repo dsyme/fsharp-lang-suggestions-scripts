@@ -26,7 +26,7 @@ Typical usage would be for idf to reference an integer id field in the record.
 
 ## Comment by Don Syme on 2/4/2016 5:31:00 AM
 
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/11645070-exclude-mutable-fields-from-gethashcode-in-record
+See also [/ideas/suggestion-11645070-exclude-mutable-fields-from-gethashcode-in-record](/ideas/suggestion-11645070-exclude-mutable-fields-from-gethashcode-in-record.md)
 
 ## Comment by Don Syme on 2/5/2016 9:08:00 AM
 

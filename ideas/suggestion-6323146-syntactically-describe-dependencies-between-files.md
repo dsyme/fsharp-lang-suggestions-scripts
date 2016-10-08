@@ -21,13 +21,13 @@ Other suggestions have been
 #requires "Helpers.fs"
 or
 #load "Helpers.fs" (which already describes dependencies in scripts)
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/6323146-describe-dependencies-between-files-by-extending
+See also [/ideas/suggestion-6323146-describe-dependencies-between-files-by-extending](/ideas/suggestion-6323146-describe-dependencies-between-files-by-extending.md)
 
 ## Comment by ADMIN
 fsharporg-lang (F# Software Foundation Language Group, F# Software Foundation) on 2/3/2016 2:51:00 PM
 
-See http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-allow-the-compiler-to-take-source-code-files-in-an
+See [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
 
 ## Comment by Don Syme on 2/5/2016 5:29:00 AM
 
-Closing this in favour of http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-allow-the-compiler-to-take-source-code-files-in-an
+Closing this in favour of [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)

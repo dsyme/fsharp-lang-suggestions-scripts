@@ -25,5 +25,5 @@ type B = {A with y:int}
 
 ## Comment by Don Syme on 2/3/2016 1:16:00 PM
 
-This is very much related to http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663704-copy-and-update-on-class-types
+This is very much related to [/ideas/suggestion-5663704-copy-and-update-on-class-types](/ideas/suggestion-5663704-copy-and-update-on-class-types.md)
 I will close this suggestion in favour of that one and link back here

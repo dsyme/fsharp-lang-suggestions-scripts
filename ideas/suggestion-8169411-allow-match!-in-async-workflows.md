@@ -26,7 +26,7 @@ Closing per my comment below
 ## Comment by Anonymous on 6/1/2015 9:01:00 AM
 
 Is this different from Joinads?
-http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663965-integrate-joinads-extension
+[/ideas/suggestion-5663965-integrate-joinads-extension](/ideas/suggestion-5663965-integrate-joinads-extension.md)
 
 ## Comment by Don Syme on 6/9/2015 12:56:00 PM
 

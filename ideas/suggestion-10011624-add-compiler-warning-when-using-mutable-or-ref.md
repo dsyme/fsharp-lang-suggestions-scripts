@@ -24,7 +24,7 @@ BTW this can be implemented in linter (eg. VFPT).
 
 ## Comment by knocte on 1/22/2016 4:26:00 AM
 
-FYI I suggested something similar to this in a comment to this other idea: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5670335-pure-functions-pure-keyword
+FYI I suggested something similar to this in a comment to this other idea: [/ideas/suggestion-5670335-pure-functions-pure-keyword](/ideas/suggestion-5670335-pure-functions-pure-keyword.md)
 NOTE: you can still use mutable locals (as oppoosed to fields), in immutable code (because local vars in a method cannot be shared among threads).
 
 ## Comment by Don Syme on 1/23/2016 11:52:00 AM

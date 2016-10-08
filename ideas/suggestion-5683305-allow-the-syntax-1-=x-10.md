@@ -35,4 +35,4 @@ let inline (.>) (leftResult, middle) right = leftResult && (middle > right)
 
 ## Comment by Steve Gilham on 4/10/2014 3:56:00 AM
 
-This is the same suggestion as http://fslang.uservoice.com/forums/245727-f-language/suggestions/5726029-support-conjunctional-operator
+This is the same suggestion as [/ideas/suggestion-5726029-support-conjunctional-operator](/ideas/suggestion-5726029-support-conjunctional-operator.md)

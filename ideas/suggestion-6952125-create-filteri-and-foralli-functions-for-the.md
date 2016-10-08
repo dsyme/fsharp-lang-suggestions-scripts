@@ -21,7 +21,7 @@ Don Syme, F# Language and Core Library Evolution
 
 ## Comment by Don Syme on 7/18/2015 1:40:00 PM
 
-Combining this with http://fslang.uservoice.com/forums/245727-f-language/suggestions/6368913-add-array-foralli to cover both "filteri" and "foralli"
+Combining this with [/ideas/suggestion-6368913-add-array-foralli](/ideas/suggestion-6368913-add-array-foralli.md) to cover both "filteri" and "foralli"
 
 ## Comment by Don Syme on 2/4/2016 5:51:00 PM
 

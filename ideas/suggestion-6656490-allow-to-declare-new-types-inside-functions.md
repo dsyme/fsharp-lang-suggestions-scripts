@@ -48,4 +48,4 @@ So this is kind of like anonymous types (albeit nested types) except they can es
 
 ## Comment by Don Syme on 7/18/2015 11:43:00 AM
 
-This is a duplicate of this one (which has more votes so will be treated as the canonical one): http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663202-allow-to-define-types-at-expression-scopes
+This is a duplicate of this one (which has more votes so will be treated as the canonical one): [/ideas/suggestion-5663202-allow-to-define-types-at-expression-scopes](/ideas/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)

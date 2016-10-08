@@ -31,7 +31,7 @@ I've "always" wanted something like this in F#. It feels very old-fashioned havi
 
 ## Comment by Mauricio Scheffer on 6/2/2014 6:19:00 PM
 
-Related: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5678806-string-interpolation
+Related: [/ideas/suggestion-5678806-string-interpolation](/ideas/suggestion-5678806-string-interpolation.md)
 
 ## Comment by Marcin Juraszek on 6/2/2014 7:21:00 PM
 

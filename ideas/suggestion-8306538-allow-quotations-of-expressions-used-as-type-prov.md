@@ -18,7 +18,7 @@ It could be used by transpilers to check validity and emit code at design/compil
 
 Hi @thinkb4coding
 I would very much be in favour of this feature for F# vNext.
-See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/6023655-allow-passing-other-types-of-parameters-to-type-pr
+See also [/ideas/suggestion-6023655-allow-passing-other-types-of-parameters-to-type-pr](/ideas/suggestion-6023655-allow-passing-other-types-of-parameters-to-type-pr.md)
 
 ## Comment by Don Syme on 2/4/2016 2:08:00 PM
 

@@ -7,7 +7,7 @@
 ## 6 votes
 
 Various .NET APIs use Nullable<'T> to represent something that might/might not contain data. Having a built-in function to convert to/from F# option type would be quite handy.
-See similar suggestion here: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6103054-add-option-ofnull-to-help-remove-nulls
+See similar suggestion here: [/ideas/suggestion-6103054-add-option-ofnull-to-help-remove-nulls](/ideas/suggestion-6103054-add-option-ofnull-to-help-remove-nulls.md)
 
 ## Response by fslang-admin on 1/21/2015 12:00:00 AM
 

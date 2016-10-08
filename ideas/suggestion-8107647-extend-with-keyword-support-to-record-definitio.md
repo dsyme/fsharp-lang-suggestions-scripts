@@ -43,4 +43,4 @@ If they are related, then you could make them classes and inherit the base class
 
 ## Comment by Don Syme on 2/5/2016 5:10:00 AM
 
-This is really related to the question of C#-style anonymous types for F#, since you are effectively making up a type definition on the fly. I will close this suggestion in favour of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5673015-support-c-like-anonymous-types-in-f and link it there.
+This is really related to the question of C#-style anonymous types for F#, since you are effectively making up a type definition on the fly. I will close this suggestion in favour of [/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md) and link it there.

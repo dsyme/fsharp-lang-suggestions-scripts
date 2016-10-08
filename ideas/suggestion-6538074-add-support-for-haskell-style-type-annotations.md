@@ -44,7 +44,7 @@ It feels a little odd not adding a full indentation level, but the second line o
 
 ## Comment by exercitus vir on 6/19/2015 6:02:00 PM
 
-This is related: http://fslang.uservoice.com/forums/245727-f-language/suggestions/6237585-allow-inline-keyword-in-the-case-let-f-fun-a
+This is related: [/ideas/suggestion-6237585-allow-inline-keyword-in-the-case-let-f-fun-a](/ideas/suggestion-6237585-allow-inline-keyword-in-the-case-let-f-fun-a.md)
 
 ## Comment by Tobias Burger on 1/11/2016 7:55:00 AM
 

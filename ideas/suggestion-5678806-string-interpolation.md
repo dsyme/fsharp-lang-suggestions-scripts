@@ -35,4 +35,4 @@ I'm also -1 for this as it cannot be partially applied.
 
 ## Comment by Mauricio Scheffer on 6/2/2014 6:18:00 PM
 
-Similar suggestion but restricted to printf only http://fslang.uservoice.com/forums/245727-f-language/suggestions/6002107-steal-nice-println-syntax-from-swift
+Similar suggestion but restricted to printf only [/ideas/suggestion-6002107-steal-nice-println-syntax-from-swift](/ideas/suggestion-6002107-steal-nice-println-syntax-from-swift.md)

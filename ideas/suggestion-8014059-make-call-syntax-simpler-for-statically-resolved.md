@@ -32,7 +32,7 @@ We will need to consider whether to simplify calls for static members as well.
 ## Comment by exercitus vir on 6/12/2015 6:32:00 PM
 
 Oh yes, much more readable!
-I have incorporated your suggestion in my suggestion for "Interfaces as simple, reusable and named sets of member constraints on statically resolved type parameters": http://fslang.uservoice.com/forums/245727-f-language/suggestions/8393964-interfaces-as-simple-reusable-and-named-sets-of-m
+I have incorporated your suggestion in my suggestion for "Interfaces as simple, reusable and named sets of member constraints on statically resolved type parameters": [/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m](/ideas/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m.md)
 
 ## Comment by Don Syme on 2/4/2016 5:35:00 PM
 

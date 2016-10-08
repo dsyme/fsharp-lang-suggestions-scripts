@@ -84,12 +84,12 @@ module Parsing =
                 |> Option.map (fun s -> s.Substring("uvStyle-status-".Length))
             
             let response : Types.Response = 
-                try
-                    let responded = element "article.uvUserAction-admin-response time" |> time
-                    let text = element "article.uvUserAction-admin-response .typeset" |> read |> rewrite_urls
-                    { Responded = responded
-                      Text = text }
-                with | _ -> Unchecked.defaultof<Types.Response>
+                let responded = someElement "article.uvUserAction-admin-response time" |> Option.map time 
+                let text = someElement "article.uvUserAction-admin-response .typeset" |> Option.map (read >> rewrite_urls)
+                match responded, text with
+                | Some r, Some t -> { Responded = r; Text = t}
+                | _, _ -> Unchecked.defaultof<Types.Response>    
+                
 
             { Number = number
               Submitter = submitter
@@ -138,8 +138,14 @@ module Parsing =
 
 open Parsing
 open canopy
+open OpenQA.Selenium
+
 start chrome 
 
+canopy.configuration.elementTimeout <- 2.0
+canopy.configuration.pageTimeout <- 2.0
+canopy.configuration.configuredFinders <- (fun selector f -> seq { yield finders.findByCss selector f })
+                                                
 let items = discoverIdeas ()
 let successful, errored = 
     items 

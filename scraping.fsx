@@ -143,40 +143,54 @@ module Parsing =
     let saveToDisk root (name, markdownString) = 
         System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
 
+module Scrape = 
+    open Parsing
+    open canopy
+    open OpenQA.Selenium
+
+    canopy.configuration.chromeDir <- @"packages/Selenium.WebDriver.ChromeDriver/driver"
+    canopy.configuration.elementTimeout <- 2.0
+    canopy.configuration.pageTimeout <- 2.0
+    canopy.configuration.configuredFinders <- (fun selector f -> seq { yield finders.findByCss selector f })
+ 
+
+    let scrapeData destination =
+        start chrome                                                 
+        let items = discoverIdeas ()
+        let successful, errored = 
+            items 
+            |> List.mapi parseIdeaFromPage
+            |> List.partition (function Choice1Of2 _ -> true | Choice2Of2 _ -> false) 
+
+        errored
+        |> List.iter (function  Choice2Of2 err -> printfn "%s" err | _ -> ())
+
+
+        let successes = successful |> List.choose (function Choice1Of2 i -> Some i | _ -> None)
+
+        let data = 
+            successes 
+            |> List.map (fun i -> i.Number, i) |> Map.ofList 
+            |> Newtonsoft.Json.JsonConvert.SerializeObject
+
+        let jsonFile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, destination)
+        System.IO.File.WriteAllText(jsonFile, data)
 
 open Parsing
-open canopy
-open OpenQA.Selenium
+open System
+open System.IO
+open Newtonsoft.Json
+open Types.Types
 
-canopy.configuration.chromeDir <- @"packages/Selenium.WebDriver.ChromeDriver/driver"
-canopy.configuration.elementTimeout <- 2.0
-canopy.configuration.pageTimeout <- 2.0
-canopy.configuration.configuredFinders <- (fun selector f -> seq { yield finders.findByCss selector f })
+let jsonFile = Path.Combine(__SOURCE_DIRECTORY__, "ideas.json")
+let readData = 
+    System.IO.File.ReadAllText(jsonFile)
+    |> (fun text -> JsonConvert.DeserializeObject<Map<string, Idea>>(text))
 
-start chrome 
-                                                
-let items = discoverIdeas ()
-let successful, errored = 
-    items 
-    |> List.mapi parseIdeaFromPage
-    |> List.partition (function Choice1Of2 _ -> true | Choice2Of2 _ -> false) 
+let data = readData |> Map.toList |> List.map snd
 
-errored
-|> List.iter (function  Choice2Of2 err -> printfn "%s" err | _ -> ())
+data |> List.groupBy (fun idea -> idea.Status)
 
-
-let successes = successful |> List.choose (function Choice1Of2 i -> Some i | _ -> None)
-
-let data = 
-    successes 
-    |> List.map (fun i -> i.Number, i) |> Map.ofList 
-    |> Newtonsoft.Json.JsonConvert.SerializeObject
-
-let jsonFile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "ideas.json")
-System.IO.File.WriteAllText(jsonFile, data)
-
-System.IO.File.ReadAllText(jsonFile)
-|> (fun text -> Newtonsoft.Json.JsonConvert.DeserializeObject<Map<string, Types.Types.Idea>>(text))
-|> Map.toList
-|> List.map (snd >> formatMarkdown)
+data
+|> List.map formatMarkdown
 |> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))

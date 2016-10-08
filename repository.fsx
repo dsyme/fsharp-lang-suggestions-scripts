@@ -87,15 +87,22 @@ module Github =
 
 open Input; open Github
     
-let GithubEngage () = async {  
-    let! client = 
-        let user = getUserInput "Github Username: "
-        let password = getUserPassword "Github Password: "
-        createClient user password
-    
+let userPasswordCreds () = 
+    let user = getUserInput "Github Username: "
+    let password = getUserPassword "Github Password: "
+    Credentials (user, password)
+
+let tokenCreds () = 
+    Credentials <| getUserInput "Github Token: "
+
+let GithubEngage credsFn () = async {  
+    let client = setupClient()
+    client.Credentials <- credsFn ()
+
     let! user = client.User.Current() |> Async.AwaitTask
     printfn "The Current User Is - %s" user.Name
-} 
+}
 
-GithubEngage() |> Async.RunSynchronously
+
+GithubEngage tokenCreds () |> Async.RunSynchronously
 

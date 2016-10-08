@@ -31,15 +31,15 @@ module Parsing =
             |> Seq.fold (fun s m' -> 
                 // rewrite the /ideas/suggestion string to [name of link](/ideas/suggestion-XXXX)
                 let whole = m'.Groups.[0].Value.Trim()
-                printfn "whole: %s" whole
+                //printfn "whole: %s" whole
                 let file = m'.Groups.[1].Value.Trim()
-                printfn "file: %s" file
+                //printfn "file: %s" file
                 s.Replace(whole, sprintf "[%s](%s.md)" whole file)
              ) rewritten                
 
     let discoverIdeas () = 
         let rec parseUrlsFromPage address =
-            printfn "discovering from %s" address 
+            //printfn "discovering from %s" address 
             url address
             let pageItemLinks = 
                 elements userVoiceItemClass
@@ -49,11 +49,21 @@ module Parsing =
             | None -> pageItemLinks
             | Some next -> pageItemLinks @ parseUrlsFromPage next
         
-        parseUrlsFromPage "https://fslang.uservoice.com/forums/245727-f-language"
+        let pages = 
+            [
+                "https://fslang.uservoice.com/forums/245727-f-language"
+                "https://fslang.uservoice.com/forums/245727-f-language/status/1225913"
+                "https://fslang.uservoice.com/forums/245727-f-language/status/1225914"
+                "https://fslang.uservoice.com/forums/245727-f-language/status/1225915"
+                "https://fslang.uservoice.com/forums/245727-f-language/status/1225916"
+                "https://fslang.uservoice.com/forums/245727-f-language/status/1225917"
+            ]
+
+        pages |> List.collect parseUrlsFromPage |> List.distinct
 
     let rec parseCommentsFromPage address = 
         let parseComment pos (el :IWebElement) : Types.Comment =
-            printfn "parsing comment %d" pos 
+            //printfn "parsing comment %d" pos 
             let submitter = el |> elementWithin "span" |> read
             let submitted = el |> elementWithin "time" |> read |> DateTime.Parse
             let content = el |> elementWithin "div.typeset" |> read
@@ -98,7 +108,7 @@ module Parsing =
               Votes = votes
               Text = text
               Comments = comments
-              Status = defaultArg state ""
+              Status = defaultArg state "open"
               Response = response } : Types.Idea |> Choice1Of2
         with
         | ex -> Choice2Of2 <| sprintf "error accessing %s: %s" address (ex.Message)
@@ -157,6 +167,7 @@ module Scrape =
     let scrapeData destination =
         start chrome                                                 
         let items = discoverIdeas ()
+        printfn "found %d ideas" items.Length
         let successful, errored = 
             items 
             |> List.mapi parseIdeaFromPage
@@ -188,8 +199,8 @@ let readData =
     |> (fun text -> JsonConvert.DeserializeObject<Map<string, Idea>>(text))
 
 let data = readData |> Map.toList |> List.map snd
-
-data |> List.groupBy (fun idea -> idea.Status)
+data |> List.length |> printfn "%d"
+data |> List.groupBy (fun idea -> idea.Status) |> List.map fst
 
 data
 |> List.map formatMarkdown

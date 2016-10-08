@@ -95,10 +95,13 @@ let userPasswordCreds () =
 let tokenCreds () = 
     Credentials <| getUserInput "Github Token: "
 
+let prompt2FA () = 
+    getUserInput "Two-Factor Auth (2FA) Key: "
+
 let GithubEngage credsFn () = async {  
     let client = setupClient()
     client.Credentials <- credsFn ()
-
+    
     let! user = client.User.Current() |> Async.AwaitTask
     printfn "The Current User Is - %s" user.Name
 }

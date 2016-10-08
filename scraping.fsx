@@ -125,8 +125,16 @@ module Parsing =
     let template = parseTemplate<Types.Idea> (File.ReadAllText(Path.Combine(__SOURCE_DIRECTORY__, "idea.md"))) "idea"
 
     let sanitize (s : string) =
-        let invalid = ["<";">";":";"\\";"/";"\"";"|";"?";"*"]
-        invalid |> List.fold (fun (s : string) sep -> s.Replace(sep, "-")) s
+        let mods = [
+            (fun s -> ["<";">";":";"\\";"/";"\"";"|";"?";"*";" ";"`";"'";"(";")";".";"#";] |> List.fold (fun (s : string) sep -> s.Replace(sep, "-")) s)
+            fun s -> s.Substring(0, min s.Length 49) // uservoice limits links to files to 49 characters of the title, so we need to keep this constraint if we want linking to still work
+            fun s -> s.ToLowerInvariant() // links are tolower in UserVoice
+            fun s -> s.TrimEnd('-') // links don't end with -
+            fun s -> let r = Regex("-+") in r.Replace(s, "-")
+        ]
+        
+        List.fold (fun str f -> f str) s mods
+        
 
     let formatMarkdown (idea : Types.Idea) : string * string =
         let sanitizedName = sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
@@ -140,11 +148,12 @@ open Parsing
 open canopy
 open OpenQA.Selenium
 
-start chrome 
-
+canopy.configuration.chromeDir <- @"packages/Selenium.WebDriver.ChromeDriver/driver"
 canopy.configuration.elementTimeout <- 2.0
 canopy.configuration.pageTimeout <- 2.0
 canopy.configuration.configuredFinders <- (fun selector f -> seq { yield finders.findByCss selector f })
+
+start chrome 
                                                 
 let items = discoverIdeas ()
 let successful, errored = 
@@ -155,6 +164,19 @@ let successful, errored =
 errored
 |> List.iter (function  Choice2Of2 err -> printfn "%s" err | _ -> ())
 
-successful
-|> List.choose (function Choice1Of2 i -> i |> formatMarkdown |> Some | _ -> None)
+
+let successes = successful |> List.choose (function Choice1Of2 i -> Some i | _ -> None)
+
+let data = 
+    successes 
+    |> List.map (fun i -> i.Number, i) |> Map.ofList 
+    |> Newtonsoft.Json.JsonConvert.SerializeObject
+
+let jsonFile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "ideas.json")
+System.IO.File.WriteAllText(jsonFile, data)
+
+System.IO.File.ReadAllText(jsonFile)
+|> (fun text -> Newtonsoft.Json.JsonConvert.DeserializeObject<Map<string, Types.Types.Idea>>(text))
+|> Map.toList
+|> List.map (snd >> formatMarkdown)
 |> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))

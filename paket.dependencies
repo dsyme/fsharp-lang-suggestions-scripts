@@ -6,4 +6,5 @@ nuget canopy
 nuget DotLiquid
 nuget FSharp.Data
 nuget octokit
+nuget Selenium.WebDriver.ChromeDriver
 nuget UserVoice

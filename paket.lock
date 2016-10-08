@@ -11,6 +11,7 @@ NUGET
     Octokit (0.23)
     RestSharp (105.2.3)
     Selenium.WebDriver (2.53.1)
+    Selenium.WebDriver.ChromeDriver (2.24)
     UserVoice (0.0.5)
       Newtonsoft.Json (>= 6.0.8)
       RestSharp (>= 105.2.2)

@@ -150,11 +150,11 @@ let items = discoverIdeas ()
 let successful, errored = 
     items 
     |> List.mapi parseIdeaFromPage
-    |> List.partition (fun i -> match i with Choice1Of2 _ -> true | Choice2Of2 _ -> false) 
+    |> List.partition (function Choice1Of2 _ -> true | Choice2Of2 _ -> false) 
 
 errored
-|> List.iter (fun bad -> match bad with | Choice2Of2 err -> printfn "%s" err)
+|> List.iter (function  Choice2Of2 err -> printfn "%s" err | _ -> ())
 
 successful
-|> List.map (fun s -> match s with Choice1Of2 i -> i |> formatMarkdown)
+|> List.choose (function Choice1Of2 i -> i |> formatMarkdown |> Some | _ -> None)
 |> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))

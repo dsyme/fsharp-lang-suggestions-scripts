@@ -29,12 +29,12 @@ module Parsing =
         | m -> 
             m |> Seq.cast<Match>
             |> Seq.fold (fun s m' -> 
-                            // rewrite the /ideas/suggestion string to [name of link](/ideas/suggestion-XXXX)
-                            let whole = m'.Groups.[0].Value.Trim()
-                            printfn "whole: %s" whole
-                            let file = m'.Groups.[1].Value.Trim()
-                            printfn "file: %s" file
-                            s.Replace(whole, sprintf "[%s](%s.md)" whole file)
+                // rewrite the /ideas/suggestion string to [name of link](/ideas/suggestion-XXXX)
+                let whole = m'.Groups.[0].Value.Trim()
+                printfn "whole: %s" whole
+                let file = m'.Groups.[1].Value.Trim()
+                printfn "file: %s" file
+                s.Replace(whole, sprintf "[%s](%s.md)" whole file)
              ) rewritten                
 
     let discoverIdeas () = 
@@ -79,9 +79,9 @@ module Parsing =
             let comments = parseCommentsFromPage address |> List.rev
             let state = 
                 someElement "span.uvStyle-status" 
-                |> Option.map (attr "class") 
-                |> Option.map (fun s -> s.Split([|' '|], StringSplitOptions.RemoveEmptyEntries) |> Array.last)
-                |> Option.map (fun s -> s.Substring("uvStyle-status-".Length))
+                |> Option.map (fun el ->((attr "class" el)
+                                            .Split([|' '|], StringSplitOptions.RemoveEmptyEntries) |> Array.last)
+                                            .Substring "uvStyle-status-".Length)
             
             let response : Types.Response = 
                 let responded = someElement "article.uvUserAction-admin-response time" |> Option.map time 

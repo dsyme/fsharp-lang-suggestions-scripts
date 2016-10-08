@@ -15,8 +15,6 @@ The difference between the do .. while loop and the already existing in F# while
 It's good that F# is not pure functional language. I like that F# is a functional-imperative programming language suitable for writing real-world applications. So, it would be nice if F# would be fully developed language in terms of imperative programming features. It certainly would boost the F# popularity and facilitate the migration of existing code from C, C++, C#, Java.
 
 
-
-
 ## Comment by Bent Tranberg on 4/10/2016 1:33:00 AM
 
 I do not like that existing keywords - do, while - are used for this loop construct, especially since "while" is already used for another loop construct. In Pascal syntax this loop construct is called repeat-until. It tells you immediately on top of the loop what this is ("do" doesn't since it's used already), and to expect an "until" at the bottom.
@@ -33,4 +31,3 @@ while (
 body-expression
 test-condition
 ) do ()
-

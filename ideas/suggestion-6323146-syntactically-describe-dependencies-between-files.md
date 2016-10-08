@@ -15,8 +15,6 @@ Then, the compiler could automatically infer the dependencies between the files 
 Related alternative #3: Keep a file order, but optionally have it specified by a fileorder.fsx or fileorder.txt or fileorder.json: [/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx](/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx.md)
 
 
-
-
 ## Comment by Don Syme on 2/3/2016 2:49:00 PM
 
 Other suggestions have been
@@ -33,4 +31,3 @@ See http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-al
 ## Comment by Don Syme on 2/5/2016 5:29:00 AM
 
 Closing this in favour of http://fslang.uservoice.com/forums/245727-f-language/suggestions/10276974-allow-the-compiler-to-take-source-code-files-in-an
-

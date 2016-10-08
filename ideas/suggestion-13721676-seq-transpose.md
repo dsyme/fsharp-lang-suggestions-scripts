@@ -13,8 +13,6 @@ to
 This is particularly useful when dealing with infinite x infinite sequences, where you want to iterate over the 'outer group' first.
 
 
-
-
 ## Comment by Yaar Hever on 5/9/2016 7:57:00 AM
 
 I took a stab at an implementation:
@@ -46,4 +44,3 @@ let transposeInfinite seqs = Seq.initInfinite(fun i -> seqs |> Seq.map (Seq.item
 // (inf x inf) set, each starting 10 off
 let orig = Seq.initInfinite(fun i -> Seq.initInfinite((+) (i * 10)))
 printfn "orig: %A\n\ntrans: %A" orig (transposeInfinite orig)
-

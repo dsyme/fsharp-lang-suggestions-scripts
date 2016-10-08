@@ -17,13 +17,11 @@ But with the new feature, we could let you write, for example:
 Frame.ofColumns(prices = [...], days, = [...])
 This could really be done just by adding [Params] attribute to an IDicitionary parameter. To support the R provider case, this needs to work in type providers too.
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 Updating to planned to indicate this is approved in general terms. A detailed design and implementation would be needed.
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Tomas Petricek on 5/27/2014 12:02:00 PM
@@ -58,4 +56,3 @@ I don't know about the user-facing side of things (i.e., how to expose this in t
 ## Comment by Jack Pappas on 7/6/2014 9:48:00 AM
 
 Another way to implement this (besides what I mentioned below) would be to have a [<ParamDictionary>] attribute and have the F# compiler compile that parameter into an ExpandoObject. That would interop a bit more closely with C# dynamic and the DLR, but the price is that it wouldn't work if targeting a .NET Framework earlier than 4.0.
-

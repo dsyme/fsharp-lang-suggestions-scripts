@@ -11,8 +11,6 @@ f := 3 //or ... rather than
 let f = 3
 
 
-
-
 ## Comment by trek42 on 4/9/2016 3:26:00 PM
 
 Admittedly, after using f# for years now I feel 'let' is too noisy/repetitive and wish it's gone. The benefits I can see are:
@@ -53,4 +51,3 @@ I agree with Boris and Gauthier Segay.
 It would be really difficult to understand the scope of definitions without let.
 As Edsger W. Dijkstra said, programming is a human activity. It's really much more about reading and thinking then about writing code. Code maintenance takes 50% (pro-level mid-size apps) to 90% (large, long-lived apps containing several million lines of code intended to be in use for 5 to 20 years) of time professional programmers spent on software projects.
 From code readability and maintenance perspective, I see no value added for dropping the let keyword. I think F# has an excellent syntax in this respect. The let keyword helps writing readable code.
-

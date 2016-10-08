@@ -8,7 +8,6 @@
 
 Like List.nth, defaultArgs has the parameters in the "wrong order" to be able to be used in partial application. List.item is solving that problem, we should also do the same for defaultArg
 
-
 ## Response by fslang-admin on 2/29/2016 12:00:00 AM
 
 Approved-in-principle to make some sensible additions to the Option module
@@ -17,7 +16,6 @@ We will create an RFC for this at https://github.com/fsharp/FSharpLangDesign/tre
 Thanks
 Don Syme
 F# Language Evolution
-
 
 
 ## Comment by Vasily Kirichenko on 11/6/2014 7:58:00 AM
@@ -61,4 +59,3 @@ Opened a GitHub issue for this: https://github.com/Microsoft/visualfsharp/issues
 ## Comment by Enrico Sada on 3/1/2016 9:10:00 AM
 
 created RFC https://github.com/fsharp/FSharpLangDesign/issues/60
-

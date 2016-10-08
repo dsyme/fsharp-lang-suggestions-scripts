@@ -13,8 +13,6 @@ let d = dict ["a",97; "b",98; "c",99]
 ... is nice, but while Maps implement IDictionary, dictionaries do not play well with Map module functions. One must inevitably convert a dictionary to a Map or create a Map with Map.ofArray, .ofList, or .ofSeq.
 
 
-
-
 ## Comment by amazingant on 3/7/2016 6:15:00 AM
 
 You can add this yourself fairly easily by adding the following anywhere in your code:
@@ -35,4 +33,3 @@ i.e Map [("Key", "Value); ("Key2", "Value2")] works fine in my code. Notice the 
 @ak, ah, I see! I am embarrassed that I had not explored that option. But I see now that it's merely a call to the Map constructor.
 I will quibble that the style is inconsistent. That is, it's set [ ... ] for sets, dict [ ... ] for dictionaries, seq [ ... ] for sequences, but it's Map [ ... ] for maps. That inconsistency is not satisfying.
 Nevertheless, I concede the point that a shorthand clearly already exists. I just overlooked it.
-

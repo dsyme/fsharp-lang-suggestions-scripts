@@ -11,8 +11,6 @@ This limitation does not exists in C# and it makes impossible to interact with s
 This will also allow to work around F#'s lack of generic (co/contra)-variance.
 
 
-
-
 ## Comment by exercitus vir on 6/18/2015 2:30:00 PM
 
 Could Don Syme or someone from the F# team comment on whether this can be realized?
@@ -32,4 +30,3 @@ What makes you think they were suggested by the core team? You can see the names
 ## Comment by Anonymous on 5/26/2016 1:35:00 PM
 
 Yes please
-

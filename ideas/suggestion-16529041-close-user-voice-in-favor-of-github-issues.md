@@ -21,8 +21,6 @@ I really believe we should close UserVoice in favor of using GitHub issues (mayb
 Similar move was done by VSCode Team - https://code.visualstudio.com/blogs/2016/08/19/goodbyeuservoice - and I strongly believe we should do the same.
 
 
-
-
 ## Comment by Anonymous on 10/6/2016 3:48:00 PM
 
 +1M
@@ -64,4 +62,3 @@ And I would throw 3 votes at this too, except my 10 votes are all used up -- on 
 
 And since I can't edit my previous comment to add what I forgot to mention, I'll add a new comment to mention it:
 I also am 100% in favor of moving to GitHub, and I don't mind re-creating my votes on the issues I've already voted on.
-

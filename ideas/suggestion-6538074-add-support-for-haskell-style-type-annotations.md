@@ -19,8 +19,6 @@ In these examples, neither of the code snippets would typically need type annota
 It is my opinion that were such a syntax to be provided, use of both the new and current syntaxes together should provide a compiler warning to the effect of "Multiple type annotations provided for function {0}. Consider removing extra type annotations to simplify refactoring of your code."
 
 
-
-
 ## Comment by Loic Denuziere on 10/14/2014 9:42:00 AM
 
 If we implement this (which I think would be a good idea), we should definitely use the same syntax as .fsi files.
@@ -92,4 +90,3 @@ The only restriction is that you currently cannot add "inline" to the function v
 let add : int -> int -> int =
 inline fun x y -> x + y
 Lifting this restriction has been requested and approved by Don Syme here, so someone just needs to propose a tested PR: [/ideas/suggestion-6237585-allow-inline-keyword-in-the-case-let-f-fun-a](/ideas/suggestion-6237585-allow-inline-keyword-in-the-case-let-f-fun-a.md)
-

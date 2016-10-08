@@ -33,6 +33,3 @@ c) and within the for loops (for i in 1 .. 2 .. 100 | 200 | 1000 .. 5000 do ... 
 I think it's a good idea to take this notation from Ada 2012 to bolster competitive strengths and popularity of the F# language.
 P.S. Ada 2012 is a statically typed, imperative, object-oriented programming language offering extremely strong typing, explicit concurrency, tasks (named and anonymous task types), synchronous message passing between task entries, protected (armored) objects for mutual exclusion. It designed for code readability, safety and maintainability of large, long-lived, mission-critical, safety-critical and security-critical applications. Ada 2012 is the latest version of the Ada language.
 
-
-
-

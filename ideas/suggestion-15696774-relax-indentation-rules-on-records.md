@@ -49,6 +49,3 @@ There is a workaround - systematically put the opening brace { on the second lin
 Note: this is loosely related to [/ideas/suggestion-9156844-relax-some-of-the-indentation-rules](/ideas/suggestion-9156844-relax-some-of-the-indentation-rules.md) ; that specific problem is brought up in the comments.
 Note: sorry about the .... but this is the only way I could find to keep the code indentation preserved.
 
-
-
-

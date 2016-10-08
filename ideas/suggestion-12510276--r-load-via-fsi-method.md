@@ -11,8 +11,6 @@ fsi.Reference("bin/debug/someDllReference.dll")
 It would be very useful to be able to fsi.Load / fsi.Reference through type providers, for use by those who are designing them.
 
 
-
-
 ## Comment by Don Syme on 2/29/2016 12:58:00 PM
 
 While tempting, the problem is that type checking of a script would not detect these and so the static type checking of the script would not be possible.
@@ -22,4 +20,3 @@ While tempting, the problem is that type checking of a script would not detect t
 Is there a way to also dynamically insert into the static type checker?
 In the spirit of exploratory programming, there are a range of useful cross .dll / tool chain workflows that this would enable. This would make it a more fluid experience. It would be quite useful for those who are new to whatever modelling domain it is. I've observed that the extra referencing exercise can be jarring to some programmers. Can provide additional use cases if of interest.
 cheers.
-

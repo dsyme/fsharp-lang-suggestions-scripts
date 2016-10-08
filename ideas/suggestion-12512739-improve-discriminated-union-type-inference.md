@@ -26,6 +26,3 @@ let x = A.List([]) // okay : fully qualified
 let y = List([ElementA]) // fails : expects ElementA
 note: this request is similar to this accepted request [/ideas/suggestion-7138324-record-based-improve-type-inference-bug?tracking_code=3364d3565b19a0c518474dccbc2a1ec0](/ideas/suggestion-7138324-record-based-improve-type-inference-bug?tracking_code=3364d3565b19a0c518474dccbc2a1ec0.md)
 
-
-
-

@@ -9,8 +9,6 @@
 Original item: http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2262739-support-protected-access-modifier-for-f
 
 
-
-
 ## Comment by Jack Pappas on 3/22/2014 8:40:00 AM
 
 This is one feature I'd really like to see in F#, and it seems like it should be very simple to implement. If the 'protected' modifier was omitted from the language to nudge developers away from OO-style code, I think that may have been the wrong way to go about it, because it makes it impossible to re-implement OO-heavy C# projects in F# in such a way that the change is transparent to any consumers. Consequently, I've had to pass on using F# to replace some C# projects -- the downside of having to re-architect large parts of an existing codebase because F# classes can't declare 'protected' members is very often going to outweigh any upsides that could be had from re-implementing a single project in F#.
@@ -31,4 +29,3 @@ Scala has it. C# has it. Let's do it! I can't replicate certain classes in my ar
 
 I concur with this suggestion. IIRC, one of the reasons given was the access of protected data member defined in base class inside a closure caused very tricky situation because the closure technically should not be able to access the data member. C# solved this through clever compiler trick. Why can't this clever compiler trick be applied to F#? Will it defeat the type soundness of F# as a programming language?
 I love F# for being a non-dogmatic functional-first programming language and this missing feature does indeed dampen the expectation a little.
-

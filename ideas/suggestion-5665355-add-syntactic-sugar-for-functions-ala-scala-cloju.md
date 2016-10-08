@@ -14,8 +14,6 @@ As opposed to
 It would be great to have this shorthand so that our anonymous functions are shorter than the C#ers' :).
 
 
-
-
 ## Comment by Gustavo Guerra on 3/21/2014 6:13:00 PM
 
 This is the same as this one: http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663326-syntax-for-turning-properties-into-functions
@@ -37,4 +35,3 @@ This is silly. You have many alternative options -
 [1; 2; 3; 4] |> List.map (add 1) // where add = (+)
 [1; 2; 3; 4] |> List.map incr // where incr n = n + 1
 These are all equivalent and good enough.
-

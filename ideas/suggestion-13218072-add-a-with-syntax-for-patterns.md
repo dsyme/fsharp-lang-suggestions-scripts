@@ -9,9 +9,6 @@
 See detailed OCaml RFC https://github.com/ocamllabs/compiler-hacking/wiki/Add-a-%22with%22-syntax-for-patterns
 
 
-
-
 ## Comment by Richard Minerich on 4/5/2016 6:53:00 PM
 
 I do like this idea, it would be so nice to be able to combine more active pattern cases like this.
-

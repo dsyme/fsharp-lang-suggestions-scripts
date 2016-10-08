@@ -10,8 +10,6 @@ Add support for implicit operators to facilitate language interop instead of hav
 http://stackoverflow.com/questions/10719770/is-there-anyway-to-use-c-sharp-implicit-operators-from-f
 
 
-
-
 ## Comment by Richard Minerich on 3/21/2014 4:51:00 PM
 
 Please no, I don't want any implicit conversions ruining my type safety.
@@ -27,4 +25,3 @@ I don't see why we can't have something like an [<AllowImplicit>] that would be 
 e.g.:
 [<AllowNull>]
 The null keyword is a valid keyword in the F# language, and you have to use it when you are working with .NET Framework APIs or other APIs that are written in another .NET language. The two situations in which you might need a null value are when you call a .NET API and pass a null value as an argument, and when you interpret the return value or an output parameter from a .NET method call.
-

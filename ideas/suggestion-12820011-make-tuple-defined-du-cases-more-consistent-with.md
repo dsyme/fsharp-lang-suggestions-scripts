@@ -24,8 +24,6 @@ match pat with
 | SynPat.LongIdent foo -> () // can deconstruct foo like a normal tuple
 
 
-
-
 ## Comment by Gauthier Segay on 3/5/2016 2:38:00 PM
 
 Actually found out it works with enclosing parens:
@@ -55,4 +53,3 @@ No warnings or errors from the F# 4.0 compiler.
 P.P.S. When I tried to write in the F# Interactive:
 let y = match x with LongIdent foo -> true
 I received a compiler error FS0019: This constructor is applied to 1 argument(s) but expects 6.
-

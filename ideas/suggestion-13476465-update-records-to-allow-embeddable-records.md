@@ -17,8 +17,6 @@ The Go language has such a feature which works quite nicely:
 https://golang.org/ref/spec#Struct_types
 
 
-
-
 ## Comment by Vasily Kirichenko on 4/19/2016 2:56:00 AM
 
 What the construction syntax would look like? In Go it's like this:
@@ -44,4 +42,3 @@ This looks the same as this suggestion: [/ideas/suggestion-12879717-allow-record
 Oh I see, you mean a sort of mixin of Position into Sprite, e.g. "include Position"
 There are zillions of issues associated with this - e.g. what about subtyping? what about members on "Position"? Would Position have to be a struct?
 I'd like to see more examples of the utility of this.
-

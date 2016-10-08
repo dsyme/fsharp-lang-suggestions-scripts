@@ -15,8 +15,6 @@ It should also be pointed out that even though F# is primarily functional (and i
 Currently the workaround would be to copy-paste the signatures for every member of an interface.
 
 
-
-
 ## Comment by Jack Pappas on 3/23/2014 7:45:00 AM
 
 I personally prefer the requirement for explicit interface implementation and would like to continue to enforce that requirement in my own codebase, so if this feature were implemented I would like to have a compiler option to disable it (or perhaps, it should be disabled by default and activated by a compiler flag).
@@ -75,4 +73,3 @@ This is a HUGE ISSUE. The worst thing about F#. Clearly indicates its immaturity
 ## Comment by Anonymous on 1/16/2016 7:46:00 AM
 
 Pls allow to use implicit interfaces. It is pain when creating an AST model and working with it.
-

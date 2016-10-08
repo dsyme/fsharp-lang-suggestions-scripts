@@ -20,14 +20,12 @@ let FromInt64 (x:int64) = Imaginery (double x)
 let FromDouble (x:float) = Imaginery x // extension
 let polar = 1.5 + 2.5I
 
-
 ## Response by fslang-admin on 3/4/2016 12:00:00 AM
 
 Now marking as planned, which means we can move to an RFC https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 The details remain to be worked out however
 Don Syme
 F# Language Evolution
-
 
 
 ## Comment by trek42 on 6/6/2015 7:19:00 PM
@@ -42,4 +40,3 @@ I'm not marking it as "approved" as yet but I'd be interested in seeing a pull r
 ## Comment by Abel on 2/5/2016 8:26:00 AM
 
 @fsharporg-lang: The link to the suggestion "in favour of" is actually *this* suggestion. It seems that you mean to say you are actually going to implement this? Or did you mean to point to another suggestion?
-

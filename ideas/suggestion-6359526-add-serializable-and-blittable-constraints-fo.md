@@ -13,8 +13,6 @@ For instance, a type could be statically deemed serializable iff
 * it is a managed class or struct that carries the Serializable attribute.
 
 
-
-
 ## Comment by thinkb4coding on 8/28/2014 11:07:00 AM
 
 That could be useful, it would avoid knowing this only at runtime.. But It makes me wonder if it could not be more generic and that you could create your own constraint that would run at design and compile time (like done with Type Providers)..
@@ -32,4 +30,3 @@ I've combined this with the suggestion for "blittable" types: http://fslang.user
 
 I think "serializable" and "blittable" are two completely different issues and should be kept seperate. Serialization is an abstract concept that can apply to any proper data type and "blittable" seems to be about unmanaged types (I don't really understand what blittable means).
 I find serialization via attributes and Reflection less than ideal (slow and unsafe). The C# team actually wants to get away from serialization via Reflection.
-

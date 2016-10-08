@@ -9,8 +9,6 @@
 Commonly I want to return some named values, or sequence of named values, in some expression. Currently I am forced to either go through the additional effort of defining a type, or use a tuple (with its associated error-proneness if there are multiple values of the same type). Anonymous record types would be very useful and would eliminate one of the areas of additional verbosity compared to C#.
 
 
-
-
 ## Comment by Lev Gorodinski on 3/24/2014 8:26:00 AM
 
 An alternative is to use a dynamic operator https://www.nuget.org/packages/FSharp.Dynamic/ which can be useful for constructing values at application boundaries. For calls within an application, I would stick to explicit types though.
@@ -99,4 +97,3 @@ C#'s support is not perfect (or new), but it has really convenient record punnin
 ## Comment by Tomas Lycken on 9/5/2016 9:05:00 AM
 
 I'd love this! See http://stackoverflow.com/q/39306148/38055 for a use case.
-

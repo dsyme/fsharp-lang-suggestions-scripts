@@ -11,8 +11,6 @@ If there were a more succinct way to achieve this, it could be a very powerful f
 decorating a function with [<StructuralTyping>] to automatically indicate to the compiler to infer the implicit structure of the type, or at least simplifying the syntax to not have to mess around with "'a member" etc..
 
 
-
-
 ## Comment by trek42 on 8/27/2014 12:35:00 PM
 
 structural typing is in general very useful, and can avoid using the OO-style inheritance in many places.
@@ -52,4 +50,3 @@ I'll leave this open as a general placeholder for votes on "better structural su
 
 Don - I'm not really sure if I'm thinking along the same lines here - I'm thinking for just syntactic sugar for either the duck-typing support that already exists in F#. I don't even know how this works internally (is the structural constraint erased at runtime? what's the signature of the method at runtime?).
 This could even be something that was erased away at compile-time and resorted to something less than that at runtime (in a similar way to units of measure?). I don't know :-)
-

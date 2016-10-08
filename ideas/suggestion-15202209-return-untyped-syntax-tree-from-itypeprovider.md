@@ -13,8 +13,6 @@ Another benefit is that there wouldn't really be much of a design to experiment 
 The F# community has very limited resources, and this would be an extremely leveraged way to utilize them.
 
 
-
-
 ## Comment by Alexei Odeychuk on 7/17/2016 4:15:00 PM
 
 One of the F# strengths is its strong typing. It is not a dynamic typed language. Strong typing helps spotting bugs in code early and produce safe, secure and high-performance code. Maybe it would be better to address the core problem: to develop support at the compiler level for creating unbound generics, records, discriminated unions, and other normal language features in type providers that lack support as of today, preserving F# as a strongly typed language.
@@ -27,4 +25,3 @@ Thinking of good abstractions for meta programming is incredibly hard, and there
 ## Comment by Dave Thomas on 7/18/2016 8:11:00 AM
 
 The big problem with TP's is a lot of errors come during running the second instance of your dev environment during quotation splicing, so they are not well typed enough during development.
-

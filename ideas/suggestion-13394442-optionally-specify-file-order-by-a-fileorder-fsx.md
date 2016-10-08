@@ -37,8 +37,6 @@ Related alternative: Allow all declarations to be mutually referential and the c
 Related alternative: Keep a file order, but infer it from #load/#require declarations. This is covered by [/ideas/suggestion-6323146-syntactically-describe-dependencies-between-files](/ideas/suggestion-6323146-syntactically-describe-dependencies-between-files.md)
 
 
-
-
 ## Comment by Kevin Ransom on 4/12/2016 12:43:00 PM
 
 I’m afraid this proposal does not resonate with me. It has a number of deficiencies in my opinion:
@@ -91,4 +89,3 @@ So really just use TOML or CSON and please not JSON
 This post might interest you :
 http://kcieslak.io/Creating-custom-project-file-for-F
 As far as I know, that tool is currently being design :)
-

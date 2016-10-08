@@ -12,8 +12,6 @@ I am inclined to think from my own experience that null returned by Unchecked.de
 The change suggested in the F# language will allow writing more simple and clear code for string processing.
 
 
-
-
 ## Comment by Dax Fohl on 3/25/2016 12:16:00 PM
 
 This would be a breaking change and would break the "principle of least surprise" for anyone coming from C#. I see the value but don't see this ever happening.
@@ -23,4 +21,3 @@ This would be a breaking change and would break the "principle of least surprise
 Although I get where you're coming from, I don't think that changing what Unchecked.defaultof<> does is a good idea because: (a) it's a breaking change and (b) it's the equivalent of default(T) in other .NET languages.
 I'd love for F# to support the idea of types that have a sensible default value (such as "" for strings, 0 for ints, [] for lists) but I don't know how you'd do it without support for higher kinds first.
 Note: We *sort of* have this with static type member constraints, but unfortunately there's no common member name from .NET type to .NET type. Int defines 'Zero' (through F# extensions), String defines 'Empty', and I'm not sure if Array defines anything at all.
-

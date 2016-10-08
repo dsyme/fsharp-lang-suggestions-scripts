@@ -18,12 +18,10 @@ printfn "Hi %(name), your age is %d"
 printfn : int -> string
 Naturally there would be compiler errors if name does not exist.
 
-
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle (and has been for a while), please see RFC FS-1001 https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1001-StringInterpolation.md
 Don Syme, F# Language Evolution
-
 
 
 ## Comment by Jarle Stabell on 6/2/2014 5:50:00 PM
@@ -118,4 +116,3 @@ printfn : unit -> string
 ## Comment by Robert Jeppesen on 2/19/2016 5:47:00 AM
 
 I'd prefer it if this feature isn't limited to printf functions, but applied generally to all string literals, like literals in C# with '$' prefix.
-

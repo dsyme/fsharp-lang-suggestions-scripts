@@ -30,14 +30,12 @@ let a = {A.a=1}
 let b = {B.b=2}
 let ab = {a=1;b=2}
 
-
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Marking this as approved-in-principle, per my comment below
 We will open an RFC for this in due course, though the change should not be large
 https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 Don Syme, F# Language Evolution
-
 
 
 ## Comment by Gauthier Segay on 2/28/2015 7:19:00 AM
@@ -48,4 +46,3 @@ https://groups.google.com/forum/#!topic/fsharp-opensource/vb3pTUAcRVs
 ## Comment by Don Syme on 2/5/2016 5:38:00 AM
 
 Yes, it looks reasonable to be more flexible here. I will mark this as approved-in-principle
-

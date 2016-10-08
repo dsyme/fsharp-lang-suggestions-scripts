@@ -8,14 +8,12 @@
 
 
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 This is approved-in-principle for F# 4.x+
 A detailed design is needed. I would prefer one that is idiom-based and doesn’t force type providers to use a later FSharp.Core.dll
 Implementations of approved language design items can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Gustavo Guerra on 6/28/2014 1:26:00 PM
@@ -26,4 +24,3 @@ Unfortunately, I'm not remembering the case I was thinking about that I wanted t
 ## Comment by exercitus vir on 6/19/2015 6:01:00 PM
 
 I also think that this would allow for many more interesting use cases for type providers.
-

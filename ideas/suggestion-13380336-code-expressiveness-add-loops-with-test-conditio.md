@@ -18,6 +18,3 @@ The do .. while .. done loop evaluates its test expression in the middle of the 
 I like that F# is a functional-imperative programming language suitable for writing real-world applications. It would be nice if F# would be a language fully developed in terms of imperative programming features, a language containing loops with the test condition at the beginning, in the middle, and at the end. It would improve the F# popularity and facilitate the migration of imperative code from other mainstream languages.
 P.S. This suggestion is an extension of my previous suggestion about introducing loops with the test condition at the end: [/ideas/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja](/ideas/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja.md)
 
-
-
-

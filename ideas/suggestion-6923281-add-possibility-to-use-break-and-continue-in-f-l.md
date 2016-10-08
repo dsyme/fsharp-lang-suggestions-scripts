@@ -9,8 +9,6 @@
 It very often looks better than recursion, and it would be wonderful to have this possibility
 
 
-
-
 ## Comment by Vladimir on 1/5/2015 5:50:00 AM
 
 And it would be wonderful to add the same things to sequences
@@ -38,4 +36,3 @@ If you have any examples on where it's truly necessary or preferable to use brea
 Sequences is very slow and there are some situation when performance is required. For example when you work with matrices. Also you can't always use Array module, because its functions always copy array, that is not very well in most cases. So if you can said, how to work with it without recursion, I will be very glad.
 I see very often, when some one use "rec loop" for making loops functionality. I think it's awful.
 I think if you don't need loops (with break and continue) you can don't to use it. I think it's not a big problem to implement this feature and you can decide for yourself, should you use it or not.
-

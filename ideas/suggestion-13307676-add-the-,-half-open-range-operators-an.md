@@ -25,12 +25,9 @@ The syntax suggested helps eliminate off-by-one errors in code.
 It would improve F# code robustness and clarity.
 
 
-
-
 ## Comment by Gauthier Segay on 4/10/2016 8:28:00 PM
 
 Interesting, what about a notation that would bring closer to mathematical notation?
 [0..lst.Length[
 or
 [0..lst.Length)
-

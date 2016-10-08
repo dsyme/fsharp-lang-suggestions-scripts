@@ -9,13 +9,11 @@
 Currently, whenever a new Option is created, a heap allocation is required. This comes at a performance penalty.
 I suggest that a new type StructOption<T> be made available for performance.
 
-
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle, per my comment below.
 Link to RFC to follow
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Arbil on 7/20/2014 2:53:00 AM
@@ -56,4 +54,3 @@ I will mark this as approved in principle and we will open an RFC for it. We sho
 More details are needed, but the intent is to augment FSharp.Core with a StructOption<'T> type that can be used as a substitute for the current option type in pattern matching etc. That will require ironing out many details.
 The library functions using Option (e.g. choose) would not initially be redefined, that could be discussed in the RFC
 The type would be opt-in, e.g. by opening a namespace or using a specific type name or StructSome/StructNone etc. Details will be discussed in the RFC
-

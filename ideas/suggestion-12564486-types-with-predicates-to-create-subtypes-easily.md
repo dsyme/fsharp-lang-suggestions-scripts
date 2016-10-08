@@ -53,8 +53,6 @@ The suggested syntax allows writing clear, concise and easy-to-understand code. 
 I think it will help bolster F# competitive strengths and improve its position in the TIOBE language popularity index.
 
 
-
-
 ## Comment by NhlCrd on 3/14/2016 4:56:00 PM
 
 It is not obvious to me what advantages this feature would provide over active patterns and partial active patterns.
@@ -68,4 +66,3 @@ let (|Predator|Prey|) = function
 Per haps a better demonstration would be user-input or data-validation; here's a couple simple examples using Ada 2012's type-system to ensure formatting/data consistsancy:
 https://m.reddit.com/r/programming/comments/2770qx/computer_science_and_math/chz389x
 https://m.reddit.com/r/programming/comments/238v7g/three_flaws_in_software_design_part_1_writing/cgv37g7
-

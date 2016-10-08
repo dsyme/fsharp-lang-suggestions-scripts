@@ -21,13 +21,11 @@ printfn "You passed %A and I am returning 42" c
 return ()
 }
 
-
 ## Response by fslang-admin on 1/23/2016 12:00:00 AM
 
 See comment
 Approved in principle, though definitely subject to a more detailed satisfactory design (not to adhoc,not specific to “async”)
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Vasily Kirichenko on 10/18/2015 3:09:00 PM
@@ -38,4 +36,3 @@ Return in computation expressions is the monodic "return" (or "pure") and has no
 
 I do agree that ideally this should be caught, and some kind of warning given.
 I don't specifically have a design in mind, but I am going to mark this as "planned", though subject to a detailed design, implementation and testing. I don't expect it to be a top-priority, but from the design perspective I'm ok with us looking for a solution to this specific problem.
-

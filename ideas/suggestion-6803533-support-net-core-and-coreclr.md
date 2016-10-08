@@ -8,7 +8,6 @@
 
 .NET Core is the new cloud runtime model for the CLR and used in ASP.NET vNext.
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 Strictly speaking this issue is not meant for https://fslang.uservoice.com, since it is about targeting a particular platform with the tooling, rather than the F# language or core library design itself.
@@ -16,7 +15,6 @@ However, I’m leaving it open for now since it’s getting so many votes. We ma
 In any case, this work is planned by the Microsoft visualfsharp team and other contributors. Please contribute to the work at the http://github.com/Microsoft/visualfsharp repository and follow that repository for more details and updates.
 Relevant issues: https://github.com/Microsoft/visualfsharp/issues/387 and https://github.com/Microsoft/visualfsharp/pull/499
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Raymen Scholten on 2/11/2015 9:46:00 AM
@@ -41,4 +39,3 @@ I find this very important, because some really good libraries are written in F#
 
 Was this completed? Looks like it may have been with this?
 https://github.com/Microsoft/visualfsharp/pull/499
-

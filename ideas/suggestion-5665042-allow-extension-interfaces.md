@@ -9,8 +9,6 @@
 Rather than just supporting single methods or properties, provide a mechanism by which to implement interfaces on existing types. This could be similar to protocols in Clojure and Elixir.
 
 
-
-
 ## Comment by Richard Minerich on 3/21/2014 4:54:00 PM
 
 If only I had more votes to give. This would be interop between various libraries a million times better.
@@ -99,4 +97,3 @@ Regarding this implementation I'd like to elaborate on what Jack Pappas said: Im
 And now, protocols in Swift. https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
 They are a tasteful design of retro-active interface implementation in a language that seems to have much the same philosophy as F#.
 Protocols are extremely powerful, not so much for apps but in library design I've missed them often.
-

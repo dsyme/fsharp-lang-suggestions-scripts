@@ -11,8 +11,6 @@ For instance I could use this feature to slowly move a C# project to F# one clas
 P.S. Other languages that F# compares to like Scala already supported mixed projects
 
 
-
-
 ## Comment by Anonymous on 7/5/2016 8:33:00 PM
 
 Nemerle's support for mixed C# and Nemerle source files was a very appealing feature when I first found it. Although the Nemerle compiler was built as something like a fork of the C# compiler. I would be much more inclined to use F# if I didn't have to 100% commit to it. As functional as C# is getting, it would be nice at times to leave the C behind.
@@ -40,4 +38,3 @@ Presumably the fs files can refer to previous cs files, and the cs files can ref
 ## Comment by Gauthier Segay on 9/21/2016 2:41:00 PM
 
 Charles Roddie, this would work with "islands" of C# files compiled together and knowing about previous compiled islands, 1.cs can't know about 4.cs in your case.
-

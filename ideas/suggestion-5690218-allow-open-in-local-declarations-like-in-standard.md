@@ -9,8 +9,6 @@
 See e.g. http://www.mpi-sws.org/~rossberg/sml-vs-ocaml.html#localdecs
 
 
-
-
 ## Comment by Bryan Edds on 3/27/2014 9:30:00 PM
 
 I like this, though I don't know what the downsides might be.
@@ -27,4 +25,3 @@ https://visualfsharp.codeplex.com/SourceControl/network/forks/EdwardPaul/AllowOp
 ## Comment by Don Syme on 7/18/2015 6:41:00 AM
 
 Paul, could you please bring the PR across to http://github.com/Microsoft/visualfsharp? It is of definite interest (though no commitment about including the feature as yet)
-

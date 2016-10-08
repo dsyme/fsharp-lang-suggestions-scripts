@@ -15,8 +15,6 @@ let substr = substring "Hello World!"
 printfn "Value: %O" substr;;
 
 
-
-
 ## Comment by Jon Harrop on 3/26/2014 8:46:00 AM
 
 Yes!
@@ -51,4 +49,3 @@ Instead of a specific directive what if we could define a set of preprocessors w
 ## Comment by Gauthier Segay on 7/28/2016 7:11:00 PM
 
 issue on github https://github.com/Microsoft/visualfsharp/issues/56
-

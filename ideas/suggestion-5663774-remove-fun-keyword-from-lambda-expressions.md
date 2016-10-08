@@ -10,8 +10,6 @@ Maybe make it optional?
 Otherwise it is more verbose than C#.
 
 
-
-
 ## Comment by Vasily Kirichenko on 4/4/2014 1:39:00 AM
 
 I personally like the current syntax.
@@ -99,4 +97,3 @@ looks verbose. Removing would make lambda looks cleaner.
 ## Comment by Anonymous on 9/27/2016 10:02:00 PM
 
 I think the optional use of the fun keyword would be the way to go as well. Just like in React in ES6 the function keyword is no longer necessary
-

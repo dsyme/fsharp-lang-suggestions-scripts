@@ -12,12 +12,10 @@ correctly results in: val x : uint16 option = None
 let y : string * uint16 option = "", None
 instead prints: val y : string * uint16 option = ("", null)
 
-
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 This should certainly be fixed, as much as possible
 Don Syme, F# Language Evolution
-
 
 
 ## Comment by Grant Crofton on 11/13/2014 4:03:00 AM
@@ -34,4 +32,3 @@ printfn "%O" None
 <null>
 (1, )
 <null>
-

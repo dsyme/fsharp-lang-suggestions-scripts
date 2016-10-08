@@ -40,8 +40,6 @@ let name = C.name
 let pitch = C.pitch
 
 
-
-
 ## Comment by exercitus vir on 7/9/2016 12:59:00 PM
 
 You could instead just do this:
@@ -76,4 +74,3 @@ Credit @kevin in fp slack.
 ## Comment by Abel on 9/22/2016 3:37:00 PM
 
 It seems to me to make more sense to change the way you use DU for your problem domain. I am missing CFlat (C♭) and ESharp (E♯) etc, or things like DDoubleSharp (D
-

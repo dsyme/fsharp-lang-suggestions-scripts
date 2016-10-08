@@ -14,6 +14,3 @@ let a = {x = 1}
 {a with x="Hello"} // Type error
 Since the x field is generic and F# is type safe, it would not be bad if the above was valid.
 
-
-
-

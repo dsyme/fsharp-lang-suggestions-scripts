@@ -14,8 +14,6 @@ let inline (~∑) xs = xs |> Seq.sum
 Writing "∑myList" is much, much easier on the eyes and brain than trying to figure out what "!++myList" does.
 
 
-
-
 ## Comment by Daniel Fabian on 3/27/2014 12:19:00 PM
 
 There used to be an addon like that. http://apollo13cn.blogspot.ch/2012/09/math-unicode-symbol-add-on-for-f.html
@@ -122,4 +120,3 @@ I think it would be close to no effort to include these as alternative syntax, a
 ← and → could also be treated as more concise and better looking versions of <- and ->
 (Maybe ¬ ∧ ∨ for not, &&, ||, and ○ for <| too but these are less universally understood symbols.)
 F# is a very expressive language. You can often write code that is basically intelligible to technical people without specific programming knowledge. For example in teaching/presenting maths you can write F# code that is universally understandable, like pseudocode, except that it actually runs. With some small tweaks to approve attractiveness, readability, and intelligibility it can be even better.
-

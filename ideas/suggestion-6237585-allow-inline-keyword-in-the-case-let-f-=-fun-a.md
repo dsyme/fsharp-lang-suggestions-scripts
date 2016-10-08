@@ -8,14 +8,12 @@
 
 Currently, the code "let inline f = fun a -> ..." does not compile, but the code "let inline f a = ..." does compile. Since the two mean the same thing, "inline" should be allowed on both.
 
-
 ## Response by fslang-admin on 7/11/2016 12:00:00 AM
 
 This is approved for inclusion in a future release of F# subject to completion of an RFC and implementation.
 An RFC can be submitted to https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 A pull request to implement this feature will be necessary and we encourage contributors to submit one with adequate design detail and testing to http://github.com/Microsoft/visualfsharp.
 Discussion of the particular version for this to be included in can be made once an implementation is available.
-
 
 
 ## Comment by amazingant on 3/21/2015 9:01:00 PM
@@ -41,4 +39,3 @@ This is not something I see as a priority (because there is an adequate way of w
 ## Comment by Don Syme on 7/11/2016 8:15:00 AM
 
 I'm changing this to be marked as "approved". This means someone can propose a PR for the issue. PRs should be submitted to http://github.com/Microsoft/visualfsharp.
-

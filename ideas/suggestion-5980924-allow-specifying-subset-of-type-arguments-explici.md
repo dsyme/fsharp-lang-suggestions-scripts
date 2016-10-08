@@ -16,13 +16,11 @@ And then I could write just:
 frame |> Frame.getCol<float> "Value"
 Interestingly, this is also problem for extension methods. When you define a C#-style extension method for a generic type like frame, it also has three type arguments and it is impossible to call it with just a single type argument.
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 Updating to planned to indicate this is approved in general terms. A detailed design and implementation would be needed.
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Don Syme on 6/20/2014 11:38:00 AM
@@ -41,4 +39,3 @@ For completeness it will be nice to allow to use the underscores in the declarat
 let func<_> = ()
 Currently this is allowed: let func< 'T, .. > = ()
 So, this should be allowed too: let func< .. > = ()
-

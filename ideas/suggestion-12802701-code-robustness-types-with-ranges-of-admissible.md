@@ -47,6 +47,3 @@ Syntax version # 2 (both versions may be acceptable):
 type temperature = float<celsius> range -80.0<celsius> .. 60.0<celsius> default 0.0<celsius>
 This change in the F# language syntax will not affect existing codebase. It requires introducing a new keyword: range. I think this syntax will help represent a programmer's intents in code and improve code robustness and expressiveness of the F# language.
 
-
-
-

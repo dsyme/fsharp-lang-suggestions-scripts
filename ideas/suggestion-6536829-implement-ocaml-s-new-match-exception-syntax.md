@@ -10,8 +10,6 @@ Implement the feature that is nicely described in the following post:
 https://blogs.janestreet.com/pattern-matching-and-exception-handling-unite/
 
 
-
-
 ## Comment by Eirik George Tsarpalis on 10/14/2014 6:18:00 AM
 
 Consider the following hypothetical example:
@@ -129,4 +127,3 @@ match result with
 | Pat2 -> expr2
 | Pat3 -> expr3
 | Pat4 -> expr4
-

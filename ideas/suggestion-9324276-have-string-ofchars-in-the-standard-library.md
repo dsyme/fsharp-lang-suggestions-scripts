@@ -17,9 +17,6 @@ which can be simplified with String.ofChars:
 String.ofSeq also can be handy for profiles like PCL where the String type is not regarded as seq<char>.
 
 
-
-
 ## Comment by Don Syme on 2/3/2016 12:06:00 PM
 
 Given that this would be pretty low-performance in any case, the use of StringBuilder appears adequate to cover this case.
-

@@ -24,8 +24,6 @@ member this.Data : ModuleData = base.Data
 Or automatic property implementation would also be a perfect option
 
 
-
-
 ## Comment by exercitus vir on 7/9/2016 1:53:00 PM
 
 This is too much magic for my taste. If I saw `base.Data` I would look for such a field or member, but would need to remember that F# magically transforms cases of tuples with common components to this.
@@ -45,4 +43,3 @@ static member getString x =
     match x with
     | _ s -> s
 But that doesn't work well with tuples as in your original example. You'd still have to iterate them over, even though you'd need only one continuation.
-

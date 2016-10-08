@@ -17,12 +17,9 @@ type C() =
 and
 type R = { [<DefaultValue>] x : C; y : int }
 
-
 ## Response by fslang-admin on 9/8/2015 12:00:00 AM
 
 Approved for inclusion in a future release of F#.
 Please consider contributing to F# by providing an implementation, with adequate testing. The code to be adjusted is around here: https://github.com/fsharp/fsharp/blob/212c3359bf6d83e30c12e53fd2ef283d3257b328/src/fsharp/PostInferenceChecks.fs#L1422. For some reason, the code is only activated for struct/enum type definitions, but it should also apply to record and class type definitions.
 Don Syme, F# Language Evolution
-
-
 

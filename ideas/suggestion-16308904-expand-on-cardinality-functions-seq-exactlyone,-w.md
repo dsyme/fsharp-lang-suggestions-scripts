@@ -17,6 +17,3 @@ Seq.tryZeroOrMore
 The reason it is better to have these in FSharp.Core is that, if one implements these by hand, it requires at least two iterations until the 2nd element. An optimized implementation may prevent this.
 See also the discussion here: http://stackoverflow.com/questions/39628567/non-throwing-version-of-seq-exactlyone-to-test-for-a-singleton-sequence
 
-
-
-

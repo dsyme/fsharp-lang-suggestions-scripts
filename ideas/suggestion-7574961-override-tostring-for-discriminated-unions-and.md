@@ -17,13 +17,11 @@ type DU =
 override x.ToString() = sprintf "%A" x
 I think it's very easy to teach the compiler generate this override automatically for all user types.
 
-
 ## Response by fslang-admin on 6/23/2016 12:00:00 AM
 
 Marking as planned, though we need to work out the details
 Don Syme
 F# Language and Core Library Evolution
-
 
 
 ## Comment by Steffen Forkmann on 4/15/2015 3:38:00 AM
@@ -42,4 +40,3 @@ However, %A is very very slow, ideally the implementation should not do any refl
 
 I am against this. ToString() carries no semantics. To what kind of string? Is it an atomic value or structured value? Is it for logging or display to the user? There is no consistency. The ToString() method should simply be deprecated.
 You can always simply call sprintf "%A" any structural type to get a good structured representation even if its very slow.
-

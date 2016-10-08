@@ -12,6 +12,3 @@ When avoiding its usage, you get a visual clue as to instances of disposable typ
 By making it a warning to use new unnecessarily, the compiler would effectively enforce a "best practice" with regards to IDisposable usage. It goes a long way today, but requires discipline to make it useful.
 This would be especially helpful to people coming to F# from C#, as many immediately use new everywhere, and don't see this very nice safety benefit provided by the compiler.
 
-
-
-

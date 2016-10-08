@@ -15,6 +15,3 @@ Here is a concrete example. Let's say you want to model a financial trading doma
 Unions are perfect for that except that there is no way currently to generically work with order types and timing options from different exchanges (in a clean way). How would you do this right now in F# without lots of boilerlate and really ugly code (i.e. one interface or member constraint per supported case)?. This feature would allow to express the model directly and I am sure there are many more examples where this is really valuable.
 What I value about F# the most is the expressiveness of it and this is the only feature (and higher-kinded types maybe) that do not let me express something cleanly.What do you think? Any issues with this that I am overlooking?
 
-
-
-

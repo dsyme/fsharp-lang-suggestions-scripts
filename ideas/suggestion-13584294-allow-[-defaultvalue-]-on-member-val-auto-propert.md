@@ -21,8 +21,6 @@ This would remove a good deal of boilerplate code and more expressively describe
 Thank you for your consideration.
 
 
-
-
 ## Comment by Daniel Robinson on 5/2/2016 9:10:00 AM
 
 Reed, an equivalent translation of your C# to F# would be:
@@ -50,4 +48,3 @@ The problem in your suggested case is that the target is no longer a property (E
 To date, the only way that I have managed to avoid this problem is with an explicit backing store (your suggestion is suitable for that purpose) that is DefaultValue'd accompanied by the manual property machinery for get and set. It seems that in all cases of F# property use, the value initializer for the property is happening after EF has setup all of its hooks into the object, effectively wiping them out. Bummer :/
 If there is anything else you would like me to test I'm happy to do so.
 Thank you again for your time.
-

@@ -14,6 +14,3 @@ There is also already a proof of concept for unions of "blittable" types: [/idea
 There has also been a lot of discussion on the implementation of multi-case unions in the discussion of struct records: https://github.com/Microsoft/visualfsharp/pull/620
 One great use of multi-case unions compiled to struct would be optional computations (e.g. Option<'T>) for value types that don't do heap-allocation at all.
 
-
-
-

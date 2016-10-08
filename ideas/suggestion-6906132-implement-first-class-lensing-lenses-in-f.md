@@ -50,8 +50,6 @@ type A with
 In conclusion, F# needs first-class support for lensing / lenses because it current set of language features is inadequate to provide a library solution, and because lensing / lenses is such a fundamental property of functional programming in stateful systems. While my design proposal certainly will have some flaws that need to be smoothed over, I think it is a good enough start to get something in the works!
 
 
-
-
 ## Comment by Christopher Stevenson on 1/9/2015 10:14:00 PM
 
 Coming from an object-oriented background, I find it difficult to understand what lenses are, besides 'functional version of properties'. Even though this proposal is rather lengthy, I'm not really understanding what the benefit of this is, besides some vague notion of more concise field setting of copied records.
@@ -158,4 +156,3 @@ change<'t> =
 | Await
 | Change of 't
 type ObservableLense<'t, 'tv> = ('t -> 'tv, 't -> 'tv -> 'tv, IObservable<'tv change>)
-

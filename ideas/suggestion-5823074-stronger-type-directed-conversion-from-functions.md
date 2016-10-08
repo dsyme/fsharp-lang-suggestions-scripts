@@ -17,8 +17,6 @@ http://stackoverflow.com/questions/23256355/passing-f-function-to-ienumerable-wh
 http://stackoverflow.com/questions/12933366/f-func-type-inference-difference-between-seq-and-pseq-todictionary
 
 
-
-
 ## Comment by Christoph Rüegg on 4/23/2014 6:01:00 PM
 
 Workarounds:
@@ -33,4 +31,3 @@ even |> seqA.all
 ## Comment by Daniel Ferreira Monteiro Alves on 4/26/2015 1:31:00 PM
 
 Why not use the .NET native Action and Func and other delegates unstead of the only F# specific closure? Or at least, allow some implicit convertion here.
-

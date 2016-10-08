@@ -13,6 +13,3 @@ this type of type annotation exists in Oracle SQL database (tablename.column_nam
 https://www.youtube.com/watch?v=iVN3LLf4wMg
 I believe it is also possible to do similar thing with C++ templates.
 
-
-
-

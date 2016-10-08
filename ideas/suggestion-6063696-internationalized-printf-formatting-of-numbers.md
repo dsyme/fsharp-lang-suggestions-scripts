@@ -9,7 +9,6 @@
 Most non-english speaking countries use "," as deciamal separator.
 it would be nice if I could write <sprintf "%,1f" 2.222> instead of <sprintf "%.1f" 2.222> to get a comma as a decimal separator.
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 This is a reasonable suggestion. From the point of view of the F# language design, I would be happy to see a well-considered set of extensions to printf added to F# 4.x or later versions.
@@ -18,7 +17,6 @@ We would strongly welcome an implementation proposal and initial testing for thi
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library..
 Thanks
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Don Syme on 6/20/2014 6:40:00 AM
@@ -39,4 +37,3 @@ Adjusted the title to match my earlier comment
 
 related:
 http://stackoverflow.com/questions/21462617/how-to-get-culture-aware-output-with-printf-like-functions
-

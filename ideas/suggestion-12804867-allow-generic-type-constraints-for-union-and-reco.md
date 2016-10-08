@@ -12,6 +12,3 @@ when 'T : record
 This would enable apis which use quotations or reflection over the supplied record or union to be safer.
 The constraint could be enforced at runtime if unions or records implemented some sort of marker interface, perhaps there is a better way.
 
-
-
-

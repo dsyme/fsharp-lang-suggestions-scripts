@@ -14,8 +14,6 @@ Related alternative: Keep a file order, but infer it from #load/#require declara
 Related alternative: Keep a file order, but optionally have it specified by a fileorder.fsx or fileorder.txt or fileorder.json: [/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx](/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx.md)
 
 
-
-
 ## Comment by Daniel Robinson on 10/19/2015 1:55:00 PM
 
 I'm confused. Isn't being able to view file dependencies at a glance, based on file order, a good thing for the same reason types are required to be defined in order?
@@ -158,4 +156,3 @@ d) Nevertheless, I see a value in having an ability to display the dependencies 
 Moreover, if I'd be building a feature allowing me to see these dependencies, I'd prefer to show differently -- one of good ways is to show it as a tree listing the most independent files on the first level, their dependencies -- on the second, and so on. The opposite order (from the mostly dependent components to their deepest dependencies) is totally valid too. Any profiler is capable of showing a similar structure for your call tree.
 And I don't think I'd prefer this dependency graph to be shown simply as an ordered sequence.
 Please consider all these arguments before downvoting this feature.
-

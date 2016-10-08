@@ -13,8 +13,6 @@ let ConnectionString = #env "MY_DB_CONNECTIONSTRING"
 let cmd = new SqlCommandProvider<"...", ConnectionString>()
 
 
-
-
 ## Comment by Alexei Odeychuk on 4/8/2016 1:33:00 AM
 
 Lenne, what's wrong with already-existing .NET built-in Environment.GetEnvironmentVariable method (from namespace System)?
@@ -36,4 +34,3 @@ Lenne, do you mean the value to be substituted at compile time? (I guess yes as 
 I'm not sure I see value in this, is there prior art (any other compiler does that?)
 I generally move those type of strings in a separate module, and can consider generating this module file as a preliminary build step.
 Also, I think this can be addressed by a type provider altogether, maybe you should consider this instead?
-

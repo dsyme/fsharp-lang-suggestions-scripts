@@ -8,11 +8,9 @@
 
 F# already has to make trade-offs when doing interop, e.g. it is possible to create a null value for a DU from C#, erased type providers don't work from anywhere but F# etc. Maybe F# could allow for higher-kinded polymorphism within F# code and use dynamic casts at runtime or maybe statically resolved inlining to simulate higher-kinded polymorphism.
 
-
 ## Response by fslang-admin on 3/21/2014 12:00:00 AM
 
 removed “until the CLR fully supports it” from title
-
 
 
 ## Comment by Don Syme on 3/21/2014 12:38:00 PM
@@ -106,4 +104,3 @@ I just want to repeat my question from about one year ago, because I would reall
 "Any comment from Don Syme or the F# Software Foundation Language Group on the chances of simulating higher-kinded polymorphism in the near future?
 I think this is a really important feature. Many expert functional programmers forego F# because they think can't take a language serious that does not have it. The F# community is losing a lot of potential expert functional programmers [because of this]."
 This issue being more than 2 years old requires some kind of official response. Either decline it or approve it in principle, but not answering just keeps our hopes up and keeps our votes from being used for other feature requests.
-

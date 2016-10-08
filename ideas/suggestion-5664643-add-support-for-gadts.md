@@ -11,8 +11,6 @@ You can see a simple explanation of how they work in haskell here: https://en.wi
 They open the door to such fantastic type safe data structures as heterogeneous lists and so can vastly improve type safety within the language.
 
 
-
-
 ## Comment by Radek Micek on 4/21/2014 3:31:00 PM
 
 I don't think that benefits of GADTs outweight how they complicate type system and type inference (you may lose principal-type property).
@@ -34,4 +32,3 @@ type C
 type D<T> : C
 If we have a C, a GADT implementation may "know" that for certain cases T has certain values, or decomposes in certain ways. But you can't implement this in .NET IL generics - you have to use reflection to recover the value of T and instantiate the branch code with a specific value. Russo and Kennedy had a proposal for what to do about this for C#.
 This is a significant blocking factor for adding this to F# - GADT code would need reflection and would be less efficient.
-

@@ -22,13 +22,11 @@ x.F(1)
 x.F(2)
 You can also view this code highlighted at http://pastebin.com/CHMj7xQG
 
-
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle. Thanks for the suggestion.
 We will add an RFC for this in due course, see https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs
 We will need to consider whether to simplify calls for static members as well.
-
 
 
 ## Comment by exercitus vir on 6/12/2015 6:32:00 PM
@@ -41,4 +39,3 @@ I have incorporated your suggestion in my suggestion for "Interfaces as simple, 
 I think this is totally reasonable, marking it as approved-in-principle.
 Note also that a naked type alias can imply multiple constraints, giving a way to name collections of constraints
 https://gist.github.com/dsyme/bfed2eed788c7ba58ccc
-

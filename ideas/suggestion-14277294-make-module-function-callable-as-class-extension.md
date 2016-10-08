@@ -31,8 +31,6 @@ Notes:
 Finally, this is related to [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions,](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions,.md) but in a reverse way (i.e., turn a module function to a method). My personal view is we need both.
 
 
-
-
 ## Comment by trek42 on 5/27/2016 1:31:00 PM
 
 fix an error: the generated extension method is:
@@ -60,4 +58,3 @@ numbers.filter { it > 0 } //== listOf(1, 2)
 numbers.map { it * it } //== listOf(1, 1, 4)
 You can also chain the dot notation together:
 numbers.filter { it > 0 }.map { it * it } //== listOf(1, 4)
-

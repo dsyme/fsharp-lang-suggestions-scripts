@@ -11,6 +11,3 @@ let ctor<'a when 'a:(new: unit -> #IWebDriver)> : unit -> IWebDriver = ...
 versus
 let ctor<'a when 'a:(new: unit- > 'a) and 'a :> IWebDriver> = fun () -> new 'a() :> IWebDriver
 
-
-
-

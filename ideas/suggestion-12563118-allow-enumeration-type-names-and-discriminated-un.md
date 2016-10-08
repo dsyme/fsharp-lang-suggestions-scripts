@@ -26,8 +26,6 @@ seq { for animal in Animals -> animal } // seq { Tiger; Cat; Lion }
 I think it's a good idea to allow enumeration type names and discriminated union type names in for loops and treat enumeration types and discriminated union types by the F# compiler as types compatible with IEnumerable and having a GetEnumerator method (even if they don't). It will make the F# syntax more expressive and bolster F# competitive strengths.
 
 
-
-
 ## Comment by Jack Fox on 3/6/2016 11:13:00 AM
 
 I see merit in this, but I'm withholding my vote as I would rather see this implemented as the having the standard collection functions (fold, map, etc.) over enumerations and discriminated unions. Then this all becomes composable. For loops are not so composable.
@@ -49,4 +47,3 @@ match animal with
 |> List.iter (printfn "%A")
 As to a comment by Jack Fox: I believe that the syntax suggested can be implemented in the compiler even without standard collection functions (fold, map, etc.) over enumerations and discriminated unions.
 The compiler can obtain information on all union cases defined by a language user for a particular discriminated union type from code (The similar applies to enumeration types). So, the F# compiler can convert the expression "for animal in Animals" to "for animal in seq { yield Tiger(Unchecked.defaultof<int>, Unchecked.defaultof<string>); yield Cat; yield Lion }" behind the scenes in order to reach the goal of the syntax suggested.
-

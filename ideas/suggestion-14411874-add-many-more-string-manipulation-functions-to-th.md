@@ -20,8 +20,6 @@ trimStart/trimEnd : string -> string
 Obviously all of this can easily be achieved by writing simple wrappers to the methods in the .NET string class but if F# is going to have a String module, it ought to be a fully featured one.
 
 
-
-
 ## Comment by Alexei Odeychuk on 5/31/2016 3:30:00 PM
 
 I believe this suggestion is valueable and should be extended. There are three useful functions for string handling in Visual Basic: left, right, mid (please see: String Functions in Visual Basic. https://msdn.microsoft.com/en-us/library/dd789093.aspx).
@@ -73,4 +71,3 @@ This is just my string library that I add to as I use different functions. It ha
 - "format" uses statically resolved types to call "ToString : string->string" on any object
 - silly naming for blank. Not sure what I was thinking. I should probably just rename to the String objects static function names, but without the "NullOr", as that is implied by the library.
 But this is far from a complete surface area. as said, only populated as I need things, so should be taken for what it is, a WIP at glacial pace...
-

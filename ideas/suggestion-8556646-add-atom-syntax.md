@@ -13,8 +13,6 @@ E.g.:
 ("fido", :is-a, :pet) is of type string*string*string
 
 
-
-
 ## Comment by Shawn Hoover on 10/30/2015 2:10:00 PM
 
 Is there a particular reason why self-evaluating symbols don't exist in a lot of statically typed languages? I've been wondering about it since hearing Rich Hickey stress in some talks the idea of using generic data (maps, vectors, lists) at subsystem boundaries. Obviously they've been around a long time in Lisp, Erlang, and Ruby, for example. Is it just that generic maps are used less in F# so whatever efficiency or syntactic gains of keywords is less useful?
@@ -45,4 +43,3 @@ match map with #{:foo 1 :bar n :REST more} -> /* n =2, more=[ (:baz,3) ] */
 I'm using Clojure over F# for a current project now for some of these reasons, even though I'd much prefer to stay in the .Net ecosystem, and F# in particular -- I'll end up having to do loosely-coupled Java/.Net interop.
 Another option (or related one) is to improve F#'s default use of "?" dynamic access, so that out of the box it does all the fast expando object / call-site caching stuff, etc., but still let it be overridable.
 It seems to be that record/class syntax and map syntax and pattern matching could be merged, so that the same pattern could match any complete or partial sum type, and that this would afford a way to do a sort of "gradual typing" in F#. Basically I could use record syntax that was a *partial* specification of the record - the backing store would be a map, not a class, and then the type could "graduate" to a fully-specified type at some point backed as a class/struct. Devil is in the details...
-

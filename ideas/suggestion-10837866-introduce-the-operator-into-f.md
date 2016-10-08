@@ -10,8 +10,6 @@ Since we allow the . operator to reference fields and properties of objects in F
 The C# 6 'elvis' operator propagates nulls in a succinct way, and I think that working with objects in F# will be similarly simplified if we introduce it here as well!
 
 
-
-
 ## Comment by Radek Micek on 11/28/2015 6:18:00 AM
 
 I prefer using None instead of null in F#.
@@ -56,4 +54,3 @@ I agree with Bartosz. Even though ?. would be more succinct, I would prefer the 
 this snippet is a superstrong argument against such a feature ;)
 http://pastebin.com/Z6kbuTEE
 (be proud if you can compute all types of the variables as well as the return value)
-

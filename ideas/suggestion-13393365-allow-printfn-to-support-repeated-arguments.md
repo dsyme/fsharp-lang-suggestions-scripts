@@ -12,8 +12,6 @@ Perhaps an index argument could be added
 printfn "%[1]i %[1]x %[1]A" mySecretNumber
 
 
-
-
 ## Comment by Gauthier Segay on 4/17/2016 8:08:00 PM
 
 Dave, do you think that would still be useful with making your variable name short in the scope where you want to print it:
@@ -41,4 +39,3 @@ printfn "%A %A %A" a b c
 printfn "%A %A %A[1]" a b c
 The first and fourth would seem to be a compiler error and the second and third should be okay. It seems like subtle errors can easily creep in that may not be obvious with a quick eye scan. How can this be made more clear or is it better to cancel this in favor the following:
 [/ideas/suggestion-6002107-add-string-interpolation-to-println-syntax-from-s](/ideas/suggestion-6002107-add-string-interpolation-to-println-syntax-from-s.md)
-

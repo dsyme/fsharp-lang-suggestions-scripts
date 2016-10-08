@@ -23,7 +23,6 @@ let minusb = -b // Compile error
 let cosb = cos b // Compile error
 let twob = b + b // OK
 
-
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as approved-in-principle per my comment below
@@ -31,8 +30,6 @@ We will post an RFC for it in due course.
 Don Syme, F# Language and Core Library Evolution
 
 
-
 ## Comment by Don Syme on 2/4/2016 3:56:00 PM
 
 This is a reasonable request and we should accommodate this somehow. Unfortunately we will likely only be able to do it by having the user open a new module.
-

@@ -15,6 +15,3 @@ match somerecord with
 This is quite a simple syntactic enhancement, however it's very nice to have. It also pushes us to use the (presumably) well chosen record field names for our variables instead of picking a single letter variable name.
 Also, in OCaml we get a warning if we don't bind all the record fields in a pattern match, unless we include _. e.g. {foo;bar;_}. This would be a nice thing to have as well, because in a pattern match where we DO want to bind all the fields, we are now told when the record type changes that we need to consider the new field. This is very useful for large projects.
 
-
-
-

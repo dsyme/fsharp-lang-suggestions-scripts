@@ -9,8 +9,6 @@
 CLR has native support for union types; these could provide optimization and performance opportunities for F# discriminated unions.
 
 
-
-
 ## Comment by David Taylor-Fuller on 2/16/2015 5:31:00 PM
 
 Would love to know why this wasnt done in the initial implementation.
@@ -34,4 +32,3 @@ A proof of concept explicit structlayout based demo available at:
 https://github.com/Microsoft/visualfsharp/pull/620
 https://gist.github.com/zpodlovics/80e12e2de35cf73e6e03
 However, it limited only to blittable types. Combine it with blittable type constraint and you can have stack allocated DU.
-

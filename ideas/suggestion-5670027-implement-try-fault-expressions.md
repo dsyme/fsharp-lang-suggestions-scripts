@@ -11,8 +11,6 @@ To answer the inevitable question, "Why not just use try/with and reraise()?" --
 With try/fault, it'd be easy to log relevant information (e.g., variable values) from functions when unwinding the stack due to an exception being thrown, without the downside of being able to affect the control flow.
 
 
-
-
 ## Comment by Jon Harrop on 3/26/2014 6:19:00 AM
 
 Why not use try..finally?
@@ -36,4 +34,3 @@ My inclination is that we won't do this in F#. I can see the use cases though - 
 ## Comment by Don Syme on 2/10/2016 11:02:00 AM
 
 One approach to this would be to add an OnException combinatory accepting a pair of functions. Likewise an Async.OnException.
-

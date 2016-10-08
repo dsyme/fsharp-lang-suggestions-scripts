@@ -8,13 +8,11 @@
 
 
 
-
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as “approved in principle” (it will show as “planned”).
 However, in reality it is both relatively low priority and relatively hard to implement, so I don’t expect this to happen any time soon.
 For example, we would have to reverse-map the metadata associated with F#-specific types. This is already done in F# reflection FSharpType.IsRecord and so on.
-
 
 
 ## Comment by Jack Pappas on 3/22/2014 8:30:00 AM
@@ -34,4 +32,3 @@ Yes please for this one; let's allow TPs to create idiomatic F# apis!
 I plan to mark this feature as "approved in principle" (it will show as "planned"). It would be great if it were done.
 However, in reality it is both relatively low priority and relatively hard to implement, so I don't expect this to happen any time soon.
 For example, we would have to reverse-map the metadata associated with F#-specific types. This is already done in F# reflection FSharpType.IsRecord and so on.
-

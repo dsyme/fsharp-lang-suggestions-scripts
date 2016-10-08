@@ -9,8 +9,6 @@
 It would be nice to be able to use open in function scope and maybe other places where it currently is illegal.
 
 
-
-
 ## Comment by Richard Minerich on 4/12/2016 3:07:00 PM
 
 I would love to be able to open modules in let scopes, this would be especially useful given the way that things like unchecked arithmetic is done in F#.
@@ -96,4 +94,3 @@ Implementation allowed
 let x = 
 (* .... *) open ModuleName1 
 (* .... *) open ModuleName2 
-

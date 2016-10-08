@@ -21,8 +21,6 @@ Whether there were one or two attributes (one for 'RecordSyntax' and one for 'Co
 Matching uppercase properties to lowercase argument names is somewhat inelegant but in the balance is likely to be a reasonable price to pay for following .NET and F# design norms.
 
 
-
-
 ## Comment by Richard Minerich on 3/21/2014 4:53:00 PM
 
 As you know, I've certainly been bitten by this before. The other option would be to extend the record syntax a bit so that they can do most of the same things classes can already do.
@@ -49,4 +47,3 @@ See also http://fslang.uservoice.com/forums/245727-f-language/suggestions/612401
 ## Comment by Don Syme on 2/3/2016 1:16:00 PM
 
 C# is looking into allowing "with" on the proposed C# record types. What ever we do here would best align with that.
-

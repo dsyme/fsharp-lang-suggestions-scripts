@@ -18,8 +18,6 @@ An example of this is the way F# has provided the capability to create extension
 NOTE: Moved from http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3942302-provide-covariance-contravariance-language-support as suggested by Don Syme.
 
 
-
-
 ## Comment by Jon Harrop on 3/21/2014 11:40:00 AM
 
 FWIW, I used OCaml for many years and never once found a use for co/contravariance in real code. There are some corner cases in F# with interop with OO libs like WPF but these are rare IME.
@@ -64,4 +62,3 @@ Tweet from Erik Meijer related to this: https://twitter.com/headinthebox/status/
 
 As the tweet from Erik Meijer linked below would suggest, F# lacks this due to its implications for type inference. Don Syme made a post about this same issue nearly ten years ago: http://osdir.com/ml/lang.fsharp.general/2008-09/msg00043.html
 It would be a shame for F# to suffer for the sake of compatibility with a "feature" that's a corner case even in C# and VB.
-

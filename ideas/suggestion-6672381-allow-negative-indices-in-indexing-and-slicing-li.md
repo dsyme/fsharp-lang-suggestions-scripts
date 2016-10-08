@@ -10,8 +10,6 @@ Example: permit usage of a.[..-2] instead of a.[..a.Length-1]
 The compiler could just do that conversion behind the scenes, so it would work with existing types that have custom indexing and slicing
 
 
-
-
 ## Comment by Kit Eason on 11/6/2014 6:32:00 AM
 
 This would be so freakin' useful in the code I am writing right now!
@@ -43,4 +41,3 @@ I like it. FSharpPlus had that feature longtime:(https://github.com/gmpl/FSharpP
 note that the GetSlice there support also negatives at the beginning of the string.
 But now I see that in F#4.0 it doesn't work anymore since GetSlice was added in the F# core (without the negatives) and shadows the method in F#+ so if this feature is not accepted an option would be to avoid shadowing those functions further defined in Libraries.
 This way everybody is free to decide to use negative indexing by using a library or writing an extension method.
-

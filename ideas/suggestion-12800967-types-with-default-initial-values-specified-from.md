@@ -32,8 +32,6 @@ Remark: "[and]" or "[with]" means that the "and", "with" keywords are optional i
 It's not a breaking change in the language; no new keywords are needed to implement this syntax in the F# language. I think this syntax will help represent a programmer's intent in code and improve the expressiveness of the F# language.
 
 
-
-
 ## Comment by Jack Fox on 3/6/2016 11:41:00 AM
 
 I suggest making the "and" and "with" keywords mandatory...I think it improves readability.
@@ -42,4 +40,3 @@ I suggest making the "and" and "with" keywords mandatory...I think it improves r
 
 This would be great, especially if the F# library would come with a function similar to `genericOne` and we can use this as a static type constraint.
 That way you could write a generic function that works on any type that defines a default value.
-

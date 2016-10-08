@@ -12,8 +12,6 @@ Details of discussion and suggested corrections to the algorithm of the % operat
 2) Distinctions between rem and mod: http://mathcentral.uregina.ca/QQ/database/QQ.09.12/h/eric1.html
 
 
-
-
 ## Comment by Fraser Waters on 3/12/2015 7:11:00 AM
 
 This matches the behavior of % in C# (and nearly every other language), it would also be a significant breaking change. But adding a new builtin function to do this would be a good idea.
@@ -37,4 +35,3 @@ I agree with Jared Hester (July 03, 2016 11:49). The "mod" operator would be a g
 For example, the "mod" exists in Object Pascal (Delphi), No. 12 in TIOBE Language Popularity Index.
 As to "%." operator suggested by Jared Hester (June 22, 2015 21:15), I believe it would add nothing to code readability. Programming is a human activitiy. The more readable and correct code, the better for programmers and language popularity.
 I am strongly in favor of the "mod" operator.
-

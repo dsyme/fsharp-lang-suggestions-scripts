@@ -14,8 +14,6 @@ let y = (B,B)
 if (x=y) then true else false
 
 
-
-
 ## Comment by Phillip Trelford on 3/21/2014 8:09:00 AM
 
 At a minimum type aliasing at local scopes as per C++ typedef would be really handy. Nested type declaration would also be nice.
@@ -55,4 +53,3 @@ Type aliases only would help a bit but not really solve the problem completely. 
 ## Comment by Anonymous on 7/24/2016 1:58:00 PM
 
 I was surprised to find this isn't inherently supported, when I first coded it it seemed quite natural because I can declare an inner function within a parent function and the inner function is known only within that parent, I added a simple enum type - also within some parent function and the compiler complained.
-

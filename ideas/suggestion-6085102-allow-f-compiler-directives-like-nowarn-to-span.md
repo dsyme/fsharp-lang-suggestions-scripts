@@ -12,8 +12,6 @@ A possibly related issue / suggestion is listed here:
 http://fslang.uservoice.com/forums/245727-f-language/suggestions/5676502-disable-compiler-warnings-per-line
 
 
-
-
 ## Comment by exercitus vir on 6/19/2015 5:32:00 PM
 
 You could use #endnowarn "[number]" to explicitely end a compiler directive.
@@ -25,4 +23,3 @@ In C#, this feature exists, and has the following form:
 code...
 #pragma warning enable 618
 This enables you to suppress specific compiler warnings locally, which is quite important for evolving APIs: sometimes you need to deprecate a particular API (function, type), but keep it around for backwards compatibility. This means that your own code may still need to use the deprecated code for a while longer (for e.g. unit tests), so it'd be nice to enable that scenario without suppressing all other warnings.
-

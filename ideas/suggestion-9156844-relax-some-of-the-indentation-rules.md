@@ -33,8 +33,6 @@ c.Name => c.Indicators.``CO2 emissions (kt)``.[2010]]
 I think that in situations like these, the rules should be relaxed. In particular, we should not require new line to be intended further than the "starting thing" on the previous line. Just further than the previous line.
 
 
-
-
 ## Comment by Tomas Petricek on 8/3/2015 7:09:00 PM
 
 Posted to F# Snippets, which actually *shows* the indentation! http://fssnip.net/rZ
@@ -86,4 +84,3 @@ let myFunction () =
 ....]
 ....let otherList = [1; 2; 3]
 ....// Other code follows
-

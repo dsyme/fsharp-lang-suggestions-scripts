@@ -10,11 +10,9 @@ The Roslyn compiler currently (as of 2014-05-08) has a new NameOf operator liste
 (https://roslyn.codeplex.com/wikipage?title=Language%20Feature%20Status&referringTitle=Documentation)
 Pending its arrival there, it would be awesome to get something similar in F# as well.
 
-
 ## Response by fslang-admin on 6/17/2016 12:00:00 AM
 
 RFC is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1003-nameof-operator.md
-
 
 
 ## Comment by Don Syme on 11/14/2014 12:35:00 PM
@@ -61,4 +59,3 @@ let y = 1
 printfn "%s" (nameof y)
 The boxing will just find the most local definition of parameter if it is a variable or wrap the expression directly as <@ expression @>
 This could allow us to use a lot of existing code and framework already in F#
-

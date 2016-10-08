@@ -22,8 +22,6 @@ Recently Added to OCaml
 https://blogs.janestreet.com/ocaml-4-03-everything-else/
 
 
-
-
 ## Comment by Huw Simpson on 3/4/2016 7:29:00 AM
 
 This feature already exists in the form:
@@ -47,4 +45,3 @@ This feature is currently deprecated in F# 3.0 and above. It was available I bel
 ## Comment by Demetrios Obenour on 7/7/2016 9:03:00 PM
 
 For me, the big advantage is that it would allow mutable inline records. This can be huge for performance.
-

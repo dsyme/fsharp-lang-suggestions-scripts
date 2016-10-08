@@ -9,8 +9,6 @@
 Optional and named parameters are supported in static methods, but not in let bindings on modules. This many times forces you to use a static class instead of a module, which has some inconvenients. Ocaml has this, so I'm guessing is doable.
 
 
-
-
 ## Comment by Gustavo Guerra on 3/21/2014 8:26:00 AM
 
 Original item: http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/5592336-optional-parameters-on-let-bindings-on-modules
@@ -57,4 +55,3 @@ This would be an excellent addition to the language, using the tupled argument s
 ## Comment by Jared Hester on 6/28/2016 12:41:00 AM
 
 related - [/ideas/suggestion-13887384-support-for-named-curried-functions](/ideas/suggestion-13887384-support-for-named-curried-functions.md)
-

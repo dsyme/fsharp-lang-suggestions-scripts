@@ -20,6 +20,3 @@ The suggestion obviously doesn't work, since the base type is abstract.
 The workaround is to define it like this:
 let foo = { new Foo(1) with member __.ToString() = base.ToString() }
 
-
-
-

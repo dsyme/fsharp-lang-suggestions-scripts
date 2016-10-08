@@ -9,8 +9,6 @@
 At least give it a try in a private branch, and upon success, enable them publicly with a compiler switch initially.
 
 
-
-
 ## Comment by Tomas Petricek on 3/24/2014 4:03:00 PM
 
 I would be quite interested in the use cases that you have in mind for this? Restricted macro functionality is already available with quotations, type providers & reflection, so I'd like to know what interesting use cases are left :-)
@@ -245,4 +243,3 @@ let nameof ([<ReflectedDefinition>] q:Quotations.Expr<'T>) : string = match q wi
 let y = 1
 printfn "%s" (nameof y)
 Thank you. Good day.
-

@@ -24,7 +24,6 @@ I understand the difficulty of doing this at compile type.Tomas P actually expla
 I can see these interop dilemmas becoming more common as F# adoption increases, especially in the enterprise where tools like NHibernate are in widespread use. There ought to be a way to address them without creating one-off CLIMutable-esque attributes per se.
 The feature itself would open the door to incredibly powerful metaprogramming opportunities.
 
-
 ## Response by fslang-admin on 6/24/2016 12:00:00 AM
 
 Marking this as “approved in principle” per comment below.
@@ -33,7 +32,6 @@ We will open an RFC for it eventually (it won’t be fast :) )
 https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 Don Syme
 F# Language Evolution
-
 
 
 ## Comment by Bryan Edds on 3/27/2014 9:42:00 PM
@@ -68,4 +66,3 @@ I will mark this as "approved in principle" and we will eventually open an RFC f
 ## Comment by Dave Thomas on 4/19/2016 2:40:00 AM
 
 One thing that heads towards this is getting intrinsic type extensions working with generative providers. So that you can then create a type from a provider and immediately augment it in some way. RE:https://github.com/Microsoft/visualfsharp/pull/882
-

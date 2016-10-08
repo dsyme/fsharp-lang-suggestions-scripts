@@ -15,8 +15,6 @@ C(CollectionProperty = [ 1;2;3 ])
 where CollectionProperty has the "Add" pattern of C#. One design would make it tht any IEnumerable<T> would be assignable, where T corresponds to the type of an Add method, though that may not be fully compatible with the C# mechanism.
 
 
-
-
 ## Comment by Dave Thomas on 7/6/2014 3:37:00 AM
 
 Having an IList<_>.Add mechanism as mentioned would make interop with lots of C# more palatable as extra create methods would ordinarily have to be added or assign an intermediate type.
@@ -56,4 +54,3 @@ Don
 ## Comment by Paul on 10/21/2014 11:28:00 AM
 
 A pull request has now been submitted.
-

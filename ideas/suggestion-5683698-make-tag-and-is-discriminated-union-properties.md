@@ -16,7 +16,6 @@ List.filter (function A -> true | _ -> false)
 when I could write:
 List.filter (fun x -> x.IsA)
 
-
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 This proposal is “approved in principle” for F# 4.0+. It would make a good addition to F#. (I don’t think the loss of purity (e.g. wr.t. ordering of union cases) is a critical problem and I believe you can turn of the DefaultAugmentation in any case)
@@ -28,7 +27,6 @@ I’d be glad to help guide people through the implementation process.
 If you strongly think this should not be approved please chime in with your technical feedback.
 Thanks
 Don Syme, F# Language and Core Library Evolution
-
 
 
 ## Comment by Peter Strøiman on 5/13/2014 3:32:00 AM
@@ -67,4 +65,3 @@ There are a few considerations to take into account when tackling this, per Don 
 Combined with [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md) would be even nicer:
 The code would be:
 List.filter Foo.isA
-

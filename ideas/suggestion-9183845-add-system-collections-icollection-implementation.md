@@ -10,14 +10,12 @@ ICollection is a useful interface that inherits IEnumerable. Inputs implementing
 I suggest that future versions of F# core implement this.
 See also https://github.com/Microsoft/visualfsharp/issues/570#issuecomment-128000307
 
-
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Approved in principle, see my comment below
 We will open an RFC for this in due course.
 https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 Don Syme, F# Language Evolution
-
 
 
 ## Comment by Lincoln Atkinson on 8/5/2015 11:55:00 AM
@@ -75,4 +73,3 @@ Alternatively we could implement IReadOnlyCollection https://msdn.microsoft.com/
 ## Comment by Marc Sigrist on 2/10/2016 4:55:00 AM
 
 FWIW, I have worked in several larger F#-to-C# projects, and I have used IReadOnlyCollection extensively. So I think implementing IReadOnlyCollection would be a great idea.
-

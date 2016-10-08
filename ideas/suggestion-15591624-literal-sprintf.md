@@ -12,6 +12,3 @@ Allow:
 let a = sprintf "%s" "string"
 ```
 
-
-
-

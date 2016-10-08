@@ -18,6 +18,3 @@ By monad laws (borrowed from haskell here) this must be equal to:
 async.Map(something, fun a -> 2*a)
 In many scenarios the latter can be implemented with a lot less overhead, so in my opinion it would be profitable to allow users to provide this "shortcut".
 
-
-
-

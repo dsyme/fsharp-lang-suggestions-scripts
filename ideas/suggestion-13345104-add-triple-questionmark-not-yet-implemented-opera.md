@@ -19,8 +19,6 @@ Finally, an article offering more explanation as to it's value and usage can be 
 http://alvinalexander.com/scala/what-does-three-question-marks-in-scala-mean
 
 
-
-
 ## Comment by Alexei Odeychuk on 4/8/2016 8:52:00 AM
 
 Varon, did you consider any other options, for example:
@@ -47,4 +45,3 @@ Would be good if F# to support
 let undefined () = raise NotImplemented
 ```
 I.e. omit `Exception` after raise like with `Attribute`s and new without `()`
-

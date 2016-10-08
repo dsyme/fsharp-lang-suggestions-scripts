@@ -19,8 +19,6 @@ let lst = [ 1 .. 10 ] // allowed
 let sq = seq { 1 .. 10 } // allowed, and that's good!
 
 
-
-
 ## Comment by Vasily Kirichenko on 3/13/2016 10:24:00 AM
 
 You can write
@@ -39,4 +37,3 @@ Vasily is right, if all you want is a simple sequence use
 seq [10;55;0] or seq [| 40; 5; 0; 40 |]|
 Perhaps that error should be improved to say "invalid sequence expression ..." with some more details and a suggestion
 [1] https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/computation-expressions-%5Bfsharp%5D
-

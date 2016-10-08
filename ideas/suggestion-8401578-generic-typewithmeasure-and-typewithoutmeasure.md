@@ -33,8 +33,6 @@ let inline SomeTypeWithMeasure (withoutMeasure : SomeType) : SomeType<'m> = Type
 let inline SomeWithoutMeasure (withMeasure : SomeType<'m>) : SomeType = TypeWithMeasure withMeasure
 
 
-
-
 ## Comment by exercitus vir on 6/14/2015 11:31:00 AM
 
 I just noticed that the following functions also exist, but I still think that we need a generic version:
@@ -57,4 +55,3 @@ I would be interested to know if currently `(Double) doubleValue` is optimized t
 Take a look at this gist.
 https://gist.github.com/dsyme/b80086ce5c5a0dc1a9f7
 Although there is a change of representation in the conversion for units <-> no units, the effect is still basically as you want it. (if you want to minimize the cost of the representation conversion you could use a struct type)
-

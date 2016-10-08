@@ -42,7 +42,6 @@ let inline clear (p : nativeptr<'T>) =
 let inline copy (destPtr : nativeptr<'T>) (srcPtr : nativeptr<'T>) =
 (# "copyobj !0" type ('T) destPtr srcPtr #)
 
-
 ## Response by fslang-admin on 11/8/2014 12:00:00 AM
 
 I’m marking this as “approved” for F# 4.0+.
@@ -50,7 +49,6 @@ A pull request for this feature has been submitted here:
 https://visualfsharp.codeplex.com/SourceControl/network/forks/jackpappas/fsharpcontrib/contribution/7134
 Thanks
 Don, F# Language Design
-
 
 
 ## Comment by Will Smith on 3/23/2014 10:50:00 AM
@@ -86,4 +84,3 @@ In this vein, it would be useful to be able to easily use what amounts to a bina
 ## Comment by Jack Pappas on 7/9/2014 7:01:00 PM
 
 I've implemented these additional intrinsic functions and will be sending a pull request ASAP: https://visualfsharp.codeplex.com/SourceControl/network/forks/jackpappas/fsharpcontrib?branch=native-interop
-

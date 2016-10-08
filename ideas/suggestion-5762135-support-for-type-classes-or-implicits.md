@@ -22,8 +22,6 @@ member map = Option.map
 I know that the 'class' keyword could be confusing for OO-folks but I could not come up with a better keyword for a type class but since 'class' is not used in F# anyway, this is probably less of a problem.
 
 
-
-
 ## Comment by Will Smith on 4/13/2014 1:13:00 PM
 
 I wouldn't say it's currently a hack; it's just how it's done. But, I think something like this would have potential if we can figure out what the actual benefits are and how do to design it in a way without confusing anyone.
@@ -117,4 +115,3 @@ These various features tug in different incompatible directions.
 ## Comment by bleis-tift on 3/2/2016 6:18:00 PM
 
 OCaml way: http://www.lpw25.net/ml2014.pdf
-

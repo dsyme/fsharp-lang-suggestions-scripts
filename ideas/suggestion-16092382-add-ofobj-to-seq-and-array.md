@@ -16,9 +16,6 @@ Seq.ofObj
 Array.ofObj
 
 
-
-
 ## Comment by Loic Denuziere on 9/16/2016 8:10:00 AM
 
 Alternatively for something more general, we could have a null equivalent of `defaultArg`. So if it's called let's say `ifNull` (placeholder name, not actual proposal) then your `Seq.ofObj s` would be `ifNull s Seq.empty`, and `Array.ofObj s` would be `ifNull s [||]`.
-

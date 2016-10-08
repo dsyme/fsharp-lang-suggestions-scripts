@@ -15,6 +15,3 @@ Name : string
 Age: int
 } with interface IHasAnAge
 
-
-
-

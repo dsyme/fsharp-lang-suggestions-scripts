@@ -10,8 +10,6 @@ The only time I ever use the new keyword is on Disposables, and even then only t
 Could this be removed from the next F# release, or perhaps replaced with a warning if you bind a Disposable with let instead of use?
 
 
-
-
 ## Comment by Alexei Odeychuk on 7/18/2016 6:44:00 AM
 
 I support Isaac Abraham's suggestion!
@@ -39,4 +37,3 @@ If the real issue is with how it currently can't be pipelined, why not ask for j
 ## Comment by miegir on 8/15/2016 4:44:00 PM
 
 I agree that this warning can be removed and replaced by the warning that IDisposable object should be either bound using 'use' or returned. And that warning should also be reported on methods that return IDisposable values. And, for completeness, using of the 'new' keyword will suppress that new warning, allowing developer to say 'I know that I do here'.
-

@@ -17,6 +17,3 @@ I think the use of one symbol "." instead of four symbols "(", ":", ">", ")" to 
 The syntax suggested would be especially useful in the body of methods of classes that implement multiple interfaces.
 P.S. My suggestion does not mean a breaking change in the F# language. I think the existing syntax and the dot notation syntax for casts to interfaces can be used interchangeably.
 
-
-
-

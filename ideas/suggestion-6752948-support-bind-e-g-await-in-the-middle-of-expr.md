@@ -27,8 +27,6 @@ return (xx + yy) / zz
 }
 
 
-
-
 ## Comment by Wallace Kelly on 5/28/2015 12:11:00 PM
 
 In your examples, you have `tasync`. Is that a typo? Or is `tasync` a real thing?
@@ -36,4 +34,3 @@ In your examples, you have `tasync`. Is that a typo? Or is `tasync` a real thing
 ## Comment by Don Syme on 2/4/2016 5:54:00 PM
 
 Wallace - it's a typo I think.
-

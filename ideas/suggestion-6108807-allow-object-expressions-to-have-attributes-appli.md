@@ -15,8 +15,6 @@ And then when the code is compiled the expression thats generated would also hav
 This would interoperability with frameworks that use declarative attributes which would otherwise require adding a full type
 
 
-
-
 ## Comment by Vasily Kirichenko on 6/28/2014 1:44:00 AM
 
 I think it's more logical to place attributes right before object expression itself, like this:
@@ -50,4 +48,3 @@ sort([0..1000000], [<Struct>] { new IComparer<int> with member this.Compare(a, b
 filter([0..1000000], [<Struct>] { new Predicate with member this.Filter(a) = a % 2 = 0 })
 and then the JIT compiler will generate some individual algorithms for each anonymous type here, and inlining the Compare/Filter method into inner loop of algorithm.
 we can benifit much from this.
-

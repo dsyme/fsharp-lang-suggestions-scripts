@@ -10,8 +10,6 @@ The idea here is to add support for labeled arguments in curried functions. This
 This feature is supported already in ML languages like OCaml or FB Reason.
 
 
-
-
 ## Comment by Alexei Odeychuk on 5/21/2016 5:03:00 AM
 
 Bartosz, please clarify your suggestion by introducing an example of new syntax in a comment
@@ -74,4 +72,3 @@ be used for the optional arg.
 Intellisense could also aid in making it clear which argument a value is being used to satisfy
 [1] https://ocaml.org/learn/tutorials/labels.html#Usingfooinafunctioncall
 [2] https://facebook.github.io/reason/#diving-deeper-curried-functions
-

@@ -1,6 +1,6 @@
 # Idea 13369500: Handle null values in Records gracefully instead of crashing with a NRE #
 
-## Status : 
+## Status : open
 
 ## Submitted by lr on 4/9/2016 12:00:00 AM
 

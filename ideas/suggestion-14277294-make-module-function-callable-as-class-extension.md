@@ -1,6 +1,6 @@
 # Idea 14277294: Make module function callable as class extension method #
 
-## Status : 
+## Status : open
 
 ## Submitted by trek42 on 5/27/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 14411874: Add many more string manipulation functions to the Core.String module #
 
-## Status : 
+## Status : open
 
 ## Submitted by TheInnerLight on 5/30/2016 12:00:00 AM
 

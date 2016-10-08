@@ -1,6 +1,6 @@
 # Idea 12546456: Allow more flexible layout for constraint syntax #
 
-## Status : 
+## Status : open
 
 ## Submitted by George on 3/1/2016 12:00:00 AM
 

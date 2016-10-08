@@ -1,6 +1,6 @@
 # Idea 12920034: Add constraints to match FSharpType.Is* predicates #
 
-## Status : 
+## Status : open
 
 ## Submitted by Matthew Orlando on 3/13/2016 12:00:00 AM
 

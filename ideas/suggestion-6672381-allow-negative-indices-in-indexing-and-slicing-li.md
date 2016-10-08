@@ -1,6 +1,6 @@
 # Idea 6672381: Allow negative indices in indexing and slicing like python #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
 

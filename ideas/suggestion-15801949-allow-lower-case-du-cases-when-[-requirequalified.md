@@ -1,6 +1,6 @@
 # Idea 15801949: Allow lower-case DU cases when [<RequireQualifiedAccess>] is specified #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alex Corrado on 8/24/2016 12:00:00 AM
 

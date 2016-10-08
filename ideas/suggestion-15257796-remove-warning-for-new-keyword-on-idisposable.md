@@ -1,6 +1,6 @@
 # Idea 15257796: Remove warning for new keyword on IDisposable #
 
-## Status : 
+## Status : open
 
 ## Submitted by Isaac Abraham on 7/18/2016 12:00:00 AM
 

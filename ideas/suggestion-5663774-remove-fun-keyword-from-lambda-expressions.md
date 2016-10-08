@@ -1,6 +1,6 @@
 # Idea 5663774: Remove fun keyword from lambda expressions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
 

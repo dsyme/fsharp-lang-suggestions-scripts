@@ -1,6 +1,6 @@
 # Idea 8306538: Allow quotations of expressions used as Type Provider arguments #
 
-## Status : 
+## Status : open
 
 ## Submitted by thinkb4coding on 6/10/2015 12:00:00 AM
 

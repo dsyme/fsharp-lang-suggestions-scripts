@@ -1,6 +1,6 @@
 # Idea 13302753: Code clarity: Remove Object Pascal-style for ... to|downto ... do ... loops from the language (from Swift) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 16126906: Allow type annotations at the top level in fsi #
 
-## Status : 
+## Status : open
 
 ## Submitted by Loic Denuziere on 9/16/2016 12:00:00 AM
 

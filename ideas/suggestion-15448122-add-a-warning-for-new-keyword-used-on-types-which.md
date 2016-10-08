@@ -1,6 +1,6 @@
 # Idea 15448122: Add a warning for new keyword used on types which are not IDisposable #
 
-## Status : 
+## Status : open
 
 ## Submitted by Reed Copsey, Jr. on 7/28/2016 12:00:00 AM
 

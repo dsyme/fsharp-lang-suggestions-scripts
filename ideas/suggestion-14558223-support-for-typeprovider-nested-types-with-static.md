@@ -1,6 +1,6 @@
 # Idea 14558223: Support for TypeProvider nested types with static parameters #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jason Kleban on 6/2/2016 12:00:00 AM
 

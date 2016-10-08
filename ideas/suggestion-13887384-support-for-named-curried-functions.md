@@ -1,6 +1,6 @@
 # Idea 13887384: Support for named curried functions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Bartosz Sypytkowski on 5/18/2016 12:00:00 AM
 

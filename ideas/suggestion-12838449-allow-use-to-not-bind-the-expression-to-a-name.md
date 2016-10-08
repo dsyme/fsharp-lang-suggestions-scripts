@@ -1,6 +1,6 @@
 # Idea 12838449: allow use to not bind the expression to a name #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 3/7/2016 12:00:00 AM
 

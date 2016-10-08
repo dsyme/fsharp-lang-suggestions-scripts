@@ -1,6 +1,6 @@
 # Idea 13554813: Add more split functions to List, Seq, and other collection modules #
 
-## Status : 
+## Status : open
 
 ## Submitted by Calogyne on 4/23/2016 12:00:00 AM
 

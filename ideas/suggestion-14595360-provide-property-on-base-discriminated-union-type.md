@@ -1,6 +1,6 @@
 # Idea 14595360: Provide property on base Discriminated Union type if all the case constructors have the same paramater #
 
-## Status : 
+## Status : open
 
 ## Submitted by Андрей Чебукин on 6/3/2016 12:00:00 AM
 

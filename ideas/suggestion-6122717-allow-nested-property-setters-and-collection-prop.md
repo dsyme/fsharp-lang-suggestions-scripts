@@ -1,6 +1,6 @@
 # Idea 6122717: Allow nested property setters and collection property setters in initializers #
 
-## Status : 
+## Status : open
 
 ## Submitted by Don Syme on 7/1/2014 12:00:00 AM
 

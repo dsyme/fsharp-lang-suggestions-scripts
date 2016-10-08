@@ -1,6 +1,6 @@
 # Idea 13335678: Compiler directive for environment variables #
 
-## Status : 
+## Status : open
 
 ## Submitted by Lenne on 4/6/2016 12:00:00 AM
 

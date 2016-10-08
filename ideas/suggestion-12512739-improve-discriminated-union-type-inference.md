@@ -1,6 +1,6 @@
 # Idea 12512739: Improve Discriminated Union Type Inference #
 
-## Status : 
+## Status : open
 
 ## Submitted by Steven Taylor on 2/29/2016 12:00:00 AM
 

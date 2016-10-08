@@ -1,6 +1,6 @@
 # Idea 5663709: Add support for implicit operators to facilitate language interop #
 
-## Status : 
+## Status : open
 
 ## Submitted by Nelak on 3/21/2014 12:00:00 AM
 

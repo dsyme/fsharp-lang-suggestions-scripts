@@ -1,6 +1,6 @@
 # Idea 10020264: implicit upcast of return values #
 
-## Status : 
+## Status : open
 
 ## Submitted by Anonymous on 10/1/2015 12:00:00 AM
 

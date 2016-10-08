@@ -1,6 +1,6 @@
 # Idea 12820011: Make tuple defined DU cases more consistent with tuple #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 3/5/2016 12:00:00 AM
 

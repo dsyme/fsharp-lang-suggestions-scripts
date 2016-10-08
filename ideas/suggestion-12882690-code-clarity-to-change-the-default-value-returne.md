@@ -1,6 +1,6 @@
 # Idea 12882690: Code clarity: To change the default value returned by function Unchecked.defaultof<string> to "" from null #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 3/10/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 16482547: Provide Intellisense on 'tab' key when creating 'new' classes or types. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Matt on 10/3/2016 12:00:00 AM
 

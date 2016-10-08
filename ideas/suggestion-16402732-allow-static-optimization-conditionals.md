@@ -1,6 +1,6 @@
 # Idea 16402732: Allow static optimization conditionals #
 
-## Status : 
+## Status : open
 
 ## Submitted by lee on 9/28/2016 12:00:00 AM
 

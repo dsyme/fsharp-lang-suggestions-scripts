@@ -1,6 +1,6 @@
 # Idea 15133590: Multi-case unions compiled to struct #
 
-## Status : 
+## Status : open
 
 ## Submitted by exercitus vir on 7/9/2016 12:00:00 AM
 

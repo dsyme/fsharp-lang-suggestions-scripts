@@ -1,6 +1,6 @@
 # Idea 13785189: Support type annotation based on expression's type #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 5/9/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 12902226: Support partial record prototypes #
 
-## Status : 
+## Status : open
 
 ## Submitted by Matthew Orlando on 3/11/2016 12:00:00 AM
 

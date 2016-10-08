@@ -1,6 +1,6 @@
 # Idea 6085086: Nested types for F# #
 
-## Status : 
+## Status : open
 
 ## Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
 

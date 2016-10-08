@@ -1,6 +1,6 @@
 # Idea 5695277: Allow the addition of operators in type extensions, and also operators on internal types #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gustavo Guerra on 3/28/2014 12:00:00 AM
 

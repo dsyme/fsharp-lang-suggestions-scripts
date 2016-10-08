@@ -1,6 +1,6 @@
 # Idea 16092382: Add ofObj to Seq and Array #
 
-## Status : 
+## Status : open
 
 ## Submitted by Mark Seemann on 9/15/2016 12:00:00 AM
 

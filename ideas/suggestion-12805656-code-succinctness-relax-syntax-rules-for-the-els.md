@@ -1,6 +1,6 @@
 # Idea 12805656: Code succinctness: Relax syntax rules for the else branch of an if expression (from Ada 2012) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Anonymous on 3/4/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 5762135: Support for type classes or implicits #
 
-## Status : 
+## Status : open
 
 ## Submitted by exercitus vir on 4/12/2014 12:00:00 AM
 

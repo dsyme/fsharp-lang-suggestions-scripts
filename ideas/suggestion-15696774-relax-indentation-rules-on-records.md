@@ -1,6 +1,6 @@
 # Idea 15696774: Relax indentation rules on Records #
 
-## Status : 
+## Status : open
 
 ## Submitted by Mathias Brandewinder on 8/17/2016 12:00:00 AM
 

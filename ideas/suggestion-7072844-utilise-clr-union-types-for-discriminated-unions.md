@@ -1,6 +1,6 @@
 # Idea 7072844: Utilise CLR union types for discriminated unions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Isaac Abraham on 2/9/2015 12:00:00 AM
 

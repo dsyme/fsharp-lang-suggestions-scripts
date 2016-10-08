@@ -1,6 +1,6 @@
 # Idea 11109258: Richer literals: TimeSpan/DateTime/Char array/UTF8 #
 
-## Status : 
+## Status : open
 
 ## Submitted by Tom Rathbone on 12/16/2015 12:00:00 AM
 

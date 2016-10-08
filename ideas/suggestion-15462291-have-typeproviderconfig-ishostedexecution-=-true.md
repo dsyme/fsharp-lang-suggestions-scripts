@@ -1,6 +1,6 @@
 # Idea 15462291: Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files #
 
-## Status : 
+## Status : open
 
 ## Submitted by Dmitry Morozov on 7/29/2016 12:00:00 AM
 

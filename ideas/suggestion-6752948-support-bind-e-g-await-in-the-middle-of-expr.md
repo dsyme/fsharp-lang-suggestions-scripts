@@ -1,6 +1,6 @@
 # Idea 6752948: Support bind (e.g. "await") in the middle of expressions, possibly using !! operator #
 
-## Status : 
+## Status : open
 
 ## Submitted by Arash Sahebolamri on 11/21/2014 12:00:00 AM
 

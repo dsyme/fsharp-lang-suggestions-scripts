@@ -1,6 +1,6 @@
 # Idea 5665042: Allow extension interfaces #
 
-## Status : 
+## Status : open
 
 ## Submitted by Ryan Riley on 3/21/2014 12:00:00 AM
 

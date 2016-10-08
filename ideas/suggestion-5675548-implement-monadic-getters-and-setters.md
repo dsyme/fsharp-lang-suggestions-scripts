@@ -1,6 +1,6 @@
 # Idea 5675548: Implement monadic getters and setters #
 
-## Status : 
+## Status : open
 
 ## Submitted by Anonymous on 3/24/2014 12:00:00 AM
 

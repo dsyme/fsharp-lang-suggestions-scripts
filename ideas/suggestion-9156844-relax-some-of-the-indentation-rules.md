@@ -1,6 +1,6 @@
 # Idea 9156844: Relax some of the indentation rules #
 
-## Status : 
+## Status : open
 
 ## Submitted by Tomas Petricek on 8/3/2015 12:00:00 AM
 

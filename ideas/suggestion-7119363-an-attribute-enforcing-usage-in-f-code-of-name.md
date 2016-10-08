@@ -1,6 +1,6 @@
 # Idea 7119363: An attribute enforcing usage (in F# code) of named parameters at callsite #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 2/19/2015 12:00:00 AM
 

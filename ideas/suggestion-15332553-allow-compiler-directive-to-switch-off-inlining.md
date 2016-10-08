@@ -1,6 +1,6 @@
 # Idea 15332553: allow compiler directive to switch off inlining #
 
-## Status : 
+## Status : open
 
 ## Submitted by Steven Taylor on 7/22/2016 12:00:00 AM
 

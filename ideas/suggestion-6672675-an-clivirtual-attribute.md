@@ -1,6 +1,6 @@
 # Idea 6672675: An CLIVirtual attribute #
 
-## Status : 
+## Status : open
 
 ## Submitted by Remko Boschker on 11/6/2014 12:00:00 AM
 

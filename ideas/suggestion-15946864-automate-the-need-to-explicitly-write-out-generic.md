@@ -1,6 +1,6 @@
 # Idea 15946864: Automate the need to explicitly write out generic parameter constraints in classes #
 
-## Status : 
+## Status : open
 
 ## Submitted by Marko Grdinic on 9/6/2016 12:00:00 AM
 

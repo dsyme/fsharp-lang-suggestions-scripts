@@ -1,6 +1,6 @@
 # Idea 5663302: Support 'protected' access modifier for F# #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 

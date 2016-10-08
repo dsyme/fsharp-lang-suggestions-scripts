@@ -1,6 +1,6 @@
 # Idea 13584294: Allow [<DefaultValue>] on member val auto-properties #
 
-## Status : 
+## Status : open
 
 ## Submitted by Reed Adams on 4/25/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 13056630: Code clarity: Dot notation for casting objects to interfaces #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 3/21/2016 12:00:00 AM
 

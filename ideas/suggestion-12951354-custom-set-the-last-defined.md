@@ -1,6 +1,6 @@
 # Idea 12951354: custom set the 'last defined' #
 
-## Status : 
+## Status : open
 
 ## Submitted by Steven Taylor on 3/15/2016 12:00:00 AM
 

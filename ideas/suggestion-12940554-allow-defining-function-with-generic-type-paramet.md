@@ -1,6 +1,6 @@
 # Idea 12940554: allow defining function with generic type parameter within another function #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 3/15/2016 12:00:00 AM
 

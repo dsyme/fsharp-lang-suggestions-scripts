@@ -1,6 +1,6 @@
 # Idea 14795655: Support mixed F# and C# projects in order to extend F# usage #
 
-## Status : 
+## Status : open
 
 ## Submitted by zjv on 6/13/2016 12:00:00 AM
 

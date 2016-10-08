@@ -1,6 +1,6 @@
 # Idea 12913179: add a keyword for module-local construction but public deconstruction of types #
 
-## Status : 
+## Status : open
 
 ## Submitted by Adnan Gazi on 3/12/2016 12:00:00 AM
 

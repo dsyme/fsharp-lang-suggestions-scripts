@@ -1,6 +1,6 @@
 # Idea 12425811: Add Polymorphic Variants (ad-hoc Discriminated Unions) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jared Hester on 2/21/2016 12:00:00 AM
 

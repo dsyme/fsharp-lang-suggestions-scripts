@@ -1,6 +1,6 @@
 # Idea 9738327: easier interop with FSharp.Core from other .net languages #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 9/13/2015 12:00:00 AM
 

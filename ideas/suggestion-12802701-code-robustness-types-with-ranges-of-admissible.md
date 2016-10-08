@@ -1,6 +1,6 @@
 # Idea 12802701: Code robustness: Types with ranges of admissible values (from Ada 2012) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 13306077: Add the do .. while loops to the language (from Java, C, C++, C#) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 

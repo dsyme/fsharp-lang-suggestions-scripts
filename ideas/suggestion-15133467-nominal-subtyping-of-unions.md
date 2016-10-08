@@ -1,6 +1,6 @@
 # Idea 15133467: Nominal subtyping of unions #
 
-## Status : 
+## Status : open
 
 ## Submitted by exercitus vir on 7/9/2016 12:00:00 AM
 

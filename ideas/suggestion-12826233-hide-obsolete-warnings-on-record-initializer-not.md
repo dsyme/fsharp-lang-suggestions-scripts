@@ -1,6 +1,6 @@
 # Idea 12826233: Hide Obsolete warnings on record initializer not using the obsolete field. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Matthias Dittrich on 3/6/2016 12:00:00 AM
 

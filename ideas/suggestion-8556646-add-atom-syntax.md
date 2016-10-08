@@ -1,6 +1,6 @@
 # Idea 8556646: Add atom syntax #
 
-## Status : 
+## Status : open
 
 ## Submitted by mikero on 6/26/2015 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 6359526: Add 'serializable' and 'blittable' constraints for types #
 
-## Status : 
+## Status : open
 
 ## Submitted by Eirik George Tsarpalis on 8/28/2014 12:00:00 AM
 

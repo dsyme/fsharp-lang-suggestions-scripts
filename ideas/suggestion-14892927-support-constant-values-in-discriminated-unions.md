@@ -1,6 +1,6 @@
 # Idea 14892927: Support constant values in Discriminated unions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Pedro Santos on 6/21/2016 12:00:00 AM
 

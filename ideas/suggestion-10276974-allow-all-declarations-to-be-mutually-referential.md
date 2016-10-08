@@ -1,6 +1,6 @@
 # Idea 10276974: Allow all declarations to be mutually referential and the compiler takes files in any order #
 
-## Status : 
+## Status : open
 
 ## Submitted by Kevin Ransom on 10/19/2015 12:00:00 AM
 

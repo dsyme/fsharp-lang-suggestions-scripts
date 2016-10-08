@@ -1,6 +1,6 @@
 # Idea 5688398: Allow Unicode symbols to be used as operators #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jerold Haas on 3/27/2014 12:00:00 AM
 

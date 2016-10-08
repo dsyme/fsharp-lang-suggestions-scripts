@@ -1,6 +1,6 @@
 # Idea 6085102: Allow F# compiler directives like #nowarn to span less than an entire file. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
 

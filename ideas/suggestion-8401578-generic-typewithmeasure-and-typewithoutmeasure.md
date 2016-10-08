@@ -1,6 +1,6 @@
 # Idea 8401578: Generic `TypeWithMeasure` and `TypeWithoutMeasure` functions for adding units of measure on any type #
 
-## Status : 
+## Status : open
 
 ## Submitted by exercitus vir on 6/13/2015 12:00:00 AM
 

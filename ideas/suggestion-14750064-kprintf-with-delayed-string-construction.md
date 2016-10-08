@@ -1,6 +1,6 @@
 # Idea 14750064: kprintf with delayed string construction #
 
-## Status : 
+## Status : open
 
 ## Submitted by mk on 6/8/2016 12:00:00 AM
 

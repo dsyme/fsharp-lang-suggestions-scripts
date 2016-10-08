@@ -1,6 +1,6 @@
 # Idea 5676471: Allow n partitions for ActivePatterns instead of a max 7 #
 
-## Status : 
+## Status : open
 
 ## Submitted by Steven Taylor on 3/25/2014 12:00:00 AM
 

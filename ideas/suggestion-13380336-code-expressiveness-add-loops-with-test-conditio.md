@@ -1,6 +1,6 @@
 # Idea 13380336: Code expressiveness: Add loops with test condition in the middle #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 4/11/2016 12:00:00 AM
 

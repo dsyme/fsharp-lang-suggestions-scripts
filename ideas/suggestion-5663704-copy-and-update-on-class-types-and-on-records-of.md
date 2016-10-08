@@ -1,6 +1,6 @@
 # Idea 5663704: Copy-and-update on class types and on records of different types. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Don Syme on 3/21/2014 12:00:00 AM
 

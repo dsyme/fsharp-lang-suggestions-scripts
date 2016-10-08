@@ -1,6 +1,6 @@
 # Idea 12998517: Inlined default argument values #
 
-## Status : 
+## Status : open
 
 ## Submitted by Vasily Kirichenko on 3/17/2016 12:00:00 AM
 

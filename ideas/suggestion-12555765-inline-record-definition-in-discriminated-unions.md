@@ -1,6 +1,6 @@
 # Idea 12555765: Inline Record Definition in Discriminated Unions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jared Hester on 3/2/2016 12:00:00 AM
 

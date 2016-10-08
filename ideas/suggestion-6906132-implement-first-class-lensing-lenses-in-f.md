@@ -1,6 +1,6 @@
 # Idea 6906132: Implement first-class lensing / lenses in F# #
 
-## Status : 
+## Status : open
 
 ## Submitted by Bryan Edds on 12/31/2014 12:00:00 AM
 

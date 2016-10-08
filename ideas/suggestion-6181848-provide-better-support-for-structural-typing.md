@@ -1,6 +1,6 @@
 # Idea 6181848: Provide better support for structural typing #
 
-## Status : 
+## Status : open
 
 ## Submitted by Isaac Abraham on 7/16/2014 12:00:00 AM
 

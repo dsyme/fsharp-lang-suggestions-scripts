@@ -1,6 +1,6 @@
 # Idea 9799014: Produce System.Linq.Expressions more efficiently #
 
-## Status : 
+## Status : open
 
 ## Submitted by Eugene Tolmachev on 9/17/2015 12:00:00 AM
 

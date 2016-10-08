@@ -1,6 +1,6 @@
 # Idea 5664242: Simulate higher-kinded polymorphism #
 
-## Status : 
+## Status : open
 
 ## Submitted by Daniel Fabian on 3/21/2014 12:00:00 AM
 

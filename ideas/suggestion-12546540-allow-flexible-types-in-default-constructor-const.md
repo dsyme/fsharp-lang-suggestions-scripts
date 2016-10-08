@@ -1,6 +1,6 @@
 # Idea 12546540: Allow flexible types in default constructor constraint #
 
-## Status : 
+## Status : open
 
 ## Submitted by George on 3/1/2016 12:00:00 AM
 

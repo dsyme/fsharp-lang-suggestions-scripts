@@ -1,6 +1,6 @@
 # Idea 5670027: Implement try/fault expressions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 

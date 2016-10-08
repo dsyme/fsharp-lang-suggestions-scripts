@@ -1,6 +1,6 @@
 # Idea 12838959: Allow record types to implement interfaces just by adding the interface name when compatible #
 
-## Status : 
+## Status : open
 
 ## Submitted by Pierre Irrmann on 3/7/2016 12:00:00 AM
 

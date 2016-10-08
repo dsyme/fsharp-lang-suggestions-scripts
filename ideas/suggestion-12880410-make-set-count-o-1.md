@@ -1,6 +1,6 @@
 # Idea 12880410: Make Set.count O(1) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Zhen on 3/10/2016 12:00:00 AM
 

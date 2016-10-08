@@ -1,6 +1,6 @@
 # Idea 16526545: Allow Object Expressions from abstract base classes without members #
 
-## Status : 
+## Status : open
 
 ## Submitted by lr on 10/6/2016 12:00:00 AM
 

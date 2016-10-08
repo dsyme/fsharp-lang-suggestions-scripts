@@ -1,6 +1,6 @@
 # Idea 10837866: Introduce the ?. operator into F# #
 
-## Status : 
+## Status : open
 
 ## Submitted by John Azariah on 11/23/2015 12:00:00 AM
 

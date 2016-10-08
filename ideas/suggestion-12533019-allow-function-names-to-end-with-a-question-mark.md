@@ -1,6 +1,6 @@
 # Idea 12533019: Allow function names to end with a question mark. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Jeff Heon on 3/1/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 12879717: Allow record inheritance / multiple "inheritance" #
 
-## Status : 
+## Status : open
 
 ## Submitted by Vasily Kirichenko on 3/10/2016 12:00:00 AM
 

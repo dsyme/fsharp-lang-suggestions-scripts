@@ -1,6 +1,6 @@
 # Idea 12536532: Add a shorthand/literal syntax for creating Maps #
 
-## Status : 
+## Status : open
 
 ## Submitted by Brad Collins on 3/1/2016 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 16529041: Close User Voice in favor of GitHub issues. #
 
-## Status : 
+## Status : open
 
 ## Submitted by Krzysztof Cieslak on 10/6/2016 12:00:00 AM
 

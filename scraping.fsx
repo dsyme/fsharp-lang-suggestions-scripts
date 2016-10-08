@@ -22,8 +22,12 @@ module Parsing =
     let markdownLinkRegex = Regex("(\/ideas\/(\S+))\s*")
     /// attempts to rewrite all urls to uservoice to map to the matching issue document on github.
     /// This is just a simple regex-replace
-    let rewrite_urls (text : string) = 
-        let rewritten = text.Replace("https://fslang.uservoice.com/forums/245727-f-language/suggestions/", "/ideas/suggestion-")
+    let rewrite_urls (text : string) =
+        let urls = [
+            "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
+            "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
+        ] 
+        let rewritten = urls |> List.fold (fun (s:string) url -> s.Replace(url, "/ideas/suggestion-")) text
         match markdownLinkRegex.Matches(rewritten) with
         | m when m.Count = 0 -> rewritten 
         | m -> 
@@ -199,8 +203,6 @@ let readData =
     |> (fun text -> JsonConvert.DeserializeObject<Map<string, Idea>>(text))
 
 let data = readData |> Map.toList |> List.map snd
-data |> List.length |> printfn "%d"
-data |> List.groupBy (fun idea -> idea.Status) |> List.map fst
 
 data
 |> List.map formatMarkdown

@@ -1,6 +1,6 @@
 # Idea 5663202: Allow to define types at expression scopes #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 

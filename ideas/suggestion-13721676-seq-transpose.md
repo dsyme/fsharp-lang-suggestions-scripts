@@ -1,6 +1,6 @@
 # Idea 13721676: Seq.transpose #
 
-## Status : 
+## Status : open
 
 ## Submitted by James Ashwell on 5/3/2016 12:00:00 AM
 

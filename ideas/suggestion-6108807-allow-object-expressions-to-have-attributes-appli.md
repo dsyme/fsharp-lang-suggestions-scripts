@@ -1,6 +1,6 @@
 # Idea 6108807: Allow Object expressions to have attributes applied to them #
 
-## Status : 
+## Status : open
 
 ## Submitted by Dave Thomas on 6/27/2014 12:00:00 AM
 

@@ -1,6 +1,6 @@
 # Idea 5665355: Add syntactic sugar for functions ala Scala/Clojure #
 
-## Status : 
+## Status : open
 
 ## Submitted by Khan Thompson on 3/21/2014 12:00:00 AM
 

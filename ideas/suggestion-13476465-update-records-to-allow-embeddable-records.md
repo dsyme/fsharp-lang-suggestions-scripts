@@ -1,6 +1,6 @@
 # Idea 13476465: Update records to allow embeddable records #
 
-## Status : 
+## Status : open
 
 ## Submitted by Dave Thomas on 4/19/2016 12:00:00 AM
 

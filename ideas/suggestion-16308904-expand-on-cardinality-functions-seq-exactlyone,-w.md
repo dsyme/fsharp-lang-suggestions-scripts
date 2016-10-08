@@ -1,6 +1,6 @@
 # Idea 16308904: Expand on cardinality functions Seq.exactlyOne, with Seq.tryExactlyOne and add oneOrMore, zeroOrMore #
 
-## Status : 
+## Status : open
 
 ## Submitted by Abel on 9/22/2016 12:00:00 AM
 

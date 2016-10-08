@@ -1,6 +1,6 @@
 # Idea 15511989: Support isNull when querying the built-in SQL type providers #
 
-## Status : 
+## Status : open
 
 ## Submitted by Loic Denuziere on 8/2/2016 12:00:00 AM
 

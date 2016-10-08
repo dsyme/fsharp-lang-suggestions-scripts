@@ -1,6 +1,6 @@
 # Idea 5669367: Allow Implicit Interface Implementation #
 
-## Status : 
+## Status : open
 
 ## Submitted by Mastr Mastic on 3/23/2014 12:00:00 AM
 

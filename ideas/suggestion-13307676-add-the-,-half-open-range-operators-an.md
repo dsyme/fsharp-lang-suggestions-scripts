@@ -1,6 +1,6 @@
 # Idea 13307676: Add the (..<), (>..) half-open range operators and (>..<) open range operator (from Swift) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 

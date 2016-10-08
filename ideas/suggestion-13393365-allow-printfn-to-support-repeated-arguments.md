@@ -1,6 +1,6 @@
 # Idea 13393365: Allow printfn to support repeated arguments #
 
-## Status : 
+## Status : open
 
 ## Submitted by Dave Thomas on 4/12/2016 12:00:00 AM
 

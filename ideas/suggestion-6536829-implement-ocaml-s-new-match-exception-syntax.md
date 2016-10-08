@@ -1,6 +1,6 @@
 # Idea 6536829: Implement OCaml's new match/exception syntax #
 
-## Status : 
+## Status : open
 
 ## Submitted by Eirik George Tsarpalis on 10/8/2014 12:00:00 AM
 

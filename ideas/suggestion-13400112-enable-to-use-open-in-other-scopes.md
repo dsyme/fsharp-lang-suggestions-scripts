@@ -1,6 +1,6 @@
 # Idea 13400112: Enable to use open in other scopes #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gauthier Segay on 4/12/2016 12:00:00 AM
 

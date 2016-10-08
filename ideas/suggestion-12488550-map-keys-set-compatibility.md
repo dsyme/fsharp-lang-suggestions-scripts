@@ -1,6 +1,6 @@
 # Idea 12488550: Map keys <--> set compatibility #
 
-## Status : 
+## Status : open
 
 ## Submitted by mikero on 2/26/2016 12:00:00 AM
 

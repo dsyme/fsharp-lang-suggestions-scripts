@@ -1,6 +1,6 @@
 # Idea 12564057: Allow basic integer numeric type names in a for loop (from Ada 2012) #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
 

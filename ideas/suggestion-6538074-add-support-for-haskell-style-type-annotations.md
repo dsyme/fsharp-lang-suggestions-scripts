@@ -1,6 +1,6 @@
 # Idea 6538074: Add support for Haskell-style type annotations #
 
-## Status : 
+## Status : open
 
 ## Submitted by amazingant on 10/8/2014 12:00:00 AM
 

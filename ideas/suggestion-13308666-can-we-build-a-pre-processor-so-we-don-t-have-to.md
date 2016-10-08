@@ -1,6 +1,6 @@
 # Idea 13308666: Can we build a pre-processor so we don't have to use the word: let ? Makes the function name standout and saves typing similar to R ? #
 
-## Status : 
+## Status : open
 
 ## Submitted by Musa on 4/4/2016 12:00:00 AM
 

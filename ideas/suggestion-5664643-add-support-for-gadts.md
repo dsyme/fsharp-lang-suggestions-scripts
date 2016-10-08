@@ -1,6 +1,6 @@
 # Idea 5664643: Add support for GADTs #
 
-## Status : 
+## Status : open
 
 ## Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
 

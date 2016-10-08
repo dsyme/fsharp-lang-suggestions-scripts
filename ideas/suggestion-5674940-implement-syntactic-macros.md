@@ -1,6 +1,6 @@
 # Idea 5674940: Implement Syntactic Macros #
 
-## Status : 
+## Status : open
 
 ## Submitted by Bryan Edds on 3/24/2014 12:00:00 AM
 

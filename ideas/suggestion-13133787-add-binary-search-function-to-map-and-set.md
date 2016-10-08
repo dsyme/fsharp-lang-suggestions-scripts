@@ -1,6 +1,6 @@
 # Idea 13133787: Add (binary) search function to Map and Set #
 
-## Status : 
+## Status : open
 
 ## Submitted by Anthony Lloyd on 3/25/2016 12:00:00 AM
 

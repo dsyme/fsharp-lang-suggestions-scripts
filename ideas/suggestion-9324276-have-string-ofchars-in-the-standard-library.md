@@ -1,6 +1,6 @@
 # Idea 9324276: Have String.ofChars in the standard library #
 
-## Status : 
+## Status : open
 
 ## Submitted by Bang Jun-young on 8/14/2015 12:00:00 AM
 

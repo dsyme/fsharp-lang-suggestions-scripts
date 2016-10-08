@@ -1,6 +1,6 @@
 # Idea 6080367: Support for Generic Provided Type Definitions #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gustavo Guerra on 6/20/2014 12:00:00 AM
 

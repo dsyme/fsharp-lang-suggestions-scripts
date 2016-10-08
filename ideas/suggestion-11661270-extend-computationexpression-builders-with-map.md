@@ -1,6 +1,6 @@
 # Idea 11661270: extend ComputationExpression builders with Map : m<'a> * ('a -> 'b) -> m<'b> #
 
-## Status : 
+## Status : open
 
 ## Submitted by Georg Haaser on 1/31/2016 12:00:00 AM
 

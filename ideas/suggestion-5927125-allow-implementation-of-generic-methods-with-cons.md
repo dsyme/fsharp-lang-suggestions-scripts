@@ -1,6 +1,6 @@
 # Idea 5927125: Allow implementation of generic methods with constraints of the form 'T :> 'U #
 
-## Status : 
+## Status : open
 
 ## Submitted by Gusty on 5/14/2014 12:00:00 AM
 

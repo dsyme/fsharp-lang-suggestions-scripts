@@ -1,6 +1,6 @@
 # Idea 5716959: Support markdown in documentation comments #
 
-## Status : 
+## Status : open
 
 ## Submitted by Anonymous on 4/2/2014 12:00:00 AM
 

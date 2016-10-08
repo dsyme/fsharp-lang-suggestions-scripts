@@ -1,6 +1,6 @@
 # Idea 7156040: Please make a correct ‘modulus’ for F# #
 
-## Status : 
+## Status : open
 
 ## Submitted by Alexei Odeychuk on 3/1/2015 12:00:00 AM
 

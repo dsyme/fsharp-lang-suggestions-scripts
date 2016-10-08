@@ -1,6 +1,6 @@
 # Idea 13218072: Add a "with" syntax for patterns #
 
-## Status : 
+## Status : open
 
 ## Submitted by Vasily Kirichenko on 3/30/2016 12:00:00 AM
 

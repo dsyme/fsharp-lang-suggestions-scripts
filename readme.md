@@ -2,7 +2,7 @@ Run `.paket/paket.bootstrapper.exe`
 
 Run `.paket/paket restore`
 
-Run `.paket/paket generate-include-scripts`
+Run `.paket/paket generate-include-scripts type fsx`
 
 Delete the include of FSharp.Core form the include.main.group.fsx file.
 

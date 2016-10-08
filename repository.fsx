@@ -36,19 +36,15 @@ module Input =
         try     Console.ForegroundColor <- color; code ()
         finally Console.ForegroundColor <- before
         
+    let standardInput prompt visible =
+        color ConsoleColor.White (fun _ -> printf "%s" prompt)
+        let str = readString visible in printfn ""; str
+        
     /// Return a string entered by the user followed by enter. The input is echoed to the screen.
-    let getUserInput prompt =
-        color ConsoleColor.White (fun _ -> printf "%s" prompt)
-        let s = readString true 
-        printfn "" 
-        s
-
+    let getUserInput prompt = standardInput prompt true
+        
     /// Return a string entered by the user followed by enter. The input is replaced by '*' on the screen.
-    let getUserPassword prompt =
-        color ConsoleColor.White (fun _ -> printf "%s" prompt)
-        let s = readString false 
-        printfn ""
-        s
+    let getUserPassword prompt = standardInput prompt false
         
 module Github =
     open Input
@@ -72,19 +68,20 @@ module Github =
                 setter.Force ()
                 match request with :? Request as r -> r.Timeout <- timeout | _ -> ()
                 base.Send (request, ct)
-    
-    let createClient user password = async {
+    let setupClient () =
         let httpClient = new HttpClientWithTimeout (TimeSpan.FromMinutes 20.)
         let connection = Connection (ProductHeaderValue "fsharp-lang", httpClient)
-        let github = GitHubClient connection
+        GitHubClient connection
+    
+    let createClient user password = async {        
+        let github = setupClient()
         github.Credentials <- Credentials (user, password)
         return github
     }
 
     let createClientWithToken token = async {        
-        let httpClient = new HttpClientWithTimeout (TimeSpan.FromMinutes 20.)
-        let connection = Connection (ProductHeaderValue "fsharp-lang", httpClient)
-        let github = GitHubClient connection
+        let github = setupClient()
+        github.Credentials <- Credentials token
         return github
     }        
 

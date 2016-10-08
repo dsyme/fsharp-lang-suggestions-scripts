@@ -8,6 +8,7 @@ NUGET
     FSharp.Core (4.0.0.1)
     FSharp.Data (2.3.2)
     Newtonsoft.Json (9.0.1)
+    Octokit (0.23)
     RestSharp (105.2.3)
     Selenium.WebDriver (2.53.1)
     UserVoice (0.0.5)

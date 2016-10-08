@@ -5,4 +5,5 @@ framework: > net46
 nuget canopy
 nuget DotLiquid
 nuget FSharp.Data
+nuget octokit
 nuget UserVoice

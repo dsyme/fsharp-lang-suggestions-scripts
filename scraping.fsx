@@ -130,7 +130,7 @@ module Parsing =
 
     let formatMarkdown (idea : Types.Idea) : string * string =
         let sanitizedName = sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
-        sprintf "%s.md" idea.Number, template idea
+        sprintf "%s.md" sanitizedName, template idea
 
     let saveToDisk root (name, markdownString) = 
         System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)

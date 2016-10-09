@@ -1,6 +1,7 @@
 #load "paket-files/include-scripts/net46/include.main.group.fsx"
 #load "types.fsx"
-
+#load "repository.fsx"
+    
 module Parsing = 
     open Types
     open DotLiquid
@@ -22,7 +23,7 @@ module Parsing =
     let markdownLinkRegex = Regex("(\/ideas\/(\S+))\s*")
     /// attempts to rewrite all urls to uservoice to map to the matching issue document on github.
     /// This is just a simple regex-replace
-    let rewrite_urls (text : string) =
+    let rewriteUrls (text : string) =
         let urls = [
             "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
             "http://fslang.uservoice.com/forums/245727-f-language/suggestions/"
@@ -71,7 +72,7 @@ module Parsing =
             let submitter = el |> elementWithin "span" |> read
             let submitted = el |> elementWithin "time" |> read |> DateTime.Parse
             let content = el |> elementWithin "div.typeset" |> read
-            {Submitter = submitter; Submitted = submitted; Content = content |> rewrite_urls }
+            {Submitter = submitter; Submitted = submitted; Content = content |> rewriteUrls }
         
         url address
         let commentBlocks = unreliableElements ".uvIdeaComments li.uvListItem" |> List.mapi parseComment
@@ -88,7 +89,7 @@ module Parsing =
             let votes = voteCount |> elementWithin "strong" |> read |> Int32.Parse
             let title = element "h1.uvIdeaTitle" |> read
             let submitter = element "div.uvUserActionHeader span.fn" |> read
-            let text = defaultArg (someElement "div.uvIdeaDescription div.typeset" |> Option.map (read >> rewrite_urls)) ""
+            let text = defaultArg (someElement "div.uvIdeaDescription div.typeset" |> Option.map (read >> rewriteUrls)) ""
             let submitted = element "section.uvIdeaSuggestors div.uvUserAction div.uvUserActionHeader span time" |> time
             let comments = parseCommentsFromPage address |> List.rev
             let state = 
@@ -99,7 +100,7 @@ module Parsing =
             
             let response : Types.Response = 
                 let responded = someElement "article.uvUserAction-admin-response time" |> Option.map time 
-                let text = someElement "article.uvUserAction-admin-response .typeset" |> Option.map (read >> rewrite_urls)
+                let text = someElement "article.uvUserAction-admin-response .typeset" |> Option.map (read >> rewriteUrls)
                 match responded, text with
                 | Some r, Some t -> { Responded = r; Text = t}
                 | _, _ -> Unchecked.defaultof<Types.Response>    
@@ -116,6 +117,13 @@ module Parsing =
               Response = response } : Types.Idea |> Choice1Of2
         with
         | ex -> Choice2Of2 <| sprintf "error accessing %s: %s" address (ex.Message)
+
+module Templating = 
+    open DotLiquid
+    open Types.Types
+    open FSharp.Reflection
+    open System.IO
+    open System.Text.RegularExpressions
 
     let parseTemplate<'T> template =
         let rec registerTypeTree ty =
@@ -143,10 +151,10 @@ module Parsing =
     //|> List.iter (fun path -> fs.ReadTemplateFile(DotLiquid.Context(ResizeArray(), DotLiquid.Hash(), DotLiquid.Hash(), false), path) |> ignore)
     Template.FileSystem <- fs :> DotLiquid.FileSystems.IFileSystem
     let templateFor<'a> file variableName = parseTemplate<'a> (File.ReadAllText(Path.Combine(templatedir, file))) variableName
-    let wholeTemplate = templateFor<Types.Idea> "_idea.liquid" "idea"
-    let ideaTemplate = templateFor<Types.Idea> "_idea_submission.liquid" "idea"
-    let responseTemplate = templateFor<Types.Response> "_idea_response.liquid" "response"
-    let commentTemplate = templateFor<Types.Comment> "_idea_comment.liquid" "comment"
+    let wholeTemplate = templateFor<Idea> "_idea.liquid" "idea"
+    let ideaTemplate = templateFor<Idea> "_idea_submission.liquid" "idea"
+    let responseTemplate = templateFor<Response> "_idea_response.liquid" "response"
+    let commentTemplate = templateFor<Comment> "_idea_comment.liquid" "comment"
     let sanitize (s : string) =
         let mods = [
             (fun s -> ["<";">";":";"\\";"/";"\"";"|";"?";"*";" ";"`";"'";"(";")";".";"#";] |> List.fold (fun (s : string) sep -> s.Replace(sep, "-")) s)
@@ -159,17 +167,14 @@ module Parsing =
         List.fold (fun str f -> f str) s mods
         
 
-    let formatMarkdown (idea : Types.Idea) : string * string =
+    let formatMarkdown (idea : Idea) : string * string =
         let sanitizedName = sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
         sprintf "%s.md" sanitizedName, wholeTemplate idea
 
-    let saveToDisk root (name, markdownString) = 
-        System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
-    
-    let sanitize_text (idea : Types.Idea) = 
+    let sanitizeText (idea : Idea) = 
         { idea with 
-            Text = rewrite_urls idea.Text
-            Comments = idea.Comments |> List.map (fun c -> { c with Content = rewrite_urls c.Content})}
+            Text = Parsing.rewriteUrls idea.Text
+            Comments = idea.Comments |> List.map (fun c -> { c with Content = Parsing.rewriteUrls c.Content})}
 
 module Scrape = 
     open Parsing
@@ -205,40 +210,80 @@ module Scrape =
         let jsonFile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, destination)
         System.IO.File.WriteAllText(jsonFile, data)
 
-open Parsing
-open System
-open System.IO
-open Newtonsoft.Json
-open Types.Types
+module Tasks = 
+    open System.IO
+    open Newtonsoft.Json
+    open Types.Types
 
-let jsonFile = Path.Combine(__SOURCE_DIRECTORY__, "ideas.json")
-let readData = 
-    System.IO.File.ReadAllText(jsonFile)
-    |> (fun text -> JsonConvert.DeserializeObject<Map<string, Idea>>(text))
+    let readIdeaDataFromFile file =
+        Path.Combine(__SOURCE_DIRECTORY__, file)
+        |> System.IO.File.ReadAllText
+        |> JsonConvert.DeserializeObject<Map<string, Idea>>
 
-let data = readData |> Map.toList |> List.map snd
-
-data
-|> List.map formatMarkdown
-|> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))
-
-let item = data |> List.head
-let templated = Parsing.wholeTemplate item
-
-#load "repository.fsx"
-open Repository
-
-let green = "009900"
-let load_issues_into (ideas : Idea list) owner repoName = async {
-    let! githubClient = GithubEngage tokenCreds
+    let reloadIdeaDataFromUserVoice file = 
+        Scrape.scrapeData file
     
-    // find the repo
-    let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
-    
-    // labels must be present before we can create issues with them 
-    let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
-    let! createdLabels = labels |> List.map (fun l -> Github.createLabel repo.Id l green githubClient) |> Async.Parallel
+    let saveToDisk root (name, markdownString) = 
+        System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
 
-    // now we can create the issues
-    return ()
-}
+    let reformatData root = List.map (Templating.formatMarkdown >> saveToDisk root) >> ignore
+
+module GithubImport = 
+    open Repository
+    open Types.Types
+    open Octokit
+    open System
+
+    let green = "009900"
+
+    let closeIssue repoId issueId (client : IGitHubClient)  = client.Issue.Update(repoId, issueId, IssueUpdate(State = Nullable.op_Implicit ItemState.Closed)) |> Async.AwaitTask
+
+    let logId id msg = 
+        printfn "[%s] %s" id msg
+
+    let createIssue repoId client idea = 
+        let log = logId idea.Number
+        async {
+            log "create"
+            let body = Templating.ideaTemplate idea
+            log "render-suggestion"
+            let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
+            log "render-comments"
+            let allcomments = 
+                if idea.Response = Unchecked.defaultof<Response> 
+                then renderedcomments
+                else (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
+            log "order-comments"
+            let comments = allcomments |> List.sortBy fst |> List.map snd
+            let! issue = Github.createIssue repoId idea.Title body (Seq.singleton idea.Status) comments client
+            log "created"
+            if idea.Status = "declined" || idea.Status = "completed" 
+            then 
+                log "closing"
+                return! closeIssue repoId issue.Id client
+            else
+                return issue
+        }
+
+    let loadIssuesInto owner repoName ideas = async {
+        let! githubClient = GithubEngage tokenCreds
+        
+        // find the repo
+        let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
+        
+        // labels must be present before we can create issues with them 
+        let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
+        let! createdLabels = labels |> List.map (fun l -> Github.createLabel repo.Id l green githubClient) |> Async.Parallel
+
+        return! ideas |> List.map (createIssue repo.Id githubClient) |> Async.Parallel
+    }
+
+// everything under this is the scratch area
+
+let jsonfile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "ideas.json")
+let data = Tasks.readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
+let statuses = data |> List.groupBy (fun i -> i.Status) |> List.map fst 
+let sample = data |> List.take 5
+let tiny = sample |> List.map (fun s -> {s with Text = ""; Comments = []})
+let tryIssue () = sample |>  GithubImport.loadIssuesInto "baronfel" "fsharp-lang-testbed" |> Async.RunSynchronously
+let updateData () = Tasks.reformatData jsonfile data

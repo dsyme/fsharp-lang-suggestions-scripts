@@ -1,10 +1,8 @@
-#r "packages/octokit/lib/net45/octokit.dll"
-#r "system.net.http"
+#r "packages/Octokit/lib/net45/Octokit.dll"
 open System
 open System.IO
 open System.Reflection
 open System.Threading
-open System.Net.Http
 open Octokit
 open Octokit.Internal
 
@@ -46,31 +44,11 @@ module Input =
     /// Return a string entered by the user followed by enter. The input is replaced by '*' on the screen.
     let getUserPassword prompt = standardInput prompt false
         
+
 module Github =
     open Input
-    // Lifted from FAKE's Octokit Script - https://github.com/fsharp/FAKE/blob/master/modules/Octokit/Octokit.fsx
-
-    // wrapper re-implementation of HttpClientAdapter which works around
-    // known Octokit bug in which user-supplied timeouts are not passed to HttpClient object
-    // https://github.com/octokit/octokit.net/issues/963
-    type private HttpClientWithTimeout(timeout : TimeSpan) as this =
-        inherit HttpClientAdapter(fun () -> HttpMessageHandlerFactory.CreateDefault())
-        let setter = lazy(
-            match typeof<HttpClientAdapter>.GetField("_http", BindingFlags.NonPublic ||| BindingFlags.Instance) with
-            | null -> ()
-            | f ->
-                match f.GetValue this with
-                | :? HttpClient as http -> http.Timeout <- timeout
-                | _ -> ())
-
-        interface IHttpClient with
-            member __.Send(request : IRequest, ct : CancellationToken) =
-                setter.Force ()
-                match request with :? Request as r -> r.Timeout <- timeout | _ -> ()
-                base.Send (request, ct)
     let setupClient () =
-        let httpClient = new HttpClientWithTimeout (TimeSpan.FromMinutes 20.)
-        let connection = Connection (ProductHeaderValue "fsharp-lang", httpClient)
+        let connection = Connection (ProductHeaderValue "fsharp-lang")
         GitHubClient connection
     
     let createClient user password = async {        

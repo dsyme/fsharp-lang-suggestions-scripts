@@ -1,0 +1,5 @@
+{% include 'idea_submission' idea %}
+{% include 'idea_response' idea.Response %}
+{% for comment in idea.Comments %}
+{% include 'idea_comment' comment %}
+{% endfor %}

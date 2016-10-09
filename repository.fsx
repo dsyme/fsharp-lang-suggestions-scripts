@@ -29,7 +29,7 @@ module Input =
             | ConsoleKey.Enter, _ -> cs
             | _ ->  if echo then Console.Write key.KeyChar else Console.Write '*'
                     loop (key.KeyChar::cs)    
-        loop [] |> List.rev |> Array.ofList |> fun cs -> String cs
+        loop [] |> List.rev |> Array.ofList |> String
 
     let internal color (color: ConsoleColor) (code : unit -> _) =
         let before = Console.ForegroundColor
@@ -85,7 +85,29 @@ module Github =
         return github
     }        
 
-open Input; open Github
+    let createLabel repoId label colorHex (client : IGitHubClient) = async {
+        let! labels = client.Issue.Labels.GetAllForRepository(repoId) |> Async.AwaitTask
+        match labels |> Seq.tryFind (fun l -> l.Name.Equals(label, StringComparison.OrdinalIgnoreCase)) with
+        | Some label -> return label
+        | None -> 
+            let newLabel = NewLabel(label, colorHex)
+            return! client.Issue.Labels.Create(repoId, newLabel) |> Async.AwaitTask
+    }
+
+    let createComment repoId issueId text (client : IGitHubClient) = client.Issue.Comment.Create(repoId, issueId, text) |> Async.AwaitTask
+    
+    let createIssue repoId title text labels comments (client : IGitHubClient) = async {
+        let newIssue = NewIssue(title, Body = text)
+        labels |> Seq.iter newIssue.Labels.Add
+        let! issue = client.Issue.Create(repoId, newIssue) |> Async.AwaitTask
+        for comment in comments do
+            do! (createComment repoId issue.Id comment client |> Async.Ignore)
+        return issue
+    }
+
+
+open Input
+open Github
     
 let userPasswordCreds () = 
     let user = getUserInput "Github Username: "
@@ -98,14 +120,15 @@ let tokenCreds () =
 let prompt2FA () = 
     getUserInput "Two-Factor Auth (2FA) Key: "
 
-let GithubEngage credsFn () = async {  
+let GithubEngage credsFn = async {  
     let client = setupClient()
     client.Credentials <- credsFn ()
     
     let! user = client.User.Current() |> Async.AwaitTask
     printfn "The Current User Is - %s" user.Name
+    return client
 }
 
 
-GithubEngage tokenCreds () |> Async.RunSynchronously
+GithubEngage tokenCreds |> Async.RunSynchronously
 

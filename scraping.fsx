@@ -134,10 +134,19 @@ module Parsing =
         registerTypeTree typeof<'T>
         let t = Template.Parse(template)
         fun k (v:'T) -> t.Render(Hash.FromDictionary(dict [k, box v]))
-
+    
     Template.NamingConvention <- NamingConventions.CSharpNamingConvention()
-    let template = parseTemplate<Types.Idea> (File.ReadAllText(Path.Combine(__SOURCE_DIRECTORY__, "idea.md"))) "idea"
-
+    let templatedir = Path.Combine(__SOURCE_DIRECTORY__, "templates/")
+    let fs = DotLiquid.FileSystems.LocalFileSystem(templatedir)
+    // next line tests tempalte file discovery
+    //["'idea'"; "'idea_comment'";"'idea_response'";"'idea_submission'"]
+    //|> List.iter (fun path -> fs.ReadTemplateFile(DotLiquid.Context(ResizeArray(), DotLiquid.Hash(), DotLiquid.Hash(), false), path) |> ignore)
+    Template.FileSystem <- fs :> DotLiquid.FileSystems.IFileSystem
+    let templateFor<'a> file variableName = parseTemplate<'a> (File.ReadAllText(Path.Combine(templatedir, file))) variableName
+    let wholeTemplate = templateFor<Types.Idea> "_idea.liquid" "idea"
+    let ideaTemplate = templateFor<Types.Idea> "_idea_submission.liquid" "idea"
+    let responseTemplate = templateFor<Types.Response> "_idea_response.liquid" "response"
+    let commentTemplate = templateFor<Types.Comment> "_idea_comment.liquid" "comment"
     let sanitize (s : string) =
         let mods = [
             (fun s -> ["<";">";":";"\\";"/";"\"";"|";"?";"*";" ";"`";"'";"(";")";".";"#";] |> List.fold (fun (s : string) sep -> s.Replace(sep, "-")) s)
@@ -152,7 +161,7 @@ module Parsing =
 
     let formatMarkdown (idea : Types.Idea) : string * string =
         let sanitizedName = sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
-        sprintf "%s.md" sanitizedName, template idea
+        sprintf "%s.md" sanitizedName, wholeTemplate idea
 
     let saveToDisk root (name, markdownString) = 
         System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
@@ -212,3 +221,24 @@ let data = readData |> Map.toList |> List.map snd
 data
 |> List.map formatMarkdown
 |> List.iter (saveToDisk (__SOURCE_DIRECTORY__ + "/ideas"))
+
+let item = data |> List.head
+let templated = Parsing.wholeTemplate item
+
+#load "repository.fsx"
+open Repository
+
+let green = "009900"
+let load_issues_into (ideas : Idea list) owner repoName = async {
+    let! githubClient = GithubEngage tokenCreds
+    
+    // find the repo
+    let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
+    
+    // labels must be present before we can create issues with them 
+    let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
+    let! createdLabels = labels |> List.map (fun l -> Github.createLabel repo.Id l green githubClient) |> Async.Parallel
+
+    // now we can create the issues
+    return ()
+}

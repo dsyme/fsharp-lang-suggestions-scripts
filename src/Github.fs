@@ -48,6 +48,25 @@ module Github =
 
     let green = "009900"
 
+    let labels = [
+        "declined" , "171819"
+        "under review", "cee283"
+        "planned", "51b7e2"
+        "started", "76bf1c"
+        "completed", "540977"
+        "open", "d3b47e"
+    ]
+
+    let standardLabels repoId (client : IGitHubClient) = async {
+        return!
+            labels |> List.map (fun (name,hex) ->
+                let newLabel = NewLabel(name, hex)
+                client.Issue.Labels.Create(repoId, newLabel) |> Async.AwaitTask
+            )
+            |> Async.Parallel
+    }
+
+
     /// Creates a new repository to test issue generation
     /// If a repo already exists with that name, delete the repo and create a clean one
     let setupTestRepo repoName (client : IGitHubClient) label = async {

@@ -1,5 +1,4 @@
-#load "paket-files/include-scripts/net46/include.main.group.fsx"
-#load "types.fsx"
+namespace FslangMigration
 
 module API = 
     open FSharp.Data
@@ -7,7 +6,6 @@ module API =
     open System
     open Newtonsoft.Json
     open Newtonsoft.Json.Linq
-    open Types
 
     let [<Literal>] suggestionJson = """{
   "response_data": {
@@ -152,7 +150,7 @@ module API =
     let fslangForumId = "245727-f-language"
     let client = UserVoice.Client("fslang", apiKey, apiSecret).LoginAsOwner()
     
-    let toIdea (sugg : IdeasResponse.Suggestion) comments : Types.Idea =
+    let toIdea (sugg : IdeasResponse.Suggestion) comments : Idea =
         printfn "%O" (sugg.Response.JsonValue.ToString())
         { Number = string sugg.Id
           Submitter = sugg.Creator.Name
@@ -162,9 +160,9 @@ module API =
           Votes = sugg.VoteCount
           Comments = comments 
           Status = defaultArg (sugg.Status |> Option.map (fun s -> s.Name)) ""
-          Response = Unchecked.defaultof<Types.Response> }
+          Response = Unchecked.defaultof<Response> }
 
-    let toComment (c : CommentsResponse.Comment) : Types.Comment = 
+    let toComment (c : CommentsResponse.Comment) : Comment = 
         { Submitter = c.Creator.Name
           Submitted = c.CreatedAt
           Content = c.Text }

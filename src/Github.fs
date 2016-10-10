@@ -46,6 +46,30 @@ module Github =
         return issue
     }
 
+    let green = "009900"
+
+    /// Creates a new repository to test issue generation
+    /// If a repo already exists with that name, delete the repo and create a clean one
+    let setupTestRepo repoName (client : IGitHubClient) label = async {
+        let createRepo () = NewRepository repoName |> client.Repository.Create
+        let! user = client.User.Current() |> Async.AwaitTask
+        let! repos = client.Repository.GetAllForCurrent()  |> Async.AwaitTask
+        let! initRepo = async {
+            if Seq.contains repoName (repos |> Seq.map (fun r -> r.Name)) then
+                let! repo = client.Repository.Get(user.Login,repoName) |> Async.AwaitTask
+                do! client.Repository.Delete repo.Id |> Async.AwaitTask
+                printfn "deleting old %s repo" repoName
+                printfn "creating new %s repo" repoName
+                return! createRepo() |> Async.AwaitTask      
+            else
+                printfn "creating new %s repo" repoName
+                return! createRepo() |> Async.AwaitTask
+            }
+        let! l = createLabel initRepo.Id label green client 
+        printfn "created the label - %s | %s" l.Name l.Color
+        return initRepo
+    }
+
     
     let userPasswordCreds () = 
         let user = getUserInput "Github Username: "
@@ -59,17 +83,17 @@ module Github =
         getUserInput "Two-Factor Auth (2FA) Key: "
 
 
-    let GithubEngage credsFn = async {  
+    let githubLogin credsFn = async {  
         let client = setupClient()
         client.Credentials <- credsFn ()
     
         let! user = client.User.Current() |> Async.AwaitTask
-        printfn "The Current User Is - %s" user.Name
+        printfn "The Current User Is - %s | %s" user.Login user.Name
         return client
     }
 
 
-    let green = "009900"
+
 
     let closeIssue repoId issueId (client : IGitHubClient)  = client.Issue.Update(repoId, issueId, IssueUpdate(State = Nullable.op_Implicit ItemState.Closed)) |> Async.AwaitTask
 
@@ -107,13 +131,15 @@ module Github =
         }
 
     let loadIssuesInto getCredentials owner repoName ideas  = async {
-        let! githubClient = GithubEngage getCredentials
+        let! githubClient = githubLogin getCredentials
+
         // find the repo
-        let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
-        
+        let! repo = setupTestRepo repoName githubClient "testing"
+        //let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
+
         // labels must be present before we can create issues with them 
-        let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
-        let! createdLabels = labels |> List.map (fun l -> createLabel repo.Id l green githubClient) |> Async.Parallel
+        //let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
+        //let! createdLabels = labels |> List.map (fun l -> createLabel repo.Id l green githubClient) |> Async.Parallel
 
         return! ideas |> List.map (transformIssue repo.Id githubClient) |> Async.Parallel
     }

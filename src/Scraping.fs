@@ -150,10 +150,4 @@ module Scrape =
         let jsonFile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, destination)
         System.IO.File.WriteAllText(jsonFile, data)
 
-module Tasks = 
-    open System.IO
-    open Newtonsoft.Json
-
-
-
 

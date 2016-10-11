@@ -121,11 +121,11 @@ module Scrape =
     open canopy
     open OpenQA.Selenium
 
-    canopy.configuration.chromeDir <- @"packages/Selenium.WebDriver.ChromeDriver/driver"
+    canopy.configuration.chromeDir <- @"/usr/local/bin"
     canopy.configuration.elementTimeout <- 2.0
     canopy.configuration.pageTimeout <- 2.0
     canopy.configuration.configuredFinders <- (fun selector f -> seq { yield finders.findByCss selector f })
- 
+    canopy.configuration.autoPinBrowserRightOnLaunch <- false
 
     let scrapeData destination =
         start chrome                                                 

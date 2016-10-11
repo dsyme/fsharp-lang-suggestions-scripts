@@ -8,4 +8,9 @@
 
 {{ idea.Text }}
 
-{% include 'idea_response' idea.Response %}
+{% if idea.Response.Exists == true %}
+
+## Response by fslang-admin on {{ idea.Response.Responded }}
+
+{{ idea.Response.Text }}
+{% endif %}

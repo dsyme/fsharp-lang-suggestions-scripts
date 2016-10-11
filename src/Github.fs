@@ -134,49 +134,49 @@ module Github =
             return failwith <| sprintf "error polling for issue %d: %s" issueNo ex.Message 
     }
 
-    let transformIssue repoId client idea =
-        let log = logId idea.Number
-        async {
-            try
-                log "create"
-                let body = Templating.submissionTemplate idea
-                log "render-suggestion"
-                let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
-                log "render-comments"
-                let allcomments =
-                    match idea.Response.Exists with
-                    | false -> renderedcomments
-                    | true -> (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
-                log "order-comments"
-                let comments = allcomments |> List.sortBy fst |> List.map snd
-                let! issue = createIssue repoId idea.Title body (Seq.singleton idea.Status) comments client
-                log "created"
-                if idea.Status = "declined" || idea.Status = "completed"
-                then
-                    log "closing"
-                    let! closed = closeIssue repoId issue.Number client
-                    return Some closed
-                else
-                    return issue |> Some
-            with
-            | :? AggregateException as aex when not <| isNull aex.InnerException ->
-                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
-                return None
-            | ex ->
-                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
-                return None
-        }
+//    let transformIssue repoId client idea =
+//        let log = logId idea.Number
+//        async {
+//            try
+//                log "create"
+//                let body = Templating.submissionTemplate idea
+//                log "render-suggestion"
+//                let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
+//                log "render-comments"
+//                let allcomments =
+//                    match idea.Response.Exists with
+//                    | false -> renderedcomments
+//                    | true -> (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
+//                log "order-comments"
+//                let comments = allcomments |> List.sortBy fst |> List.map snd
+//                let! issue = createIssue repoId idea.Title body (Seq.singleton idea.Status) comments client
+//                log "created"
+//                if idea.Status = "declined" || idea.Status = "completed"
+//                then
+//                    log "closing"
+//                    let! closed = closeIssue repoId issue.Number client
+//                    return Some closed
+//                else
+//                    return issue |> Some
+//            with
+//            | :? AggregateException as aex when not <| isNull aex.InnerException ->
+//                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
+//                return None
+//            | ex ->
+//                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
+//                return None
+//        }
 
-    let loadIssuesInto getCredentials owner repoName ideas  = async {
-        let! githubClient = githubLogin getCredentials
-
-        // find the repo
-        let! repo = setupTestRepo repoName githubClient "testing"
-        //let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
-
-        // labels must be present before we can create issues with them
-        //let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
-        //let! createdLabels = labels |> List.map (fun l -> createLabel repo.Id l green githubClient) |> Async.Parallel
-
-        return! ideas |> List.map (transformIssue repo.Id githubClient) |> Async.Parallel
-    }
+//    let loadIssuesInto getCredentials owner repoName ideas  = async {
+//        let! githubClient = githubLogin getCredentials
+//
+//        // find the repo
+//        let! repo = setupTestRepo repoName githubClient "testing"
+//        //let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
+//
+//        // labels must be present before we can create issues with them
+//        //let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
+//        //let! createdLabels = labels |> List.map (fun l -> createLabel repo.Id l green githubClient) |> Async.Parallel
+//
+//        return! ideas |> List.map (transformIssue repo.Id githubClient) |> Async.Parallel
+//    }

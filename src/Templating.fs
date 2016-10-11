@@ -46,8 +46,7 @@ let templateFor<'a> file variableName = parseTemplate<'a> (File.ReadAllText(Path
 
 let archiveTemplate    = templateFor<Idea>     "_idea_archive.liquid"    "idea"
 let submissionTemplate = templateFor<Idea>     "_idea_submission.liquid" "idea"
-let responseTemplate   = templateFor<Response> "_idea_response.liquid"   "response"
-let commentTemplate    = templateFor<Comment>  "_idea_comment.liquid"    "comment"
+
 
 let sanitize (s : string) =
     let mods = [

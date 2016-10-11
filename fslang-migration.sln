@@ -19,8 +19,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{B04CCD72-E16D-4A40-AC46-6F58D1DCE6E2}"
 	ProjectSection(SolutionItems) = preProject
 		templates\_idea_archive.liquid = templates\_idea_archive.liquid
-		templates\_idea_comment.liquid = templates\_idea_comment.liquid
-		templates\_idea_response.liquid = templates\_idea_response.liquid
 		templates\_idea_submission.liquid = templates\_idea_submission.liquid
 	EndProjectSection
 EndProject

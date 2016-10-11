@@ -3,5 +3,7 @@
 ## Comments
 
 {% for comment in idea.Comments %}
-{% include 'idea_comment' comment %}
+## Comment by {{ comment.Submitter }} on {{ comment.Submitted }}
+{{ comment.Content }}
+
 {% endfor %}

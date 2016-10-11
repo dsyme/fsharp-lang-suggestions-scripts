@@ -12,13 +12,16 @@ let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
 //Scrape.scrapeData jsonfile
 
 let data = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
-let sample = data |> List.take 5
+let sample = data |> List.take 7
 ;;
 sample |> List.iter (fun idea -> 
-    Templating.responseTemplate idea.Response 
-    //Templating.submissionTemplate idea
-    + (sprintf "[archived comments](archive/%s.md#comments)\n\n" (ideaFileName idea))
+    //Templating.responseTemplate idea.Response 
+    Templating.archiveTemplate idea
+    //+ (sprintf "[archived comments](archive/%s.md#comments)\n\n" (ideaFileName idea))
     |> printfn "%s" )
+;;
+
+//sample |> List.iter (fun idea -> Templating.responseTemplate idea.Response |> printfn "%s" )
 
 
 //let statuses = data |> List.groupBy (fun i -> i.Status) |> List.map fst 

@@ -48,6 +48,7 @@ let archiveTemplate = templateFor<Idea> "_idea_archive.liquid" "idea"
 let submissionTemplate = templateFor<Idea> "_idea_submission.liquid" "idea"
 let responseTemplate = templateFor<Response> "_idea_response.liquid" "response"
 let commentTemplate = templateFor<Comment> "_idea_comment.liquid" "comment"
+
 let sanitize (s : string) =
     let mods = [
         (fun s -> ["<";">";":";"\\";"/";"\"";"|";"?";"*";" ";"`";"'";"(";")";".";"#";] |> List.fold (fun (s : string) sep -> s.Replace(sep, "-")) s)
@@ -56,11 +57,13 @@ let sanitize (s : string) =
         fun s -> s.TrimEnd('-') // links don't end with -
         fun s -> let r = Regex("-+") in r.Replace(s, "-")
     ]
-    
     List.fold (fun str f -> f str) s mods
-    
+
+
+let ideaFileName (idea:Idea) =
+    sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
 
 let formatMarkdown (idea : Idea) : string * string =
-    let sanitizedName = sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
-    sprintf "%s.md" sanitizedName, wholeTemplate idea
+    let sanitizedName = ideaFileName idea
+    sprintf "%s.md" sanitizedName, archiveTemplate idea
 

@@ -1,4 +1,5 @@
 namespace FslangMigration
+open System
 
 type Comment = 
     {   Submitter : string

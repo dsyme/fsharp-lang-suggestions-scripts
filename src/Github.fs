@@ -42,7 +42,7 @@ module Github =
         labels |> Seq.iter newIssue.Labels.Add
         let! issue = client.Issue.Create(repoId, newIssue) |> Async.AwaitTask
         for comment in comments do
-            do! (createComment repoId issue.Id comment client |> Async.Ignore)
+            do! (createComment repoId issue.Number comment client |> Async.Ignore)
         return issue
     }
 
@@ -111,13 +111,26 @@ module Github =
         return client
     }
 
-
-
-
     let closeIssue repoId issueId (client : IGitHubClient)  = client.Issue.Update(repoId, issueId, IssueUpdate(State = Nullable.op_Implicit ItemState.Closed)) |> Async.AwaitTask
 
     let logId id msg =
         printfn "[%s] %s" id msg
+
+    /// there's some delay to the github API, so we're going to try to fetch an issue up to times times 
+    let rec pollFetchIssue times (client : IGitHubClient) repoId issueNo = async {
+        try 
+            printfn "polling for %d" issueNo
+            let! issue = client.Issue.Get(repoId, issueNo) |> Async.AwaitTask
+            printfn "found %d" issueNo
+            return issue
+        with 
+        | :? AggregateException as aex when aex.InnerException.GetType() = typeof<NotFoundException> && times > 0 ->
+            printfn "%d not found, trying again in 5 seconds" issueNo 
+            do! Async.Sleep(5 * 1000)
+            return! pollFetchIssue (times - 1) client repoId issueNo
+        | ex ->
+            return failwith <| sprintf "error polling for issue %d: %s" issueNo ex.Message 
+    }
 
     let transformIssue repoId client idea =
         let log = logId idea.Number
@@ -129,9 +142,9 @@ module Github =
                 let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
                 log "render-comments"
                 let allcomments =
-                    if idea.Response = Unchecked.defaultof<Response>
-                    then renderedcomments
-                    else (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
+                    match idea.Response.Exists with
+                    | false -> renderedcomments
+                    | true -> (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
                 log "order-comments"
                 let comments = allcomments |> List.sortBy fst |> List.map snd
                 let! issue = createIssue repoId idea.Title body (Seq.singleton idea.Status) comments client
@@ -139,13 +152,16 @@ module Github =
                 if idea.Status = "declined" || idea.Status = "completed"
                 then
                     log "closing"
-                    let! closed = closeIssue repoId issue.Id client
+                    let! closed = closeIssue repoId issue.Number client
                     return Some closed
                 else
                     return issue |> Some
             with
-            | e ->
-                printfn "issue '%s' transform failed\n%s" idea.Number e.Message
+            | :? AggregateException as aex when not <| isNull aex.InnerException ->
+                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
+                return None
+            | ex ->
+                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
                 return None
         }
 

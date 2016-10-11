@@ -4,21 +4,34 @@ open DotLiquid
 open FSharp.Reflection
 open System.IO
 open System.Text.RegularExpressions
+open System.Collections.Generic
+
+let registrations = Dictionary<_,_>()
 
 let parseTemplate<'T> template =
     let rec registerTypeTree ty =
-        if FSharpType.IsRecord ty then
-            let fields = FSharpType.GetRecordFields(ty)
-            Template.RegisterSafeType(ty, [| for f in fields -> f.Name |])
-            for f in fields do registerTypeTree f.PropertyType
-        elif ty.IsGenericType &&
-            ( let t = ty.GetGenericTypeDefinition()
-                in t = typedefof<seq<_>> || t = typedefof<list<_>> ) then   
-            () //registerTypeTree (ty.GetGenericArguments().[0])
-            registerTypeTree (ty.GetGenericArguments().[0])
-        else 
-            () (* printfn "%s" ty.FullName *)
-
+        if registrations.ContainsKey(ty) then ()
+        else
+            if FSharpType.IsRecord ty then
+                let fields = FSharpType.GetRecordFields(ty)
+                Template.RegisterSafeType(ty, [| for f in fields -> f.Name |])
+                registrations.[ty] <- true
+                for f in fields do registerTypeTree f.PropertyType
+            elif ty.IsGenericType then
+                let t = ty.GetGenericTypeDefinition()
+                if t = typedefof<seq<_>> || t = typedefof<list<_>>  then
+                    registrations.[ty] <- true
+                    registerTypeTree (ty.GetGenericArguments().[0])     
+                elif t = typedefof<option<_>> then
+                    Template.RegisterSafeType(ty, [|"Value"; "IsSome"; "IsNone";|])
+                    registrations.[ty] <- true
+                    registerTypeTree (ty.GetGenericArguments().[0])
+                elif ty.IsArray then          
+                    registrations.[ty] <- true
+                    registerTypeTree (ty.GetElementType())
+            else
+                ()
+   
     registerTypeTree typeof<'T>
     let t = Template.Parse(template)
     fun k (v:'T) -> t.Render(Hash.FromDictionary(dict [k, box v]))
@@ -27,8 +40,8 @@ Template.NamingConvention <- NamingConventions.CSharpNamingConvention()
 let templatedir = Path.GetFullPath "../templates/"
 let fs = DotLiquid.FileSystems.LocalFileSystem(templatedir)
 // next line tests tempalte file discovery
-//["'idea'"; "'idea_comment'";"'idea_response'";"'idea_submission'"]
-//|> List.iter (fun path -> fs.ReadTemplateFile(DotLiquid.Context(ResizeArray(), DotLiquid.Hash(), DotLiquid.Hash(), false), path) |> ignore)
+// ["'idea'"; "'idea_comment'";"'idea_response'";"'idea_submission'"]
+// |> List.iter (fun path -> fs.ReadTemplateFile(DotLiquid.Context(ResizeArray(), DotLiquid.Hash(), DotLiquid.Hash(), false), path) |> ignore)
 Template.FileSystem <- fs :> DotLiquid.FileSystems.IFileSystem
 let templateFor<'a> file variableName = parseTemplate<'a> (File.ReadAllText(Path.Combine(templatedir, file))) variableName
 let wholeTemplate = templateFor<Idea> "_idea.liquid" "idea"

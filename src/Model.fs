@@ -1,7 +1,5 @@
 namespace FslangMigration
 
-open System
-
 type Comment = 
     {   Submitter : string
         Submitted : DateTime
@@ -9,7 +7,8 @@ type Comment =
     
 type Response = 
     {   Responded : DateTime
-        Text : string }
+        Text : string
+        Exists : bool }
 
 type Idea = 
     {   Number : string

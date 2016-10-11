@@ -160,7 +160,7 @@ module API =
           Votes = sugg.VoteCount
           Comments = comments 
           Status = defaultArg (sugg.Status |> Option.map (fun s -> s.Name)) ""
-          Response = Unchecked.defaultof<Response> }
+          Response = {Exists = false; Responded = DateTime.MinValue; Text = "" } }
 
     let toComment (c : CommentsResponse.Comment) : Comment = 
         { Submitter = c.Creator.Name

@@ -95,12 +95,12 @@ module Parsing =
                                             .Split([|' '|], StringSplitOptions.RemoveEmptyEntries) |> Array.last)
                                             .Substring "uvStyle-status-".Length)
             
-            let response : Response = 
+            let response = 
                 let responded = someElement "article.uvUserAction-admin-response time" |> Option.map time 
                 let text = someElement "article.uvUserAction-admin-response .typeset" |> Option.map (read >> rewriteUrls)
                 match responded, text with
-                | Some r, Some t -> { Responded = r; Text = t}
-                | _, _ -> Unchecked.defaultof<Response>    
+                | Some r, Some t -> { Responded = r; Text = t; Exists = true }
+                | _, _ -> {Exists = false; Responded = DateTime.MinValue; Text = ""}
                 
 
             { Number = number

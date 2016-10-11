@@ -120,3 +120,7 @@ I think it would be close to no effort to include these as alternative syntax, a
 ← and → could also be treated as more concise and better looking versions of <- and ->
 (Maybe ¬ ∧ ∨ for not, &&, ||, and ○ for <| too but these are less universally understood symbols.)
 F# is a very expressive language. You can often write code that is basically intelligible to technical people without specific programming knowledge. For example in teaching/presenting maths you can write F# code that is universally understandable, like pseudocode, except that it actually runs. With some small tweaks to approve attractiveness, readability, and intelligibility it can be even better.
+
+## Comment by cj on 10/10/2016 4:10:00 PM
+
+Emacs' prettify-symbols-mode partially addresses this feature request by changing the way [plain text] symbols are rendered (without touching the code) using regex substitutions. I've implemented a similar extension for vscode: https://marketplace.visualstudio.com/items?itemName=siegebell.prettify-symbols-mode.

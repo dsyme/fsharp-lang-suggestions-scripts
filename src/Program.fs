@@ -4,6 +4,7 @@ open System.IO
 open Newtonsoft.Json
 
 module Program =
+    Directory.SetCurrentDirectory __SOURCE_DIRECTORY__
 
     let readIdeaDataFromFile file =
         Path.Combine(__SOURCE_DIRECTORY__, file)
@@ -14,15 +15,24 @@ module Program =
         Scrape.scrapeData file
     
     let saveToDisk root (name, markdownString) = 
-        System.IO.File.WriteAllText(System.IO.Path.Combine(root, name), markdownString)
+        System.IO.File.WriteAllText(Path.Combine(root, name), markdownString)
 
     let reformatData root = List.map (Templating.formatMarkdown >> saveToDisk root) >> ignore
+
+    let ideasFromJsonFile jsonfile =
+        readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
+        
+    let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
+
+    let generateArchiveFiles jsonfile =
+        let ideas = ideasFromJsonFile jsonfile 
+        ideas |> reformatData "../archive"
+        printfn "Generated %i archive files" ideas.Length
+
 
     [<EntryPoint>]
     let main argv = 
         printfn "%A" argv
-
-
 
         let jsonfile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "archive-data.json")
         let data = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd

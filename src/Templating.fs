@@ -58,9 +58,14 @@ let sanitize (s : string) =
     ]
     List.fold (fun str f -> f str) s mods
 
-
+/// generate a filename in the form "suggestion-%s-%s" idea.Number (sanitize idea.Title)
 let ideaFileName (idea:Idea) =
     sprintf "suggestion-%s-%s" idea.Number (sanitize idea.Title)
+
+/// create a realtive md link to the associated archive document in the form
+/// "[archived comments](archive/%s.md#comments)\n" 
+let archiveCommentLink (idea:Idea) =
+    sprintf "[archived comments](archive/%s.md#comments)\n" (ideaFileName idea)
 
 let formatMarkdown (idea : Idea) : string * string =
     let sanitizedName = ideaFileName idea

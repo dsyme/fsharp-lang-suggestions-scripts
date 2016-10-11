@@ -6,10 +6,11 @@ open System.Reflection
 open System.Threading
 open Octokit
 open Octokit.Internal
+open Input
 
 
 module Github =
-    open Input
+
     let setupClient () =
         let connection = Connection (ProductHeaderValue "fsharp-lang")
         GitHubClient connection
@@ -23,74 +24,8 @@ module Github =
     let createClientWithToken token = async {
         let github = setupClient()
         github.Credentials <- Credentials token
-        return github
-    }
-
-    let createLabel repoId label colorHex (client : IGitHubClient) = async {
-        let! labels = client.Issue.Labels.GetAllForRepository repoId |> Async.AwaitTask
-        match labels |> Seq.tryFind (fun l -> l.Name.Equals(label, StringComparison.OrdinalIgnoreCase)) with
-        | Some label -> return label
-        | None ->
-            let newLabel = NewLabel(label, colorHex)
-            return! client.Issue.Labels.Create(repoId, newLabel) |> Async.AwaitTask
-    }
-
-    let createComment repoId issueId text (client : IGitHubClient) = client.Issue.Comment.Create(repoId, issueId, text) |> Async.AwaitTask
-
-    let createIssue repoId title text labels comments (client : IGitHubClient) = async {
-        let newIssue = NewIssue(title, Body = text)
-        labels |> Seq.iter newIssue.Labels.Add
-        let! issue = client.Issue.Create(repoId, newIssue) |> Async.AwaitTask
-        for comment in comments do
-            do! (createComment repoId issue.Number comment client |> Async.Ignore)
-        return issue
-    }
-
-    let green = "009900"
-
-    let labels = [
-        "declined" , "171819"
-        "under review", "cee283"
-        "planned", "51b7e2"
-        "started", "76bf1c"
-        "completed", "540977"
-        "open", "d3b47e"
-    ]
-
-    /// Creates the standard set of labels based on the uservoice suggestion categories
-    let standardLabels repoId (client : IGitHubClient) = async {
-        return!
-            labels |> List.map (fun (name,hex) ->
-                let newLabel = NewLabel (name, hex)
-                client.Issue.Labels.Create (repoId, newLabel) |> Async.AwaitTask
-            )
-            |> Async.Parallel
-    }
-
-
-    /// Creates a new repository to test issue generation
-    /// If a repo already exists with that name, delete the repo and create a clean one
-    let setupTestRepo repoName (client : IGitHubClient) label = async {
-        let createRepo () = NewRepository repoName |> client.Repository.Create
-        let! user = client.User.Current() |> Async.AwaitTask
-        let! repos = client.Repository.GetAllForCurrent()  |> Async.AwaitTask
-
-        let! initRepo = async {
-            if Seq.contains repoName (repos |> Seq.map (fun r -> r.Name)) then
-                let! repo = client.Repository.Get(user.Login,repoName) |> Async.AwaitTask
-                do! client.Repository.Delete repo.Id |> Async.AwaitTask
-                printfn "deleting old %s repo" repoName
-                printfn "creating new %s repo" repoName
-                return! createRepo() |> Async.AwaitTask
-            else
-                printfn "creating new %s repo" repoName
-                return! createRepo() |> Async.AwaitTask
-            }
-        let! l = createLabel initRepo.Id label green client
-        printfn "created the label - %s | %s" l.Name l.Color
-        return initRepo
-    }
-
+        return github 
+    } 
 
     let userPasswordCreds () =
         let user = getUserInput "Github Username: "
@@ -113,70 +48,118 @@ module Github =
         return client
     }
 
-    let closeIssue repoId issueId (client : IGitHubClient)  = client.Issue.Update(repoId, issueId, IssueUpdate(State = Nullable.op_Implicit ItemState.Closed)) |> Async.AwaitTask
+    /// create an issue on the specified repository with labels that have already
+    /// been created on that repository
+    let createIssue repoId title text labels (client : IGitHubClient) = async {
+        let newIssue = NewIssue(title, Body = text)
+        labels |> Seq.iter newIssue.Labels.Add
+        let! issue = client.Issue.Create(repoId, newIssue) |> Async.AwaitTask
+        return issue
+    }
 
-    let logId id msg =
-        printfn "[%s] %s" id msg
+
+    let closeIssue repoId issueId (client : IGitHubClient) = 
+        let closedIssue =  IssueUpdate(State = Nullable ItemState.Closed)
+        client.Issue.Update(repoId, issueId,closedIssue) |> Async.AwaitTask
+
+
+    /// Creates a new repository to test issue generation
+    /// If a repo already exists with that name, delete the repo and create a clean one
+    let setupTestRepo repoName (client : IGitHubClient) = async {
+        let createRepo () = NewRepository repoName |> client.Repository.Create
+        let! user = client.User.Current() |> Async.AwaitTask
+        let! repos = client.Repository.GetAllForCurrent()  |> Async.AwaitTask
+
+        let! initRepo = async {
+            if Seq.contains repoName (repos |> Seq.map (fun r -> r.Name)) then
+                let! repo = client.Repository.Get(user.Login,repoName) |> Async.AwaitTask
+                do! client.Repository.Delete repo.Id |> Async.AwaitTask
+                printfn "deleting old %s repo" repoName
+                printfn "creating new %s repo" repoName
+                return! createRepo() |> Async.AwaitTask
+            else
+                printfn "creating new %s repo" repoName
+                return! createRepo() |> Async.AwaitTask
+            }        
+        return initRepo
+    }
+
+
+    let labels = [
+        "declined" , "171819"
+        "under review", "cee283"
+        "planned", "51b7e2"
+        "started", "76bf1c"
+        "completed", "540977"
+        "open", "d3b47e"
+    ]
+
+    /// Creates the standard set of labels based on the uservoice suggestion categories
+    let standardLabels repoId (client : IGitHubClient) = async {
+        return!
+            labels |> List.map (fun (name,hex) ->
+                let newLabel = NewLabel (name, hex)
+                client.Issue.Labels.Create (repoId, newLabel) |> Async.AwaitTask
+            ) |> Async.Parallel
+    }
+
+    let logId id msg = printfn "[%s] %s" id msg
 
     /// there's some delay to the github API, so we're going to try to fetch an issue up to times times 
-    let rec pollFetchIssue times (client : IGitHubClient) repoId issueNo = async {
+    let rec pollFetchIssue times (client:IGitHubClient) repoId issueNum = async {
         try 
-            printfn "polling for %d" issueNo
-            let! issue = client.Issue.Get(repoId, issueNo) |> Async.AwaitTask
-            printfn "found %d" issueNo
+            printfn "polling for %d" issueNum
+            let! issue = client.Issue.Get(repoId, issueNum) |> Async.AwaitTask
+            printfn "found %d" issueNum
             return issue
         with 
         | :? AggregateException as aex when aex.InnerException.GetType() = typeof<NotFoundException> && times > 0 ->
-            printfn "%d not found, trying again in 5 seconds" issueNo 
+            printfn "%d not found, trying again in 5 seconds" issueNum 
             do! Async.Sleep(5 * 1000)
-            return! pollFetchIssue (times - 1) client repoId issueNo
+            return! pollFetchIssue (times - 1) client repoId issueNum
         | ex ->
-            return failwith <| sprintf "error polling for issue %d: %s" issueNo ex.Message 
+            return failwith <| sprintf "error polling for issue %d: %s" issueNum ex.Message 
     }
 
-//    let transformIssue repoId client idea =
-//        let log = logId idea.Number
-//        async {
-//            try
-//                log "create"
-//                let body = Templating.submissionTemplate idea
-//                log "render-suggestion"
-//                let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
-//                log "render-comments"
-//                let allcomments =
-//                    match idea.Response.Exists with
-//                    | false -> renderedcomments
-//                    | true -> (idea.Response.Responded, Templating.responseTemplate idea.Response) :: renderedcomments
-//                log "order-comments"
-//                let comments = allcomments |> List.sortBy fst |> List.map snd
-//                let! issue = createIssue repoId idea.Title body (Seq.singleton idea.Status) comments client
-//                log "created"
-//                if idea.Status = "declined" || idea.Status = "completed"
-//                then
-//                    log "closing"
-//                    let! closed = closeIssue repoId issue.Number client
-//                    return Some closed
-//                else
-//                    return issue |> Some
-//            with
-//            | :? AggregateException as aex when not <| isNull aex.InnerException ->
-//                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
-//                return None
-//            | ex ->
-//                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
-//                return None
-//        }
+    let ideaToIssue repoId (client:IGitHubClient) idea =
+        let log = logId idea.Number
+        async {
+            try
+                // reorder commments in chronological order
+                let idea = { idea with Comments = idea.Comments |> List.sortBy (fun c -> c.Submitted) }
+                let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
+                let! issue = createIssue repoId idea.Title text (Seq.singleton idea.Status) client
+                log "created"
+                return issue |> Some
+            with
+            | :? AggregateException as aex when not <| isNull aex.InnerException ->
+                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
+                return None
+            | ex ->
+                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
+                return None
+        }
 
-//    let loadIssuesInto getCredentials owner repoName ideas  = async {
-//        let! githubClient = githubLogin getCredentials
-//
-//        // find the repo
-//        let! repo = setupTestRepo repoName githubClient "testing"
-//        //let! repo = githubClient.Repository.Get(owner, repoName) |> Async.AwaitTask
-//
-//        // labels must be present before we can create issues with them
-//        //let labels = ideas |> List.map (fun idea -> idea.Status) |> List.distinct
-//        //let! createdLabels = labels |> List.map (fun l -> createLabel repo.Id l green githubClient) |> Async.Parallel
-//
-//        return! ideas |> List.map (transformIssue repo.Id githubClient) |> Async.Parallel
-//    }
+
+    //let loadIssuesInto getCredentials owner repoName ideas  = async {
+    let createRepoIssues (client:IGitHubClient) owner repoName ideas  = async {
+        // create a clean repository to store the issues
+        let! repo = setupTestRepo repoName client
+
+        return! ideas |> List.map (ideaToIssue repo.Id client) |> Async.Parallel
+    }
+
+
+    /// close all issues in the repository that have at least one label from the provided list
+    let closeLabeledIssues (client:IGitHubClient) repoId (labels:string list)  = async {
+        let closeLabels = Set labels
+        let! repoIssues = client.Issue.GetAllForRepository repoId |> Async.AwaitTask
+        let  closeSqs = repoIssues |> Seq.filter (fun i ->
+            let issueLabels = (i.Labels |> Seq.map (fun l -> l.Name)) |> Set
+            let intersect = Set.intersect closeLabels issueLabels
+            intersect.Count > 0
+        )
+        return! closeSqs |> Seq.map (fun i -> closeIssue repoId i.Id client) |> Async.Parallel
+    }
+
+

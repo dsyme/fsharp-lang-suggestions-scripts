@@ -25,7 +25,7 @@ module Parsing =
             "https://fslang.uservoice.com/forums/245727-f-language/suggestions/"
             "http://fslang.uservoice.com/forums/245727-f-language/suggestions/"
         ] 
-        let rewritten = urls |> List.fold (fun (s:string) url -> s.Replace(url, "/ideas/suggestion-")) text
+        let rewritten = urls |> List.fold (fun (s:string) url -> s.Replace(url, "/archive/suggestion-")) text
         match markdownLinkRegex.Matches(rewritten) with
         | m when m.Count = 0 -> rewritten 
         | m -> 

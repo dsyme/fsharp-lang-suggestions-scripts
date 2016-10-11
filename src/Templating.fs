@@ -44,8 +44,8 @@ let fs = DotLiquid.FileSystems.LocalFileSystem(templatedir)
 // |> List.iter (fun path -> fs.ReadTemplateFile(DotLiquid.Context(ResizeArray(), DotLiquid.Hash(), DotLiquid.Hash(), false), path) |> ignore)
 Template.FileSystem <- fs :> DotLiquid.FileSystems.IFileSystem
 let templateFor<'a> file variableName = parseTemplate<'a> (File.ReadAllText(Path.Combine(templatedir, file))) variableName
-let wholeTemplate = templateFor<Idea> "_idea.liquid" "idea"
-let ideaTemplate = templateFor<Idea> "_idea_submission.liquid" "idea"
+let archiveTemplate = templateFor<Idea> "_idea_archive.liquid" "idea"
+let submissionTemplate = templateFor<Idea> "_idea_submission.liquid" "idea"
 let responseTemplate = templateFor<Response> "_idea_response.liquid" "response"
 let commentTemplate = templateFor<Comment> "_idea_comment.liquid" "comment"
 let sanitize (s : string) =

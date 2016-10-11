@@ -57,6 +57,7 @@ module Github =
         "open", "d3b47e"
     ]
 
+    /// Creates the standard set of labels based on the uservoice suggestion categories
     let standardLabels repoId (client : IGitHubClient) = async {
         return!
             labels |> List.map (fun (name,hex) ->
@@ -73,6 +74,7 @@ module Github =
         let createRepo () = NewRepository repoName |> client.Repository.Create
         let! user = client.User.Current() |> Async.AwaitTask
         let! repos = client.Repository.GetAllForCurrent()  |> Async.AwaitTask
+
         let! initRepo = async {
             if Seq.contains repoName (repos |> Seq.map (fun r -> r.Name)) then
                 let! repo = client.Repository.Get(user.Login,repoName) |> Async.AwaitTask
@@ -137,7 +139,7 @@ module Github =
         async {
             try
                 log "create"
-                let body = Templating.ideaTemplate idea
+                let body = Templating.submissionTemplate idea
                 log "render-suggestion"
                 let renderedcomments = idea.Comments |> List.map (fun c -> c.Submitted, Templating.commentTemplate c)
                 log "render-comments"

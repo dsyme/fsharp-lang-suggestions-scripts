@@ -43,7 +43,7 @@ module Github =
         let client = setupClient()
         client.Credentials <- credsFn ()
 
-        let! user = client.User.Current() |> Async.AwaitTask
+        let! user = client.User.Current() 
         printfn "The Current User Is - %s | %s" user.Login user.Name
         return client
     }
@@ -53,34 +53,43 @@ module Github =
     let createIssue repoId title text labels (client : IGitHubClient) = async {
         let newIssue = NewIssue(title, Body = text)
         labels |> Seq.iter newIssue.Labels.Add
-        let! issue = client.Issue.Create(repoId, newIssue) |> Async.AwaitTask
+        let! issue = client.Issue.Create(repoId, newIssue)
         return issue
     }
 
 
-    let closeIssue repoId issueId (client : IGitHubClient) = 
+    let closeIssue repoId issueId (client : IGitHubClient) = async {
         let closedIssue =  IssueUpdate(State = Nullable ItemState.Closed)
-        client.Issue.Update(repoId, issueId,closedIssue) |> Async.AwaitTask
-
+        return client.Issue.Update(repoId, issueId,closedIssue) 
+    }
+    /// get the handle of the user that started the client's session
+    let getLogin (client:IGitHubClient) = async {
+        let! user = client.User.Current() 
+        return user.Login
+    }
 
     /// Creates a new repository to test issue generation
     /// If a repo already exists with that name, delete the repo and create a clean one
     let setupTestRepo repoName (client : IGitHubClient) = async {
-        let createRepo () = NewRepository repoName |> client.Repository.Create
-        let! user = client.User.Current() |> Async.AwaitTask
-        let! repos = client.Repository.GetAllForCurrent()  |> Async.AwaitTask
+        let createRepo () = 
+            NewRepository(repoName, AutoInit = Nullable true) 
+            |> client.Repository.Create
+
+        let! login = getLogin client
+        let! repos = client.Repository.GetAllForCurrent()  
 
         let! initRepo = async {
             if Seq.contains repoName (repos |> Seq.map (fun r -> r.Name)) then
-                let! repo = client.Repository.Get(user.Login,repoName) |> Async.AwaitTask
+                let! repo = client.Repository.Get(login, repoName) 
                 do! client.Repository.Delete repo.Id |> Async.AwaitTask
                 printfn "deleting old %s repo" repoName
                 printfn "creating new %s repo" repoName
-                return! createRepo() |> Async.AwaitTask
+                return! createRepo() 
             else
                 printfn "creating new %s repo" repoName
-                return! createRepo() |> Async.AwaitTask
+                return! createRepo() 
             }        
+        printfn "Test Repository created @ - %s" initRepo.HtmlUrl
         return initRepo
     }
 
@@ -99,7 +108,7 @@ module Github =
         return!
             labels |> List.map (fun (name,hex) ->
                 let newLabel = NewLabel (name, hex)
-                client.Issue.Labels.Create (repoId, newLabel) |> Async.AwaitTask
+                client.Issue.Labels.Create (repoId, newLabel) 
             ) |> Async.Parallel
     }
 
@@ -109,7 +118,7 @@ module Github =
     let rec pollFetchIssue times (client:IGitHubClient) repoId issueNum = async {
         try 
             printfn "polling for %d" issueNum
-            let! issue = client.Issue.Get(repoId, issueNum) |> Async.AwaitTask
+            let! issue = client.Issue.Get(repoId, issueNum) 
             printfn "found %d" issueNum
             return issue
         with 
@@ -150,7 +159,7 @@ module Github =
     /// close all issues in the repository that have at least one label from the provided list
     let closeLabeledIssues (client:IGitHubClient) repoId (labels:string list)  = async {
         let closeLabels = Set labels
-        let! repoIssues = client.Issue.GetAllForRepository repoId |> Async.AwaitTask
+        let! repoIssues = client.Issue.GetAllForRepository repoId
         let  closeSqs = repoIssues |> Seq.filter (fun i ->
             let issueLabels = (i.Labels |> Seq.map (fun l -> l.Name)) |> Set
             let intersect = Set.intersect closeLabels issueLabels
@@ -211,7 +220,7 @@ module Github =
         let contents = 
             Text.Encoding.UTF8.GetBytes contents |> Convert.ToBase64String
         let request = CreateFileRequest(sprintf "created %s" filepath, contents, "master" )
-        return! client.Repository.Content.CreateFile(repoId ,filepath, request)|> Async.AwaitTask
+        return! client.Repository.Content.CreateFile(repoId ,filepath, request)
     }
 
 

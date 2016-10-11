@@ -16,6 +16,10 @@ Combining several suggestions for richer literals
 and indeed perhaps the whole mechanism should be extensible like QZRING literals
 
 
-## Comment by Sergey Tihon on 12/20/2015 1:17:00 AM
+------------------------
+## Comments
 
+
+## Comment by Sergey Tihon on 12/20/2015 1:17:00 AM
 F# allow you to define your own behavior for suffixes Q, R, Z, I, N & G - https://sergeytihon.wordpress.com/2014/01/11/f-kung-fu-2-custom-numeric-literals/
+

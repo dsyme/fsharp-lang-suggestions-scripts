@@ -12,8 +12,13 @@ or
 open NuGet<"fsharpx","1.2.3">
 The compiler would be agnostic to any specific platform, such as NuGet, but would provide an API, much like for type providers, to provide assemblies.
 
+
+
 ## Response by fslang-admin on 9/16/2014 12:00:00 AM
 
-This is effectively a duplicate of [/ideas/suggestion-5670137--package-directive-to-import-nuget-packages-in-f](/ideas/suggestion-5670137--package-directive-to-import-nuget-packages-in-f.md)
+This is effectively a duplicate of [/archive/suggestion-5670137--package-directive-to-import-nuget-packages-in-f](/archive/suggestion-5670137--package-directive-to-import-nuget-packages-in-f.md)
 The ideas aren’t identical. but it seems best to consider them as one.
+
+------------------------
+## Comments
 

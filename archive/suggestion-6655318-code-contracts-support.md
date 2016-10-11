@@ -46,13 +46,18 @@ Contract.Requires(num > 0);
 }
 as you see it adds some magic code on top of the contract code by magic. And this causes contract checker and rewriter to fail
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
 Declining this because it is the remit of the code contracts tool. I think they should make a fix in this case, or simply ignore the added F# initialization checking code.
 Further discussion and input welcome.
 Don Syme, F# Language and Core Library evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 7/18/2015 11:39:00 AM
-
 Why doe this require a fix in F# rather than in the Code Contracts tool?
+

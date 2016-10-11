@@ -10,15 +10,20 @@ One of the biggest problem in async or computation expressions in general is lac
 I recently made a blog post arguing for the addition of language features that would make symbolic stacktraces possible for computation expression authors: https://eiriktsarpalis.wordpress.com/2015/12/27/reconciling-stacktraces-with-computation-expressions/
 Symbolic stacktraces is a feature that has already appeared in languages like C# (https://github.com/ljw1004/async-exception-stacktrace) and JavaScript (http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/)
 
+
+
 ## Response by fslang-admin on 8/2/2016 12:00:00 AM
 
 See Eirik’s comment below
 
+------------------------
+## Comments
+
 
 ## Comment by Eirik George Tsarpalis on 6/13/2016 7:32:00 AM
-
 From a compiler perspective, I believe that the issue has been covered by RFC FS-1012..
 C.f.
-[/ideas/suggestion-8899330-f-compiler-should-support-callerlinenumber-calle](/ideas/suggestion-8899330-f-compiler-should-support-callerlinenumber-calle.md)
+[/archive/suggestion-8899330-f-compiler-should-support-callerlinenumber-calle](/archive/suggestion-8899330-f-compiler-should-support-callerlinenumber-calle.md)
 https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1012-caller-info-attributes.md
 https://github.com/Microsoft/visualfsharp/pull/1114
+

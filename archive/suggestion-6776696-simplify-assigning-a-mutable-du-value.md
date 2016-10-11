@@ -32,13 +32,18 @@ comments
 * Thanks for the feature suggestion. We ask that language feature requests be opened and discussed at https://fslang.uservoice.com/.
 * Take a look at http://stackoverflow.com/a/2221803/1366219 for a discussion on this topic. There are various complications and design considerations that come into play here.
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome
 Don Syme, F# Language and Core Library Evolution.
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 7/18/2015 1:26:00 PM
-
 I think it's best to just define a settable property on the DU that does what you want.
+

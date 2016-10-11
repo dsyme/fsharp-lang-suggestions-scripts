@@ -31,13 +31,18 @@ static member IsExceptionRepresentation: exceptionType:Type * ?bindingFlags:Bind
 These functions are really part of the basic F# programming model. This is a frustrating problem because the “BindingFlags” is really only used to supportBindingFlags.NonPublic, and could always just as well have been a Boolean flag.
 I believe we should really make alternative versions of these available, especially on .NET Core but also on the portable profiles.
 
+
+
 ## Response by fslang-admin on 6/13/2016 12:00:00 AM
 
 Completed per comment
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 6/13/2016 5:48:00 AM
-
 This has actually already been done as part of F# portable profile work https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1013-enable-reflection-functionality-on-portable-profiles.md
+

@@ -12,22 +12,26 @@ This proposal is one of three alternatives to deal with this problem in the F# l
 The specific proposal covered by this UV entry is to use #requrie declarations within files to specify a file order
 #require "Helpers.fs"
 Then, the compiler could automatically infer the dependencies between the files and not require files to be passed in pre-ordered by least dependent first.
-Related alternative #3: Keep a file order, but optionally have it specified by a fileorder.fsx or fileorder.txt or fileorder.json: [/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx](/ideas/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx.md)
+Related alternative #3: Keep a file order, but optionally have it specified by a fileorder.fsx or fileorder.txt or fileorder.json: [/archive/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx](/archive/suggestion-13394442-optionally-specify-file-order-by-a-fileorder-fsx.md)
+
+
+------------------------
+## Comments
 
 
 ## Comment by Don Syme on 2/3/2016 2:49:00 PM
-
 Other suggestions have been
 #requires "Helpers.fs"
 or
 #load "Helpers.fs" (which already describes dependencies in scripts)
-See also [/ideas/suggestion-6323146-describe-dependencies-between-files-by-extending](/ideas/suggestion-6323146-describe-dependencies-between-files-by-extending.md)
+See also [/archive/suggestion-6323146-describe-dependencies-between-files-by-extending](/archive/suggestion-6323146-describe-dependencies-between-files-by-extending.md)
+
 
 ## Comment by ADMIN
 fsharporg-lang (F# Software Foundation Language Group, F# Software Foundation) on 2/3/2016 2:51:00 PM
+See [/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
 
-See [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
 
 ## Comment by Don Syme on 2/5/2016 5:29:00 AM
+Closing this in favour of [/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
 
-Closing this in favour of [/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/ideas/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)

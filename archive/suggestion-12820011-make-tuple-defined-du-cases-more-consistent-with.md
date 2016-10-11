@@ -24,8 +24,11 @@ match pat with
 | SynPat.LongIdent foo -> () // can deconstruct foo like a normal tuple
 
 
-## Comment by Gauthier Segay on 3/5/2016 2:38:00 PM
+------------------------
+## Comments
 
+
+## Comment by Gauthier Segay on 3/5/2016 2:38:00 PM
 Actually found out it works with enclosing parens:
 match pat with
 | SynPat.LongIdent(_) -> ()
@@ -33,8 +36,8 @@ but it doesn't work with identifier (case whose utility is close to 0)
 match pat with
 | SynPat.LongIdent(a) -> ()
 
-## Comment by Alexei Odeychuk on 3/5/2016 3:02:00 PM
 
+## Comment by Alexei Odeychuk on 3/5/2016 3:02:00 PM
 I support the idea shared by Gauthier Segay in respect of "match pat with
 | SynPat.LongIdent foo -> ..."! When I developed a natural language processing application in F#, I often wrote something like: match arabicLexeme with
 | Participle(_, _, _, _, _, _, _) -> ...
@@ -53,3 +56,4 @@ No warnings or errors from the F# 4.0 compiler.
 P.P.S. When I tried to write in the F# Interactive:
 let y = match x with LongIdent foo -> true
 I received a compiler error FS0019: This constructor is applied to 1 argument(s) but expects 6.
+

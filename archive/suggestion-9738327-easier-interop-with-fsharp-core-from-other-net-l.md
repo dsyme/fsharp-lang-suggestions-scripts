@@ -12,10 +12,14 @@ There are other efforts to be made to make FSharp.Core look not too alien in oth
 Having design guidelines for this type of interop doesn't remove the need for basic F# constructs to be exposed in a convenient way to other dotnet languages.
 
 
-## Comment by Gauthier Segay on 9/13/2015 5:26:00 AM
+------------------------
+## Comments
 
+
+## Comment by Gauthier Segay on 9/13/2015 5:26:00 AM
 For discrimated union, the root type expose get_Is* methods, it should be exposed as Is* methods instead.
 
-## Comment by Dzmitry Lahoda on 9/22/2015 12:46:00 PM
 
+## Comment by Dzmitry Lahoda on 9/22/2015 12:46:00 PM
 It would be yet another path to introduce F# into C# heavy bureaucratic enterprise. I know that F# Core is part of .NET 4.5. So just add reference from GAC.
+

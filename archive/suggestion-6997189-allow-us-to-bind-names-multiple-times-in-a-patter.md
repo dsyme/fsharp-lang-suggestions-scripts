@@ -16,6 +16,8 @@ match a with
 | Some (x, x, x) -> printfn "Something interesting"
 | _ -> printfn "Something boring"
 
+
+
 ## Response by fslang-admin on 2/14/2015 12:00:00 AM
 
 This was considered in F# 1.0-2.0 but was not included.
@@ -24,15 +26,18 @@ So while the feedback is appreciated, this kind of extension is beyond the scope
 Thanks
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Isaac Abraham on 1/24/2015 8:38:00 AM
-
 Because you're binding those fields to specific values for use on the right hand side of the -> - it's not for equality checks.
 
-## Comment by luketopia on 2/8/2015 7:44:00 AM
 
+## Comment by luketopia on 2/8/2015 7:44:00 AM
 I think this is a reasonable proposal. It's not contradictory to bind multiple values to a single pattern variable if they are equal. It's reads nicer than the when guard.
 
-## Comment by Marcus Magnusson on 2/8/2015 8:33:00 AM
 
+## Comment by Marcus Magnusson on 2/8/2015 8:33:00 AM
 I agree, I think this would be nice. Shows intention very clearly. I believe this is supported in Erlang, and the little experience I have of Erlang hasn't shown me any drawbacks to this.
+

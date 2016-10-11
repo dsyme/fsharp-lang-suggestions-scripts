@@ -9,11 +9,16 @@
 @"\\server\share"B is a byte array
 @"\\server\share"C could be a char array
 
+
+
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
-Combining into one suggestion with http://fslang.uservoice.com/forums/245727-f-language/suggestions/11109258-allow-string-literal-formats-for-timespan-datetime
+Combining into one suggestion with [/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime](/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Don Syme on 2/4/2016 4:21:00 PM
+Combining into one suggestion with [/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime](/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime.md)
 
-Combining into one suggestion with [/ideas/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime](/ideas/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime.md)

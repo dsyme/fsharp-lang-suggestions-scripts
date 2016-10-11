@@ -14,12 +14,17 @@ However, this would normally make type inference impossible, because writing `x.
 In such cases, it could be possible to use a special attribute, `DefaultOverloadAttribute`, that specifies the overload the inference procedure should try first. A more powerful alternative would be an `OverloadPriorityAttribute` that accepts an `int`, and creates a sequence of methods to try one after the other.
 The attribute should automatically generate some documentation that specifies it is the primary overload.
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined: see my comment below
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/3/2016 12:38:00 PM
-
 I understand the suggestion and can see the motivation
 However my inclination is not to add more special cases to the overload resolution rules unless really critical for interoperability purposes. The F# programmer always has the option of avoiding the use of overloading
+

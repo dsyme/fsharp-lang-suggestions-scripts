@@ -13,16 +13,21 @@ Why could this be a problem, you may ask? It is the case that many IEnumerators 
 for i in [| 1 .. 100 |] do ()
 Making Range types public would remedy this issue.
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined, per my comment, thanks!
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 4:13:00 AM
-
 My understanding is that one way to solve this is to make sure the enclosing cloud/monadic computation has a Delay method.
 
-## Comment by Don Syme on 2/5/2016 4:14:00 AM
 
+## Comment by Don Syme on 2/5/2016 4:14:00 AM
 I will close this as I don't think chasing down non-serializable sequence objects one by one is the way we will solve this?
+

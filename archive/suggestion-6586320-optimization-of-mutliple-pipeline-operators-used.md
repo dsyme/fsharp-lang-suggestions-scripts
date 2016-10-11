@@ -13,11 +13,16 @@ let fn = f <| 1 <| 2
 ```
 Second line will result with generation of IL code for intermediate classes and delegates for each `<|` operator used in this single statement. Desired behavior would be to optimize this code to equivalent of `let fn = f 1 2`, that means all following pipeline intermediate results should be aggregated into single one containing all applied partial function applications.
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
 As per comment, please just submit a PR directly to the http://github.com/Microsoft/visualfsharp repository.
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 7/18/2015 2:01:00 PM
-
 I think a PR for this could just be submitted directly to the http://github.com/Microsoft/visualfsharp repository. It doesn't need to be tracked here as a language design item.
+

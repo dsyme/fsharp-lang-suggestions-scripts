@@ -19,16 +19,21 @@ let FloatToBigint = 10.0 |> bigint
 works perfectly.
 Please make correct type casting for bigint in F# in order to eliminate the need to declare a helper function.
 
+
+
 ## Response by fslang-admin on 9/7/2015 12:00:00 AM
 
 See Lincoln’s comment – this will work the way you want in F# 4.0
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Lincoln Atkinson on 3/16/2015 12:37:00 PM
-
 This will actually work the way you want in F# 4.0, due to the "constructors as first-class functions" feature.
 `float` and `int` in your example are generic inline *functions* which are defined to facilitate casts. Here's an example of their implementation https://github.com/Microsoft/visualfsharp/blob/fsharp4/src/fsharp/FSharp.Core/prim-types.fs#L4356
 `bigint`, on the other hand, is simply a *type alias* for `System.Numerics.BigInteger` https://github.com/Microsoft/visualfsharp/blob/fsharp4/src/fsharp/FSharp.Core/math/z.fs#L336
 Before F# 4.0, you could construct an instance by calling the ctor like `bigint(10.0)`, but it was not supported to use the type name like a function, e.g. `10.0 |> bigint`. With F# 4.0 this is now supported, and your example code works fine.
+

@@ -15,13 +15,18 @@ The if or match expression needs not be surrounded by parentheses so long as it 
 let a = if x then y else z // parentheses are not required
 I think it's a good idea of defensive coding. It can be implemented easily in the F# compiler and allows preventing potential logical errors in F# code and improving code readability.
 
+
+
 ## Response by fslang-admin on 3/4/2016 12:00:00 AM
 
 Per comment, please add this to FSharpLint.
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 3/4/2016 6:53:00 AM
-
 Like most other style checks like this, we'd prefer this goes into FSharpLint
+

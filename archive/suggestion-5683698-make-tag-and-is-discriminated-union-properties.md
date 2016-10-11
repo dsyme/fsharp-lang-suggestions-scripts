@@ -16,6 +16,8 @@ List.filter (function A -> true | _ -> false)
 when I could write:
 List.filter (fun x -> x.IsA)
 
+
+
 ## Response by fslang-admin on 8/3/2015 12:00:00 AM
 
 This proposal is “approved in principle” for F# 4.0+. It would make a good addition to F#. (I don’t think the loss of purity (e.g. wr.t. ordering of union cases) is a critical problem and I believe you can turn of the DefaultAugmentation in any case)
@@ -28,9 +30,11 @@ If you strongly think this should not be approved please chime in with your tech
 Thanks
 Don Syme, F# Language and Core Library Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Peter Strøiman on 5/13/2014 3:32:00 AM
-
 Or even better, have it exposed as static members, so you can write
 List.filter Foo.IsA
 The latter can work better with some cases of type inference, e.g.
@@ -41,18 +45,18 @@ Would automatically type infer 'T to be List<Foo>, where
 get () |> List.filter (x -> x.IsA)
 would not, and thus would not compile
 
-## Comment by Loic Denuziere on 5/13/2014 4:40:00 AM
 
+## Comment by Loic Denuziere on 5/13/2014 4:40:00 AM
 Peter: The thing is, these methods already exist as instance methods, they're just not exposed in F#. Making them static would break backward compatibility for C# code that uses them.
-There is a discussion about a static syntax for instance methods here: [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md) which would provide the same advantages as you cite, but for all instance methods.
+There is a discussion about a static syntax for instance methods here: [/archive/suggestion-5663326-syntax-for-turning-properties-into-functions](/archive/suggestion-5663326-syntax-for-turning-properties-into-functions.md) which would provide the same advantages as you cite, but for all instance methods.
+
 
 ## Comment by Robert Jeppesen on 6/26/2014 4:12:00 PM
-
 I agree with Peter, it would be nice to have this as part of the static type.
 We should have both: The static `IsA` would call the instance `IsA`.
 
-## Comment by Christopher Atkins on 7/17/2014 7:10:00 AM
 
+## Comment by Christopher Atkins on 7/17/2014 7:10:00 AM
 There are a few considerations to take into account when tackling this, per Don Syme:
 * The problem is that the generated “Is*” and “New*” for unions are inserted very late in the compilation pipeline, in the “ILX” phase, using nasty code that is somewhat ancient. There are lots of corresponding cases in tc.fs and check.fs to check that the user doesn’t define these him/herself.
 
@@ -60,8 +64,9 @@ There are a few considerations to take into account when tackling this, per Don 
 
 * The messiness is compounded by the fact that there are special cases in ILX generation for lists, options and AllowNullValueAsRepresentation unions.
 
-## Comment by Ovidiu Deac on 10/25/2014 8:03:00 PM
 
-Combined with [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md) would be even nicer:
+## Comment by Ovidiu Deac on 10/25/2014 8:03:00 PM
+Combined with [/archive/suggestion-5663326-syntax-for-turning-properties-into-functions](/archive/suggestion-5663326-syntax-for-turning-properties-into-functions.md) would be even nicer:
 The code would be:
 List.filter Foo.isA
+

@@ -26,18 +26,22 @@ Approach suggested:
 I suggest that the for ... to|downto ... do ... loop be deprecated in F# vNext and removed entirely in F# vNext vNext.
 
 
-## Comment by Alexei Odeychuk on 4/4/2016 5:09:00 AM
+------------------------
+## Comments
 
+
+## Comment by Alexei Odeychuk on 4/4/2016 5:09:00 AM
 Removing the for .. to|downto ... loops would mean the removal of the unneeded "to" and "downto" keywords from F#.
 
-## Comment by Vasily Kirichenko on 4/10/2016 1:03:00 PM
 
+## Comment by Vasily Kirichenko on 4/10/2016 1:03:00 PM
 Nothing can be removed from the language.
 
-## Comment by Alexei Odeychuk on 4/11/2016 4:16:00 AM
 
+## Comment by Alexei Odeychuk on 4/11/2016 4:16:00 AM
 Vasily, obsolescences and deletions are part of the history of programming languages. Some features are identified as obsolescent; some features are deleted from programming languages in the course of time.
 The languages are rid of rarely used or unsafe features, borrows new features from others in order to survive, boost their competitive strengths, and be modern after all.
 Features removal occurs not only in old programming languages like Fortran (list of obsolescent and deleted features in Fortran: https://en.wikipedia.org/wiki/Fortran#Obsolescence_and_deletions), but also in new languages that are actively developed, for example, Swift (Remove C-style for-loops with conditions and incrementers. Status: Accepted for Swift 3.0: https://github.com/apple/swift-evolution/blob/master/proposals/0007-remove-c-style-for-loops.md).
 I believe it would be OK to deprecate and then remove the rarely-if-ever-used for ... to|downto ... do ... loop from the language.
 I think the list of obsolescent and deleted features has to be an integral, normal part of the F# programming language specification.
+

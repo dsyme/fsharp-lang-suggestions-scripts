@@ -11,6 +11,10 @@ When you try do it today, there is an error message such as "The custom operatio
 I'm aware this is a not-so-used feature, but I'd like to know how hard you think it could be (I would event be willing to have a look at how to implement it).
 
 
-## Comment by Jared Hester on 6/28/2016 12:26:00 AM
+------------------------
+## Comments
 
+
+## Comment by Jared Hester on 6/28/2016 12:26:00 AM
 This would be great. If custom operators could take other custom operators as arguments it'd be even better.
+

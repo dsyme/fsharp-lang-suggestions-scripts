@@ -32,11 +32,16 @@ A non-generic struct type whose fields are all unmanaged types is unmanaged."
 Example.:
 let safeCall (x : 'T when 'T: blittable and 'T: struct) = nativeCall(x)
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
-Merging with http://fslang.uservoice.com/forums/245727-f-language/suggestions/6359526-add-serializable-and-blittable-constraints-fo
+Merging with [/archive/suggestion-6359526-add-serializable-and-blittable-constraints-fo](/archive/suggestion-6359526-add-serializable-and-blittable-constraints-fo.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Don Syme on 2/4/2016 6:12:00 PM
-
 Combining with this suggestion: https://fslang.uservoice.com/admin/forums/245727-f-language/suggestions/6359526-add-serializable-constraint-for-types
+

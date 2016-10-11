@@ -15,9 +15,13 @@ when ^a : string = System.Text.Encoding.UTF8.GetBytes(retype x : string)
 But allow "static optimization conditionals" is very useful, which allow us avoid to use those tricks like "Simple typeclass implementation". http://www.fssnip.net/9B
 
 
-## Comment by Gusty on 10/1/2016 4:33:00 PM
+------------------------
+## Comments
 
+
+## Comment by Gusty on 10/1/2016 4:33:00 PM
 I'm not sure type inference will work well by only allowing static optimizations outside the F# library.
 If you look at the source code of the F# compiler there are many particular cases introduced in order to get simulated members working and inferred.
 In your example calling toBytes with byte will not type check because byte doesn't have a ToBytes static member.
 Anyway there seems to be a better way to implement type classes in .NET http://www.mlworkshop.org/2016-7.pdf?attredirects=0
+

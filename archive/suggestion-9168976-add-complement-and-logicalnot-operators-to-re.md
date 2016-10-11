@@ -10,8 +10,13 @@ When used on user-defined types, the ~~~ operator resolves to op_LogicalNot rath
 This should be fixed FSharp.Core. An attempt to fix this transparently failed, see https://github.com/Microsoft/visualfsharp/pull/458.
 A plan to address this going forward is at https://github.com/Microsoft/visualfsharp/pull/458#issuecomment-127711336 but will require an update to FSharp.Core.
 
+
+
 ## Response by fslang-admin on 8/4/2015 12:00:00 AM
 
 Approved in principle for F# 4.x+ at next FSharp.Core update. See ongoing discussion on github threads as well.
 Don Syme, F# Language and Core Library Evolution
+
+------------------------
+## Comments
 

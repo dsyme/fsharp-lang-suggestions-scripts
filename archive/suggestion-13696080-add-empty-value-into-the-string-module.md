@@ -22,8 +22,12 @@ I think this will be useful because we already have similar empty values from ot
 This will also make the code more explicit (i.e. convey to others that 'I want an empty string here' instead of 'this can potentially be a typo').
 
 
-## Comment by Reed Adams on 5/3/2016 10:10:00 AM
+------------------------
+## Comments
 
+
+## Comment by Reed Adams on 5/3/2016 10:10:00 AM
 While you're waiting for an official library solution, it might be worth noting that you can extend and approximate the desired functionality in your own code for the time being, possibly giving you the expressiveness you're after.
 Example at: https://dotnetfiddle.net/rFSPQl
 Hopefully this gets you closer to where you want to be until a library solution is in place.
+

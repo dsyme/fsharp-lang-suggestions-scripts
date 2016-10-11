@@ -11,6 +11,10 @@ http://stackoverflow.com/questions/36220283/anything-else-similar-to-haskells-in
 Optionally call it ^$ for Haskell users, though it's not exactly the same as Haskell's $. ^% is (imo) the nicest on the fingers.
 
 
-## Comment by Dax Fohl on 3/25/2016 3:11:00 PM
+------------------------
+## Comments
 
+
+## Comment by Dax Fohl on 3/25/2016 3:11:00 PM
 In particular note the conversation below Mark's answer.
+

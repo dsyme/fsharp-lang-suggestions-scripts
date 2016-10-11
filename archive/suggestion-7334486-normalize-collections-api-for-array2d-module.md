@@ -11,15 +11,20 @@ A large portion of the collections API (avg, contains, exists, find, fold, foral
 Other functions like append and concat should be workable if they enforce constraints on the length of the [,]'s dimensions similiar to the ones on the length of collections for the zip functions.
 Functions like filter that will likely remove elements in a manner that doesn't map to a filled 'T [,] could return 'T [] instead.
 
+
+
 ## Response by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome
 Don Syme, F# Language and Core Library Evolution.
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 6/9/2015 1:55:00 PM
-
 Hi Jared
 My view is that this best lies outside the core. It would be entirely reasonable to have it in an FSharp.Core.ArrayFunctions community project and nuget package.
 Don Syme, F# Language and Core Library Evolution
+

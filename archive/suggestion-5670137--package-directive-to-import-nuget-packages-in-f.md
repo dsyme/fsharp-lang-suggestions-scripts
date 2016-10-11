@@ -15,37 +15,41 @@ let substr = substring "Hello World!"
 printfn "Value: %O" substr;;
 
 
-## Comment by Jon Harrop on 3/26/2014 8:46:00 AM
+------------------------
+## Comments
 
+
+## Comment by Jon Harrop on 3/26/2014 8:46:00 AM
 Yes!
 
-## Comment by Christoph Rüegg on 4/23/2014 12:50:00 PM
 
+## Comment by Christoph Rüegg on 4/23/2014 12:50:00 PM
 See also: https://visualfsharp.codeplex.com/workitem/42
 
-## Comment by Greg Chernis on 9/15/2014 8:03:00 PM
 
+## Comment by Greg Chernis on 9/15/2014 8:03:00 PM
 Here's a workaround: http://tobivnext.wordpress.com/2014/03/26/import-nuget-packages-to-fs-interactive/
 
-## Comment by Don Syme on 2/14/2015 12:04:00 PM
 
+## Comment by Don Syme on 2/14/2015 12:04:00 PM
 You can use the following formula to download both a package-management-client tool (paket.exe) at the start of a script and then use it to then download nuget packages:
 https://gist.github.com/dsyme/9b18608b78dccf92ba33
 It's really cool and close to what's needed, without building in things into F# Interactive.
 Adding #nuget to F# Interactive would be a smoother experience, but also has some risks (e.g. nuget is still an evolving thing in many ways).
 
-## Comment by exercitus vir on 6/19/2015 5:54:00 PM
 
+## Comment by exercitus vir on 6/19/2015 5:54:00 PM
 I like that this would be independent of the package management client.
 
-## Comment by zjv on 12/4/2015 7:18:00 AM
 
+## Comment by zjv on 12/4/2015 7:18:00 AM
 It would be nice if one could also easily import DLL's from projects in the current solution !
 
-## Comment by Jared Hester on 6/28/2016 12:38:00 AM
 
+## Comment by Jared Hester on 6/28/2016 12:38:00 AM
 Instead of a specific directive what if we could define a set of preprocessors with custom behaviors in a dll and have fsi automatically reference that assembly at startup.
 
-## Comment by Gauthier Segay on 7/28/2016 7:11:00 PM
 
+## Comment by Gauthier Segay on 7/28/2016 7:11:00 PM
 issue on github https://github.com/Microsoft/visualfsharp/issues/56
+

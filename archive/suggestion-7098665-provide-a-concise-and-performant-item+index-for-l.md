@@ -28,15 +28,20 @@ index <- 1 + index
 However, the goal would eventually be for the compiler in the case of native collections (arrays, lists, etc.) to avoid the call the iterator and access successor items directly, as the C# compiler foreach does in some cases.
 One could imagine that this pattern could be extended by the user (a la workflows) to provide a richer item than an index - such as an object that provides a mutator/zipper function, etc., but that a whole other kettle of fish.
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined in favour of using Seq.indexed in F# 4.0, see comment below
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 6/9/2015 2:13:00 PM
-
 I've often wanted something in this zone for F# comprehension syntax. I'd appreciate additional feedback on this proposal and ideas about alternative syntaxes
 
-## Comment by Don Syme on 2/3/2016 2:46:00 PM
 
+## Comment by Don Syme on 2/3/2016 2:46:00 PM
 In F# 4.0 Seq.indexed has been provided as a marking combinatory, please use that.
+

@@ -13,20 +13,24 @@ For instance, a type could be statically deemed serializable iff
 * it is a managed class or struct that carries the Serializable attribute.
 
 
-## Comment by thinkb4coding on 8/28/2014 11:07:00 AM
+------------------------
+## Comments
 
+
+## Comment by thinkb4coding on 8/28/2014 11:07:00 AM
 That could be useful, it would avoid knowing this only at runtime.. But It makes me wonder if it could not be more generic and that you could create your own constraint that would run at design and compile time (like done with Type Providers)..
 This way you could check various things about types used in a function to validate that behavior will be correct then at runtime... thoughts ?
 
-## Comment by Eirik George Tsarpalis on 8/28/2014 11:48:00 AM
 
+## Comment by Eirik George Tsarpalis on 8/28/2014 11:48:00 AM
 @thinkb4coding you mean having arbitrary pluggable type predicates? I'm not even sure what the consequences would be to that.
 
-## Comment by Don Syme on 2/4/2016 6:13:00 PM
 
-I've combined this with the suggestion for "blittable" types: [/ideas/suggestion-9989010-add-blittable-type-constraints-in-order-to-support](/ideas/suggestion-9989010-add-blittable-type-constraints-in-order-to-support.md)
+## Comment by Don Syme on 2/4/2016 6:13:00 PM
+I've combined this with the suggestion for "blittable" types: [/archive/suggestion-9989010-add-blittable-type-constraints-in-order-to-support](/archive/suggestion-9989010-add-blittable-type-constraints-in-order-to-support.md)
+
 
 ## Comment by exercitus vir on 7/8/2016 2:12:00 PM
-
 I think "serializable" and "blittable" are two completely different issues and should be kept seperate. Serialization is an abstract concept that can apply to any proper data type and "blittable" seems to be about unmanaged types (I don't really understand what blittable means).
 I find serialization via attributes and Reflection less than ideal (slow and unsafe). The C# team actually wants to get away from serialization via Reflection.
+

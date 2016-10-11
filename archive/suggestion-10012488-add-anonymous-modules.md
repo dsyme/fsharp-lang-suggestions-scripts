@@ -20,15 +20,20 @@ open SomeGeneratedNameIDontCareAbout
 Note that the module is implicitly private; it effectively has no name, so there is no way to reference its members outside the scope in which it is open'd.
 The `open module =` syntax is just my random suggestion :)
 
+
+
 ## Response by fslang-admin on 1/23/2016 12:00:00 AM
 
 Declined per comment from requestor
 
+------------------------
+## Comments
+
 
 ## Comment by Alex Corrado on 10/1/2015 1:03:00 PM
-
 A colleague just pointed out that you can do this:
 [<AutoOpen>]
 module private __ =
 ...
 Not quite as pretty, but adequate. Feeling a little silly, I withdraw my suggestion.
+

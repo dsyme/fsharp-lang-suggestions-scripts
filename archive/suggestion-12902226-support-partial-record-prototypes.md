@@ -17,3 +17,7 @@ let defaultFoo' = { Bar = None; Baz = None } : Foo' partial
 Alternatively, I'll accept any comments that help point out something I've missed in F#... I'm still only about knee deep in the waters around here.
 Now that I think about it a bit more, I wonder if the way I used "partial" in my example can be implemented with reflection... Still, I think language support would give a better developer experience.
 
+
+------------------------
+## Comments
+

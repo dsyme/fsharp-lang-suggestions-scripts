@@ -29,24 +29,29 @@ match subset with
 let accepted_superset = accept_superset A
 This would not break backwards compatibility as it is currently possible to hack this together using explicit static member constraints and additional interfaces (one interface per case), but that is really ugly and repetitive.
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Many thanks for the suggestion. I’ve declined it per my comment below, please see what I wrote there
 Best wishes
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by exercitus vir on 6/14/2015 1:21:00 PM
-
 I just realized that this is enables nominal subtype polymorphism, not structural subtype polymorphism since the subtype relationship is made explicit with `:>`.
 
-## Comment by Don Syme on 2/5/2016 9:14:00 AM
 
+## Comment by Don Syme on 2/5/2016 9:14:00 AM
 I renamed the suggestion to clarify that it is about introducing new nominal subtypes.
 This is definitely an interesting idea. Of course it's the natural partner to allowing nominal subtyping on records, which we don't allow
 Although this is a fascinating suggestion, my inclination is that I have to decline this simply because I would decline the corresponding nominal-subtyping-on-records feature.
 
-## Comment by exercitus vir on 7/9/2016 10:47:00 AM
 
+## Comment by exercitus vir on 7/9/2016 10:47:00 AM
 I don't understand the reason for declining this. Could you please reconsider?
 I can see no use cases for subtyping of records, but there are common use cases for subtyping of unions. Not all F# features need to be symmetric.
+

@@ -11,16 +11,21 @@ I suggest:
 - If the object has an IRecordClone (or whatever) implementation (or simply an implementation of a required method), then call it first. This would allow the copying of private data, etc. It returns the new object.
 - If there was no pre-copy method to call, or after it runs, perform the standard record-like behavior of copying Public properties over to the new object.
 
+
+
 ## Response by fslang-admin on 9/16/2014 12:00:00 AM
 
-This is a duplicate of [/ideas/suggestion-5663704-copy-and-update-on-class-types](/ideas/suggestion-5663704-copy-and-update-on-class-types.md)
+This is a duplicate of [/archive/suggestion-5663704-copy-and-update-on-class-types](/archive/suggestion-5663704-copy-and-update-on-class-types.md)
+
+------------------------
+## Comments
 
 
 ## Comment by mikero on 9/10/2014 4:54:00 PM
-
 - *Copying all but the override values*
 - and finally setting the new values, obviously
 
-## Comment by mikero on 9/10/2014 5:07:00 PM
 
+## Comment by mikero on 9/10/2014 5:07:00 PM
 The related feature is to allow records to take part in inheritance
+

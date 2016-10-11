@@ -29,18 +29,23 @@ type DU =
 let a = Case(1, "foo")
 let a' = { a with p1 = 2 }
 
+
+
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
-Closed in favour of [/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md) per comment below
+Closed in favour of [/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md) per comment below
 Don Syme, F# Language Evolution
+
+------------------------
+## Comments
 
 
 ## Comment by Mark Seemann on 3/22/2014 3:40:00 AM
-
 This sounds like a good idea.
 Apologies if I don't understand this well enough, but isn't this really asking for Lenses in F#? http://bugsquash.blogspot.dk/2011/11/lenses-in-f.html
 
-## Comment by Don Syme on 2/4/2016 1:56:00 PM
 
-I am going to close this in favour of [/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/ideas/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md)
+## Comment by Don Syme on 2/4/2016 1:56:00 PM
+I am going to close this in favour of [/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md)
 That doesn't mean we would implement first-class lensing. But I think the linked issue opens up several important parts of the design discussion, for example how would this work on class types that are not record types (and also how would this work for collection types). At least we should look at the topic of functional update a bit more holistically than this specific request, even if in the end this is all we do.
+

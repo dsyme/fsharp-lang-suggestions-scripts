@@ -61,3 +61,7 @@ Here is my proposal:
 *.fsx files mostly meant to be executed from FSI. Why not to have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files
 So type provider will able to generate diff types depending on IsHostedExecution value
 
+
+------------------------
+## Comments
+

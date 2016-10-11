@@ -28,16 +28,21 @@ Valid address
 | false, errMsg ->
 Invalid errMsg
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, which is definitely interesting. Declining per my comment, please take a look
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 8:49:00 AM
-
 Thanks for the suggestion.
 Enforcing invariants on union and record types is a serious issue. The recommended way is either to use a class type, or to hide the representation.
 This is an interesting midpoint, which is to intercept the construction methods for the union type. It's more difficult to design a corresponding way to do this for a record type.
 However, in the balance this feels too adhoc to embrace in the F# language design: would we do the same for Is*? for accessors? Would we make union types purely pattern-based? Just doing the New* case seems like scratching the surface and opening a box with more inside it.
 I will mark this as declined, though it's definitely an interesting idea and something I had not thought of doing.
+

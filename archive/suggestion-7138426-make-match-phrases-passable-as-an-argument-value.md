@@ -12,16 +12,21 @@ static member walk ast =
 let rec walk ast = ast |> function | ListOfX(_,l) -> [for e in l -> walk e] |> List.concat | e -> [e]
 walk ast
 
+
+
 ## Response by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.
 
+------------------------
+## Comments
+
 
 ## Comment by Fraser Waters on 2/26/2015 5:51:00 AM
-
 You can already do this, match functions can be passed as lambdas.
 
-## Comment by Don Syme on 6/9/2015 2:07:00 PM
 
+## Comment by Don Syme on 6/9/2015 2:07:00 PM
 Yes, this is what "function" is for as far as I understand the request.
+

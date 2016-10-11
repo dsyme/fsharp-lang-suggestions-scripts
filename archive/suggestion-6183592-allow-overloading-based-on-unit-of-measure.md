@@ -20,8 +20,13 @@ static member Cosine(x: float<rad>) = ...
 [<CompiledName("CosineDeg")>]
 static member Cosine(x: float<deg>) = ...
 
+
+
 ## Response by fslang-admin on 9/3/2014 12:00:00 AM
 
 Unfortunately limitations on compiled .NET code mean that this is not possible – .NET requires that erased signatures be distinct.
 Don Syme, Current BDFL for F# Language Evolution
+
+------------------------
+## Comments
 

@@ -11,8 +11,11 @@ f := 3 //or ... rather than
 let f = 3
 
 
-## Comment by trek42 on 4/9/2016 3:26:00 PM
+------------------------
+## Comments
 
+
+## Comment by trek42 on 4/9/2016 3:26:00 PM
 Admittedly, after using f# for years now I feel 'let' is too noisy/repetitive and wish it's gone. The benefits I can see are:
 * Make the language feel lighter-weight and the code more "direct to the point", without sacrificing readability. (subjectively, I would say it improves readability, especially so in subareas like math/science/finance).
 * It's a huge win when using FSI, where virtually every line starts with a "let" which doesn't do much.
@@ -31,23 +34,24 @@ would not work because the first line can also be interpreted as function applic
 * Unify tuple and records. (get rid of the concept of "tuple", which is just record with special field names like _0, _1. Make record types by-default structural instead of nominal)
 Arguably the last one isn't just a syntax feature. So I'll stop here :-) ).
 
-## Comment by Boris on 4/10/2016 1:43:00 PM
 
+## Comment by Boris on 4/10/2016 1:43:00 PM
 I think it will sacrifice readability very much.
 It's just an ancient C(+ - # ) programmer's mental force overestimation.
 Such a quirks make you constantly analyze complex textual patterns to understand what does
 one code line exactly mean.
 IMHO programming languages are much more about reading(and thinking) then about writing.
 
-## Comment by Gauthier Segay on 4/10/2016 8:43:00 PM
 
+## Comment by Gauthier Segay on 4/10/2016 8:43:00 PM
 F# is functional first but has to support quite a bit of imperative style constructs which makes it very practical.
 Without let, it would be difficult to understand the scope of definitions, difficult to catch if I mistyped a symbol name.
 I think the list of ambiguity this would create is huge and I'm not in favor of this proposition.
 
-## Comment by Alexei Odeychuk on 4/11/2016 2:14:00 AM
 
+## Comment by Alexei Odeychuk on 4/11/2016 2:14:00 AM
 I agree with Boris and Gauthier Segay.
 It would be really difficult to understand the scope of definitions without let.
 As Edsger W. Dijkstra said, programming is a human activity. It's really much more about reading and thinking then about writing code. Code maintenance takes 50% (pro-level mid-size apps) to 90% (large, long-lived apps containing several million lines of code intended to be in use for 5 to 20 years) of time professional programmers spent on software projects.
 From code readability and maintenance perspective, I see no value added for dropping the let keyword. I think F# has an excellent syntax in this respect. The let keyword helps writing readable code.
+

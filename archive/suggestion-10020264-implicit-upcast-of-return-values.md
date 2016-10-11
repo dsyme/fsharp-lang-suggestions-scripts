@@ -13,3 +13,7 @@ http://www.fssnip.net/c7
 Aside from this show-stopping issue, there are many other scenarios where libraries expect implicit upcasts and it becomes annoying to have to litter your code with explicit upcasts. Interfaces and System.Object are the usual suspects for upcasting.
 Request implicit upcasting of return values.
 
+
+------------------------
+## Comments
+

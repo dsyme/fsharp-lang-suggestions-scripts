@@ -10,9 +10,14 @@ The absence of a filter function from the String module is a major deficit for t
 As map, mapi, iter and iteri already exist it would seem that most of the core machinery already exists, so it shouldn't be too difficult to add a filter function.
 I would like add that a filter function would actually be more useful for string processing that map and iter, so it's absence is all the more puzzling.
 
+
+
 ## Response by fslang-admin on 11/8/2014 12:00:00 AM
 
 This work has been completed for the “fsharp4” branch, see https://visualfsharp.codeplex.com/SourceControl/network/forks/marten_range/visualfsharp/contribution/7255
 Thanks
 Don Syme, current BDFL for F# Language Design
+
+------------------------
+## Comments
 

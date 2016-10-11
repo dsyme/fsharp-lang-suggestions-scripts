@@ -16,3 +16,7 @@ module : IsModule
 exception : IsExceptionRepresentation
 (I'm not really sure about that last one... I included it for completeness but maybe just testing for some subclass is sufficient?)
 
+
+------------------------
+## Comments
+

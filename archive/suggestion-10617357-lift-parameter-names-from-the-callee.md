@@ -24,17 +24,22 @@ save (ConnectionString connString) apptId apptPatientId apptPatientInfoId apptPr
 ```
 My suggestion is to lift the remaining parameters needed to finish the method call from the callee
 
+
+
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thank you for the suggestion. I have marked it declined per my comment below
 Best wishes
 Don Syme, F# Core Library and Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Sehnsucht on 11/10/2015 7:31:00 PM
-
 Aside the current suggestion ; that's a lot of parameter, maybe all those apptXXX args should be in their own type, a record for example (and that way you can "dot into" it and have the field names as a hint when the function is "lifted")
 
-## Comment by Don Syme on 2/4/2016 4:23:00 PM
 
+## Comment by Don Syme on 2/4/2016 4:23:00 PM
 I don't think we will do this suggestion: the better thing is to redesign an API when there are soooo many parameters, per the comment below.
+

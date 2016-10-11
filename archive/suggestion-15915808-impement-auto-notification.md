@@ -12,3 +12,7 @@ let achaged name old new =
 PropertyChanged(this, name)
 member B : int 3 with get and set and notifyby achanged
 
+
+------------------------
+## Comments
+

@@ -6,7 +6,7 @@
 
 ## 6 votes
 
-(this is similar to [[/ideas/suggestion-8592088-make-records-extensible-a-la-elm](/ideas/suggestion-8592088-make-records-extensible-a-la-elm.md),]([/ideas/suggestion-8592088-make-records-extensible-a-la-elm](/ideas/suggestion-8592088-make-records-extensible-a-la-elm.md),.md) but more concrete).
+(this is similar to [[/archive/suggestion-8592088-make-records-extensible-a-la-elm](/archive/suggestion-8592088-make-records-extensible-a-la-elm.md),]([/archive/suggestion-8592088-make-records-extensible-a-la-elm](/archive/suggestion-8592088-make-records-extensible-a-la-elm.md),.md) but more concrete).
 == Motivations ==
 F#'s record type is good at representing a group of fields, but is also limited and inflexible:
 * Not Extensible -- it's hard to extend an existing record type with new fields. To extend type A without elaborating all its fields, the only choice is to create a nested structure that holds A as one field. However, many times a flat structure is more desirable (e.g. it is a better way to model the data, simpler, more readable, etc), and this is hard to do.
@@ -89,9 +89,9 @@ let h2 (r: #{x: _}) = r.x
 // Below we can use result.x, etc.
 let h3 … = … in #{ x = x; y = y; z = z }
 let result = h3 …
-(note: this implements this suggestion: [[/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md))]([/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md)).md)
+(note: this implements this suggestion: [[/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md))]([/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md)).md)
 ==== Extra Feature: Partially Apply Records to Functions ====
-There are already suggestions for supporting named and optional parameters on let-binding functions ([[/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)).]([/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md))..md)
+There are already suggestions for supporting named and optional parameters on let-binding functions ([[/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)).]([/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md))..md)
 A way to achieve this is to allow partially applying the fields of a record
 (nominal or flexible) to a function based on parameter names. But we need a new syntax to distinguish this to normal function application. I think a reasonable choice is to use “##{}”, which means “flexible application”. I don’t really enjoy the particular operator, but I think it’s quite acceptable.
 // syntax: “Function ##record”.
@@ -116,20 +116,24 @@ There might be clever ways to avoid the virtual dispatch for common cases, e.g.,
 == Summary ==
 I think this opens lots of opportunities, and the fact that it can achieve the goal of some other suggestions (“C#-like anonymous type; named parameters for let-binding) suggests it may be an appropriate language construct and bring synergy and consistency to the language.
 Related Suggestions:
-* [/ideas/suggestion-8592088-make-records-extensible-a-la-elm](/ideas/suggestion-8592088-make-records-extensible-a-la-elm.md)
-* [/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md)
-* [/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/ideas/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)
+* [/archive/suggestion-8592088-make-records-extensible-a-la-elm](/archive/suggestion-8592088-make-records-extensible-a-la-elm.md)
+* [/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md)
+* [/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)
 PS: IMHO, ideally structural record should be the default, and nominal record type should require annotation. However this doesn’t seem to be feasible now.
+
+
 
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, I think it’s a great feature
 Unfortunately I have to decline it since I don’t think it’s possible to implement it within the constraints of the .NET nominal/generics type system, while maintaining cross-assembly type identity
-The issue http://fslang.uservoice.com/forums/245727-f-language/suggestions/5673015-support-c-like-anonymous-types-in-f is also highly relevant, as is http://fslang.uservoice.com/forums/245727-f-language/suggestions/6148669-add-support-for-structtuple
+The issue [/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md) is also highly relevant, as is [/archive/suggestion-6148669-add-support-for-structtuple](/archive/suggestion-6148669-add-support-for-structtuple.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Don Syme on 9/7/2015 5:15:00 AM
-
 Thanks for the well described proposal. For example I'd not seen the use of this kind of declaration:
 let h1 (r: #{_}) = r.x, (r.y + 1)
 to introduce the ability to use r.x and r.y without pre-naming x and y (and without allowing r.mistake in other situations) before.
@@ -144,8 +148,8 @@ For example, you could unify all the similar record types within an assembly (C#
 Likewise you could choose to tie the identity of a type to a containing module or containing function, so #{ x = 10; y = 10 } in one module was not type-compatible with #{ x = 10; y = 10 } in another module unless they were explicitly type-annotated to refer to a common module.
 But what you can't get for free from .NET is structural types that somehow compile to nominal types in the natural way _and_ with seamless compatibility between objects and types across assembly boundaries.
 
-## Comment by trek42 on 9/7/2015 9:43:00 AM
 
+## Comment by trek42 on 9/7/2015 9:43:00 AM
 Hi Don — thanks for the thoughtful reply!
 I think we want to make all “#{x=4}” objects instantiated
 in different assemblies work together seamlessly, otherwise
@@ -190,23 +194,23 @@ concrete instead of interface, for better performance and simplicity. This may m
 mutable fields can’t be supported (I’m not sure), but I think it’s an acceptable situation
 if other parts of the solution can be worked out nicely.
 
-## Comment by Nathan Schultz on 11/17/2015 9:00:00 PM
 
+## Comment by Nathan Schultz on 11/17/2015 9:00:00 PM
 It might be worth noting that Elm is removing Extensible Record support as of version 0.16.
 https://github.com/elm-lang/elm-compiler/issues/985
 
-## Comment by Don Syme on 2/5/2016 5:17:00 AM
 
+## Comment by Don Syme on 2/5/2016 5:17:00 AM
 trek42 - I think it is not possible to get both cross-assembly structural typing and subtype-compatible extensibility.
-There is also a lot of overlap between this and [/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f](/ideas/suggestion-5673015-support-c-like-anonymous-types-in-f.md) and [/ideas/suggestion-6148669-add-support-for-structtuple.](/ideas/suggestion-6148669-add-support-for-structtuple..md) From the notes below, this is beginning to look a lot like the StructTuple proposal in its compiled form. But I think you _really_ want to be able to add and remove fields and maintain structural compatibility. I don't think that's possible if compiling to tuple types.
+There is also a lot of overlap between this and [/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md) and [/archive/suggestion-6148669-add-support-for-structtuple.](/archive/suggestion-6148669-add-support-for-structtuple..md) From the notes below, this is beginning to look a lot like the StructTuple proposal in its compiled form. But I think you _really_ want to be able to add and remove fields and maintain structural compatibility. I don't think that's possible if compiling to tuple types.
 Don't get me wrong - I think this is a great feature - I just think it would have to be completely erased to property bags to actually work in practice. But that would not satisfy typical performance needs.
 
-## Comment by Don Syme on 2/5/2016 5:18:00 AM
 
+## Comment by Don Syme on 2/5/2016 5:18:00 AM
 I'm going to decline this feature because I don't believe it's possible to implement it satisfactorily within the constraints of the .NET nominal/generics type system, without using complete erasure of the types (or interfaces, which also would bring cross-assembly type identity problems)
 
-## Comment by trek42 on 2/6/2016 2:05:00 AM
 
+## Comment by trek42 on 2/6/2016 2:05:00 AM
 Don -- It's a great news that there will be StructTuple in F# !! really looking forward to the open rfc. I think it will be a great enhancement to F#.
 ====
 Some further discussion:
@@ -222,3 +226,4 @@ Namely (using tuple notation):
 (How to make #1 and #2 work on .NET and across assembly is the hardest part. I really hope there is someway to hack this...)
 Beyond that, producing new types by adding/removing fields from existing, *concrete* type is mostly syntax sugar -- they are very useful but not as critical as subtyping (#2), which enables sharing code.
 I'm eager to find out whether the StructTuple is completely agnostic to field order (I think order-based mapping is too confusing), and to what extend type conversion among different StructTuple can be introduced.
+

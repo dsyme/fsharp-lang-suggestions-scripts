@@ -14,10 +14,14 @@ http://msdn.microsoft.com/en-us/library/ms173120.aspx
 http://cs.hubfs.net/topic/None/57397
 
 
-## Comment by James Freiwirth on 10/20/2014 3:10:00 PM
+------------------------
+## Comments
 
+
+## Comment by James Freiwirth on 10/20/2014 3:10:00 PM
 This would be great. Also allowing 'open' statements in the same way that you can with nested modules would help to make large codebases more organised and easier to maintain.
 
-## Comment by Gauthier Segay on 8/5/2015 7:01:00 AM
 
+## Comment by Gauthier Segay on 8/5/2015 7:01:00 AM
 I concur that we need fuller support of .net type system.
+

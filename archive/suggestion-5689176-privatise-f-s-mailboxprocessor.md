@@ -12,11 +12,16 @@ If we do, maybe we can use the funds to build a MessageProcessor type, to be acq
 See https://twitter.com/businessBoris/status/448983711451983872
 </joke>
 
+
+
 ## Response by fslang-admin on 3/27/2014 12:00:00 AM
 
 Sold. We’ve spent the proceeds on beer.
 
+------------------------
+## Comments
+
 
 ## Comment by bB on 3/27/2014 2:04:00 PM
-
 Where do I sign?
+

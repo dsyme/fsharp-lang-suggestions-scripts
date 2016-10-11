@@ -14,6 +14,8 @@ http://www.tryfsharp.org/Learn/data-science#further-data-analysis
 3) Make it compile-time-aware of capacities of the queryed interface. For example, Azure Table Storage won't support most of the queries:
 http://msdn.microsoft.com/en-us/library/windowsazure/dd135725.aspx
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestions! Per my comment and the other comments, I’m declining this, please take a look at the links.
@@ -21,9 +23,11 @@ One reason for declining was that some of the suggestions were not that concrete
 Many thanks
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Loic Denuziere on 3/31/2014 8:39:00 AM
-
 1) you can perfectly break the line before or after "->". In the linked example this works just fine:
 Chart.Point([for cy in cyclonesWithFatalities ->
 cy.``Highest winds``.Value,
@@ -32,8 +36,9 @@ cy.``Total fatalities``.Value])
 2) Do you have concrete examples?
 3) I agree with this one, it would be nice.
 
-## Comment by Don Syme on 2/5/2016 6:47:00 AM
 
+## Comment by Don Syme on 2/5/2016 6:47:00 AM
 My feeling is that the solution to these problems is not in modifications to the "query" feature but in taking alternative approaches to querying. For example:
 The Azure Storage Type Provider shows a better way to have queries when the query language is limited: http://fsprojects.github.io/AzureStorageTypeProvider/
 The SqlCommandProvider shows how to do checked SQL directly using type providers: http://fsprojects.github.io/FSharp.Data.SqlClient/
+

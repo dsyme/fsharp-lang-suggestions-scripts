@@ -14,6 +14,8 @@ static member parse (inStr:string) =
 ...
 It would be very useful to be able to extend type abbreviations so we don't have to wrap the underlying type inside a record.
 
+
+
 ## Response by fslang-admin on 9/7/2015 12:00:00 AM
 
 Thanks for the suggestion.
@@ -23,10 +25,13 @@ As stated in the comment, using a single-case discriminated union or a single-el
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Will Smith on 9/6/2015 12:55:00 PM
-
 What is wrong with this?:
 type Statistics = Statistics of Map<string, double> with
 static member parse (insTr:string)=
 ...
+

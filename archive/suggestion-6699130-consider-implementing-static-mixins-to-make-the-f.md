@@ -142,41 +142,46 @@ Bryan Edds -
 but it doesn't at all, so we're on our own
 The original conversation is also linked here - http://chat.stackoverflow.com/transcript/message/19890630#19890630
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing as this suggestion needs to be more concrete (not just a chat log)
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Isaac Abraham on 11/11/2014 9:31:00 AM
-
 Agree with this in principle - there are times where you want to share fields across records. The only way to do it now is by making a separate record type and making that a child field of the two top-level record types (so a sort of composition approach). It would be nice to have the ability to share those properties in a more lightweight fashion (even if this was erased away).
 
-## Comment by Daniel Robinson on 11/11/2014 9:33:00 AM
 
+## Comment by Daniel Robinson on 11/11/2014 9:33:00 AM
 Posting a chat log instead of clearly and concisely stating your suggestion doesn't bode well for gathering support from the community.
 
-## Comment by Bryan Edds on 11/11/2014 9:44:00 AM
 
+## Comment by Bryan Edds on 11/11/2014 9:44:00 AM
 Danial Rocinson, please feel free to do your part and write a summary. I have some other pressing stuff I have to do today, so I can't polish this as much as we would both like. And on the other hand, a chat context can be extremely illuminating in its own way if one is willing to spend the time on it.
 
-## Comment by Bryan Edds on 11/11/2014 10:33:00 AM
 
+## Comment by Bryan Edds on 11/11/2014 10:33:00 AM
 Here's a link to the extended chat log -
 http://chat.stackoverflow.com/rooms/51909/conversation/data-type-composition-via-mixins
 
-## Comment by Suminda Sirinath Salpitikorala Dharmasena on 11/13/2014 1:16:00 AM
 
+## Comment by Suminda Sirinath Salpitikorala Dharmasena on 11/13/2014 1:16:00 AM
 The details are lost in the chat. Can someone summarise.
 
-## Comment by Vasily Kirichenko on 11/15/2014 9:14:00 AM
 
+## Comment by Vasily Kirichenko on 11/15/2014 9:14:00 AM
 +1. What's this all about?
 
-## Comment by Frank Joppe on 11/16/2014 9:12:00 AM
 
+## Comment by Frank Joppe on 11/16/2014 9:12:00 AM
 I'm casting a vote for the feature of Record inheritance. And honestly, I would like Record to be even a bit more like a class, having a constructor (with parameters), but keeping the current Record advantages with the equality comparison.
 
-## Comment by Isaac Abraham on 1/9/2016 6:06:00 AM
 
+## Comment by Isaac Abraham on 1/9/2016 6:06:00 AM
 Frank: If it's just a constructor that takes in all the fields, how is this any different from the current native syntax e.g. { Field = value; Field 2 = value2 } etc. aside from possibly saving a tiny bit of text at the cost of readability e.g. new Record(value, value2) ?
+

@@ -20,14 +20,19 @@ nums |> Seq.filter (10>)
 I think this would fit very well with the existing syntax. Haskell has both notations and it doesn't cause any issues except with minus due to its duality as a unary and binary operator. As a side note, Haskell also allows sections to be used with functions called with the infix notation (that places the function name in backticks), which is sometimes more succinct than a lambda.
 https://wiki.haskell.org/Section_of_an_infix_operator
 
+
+
 ## Response by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information welcome
 Don Syme, F# Language and Core Library Evolution.
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 7/17/2015 8:29:00 AM
-
 To me this doesn't sit well as an addition to F#. First, the resolution of "<" and ">" in the F# syntax is non-trivial because of their use as type applications. Next, the bar to change and extend the F# expression syntax is high indeed at this stage - the utility gained needs to be large, and the application domain broad.
 So my inclination is to decline this.
+

@@ -24,10 +24,14 @@ get : 'k -> Async<'v>
 set : 'k -> 'v -> Async<unit>
 
 
-## Comment by Mauricio Scheffer on 3/24/2014 6:50:00 PM
+------------------------
+## Comments
 
+
+## Comment by Mauricio Scheffer on 3/24/2014 6:50:00 PM
 Interesting, could you post a snippet illustrating how the current syntax/typechecking is insufficient, and how this suggestion would make it better?
 
-## Comment by Don Syme on 2/3/2016 2:59:00 PM
 
+## Comment by Don Syme on 2/3/2016 2:59:00 PM
 I am very sympathetic to this proposal. However, please note that the items would likely not be "proper" .NET properties since those are required to have "unit" return type on the setter method.
+

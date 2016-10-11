@@ -24,20 +24,25 @@ This feature is implemented in PureScript and Elm.
 Elm uses the Name "Extensible Records", see: http://elm-lang.org/docs/records#record-types
 Purescript: https://leanpub.com/purescript/read#leanpub-auto-record-patterns-and-row-polymorphism
 
+
+
 ## Response by fslang-admin on 1/23/2016 12:00:00 AM
 
-Duplicate of [/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete](/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
+Duplicate of [/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
 Don Syme, F# Language Evolution
+
+------------------------
+## Comments
 
 
 ## Comment by Radek Micek on 11/15/2015 10:05:00 AM
-
 Note that this is same as
-[/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete](/ideas/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
+[/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
 and similar to
-[/ideas/suggestion-6181848-provide-better-support-for-structural-typing](/ideas/suggestion-6181848-provide-better-support-for-structural-typing.md)
+[/archive/suggestion-6181848-provide-better-support-for-structural-typing](/archive/suggestion-6181848-provide-better-support-for-structural-typing.md)
+
 
 ## Comment by Nathan Schultz on 11/17/2015 8:59:00 PM
-
 It might be worth noting that Elm is removing Extensible Record support as of version 0.16.
 https://github.com/elm-lang/elm-compiler/issues/985
+

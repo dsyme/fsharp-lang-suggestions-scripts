@@ -8,7 +8,12 @@
 
 
 
+
+
 ## Response by fslang-admin on 1/23/2016 12:00:00 AM
 
-Duplicate of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5695277-allow-the-addition-of-operators-in-type-extensions
+Duplicate of [/archive/suggestion-5695277-allow-the-addition-of-operators-in-type-extensions](/archive/suggestion-5695277-allow-the-addition-of-operators-in-type-extensions.md)
+
+------------------------
+## Comments
 

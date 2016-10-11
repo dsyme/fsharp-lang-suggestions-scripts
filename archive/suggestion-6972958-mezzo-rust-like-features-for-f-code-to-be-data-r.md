@@ -12,13 +12,17 @@ However writing code with data-races is still possible when using mutable data.
 There is a fairly large and non-trivial design space to addressing this problem, but some type-based techniques are starting to mature. If done "right" they can make writing high-performance concurrent, shared memory code "data-race free", that is, some F# code would be provably data-race free.
 Given the design of F#, there would likely be "back doors" to this feature, especially when libraries are used. It's status would be somewhat like "Checked arithmetic".
 
+
+
 ## Response by fslang-admin on 2/10/2016 12:00:00 AM
 
 Declining per comment below – this was a placeholder and much more concrete suggestions would be needed!
 
+------------------------
+## Comments
+
 
 ## Comment by Jonathan Protzenko on 1/17/2015 11:20:00 PM
-
 Disclaimer: I am the author of Mezzo; I am also not proficient in F#, especially the internals of the type-checking algorithm.
 Such an addition would be great; however, the way I see it, there are a few difficulties.
 - There needs to be a way to easily opt-out of the extended checks. The type system may be very smart, but it will never cover all possible patterns. The user should be able to either use run-time checks (locks?) or assert statically "I know what I'm doing" and disable the extended checks, possibly locally.
@@ -28,11 +32,12 @@ Such an addition would be great; however, the way I see it, there are a few diff
 François and I wrote this paper where we recount the story of Mezzo and try to figure out what worked, what didn't, and what could've been done better <http://gallium.inria.fr/~fpottier/publis/fpottier-protzenko-lessons-mezzo.pdf>. Hopefully, there's some knowledge in there that may be useful.
 I'll follow this topic and I'll happily answer more technical questions, if any :).
 
-## Comment by Phylos on 1/18/2015 12:12:00 AM
 
+## Comment by Phylos on 1/18/2015 12:12:00 AM
 This sounds like it would be a wonderful addition to F#, helping to make it the language of choice for writing safe and robust software for the .NET platform.
 
-## Comment by Don Syme on 2/10/2016 11:23:00 AM
 
+## Comment by Don Syme on 2/10/2016 11:23:00 AM
 I'm going to decline this suggestion (which was made by me) because it is too vague.
 More concrete proposals welcome!!
+

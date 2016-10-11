@@ -9,6 +9,10 @@
 Implement Map.count
 
 
-## Comment by Robert Pickering on 3/11/2016 3:43:00 PM
+------------------------
+## Comments
 
+
+## Comment by Robert Pickering on 3/11/2016 3:43:00 PM
 Sent pull request! https://github.com/Microsoft/visualfsharp/pull/1007
+

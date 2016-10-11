@@ -12,6 +12,8 @@ inherit Base() as someBase
 member myDerived.Print() =
 someBase.Print()
 
+
+
 ## Response by fslang-admin on 10/15/2014 12:00:00 AM
 
 See comment above.
@@ -20,16 +22,19 @@ In general when decisions like this have already been made and are known, stable
 Thanks
 Don Syme, BDFL F# Language/Core Library Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Anonymous on 10/6/2014 2:00:00 PM
-
 Hi,
 Could be great in a more F#-ish way, i.e. inherit someBase = Base()
 
-## Comment by Loic Denuziere on 10/14/2014 9:45:00 AM
 
+## Comment by Loic Denuziere on 10/14/2014 9:45:00 AM
 @Anonymous: I prefer Robert's proposal because it mirrors the "as this" syntax that we already have.
 
-## Comment by Don Syme on 10/15/2014 7:19:00 AM
 
+## Comment by Don Syme on 10/15/2014 7:19:00 AM
 I don't see there's anything much to be gained with changing this decision at this point. If you need to use "base" then use ``base``.
+

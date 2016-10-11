@@ -68,14 +68,18 @@ Again, the resulting IL would be the same as getDataFromServer1()
 
 In summary, we want something that works like let!, but for forward-piping.
 
+
+
 ## Response by fslang-admin on 6/9/2015 12:00:00 AM
 
 Declined as suggested by the author
 Don Syme, F# Language and Core Library Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Wallace Kelly on 5/29/2015 9:50:00 AM
-
 I received this suggested operator...
 let (|>>) xA x2y = async.Bind (xA, x2y >> async.Return)
 ...which works very nicely....
@@ -86,3 +90,4 @@ return! downloadData()
 |>> Seq.toList
 }
 Based on this, I'm considering deleting this suggestion. Thoughts?
+

@@ -63,7 +63,11 @@ API design wise, some people might want to enforce that callsite will use named 
 I hope the description is clear enough.
 
 
-## Comment by Don Syme on 7/17/2015 8:04:00 AM
+------------------------
+## Comments
 
+
+## Comment by Don Syme on 7/17/2015 8:04:00 AM
 I can see the rationale.
 It feels uncomfortable to add a bespoke attribute for this though I don't have specific better suggestions as yet. There's nothing quite like this in the F# language design, apart from the requirement to name record fields in the { a=1; b = 2} construction syntax, which is of course a related problem.
+

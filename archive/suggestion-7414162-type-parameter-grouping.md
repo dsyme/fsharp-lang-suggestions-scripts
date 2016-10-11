@@ -20,11 +20,16 @@ type Example<'first, 'second; 'third>(...) = ...
 We can specify `Example<int, string>` and leave `'third` to be inferred (possibly generic), or we can specify the full `Example<int, string; int>`.
 Of course, there is an issue with overload resolution, which is why I think type parameter grouping shouldn't b the default behavior. In the case of overload resolution, the compiler will always attempt to infer parameter groupings last, and try other things first (e.g. or `List.cast<int>` it will first look for `List.cast<'t>`)
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/3/2016 2:31:00 PM
-
 I understand the proposal. We would probably do it differently, by marking some type parameters as "not required", i.e. inferable. I'll decline that since I believe that suggestion is covered elsewhere.
+

@@ -17,19 +17,24 @@ type non_negative_int = int for 0 to int.MaxValue //for-loop syntax
 //specify minimum and maximum length of string
 type path = string for 1 to 256 //for-loop syntax
 
+
+
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
-Declined per my comment below: this feature almost immediately leads you to dependent types, see the comments here: [/ideas/suggestion-6062821-add-dependent-types](/ideas/suggestion-6062821-add-dependent-types.md)
+Declined per my comment below: this feature almost immediately leads you to dependent types, see the comments here: [/archive/suggestion-6062821-add-dependent-types](/archive/suggestion-6062821-add-dependent-types.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Tony Williams on 4/16/2014 4:58:00 AM
-
 Wouldn't dependent typing also solve this? If so then hopefully the work on F* could be used here.
 
-## Comment by Patrick Q on 5/1/2014 7:12:00 AM
 
+## Comment by Patrick Q on 5/1/2014 7:12:00 AM
 Wish I could give more votes. Ever since I saw this in Ada I've always thought it would such a useful feature to have in F#. Certainly agree that it would enhance safety and robustness.
 
-## Comment by Don Syme on 9/16/2014 5:53:00 AM
 
+## Comment by Don Syme on 9/16/2014 5:53:00 AM
 Just to note that this feature is very difficult to add to F# satisfactorily, and quickly leads you towards full dependent types.
+

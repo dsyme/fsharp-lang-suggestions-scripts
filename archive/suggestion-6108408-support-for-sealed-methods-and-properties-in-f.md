@@ -15,6 +15,8 @@ I suggest to add this feature, as it is occasionally useful and shouldn't be tha
 Do you think that would be worth doing? Sure it's only a small change with very limited impact, but it would bring F# closer to feature parity with C# when it comes to object-oriented constructs. If you think it's worth implementing, I'll be happy to do it, although I have to admit that I've never modified the F# compiler before.
 I'm looking forward to hearing your opinions on that suggestion!
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion!
@@ -23,7 +25,10 @@ That said, we may implement this feature one day as part of some overall “feat
 Best wishes
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 6:25:00 AM
-
 My inclination is not to implement this feature. I understand its utility, but we don't aim for 100% feature parity with C# OO. Specifically the F# emphasis is more to hide the implementation of object types rather than creating object inheritance hierarchies based on implementation inheritance. So we tend to strongly de-emphasize features related to supporting implementation inheritance as a technique - we allow basic implementation inheritance but not every bell-and-whistle of C#.
+

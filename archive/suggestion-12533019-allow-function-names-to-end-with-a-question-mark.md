@@ -11,12 +11,16 @@ Consider `odd? 5` vs `isOdd 5` or `areRelated a b` vs `related? a b`
 There might be some reason why it's a terrible idea grammar-wise or something in F#. I'm still very much a newbie I'm afraid. I apologize if it's featured in a FAQ I missed or even here and I search badly.
 
 
-## Comment by Isaac Abraham on 3/6/2016 11:53:00 AM
+------------------------
+## Comments
 
+
+## Comment by Isaac Abraham on 3/6/2016 11:53:00 AM
 You can get this to work with backtick declarations which let you put lots of stuff e.g. spaces in the declaration e.g.
 let ``odd?`` a = a % 2 <> 0
 Intellisense in e.g. Visual Studio doesn't work for them though, unfortunately.
 
-## Comment by Jeff Heon on 3/6/2016 3:53:00 PM
 
+## Comment by Jeff Heon on 3/6/2016 3:53:00 PM
 That's great to know Isaac. Thank you very much for taking the time to educate me 8)
+

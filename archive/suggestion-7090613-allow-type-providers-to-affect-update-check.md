@@ -10,6 +10,10 @@ In short, if a TP uses a file, and that file changes, the needs-update check has
 Some suggestions here: https://github.com/Microsoft/visualfsharp/issues/234
 
 
-## Comment by Don Syme on 7/18/2015 1:20:00 PM
+------------------------
+## Comments
 
+
+## Comment by Don Syme on 7/18/2015 1:20:00 PM
 Looking at the original issue, @latkin confirmed that using the "Content" item type should solve things. If that's not the case please add more detail to that issue.
+

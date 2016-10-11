@@ -29,13 +29,18 @@ accelerate 1
 }
 }
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further discussion welcome
 Don Syme, F# Language and Core Library Evolution.
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 7/18/2015 1:43:00 PM
-
 More design detail, use-cases and motivation would be needed here. This would be a pretty substantial feature - what's the killer app for this? The above case is not convincing enough for me.
+

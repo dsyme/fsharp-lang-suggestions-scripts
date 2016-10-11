@@ -19,3 +19,7 @@ let student = { First = "a"; Last = "b"; Bar = 2; GPA = 1.0 }
 Making the same thing with composition results with not such an elegance flat records.
 This approach is used, for example, in Nitra AST DSL, see https://github.com/rsdn/Nitra-Mini-C/blob/master/Nitra-Mini-C/MiniC-ast.nitra#L94
 
+
+------------------------
+## Comments
+

@@ -26,22 +26,27 @@ typing:
 still expects another argument and doesn't execute, but pressing Enter again will bind printInt to a function: (int -> unit).
 This means, of course, that a non well-formed piece of code followed by pressing Enter twice will have to fail and start a new line.
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment
 
+------------------------
+## Comments
+
 
 ## Comment by Yaar Hever on 10/11/2015 1:53:00 PM
-
 On second thought, I would like to restrict this suggestion. It doesn't make sense to have this faster evaluation option for bindings, since those could be easily evaluated with ';;' like now.
 In fact, the only kind of expression that could be made faster and more efficient by not requiring the double semicolon in an interesting way are expressions that evaluate to a unit.
 So I withdraw the two-'Enter' suggestion and suggest only that if this option is set, each time the user presses 'Enter', the accumulated buffer would be checked to see if it evaluates properly to a unit. If it does, then the buffer is executed and all of the side-effects take place.
 To run an imperative library function that returns a value (say, a boolean marking success/failure), the use could add "|> ignore" which would make it evaluate to a unit.
 
-## Comment by Don Syme on 2/3/2016 2:45:00 PM
 
+## Comment by Don Syme on 2/3/2016 2:45:00 PM
 Given the complexity of implementing this (invoking the type checker) we are unlikely to make specific changes here until a major revamp of F# interactive is done.
 
-## Comment by Yaar Hever on 2/25/2016 6:16:00 PM
 
+## Comment by Yaar Hever on 2/25/2016 6:16:00 PM
 Thank you for your response. I hope this could be implemented in the future.
+

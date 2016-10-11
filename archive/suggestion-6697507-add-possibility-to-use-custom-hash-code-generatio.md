@@ -9,14 +9,18 @@
 Current implementation has some probems with collisions rate but fr backwards-compat reasons it couldn't be changed. https://github.com/fsharp/fsharp/issues/343
 We need some way to use custom generatior and change it at compile time.
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined per Paul’s comment: just use a custom IEqualityComparer or Equals/GetHashCode
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Paul Westcott on 7/29/2015 2:21:00 PM
-
 Not really addressing your issue, but with https://github.com/Microsoft/visualfsharp/pull/513 changes the performance profile of your issue a bit.
 32-bit run
 ------------
@@ -56,6 +60,7 @@ match other with
 | _ -> false
 end
 
-## Comment by Don Syme on 2/5/2016 9:04:00 AM
 
+## Comment by Don Syme on 2/5/2016 9:04:00 AM
 The way to do this is to manually implement GetHashCode and Equals on your key type. That's just how you do it.
+

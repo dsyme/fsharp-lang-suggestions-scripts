@@ -11,11 +11,16 @@ I suggest to make it possible the alternative syntax { ... with ... and ... and 
 I think F# syntax rules shouldn't push developers to use curly brakets (those relics of C# in the language with the indentation-based and depth-colorized syntax) in their code excessively.
 Syntax "with ... and ..." here is mirroring the existing syntax for class properties: "...with get() = ... and set x = ... .
 
+
+
 ## Response by fslang-admin on 2/29/2016 12:00:00 AM
 
 See reply above – use a semicolon
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/29/2016 12:55:00 PM
-
 Use { Record with field1 = x; field2 = y }
+

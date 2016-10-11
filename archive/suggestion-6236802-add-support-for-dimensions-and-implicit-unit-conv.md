@@ -26,14 +26,19 @@ match value with
 [<Measure>] type Second
 [<Measure>] type Minute (value:float) : (float<Second>) = value * 60.0<Second/Minute>
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. Marking as declined as part of house keeping per my comment below. However we’re still interested in collecting more feedback over time on this issue.
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 5:42:00 AM
-
 We decided against this in F# 2.0 because it requires witness passing (i.e. passing extra arguments around in generic code and storing them in generic classes) , and it is not particularly apparent where the floating point conversions get applied in generic code
 I also would have though this issue might get more votes, and it's interesting to me that it has only one.
 I will mark the issue as declined as part of house keeping, though we're still interested in collecting more feedback on this
+

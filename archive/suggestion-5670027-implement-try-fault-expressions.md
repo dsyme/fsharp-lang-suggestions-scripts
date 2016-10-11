@@ -11,12 +11,15 @@ To answer the inevitable question, "Why not just use try/with and reraise()?" --
 With try/fault, it'd be easy to log relevant information (e.g., variable values) from functions when unwinding the stack due to an exception being thrown, without the downside of being able to affect the control flow.
 
 
-## Comment by Jon Harrop on 3/26/2014 6:19:00 AM
+------------------------
+## Comments
 
+
+## Comment by Jon Harrop on 3/26/2014 6:19:00 AM
 Why not use try..finally?
 
-## Comment by Jack Pappas on 3/28/2014 6:33:00 PM
 
+## Comment by Jack Pappas on 3/28/2014 6:33:00 PM
 Jon -- With try/finally, the code in the finally block is always executed, whether an exception is raised within the protected (try) block or not. With try/fault, the code in the fault block is executed *only* when an exception has been raised in the try block.
 It would be possible to emulate try/fault behavior with try/finally by writing something like this:
 let mutable error = true
@@ -27,10 +30,11 @@ finally
 if error then ... // execute the "fault" handler
 but it's hacky and I'd prefer just to use a true 'fault' block (which is already a feature supported by the CLR). In addition, the code to implement try/finally in the compiler is basically identical to what's needed for try/fault, so it should be fairly straightforward to implement this. If this language feature were accepted, I'd be happy to contribute an implementation (or attempt to).
 
-## Comment by Don Syme on 2/5/2016 5:39:00 AM
 
+## Comment by Don Syme on 2/5/2016 5:39:00 AM
 My inclination is that we won't do this in F#. I can see the use cases though - are there really no other ways to achieve this in .NET, e.g. by calling a library function with two lambdas?
 
-## Comment by Don Syme on 2/10/2016 11:02:00 AM
 
+## Comment by Don Syme on 2/10/2016 11:02:00 AM
 One approach to this would be to add an OnException combinatory accepting a pair of functions. Likewise an Async.OnException.
+

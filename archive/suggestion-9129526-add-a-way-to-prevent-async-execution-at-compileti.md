@@ -8,6 +8,8 @@
 
 There are sometimes operations such as COM that don't play very well with threading. It would be nice if there was a way to denote that a function is not threadsafe and cannot be used from within a thread. e.g. if someone tries to use parallel a compile error would show up indicating that the function cannot be used from within a thread.
 
+
+
 ## Response by fslang-admin on 9/7/2015 12:00:00 AM
 
 Many thanks for the suggestion
@@ -16,7 +18,10 @@ If you’d like to re-propose, please resubmit with a more detailed description 
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Fyodor Soikin on 8/9/2015 5:37:00 PM
-
 What do you mean by "within a thread"? All code execution happens on _some_ thread. So if a particular function was prohibited from executing "within a thread", it could not be executed at all.
+

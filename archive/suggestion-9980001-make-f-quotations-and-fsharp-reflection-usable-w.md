@@ -13,18 +13,23 @@ There are workarounds to use backdoors to avoid the checks that the constructors
 However, this should really be fixed in FSharp.Core. There are various fixes possible: either add the Unchecked family of functions, or make the checks only take into account type names rather than assembly identities.
 Likewise fixes should be made in FSharp.Reflection (especially FSharpUnionCase)
 
+
+
 ## Response by fslang-admin on 6/17/2016 12:00:00 AM
 
 Approved, this should always have been allowed.
 Don Syme, F# Language and Core Library Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 1/27/2016 12:27:00 PM
-
 I started the implementation of this but it is quite tricky. Here's the work in progress. The main thing missing is testing and fixes for FSharpUnionCase https://github.com/dsyme/visualfsharp/tree/quotation-fixes-1
 Don Syme
 
-## Comment by Jared Hester on 3/6/2016 1:26:00 AM
 
+## Comment by Jared Hester on 3/6/2016 1:26:00 AM
 I did a rough sketch of getting union field names with reflection only using TypeInfo
 https://gist.github.com/cloudRoutine/3884b1ac325bbd5553f9
+

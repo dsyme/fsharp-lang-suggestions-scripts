@@ -11,12 +11,17 @@ Suggestion: make the #I directive automatically add the specified path also to t
 Windows only; loading libraries is quite different in Linux.
 Original ticket with more details: https://github.com/fsharp/fsharp/issues/164
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion! Declining per my comment below.
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 6:44:00 AM
-
 It seems you can work around this by adding to the path manually. I think I would prefer to keep that as the solution rather than making implicit changes to the path.
+

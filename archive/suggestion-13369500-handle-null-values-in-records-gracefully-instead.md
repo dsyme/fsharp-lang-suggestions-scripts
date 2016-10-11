@@ -14,3 +14,7 @@ If the external code ever calls .GetHashCode on an object under construction, it
 The suggestion is NOT to change anything semantically but to handle null values gracefully where possible to ease the interop with these external libraries. This is especially important for .GetHashCode, since it is expected that it is always safe to call this method.
 In the case of .GetHashCode, this could be handled backwards-compatible by returning a fixed hash for a null value.
 
+
+------------------------
+## Comments
+

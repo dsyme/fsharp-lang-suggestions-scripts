@@ -21,20 +21,24 @@ The call would be translated to something like:
 Chart.Plot(prices, <@@ prices @@>)
 This also requires extending the quotations to actually capture names of local let-bound values (so that the quotation contains the name in some form).
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
 Completed in F# 4.0
 
+------------------------
+## Comments
+
 
 ## Comment by Howard Mansell on 5/28/2014 7:16:00 AM
-
 It should also be possible to do this with the param-array argument, so one can pass some arbitrary number of arguments. This would allow (for example) the construction of Deedle Frames with columns named according to the expression passed in.
 Also, note that if I call something like plot(xs, ys ^ 2) this allows the axes of the plot to be labelled with the textual form of the expression, just as they do in R. So this is strictly more powerful that the Python kwargs feature.
 In terms of implementation/syntax, I think having two separate formal parameters for each argument is strange. It would be better to pass some type that wraps up the whole thing.
 BTW a string version of the expression covers all the use cases I think of, though some AST-based approach would presumably be generally more powerful.
 
-## Comment by Don Syme on 6/24/2014 10:37:00 AM
 
+## Comment by Don Syme on 6/24/2014 10:37:00 AM
 I am strongly sympathetic to this design proposal consider it basically "approved" though a prototype is needed.
 As Tomas mentions one main problem is a limitation in F# quotations w.r.t. local values. When given this code:
 let f() =
@@ -46,8 +50,8 @@ Libraries which used this feature would pick up a dependency on the correspondin
 Cheers
 Don
 
-## Comment by Don Syme on 6/24/2014 11:10:00 AM
 
+## Comment by Don Syme on 6/24/2014 11:10:00 AM
 Here's an alternative design (in addition to the need for NamedLocalValue):
 At the declaration site we just have one argument with the following very natural form:
 type Chart =
@@ -75,8 +79,8 @@ static method Expr.NamedLocalValue : T * Expr --> Expr
 /// Match a NamedLocalValue node
 active pattern (|NamedLocalValue|_|) : Expr<T> --> (string * T * Type) option
 
-## Comment by Don Syme on 10/30/2014 12:27:00 PM
 
+## Comment by Don Syme on 10/30/2014 12:27:00 PM
 I have submitted a design here:https://visualfsharp.codeplex.com/SourceControl/network/forks/dsyme/cleanup/contribution/7638
 The refined design is similar to the one below. At the declaration site we have:
 static member Plot([<ReflectedDefinition>] values:Expr<X>) = (...)
@@ -95,12 +99,12 @@ match (f 3) with
 returns 'true'
 The named local values embedded in the quotation are irrelevant for the purposes of quotation equality.
 
-## Comment by Don Syme on 1/16/2015 9:18:00 AM
 
+## Comment by Don Syme on 1/16/2015 9:18:00 AM
 A speclet for this feature has been added here: https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/AutoQuotation.md
 
-## Comment by Yemi Bedu on 5/29/2016 3:45:00 AM
 
+## Comment by Yemi Bedu on 5/29/2016 3:45:00 AM
 Hello,
 So I have the following and can not pass in a quotation as the parameter:
 type NameOf =
@@ -124,3 +128,4 @@ is not compatible with type
 Quotations.Expr<Quotations.Expr<int>>
 The type 'Quotations.Expr<int>' does not match the type 'int' (FS0193)
 Can you extend this feature to include Quotations? Thank you. Good day.
+

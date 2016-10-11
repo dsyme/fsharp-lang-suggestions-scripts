@@ -55,15 +55,19 @@ let v3access2 = v3var1.Feild2 // obsolete, OK
 I'm pretty sure this is because the code will still break (and use the obsolete field behind the scenes). So even if the suggestion can not be accepted in general (but I think still worth the discussion) we should consider this is in scripting contexts (where binary compatibility is not really a problem). Scripting is the place where I realized this, so currently there really is no good way to use Obsolete on records at all (besides using constructor functions, but then I think the compiler should generate them for me behind the scenes).
 
 
-## Comment by Matthias Dittrich on 3/6/2016 4:31:00 AM
+------------------------
+## Comments
 
+
+## Comment by Matthias Dittrich on 3/6/2016 4:31:00 AM
 As the formatting was completely broken: http://fssnip.net/7OE
 The line with "// Why?" is triggering an obsolete compiler warning!
 
-## Comment by Matthias Dittrich on 3/6/2016 4:46:00 AM
 
+## Comment by Matthias Dittrich on 3/6/2016 4:46:00 AM
 I noticed one more thing: The complete record initializer is triggering the obsolete warning instead of the line accessing the obsoleted field (updated the fssnip version)
 
-## Comment by Alexei Odeychuk on 3/6/2016 5:47:00 AM
 
+## Comment by Alexei Odeychuk on 3/6/2016 5:47:00 AM
 I support the idea shared by Matthias Dittrich.
+

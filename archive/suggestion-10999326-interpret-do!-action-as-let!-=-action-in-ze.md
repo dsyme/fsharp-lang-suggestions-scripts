@@ -17,6 +17,8 @@ The proposal is to interpret `do! action` as `let! () = action in zero` when the
 With it return keyword would be unavailable to the users of the Builder.
 Original discussion: https://github.com/fsprojects/FSharp.Control.AsyncSeq/issues/38
 
+
+
 ## Response by fslang-admin on 1/23/2016 12:00:00 AM
 
 This PR has been merged, so this design item is completed, though not yet released in a specific version of F#
@@ -24,4 +26,7 @@ This is approved for F# 4.1+. It’s the right adjustment to the language given 
 See also the proposed implementation here: https://github.com/Microsoft/visualfsharp/pull/773
 Don Syme
 F# Language and Core Library Evolution
+
+------------------------
+## Comments
 

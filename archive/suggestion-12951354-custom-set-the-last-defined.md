@@ -23,3 +23,7 @@ Some of the F# conventions are nice, and it'd be good to be able to stay consist
 Option<string>.None just to get the point across to the compiler. Likewise, pushing the definition up the tree -- ie. in this case (aVarName : BinaryOp option) is not always the sensible thing to do.
 This is just a simple example where it doesn't make much difference one way or the other. I suggest we have more preferences for hints and context. Pithy code probably leads to more name clashes. Sometimes these are acceptable.
 
+
+------------------------
+## Comments
+

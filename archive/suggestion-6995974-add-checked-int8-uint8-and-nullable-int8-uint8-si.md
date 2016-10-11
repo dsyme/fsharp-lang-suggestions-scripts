@@ -11,7 +11,12 @@ F# defines "int8" and "uint8" as synonyms for "sbyte" and "byte", both as types 
 We also noticed that "Nullable.int8" and "Nullable.uint8", "Nullable.single" and "Nullable.double" are missing.
 The proposal is to add these.
 
+
+
 ## Response by fslang-admin on 7/17/2015 12:00:00 AM
 
 Completed, see https://github.com/Microsoft/visualfsharp/pull/19
+
+------------------------
+## Comments
 

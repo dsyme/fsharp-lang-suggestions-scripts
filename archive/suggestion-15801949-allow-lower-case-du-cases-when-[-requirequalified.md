@@ -15,3 +15,7 @@ type Foo =
 This yields: error FS0053: Discriminated union cases and exception labels must be uppercase identifiers
 As I understand it, this is to prevent ambiguity in pattern matching between matching a union case and binding to an identifier. However, this is not an issue if the [<RequireQualifiedAccess>] attribute is specified on the DU. Therefore, I propose we allow lower-case cases in this case.
 
+
+------------------------
+## Comments
+

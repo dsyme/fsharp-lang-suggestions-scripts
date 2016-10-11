@@ -12,18 +12,23 @@ type B = {x : int; y : int}
 let a : A = {x = 1}
 let b : B = {a with y = 2}
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
-Closing in favor of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663704-copy-and-update-on-class-types
+Closing in favor of [/archive/suggestion-5663704-copy-and-update-on-class-types](/archive/suggestion-5663704-copy-and-update-on-class-types.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Dax Fohl on 5/25/2015 9:54:00 AM
-
 I'd extend this idea to also make it easier to *create* records of different types.
 type A = {x: int}
 type B = {A with y:int}
 
-## Comment by Don Syme on 2/3/2016 1:16:00 PM
 
-This is very much related to [/ideas/suggestion-5663704-copy-and-update-on-class-types](/ideas/suggestion-5663704-copy-and-update-on-class-types.md)
+## Comment by Don Syme on 2/3/2016 1:16:00 PM
+This is very much related to [/archive/suggestion-5663704-copy-and-update-on-class-types](/archive/suggestion-5663704-copy-and-update-on-class-types.md)
 I will close this suggestion in favour of that one and link back here
+

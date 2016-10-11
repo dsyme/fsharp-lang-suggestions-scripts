@@ -26,17 +26,22 @@ new(x: float, y: float) = { X = x; Y = y }
 new(x: float) = ? // how to call this() or new() here? <<<<<<<<======
 end
 
+
+
 ## Response by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion! I’ve added links to how you can do this. Declining per my comments
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/5/2016 5:58:00 AM
-
 You do this: https://gist.github.com/dsyme/4dc266348f47303f6b99
 Our use DefaultValue: https://gist.github.com/dsyme/2fceed8074e56f17a761
 
-## Comment by Don Syme on 2/5/2016 5:58:00 AM
 
+## Comment by Don Syme on 2/5/2016 5:58:00 AM
 Will close this since you can use the techniques below
+

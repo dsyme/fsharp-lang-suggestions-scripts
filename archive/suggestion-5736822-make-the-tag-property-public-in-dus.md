@@ -12,14 +12,18 @@ At the moment, this can only be achieved either by cumbersomely defining a custo
 For the ML purists that don't like the idea of a property, this could also be achieved through the definition of a static method, for instance
 UnionType.GetInternalBranchRepresentationValue : UnionType -> int
 
+
+
 ## Response by fslang-admin on 6/25/2014 12:00:00 AM
 
-Merging this with [/ideas/suggestion-5683698-make-is-discriminated-union-properties-visible-f](/ideas/suggestion-5683698-make-is-discriminated-union-properties-visible-f.md)
+Merging this with [/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f](/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f.md)
 This is not actually being declined, quite the opposite, it is being approved and merged
+
+------------------------
+## Comments
 
 
 ## Comment by Don Syme on 6/20/2014 11:57:00 AM
-
 I generally approve of this particular suggestion and think it would make a good addition to F#. (I don't think the loss of purity (e.g. wr.t. ordering of union cases) is a critical problem and I believe you can turn of the DefaultAugmentation in any case)
 Some technical issues may need to be ironed out during implementation.
 If this is done, the Is* properties present on these types should also be revealed, that is covered by a separate item.
@@ -29,3 +33,4 @@ I'd be glad to help guide people through the implementation process.
 If you strongly think this should _not_ be approved please chime in with your technical feedback.
 Thanks
 Don Syme, current BDFL for F# Language Design
+

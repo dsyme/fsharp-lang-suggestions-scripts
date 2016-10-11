@@ -16,5 +16,9 @@ done
 Remark: I think the syntax: “do … while test-condition do … done” containing the do twice would be verbose. We can visually separate the two parts of the loop body by enforcing that the line of code beginning with the while keyword contains the test condition only.
 The do .. while .. done loop evaluates its test expression in the middle of the loop instead of the top or bottom. Therefore, the first part of the loop body is always evaluated at least once before the condition is tested. If the test condition is true, the second part of the loop body evaluates and the flow of control jumps back up to do. This process repeats until the given test condition becomes false. Indentation indicates which expressions are in the first or second part of the loop body; the line of code beginning with the while keyword contains the test condition only, so code is clear and easy-to-understand.
 I like that F# is a functional-imperative programming language suitable for writing real-world applications. It would be nice if F# would be a language fully developed in terms of imperative programming features, a language containing loops with the test condition at the beginning, in the middle, and at the end. It would improve the F# popularity and facilitate the migration of imperative code from other mainstream languages.
-P.S. This suggestion is an extension of my previous suggestion about introducing loops with the test condition at the end: [/ideas/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja](/ideas/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja.md)
+P.S. This suggestion is an extension of my previous suggestion about introducing loops with the test condition at the end: [/archive/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja](/archive/suggestion-13306077-add-the-do-while-loops-to-the-language-from-ja.md)
+
+
+------------------------
+## Comments
 

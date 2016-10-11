@@ -9,6 +9,10 @@
 Just as you can use CLIMutable to store records using Entity Framework wouldn't is be nice to be able to set an CLIVirtual attribute on a record field of an ICollection type so that Entity Framework can do lazy loading. See also http://stackoverflow.com/questions/26775760/how-to-create-a-virtual-record-field-for-entity-framework-lazy-loading
 
 
-## Comment by luketopia on 11/10/2014 5:40:00 PM
+------------------------
+## Comments
 
+
+## Comment by luketopia on 11/10/2014 5:40:00 PM
 In addition to making the property virtual, you would also have to make the record type non-sealed since EF creates dynamic proxy types that inherit from the base entity to override the virtual properties. Right now, all record types are sealed.
+

@@ -14,24 +14,28 @@ As opposed to
 It would be great to have this shorthand so that our anonymous functions are shorter than the C#ers' :).
 
 
-## Comment by Gustavo Guerra on 3/21/2014 6:13:00 PM
+------------------------
+## Comments
 
-This is the same as this one: [/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions](/ideas/suggestion-5663326-syntax-for-turning-properties-into-functions.md)
+
+## Comment by Gustavo Guerra on 3/21/2014 6:13:00 PM
+This is the same as this one: [/archive/suggestion-5663326-syntax-for-turning-properties-into-functions](/archive/suggestion-5663326-syntax-for-turning-properties-into-functions.md)
 (your tittle is actually better, but there's already a bunch of votes there)
 
-## Comment by Jon Harrop on 3/26/2014 9:50:00 AM
 
+## Comment by Jon Harrop on 3/26/2014 9:50:00 AM
 @Gustavo: I think this is a separate idea. That idea was just a shorthand for a lambda that just invokes a property like (fun foo -> foo.Name) could be #Name. This idea is more general. You could do (_.Name) but with this you can also do (_ + 1) as a shorthand for ((+) 1).
 FWIW, Mathematica has the shorthand notation #+1& for this where # is an anonymous argument in an anonymous function that ends with &. The syntax really is quite hideous!
 
-## Comment by Jon Harrop on 3/26/2014 9:52:00 AM
 
+## Comment by Jon Harrop on 3/26/2014 9:52:00 AM
 Mathematica can also do multivariate anonymous parameters in anonymous functions. So (fun (x, y, z) -> x*y+z) can be written #1*#2+#3& in Mathematica.
 
-## Comment by Bryan Edds on 3/27/2014 10:03:00 PM
 
+## Comment by Bryan Edds on 3/27/2014 10:03:00 PM
 This is silly. You have many alternative options -
 [1; 2; 3; 4] |> List.map ((+) 1)
 [1; 2; 3; 4] |> List.map (add 1) // where add = (+)
 [1; 2; 3; 4] |> List.map incr // where incr n = n + 1
 These are all equivalent and good enough.
+

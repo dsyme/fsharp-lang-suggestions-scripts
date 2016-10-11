@@ -15,8 +15,11 @@ And then when the code is compiled the expression thats generated would also hav
 This would interoperability with frameworks that use declarative attributes which would otherwise require adding a full type
 
 
-## Comment by Vasily Kirichenko on 6/28/2014 1:44:00 AM
+------------------------
+## Comments
 
+
+## Comment by Vasily Kirichenko on 6/28/2014 1:44:00 AM
 I think it's more logical to place attributes right before object expression itself, like this:
 let makeResource name =
 [<MyAttribute>]
@@ -28,12 +31,12 @@ func ([<MyAttribute>]
 member this.Dispose() = printfn "%s disposed" name },
 anotherArg)
 
-## Comment by Don Syme on 7/18/2015 1:28:00 PM
 
+## Comment by Don Syme on 7/18/2015 1:28:00 PM
 I tend to agree that this should be supported (though the location for the attributes would be different to shown above)
 
-## Comment by zhonglei chen on 1/30/2016 12:29:00 PM
 
+## Comment by zhonglei chen on 1/30/2016 12:29:00 PM
 I agree with this suggestion due to performance consideration.
 If we can add attribute to object expression, we can apply the following pattern to improve the performance of algorithms:
 let sort<'a, 'c when 'c :> System.Collection.Generic.IComparer<'a>>( array : 'a[], comparer : 'c ) = ...
@@ -48,3 +51,4 @@ sort([0..1000000], [<Struct>] { new IComparer<int> with member this.Compare(a, b
 filter([0..1000000], [<Struct>] { new Predicate with member this.Filter(a) = a % 2 = 0 })
 and then the JIT compiler will generate some individual algorithms for each anonymous type here, and inlining the Compare/Filter method into inner loop of algorithm.
 we can benifit much from this.
+

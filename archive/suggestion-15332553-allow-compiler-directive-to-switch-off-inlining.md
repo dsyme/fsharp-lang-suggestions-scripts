@@ -15,8 +15,11 @@ let inline writeBoundedSequence
 It would be nice to be able to turn off the effect of the inline keyword for files and entire projects while compiling for debugging purposes. Also, optionally setting ignore inline for code executed in an interactive session would be useful too.
 
 
-## Comment by Abel on 9/25/2016 7:38:00 AM
+------------------------
+## Comments
 
+
+## Comment by Abel on 9/25/2016 7:38:00 AM
 I believe I have seen this request before. The problem is that "inline" changes the behavior and is often inevitable to create semi-polymorphic (duck-typed) functions and types. Consider:
 let f a b = a + b // a and b are ints
 let inline f a b = a + b // a and b requires member (+)
@@ -40,3 +43,4 @@ let
     #endif
     writeBoundedSequence ....
 That is because you would want to be able to see debug behavior of the inlined version and this way you can better control when and where INLINE is used.
+

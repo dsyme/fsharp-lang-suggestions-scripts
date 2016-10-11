@@ -58,25 +58,30 @@ any (b.Name2 = "disallowed value")
 }
 let domainInvariants = [ invariant1; invariant2 ]
 
+
+
 ## Response by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below. Please contact me if you have more informaiton on this – I’m not opposed to the suggestion I just need to understand exactly what’s involved
 Don Syme, F# Language Evolution @dsyme
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 6/9/2015 1:51:00 PM
-
 Hi Jason, could you provide a link to a gist with this code? thanks
 Don Syme
 
-## Comment by Don Syme on 7/17/2015 7:18:00 AM
 
+## Comment by Don Syme on 7/17/2015 7:18:00 AM
 Here's the gist: https://gist.github.com/dsyme/6623d02d1a6065a7f9e0
 
-## Comment by Don Syme on 7/17/2015 7:19:00 AM
 
+## Comment by Don Syme on 7/17/2015 7:19:00 AM
 When you say "should be `for a in d.Bs do`" - where would "d" be bound?
 
-## Comment by Don Syme on 2/3/2016 2:58:00 PM
 
+## Comment by Don Syme on 2/3/2016 2:58:00 PM
 This hasn't been updated in a while and there are pending questions below. I propose to decline this.
+

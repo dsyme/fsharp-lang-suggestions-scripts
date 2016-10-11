@@ -18,6 +18,8 @@ _mytable_query.sql_
 select a, b, c
 from mytable
 
+
+
 ## Response by fslang-admin on 6/13/2016 12:00:00 AM
 
 Having a type provider to read string literals from files is entirely reasonable.
@@ -25,21 +27,24 @@ I am marking this as declined for the F# language itself because the functionali
 Don Syme
 F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Radek Micek on 4/16/2016 9:05:00 AM
-
 You can do that with type providers.
 
-## Comment by Jeffrey Pierson on 4/27/2016 12:29:00 PM
 
+## Comment by Jeffrey Pierson on 4/27/2016 12:29:00 PM
 Radek Micek - care to share how? I haven't found any available type provider for string literals and looking into how to create a custom type provider has led me into what seems to be a deep rabbit hole.
 
-## Comment by Don Syme on 6/13/2016 5:20:00 AM
 
+## Comment by Don Syme on 6/13/2016 5:20:00 AM
 This is possible with F# type providers, but the functionality needs to be implemented. I tweeted a request for someone to help with this here: https://twitter.com/dsyme/status/742300239739166720
 
-## Comment by Gauthier Segay on 6/21/2016 8:39:00 AM
 
+## Comment by Gauthier Segay on 6/21/2016 8:39:00 AM
 Jeffrey Pierson, please look at this type provider I created to read a .csv file, parse values from a single column, and generate distinct string literals from those:
 https://gist.github.com/smoothdeveloper/94332dbd7b894d2dc45cbc1f47a75ac5
 I think your feature request is "as simple as you could get" exercise to write your first type provider :)
+

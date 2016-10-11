@@ -22,10 +22,15 @@ function
 Or some similar syntax where we identify which case we are working on by separating them in the same order. If our Choice type was bigger than 3, this would of course become somewhat unmaintainable and not very readable. But if we are only working with a small number of choices in a one-off function, this might help avoid unnecessary clutter.
 There also might be a way of making a terse replacement for the 'Choice1of3' syntax. Perhaps in1, in2 in3 etc
 
+
+
 ## Response by fslang-admin on 9/7/2015 12:00:00 AM
 
 Thanks for the suggestion. While I appreciate the intent here, this is something we decided against in F# 1.0 in order to balance code readability v. special syntax. I don’t think anything specific has changed to warrant us revising that choice at this stage.
 Many thanks
 Don Syme
 F# Language Evolution
+
+------------------------
+## Comments
 

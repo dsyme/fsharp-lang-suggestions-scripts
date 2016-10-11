@@ -19,6 +19,10 @@ let doSomething () =
 It's not possible to do that right now and even if I define the function outside at module level (with extra writer parameter), I can't curry it to avoid passing the context (writer) parameter I'm trying to elide to keep my code concise.
 
 
-## Comment by Paul Westcott on 3/21/2016 3:28:00 PM
+------------------------
+## Comments
 
+
+## Comment by Paul Westcott on 3/21/2016 3:28:00 PM
 If you make writeOption inline then this is currently valid synatx...
+

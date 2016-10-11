@@ -16,6 +16,8 @@ let (|HasError|HasNotError|) (input: ExecuteResult) =
 if input.HasError then HasError (input:>ResultBase)
 else HasNotError input
 
+
+
 ## Response by fslang-admin on 6/20/2014 12:00:00 AM
 
 Realistically, we’re not going to add this to the active pattern feature.
@@ -23,4 +25,7 @@ Type-directed overloading of this kind doesn’t fit well with the feature.
 If active patterns could be defined on objects as members we might consider adding type-directed overloading like this.
 Declining this for now to recycle votes.
 Don Syme
+
+------------------------
+## Comments
 

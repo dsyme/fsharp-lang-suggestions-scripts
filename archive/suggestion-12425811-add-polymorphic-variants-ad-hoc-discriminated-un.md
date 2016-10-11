@@ -55,7 +55,11 @@ https://realworldocaml.org/v1/en/html/variants.html
 further reference - http://caml.inria.fr/pub/docs/manual-ocaml-400/manual006.html#toc36
 
 
-## Comment by Jack Fox on 3/6/2016 11:36:00 AM
+------------------------
+## Comments
 
+
+## Comment by Jack Fox on 3/6/2016 11:36:00 AM
 Would there be a single ad-hoc Discriminated Union for all polymorphic variants currently in scope? Then depending on program structure and scope different sets of polymorphic variants would be available.
 I think I like this idea...
+

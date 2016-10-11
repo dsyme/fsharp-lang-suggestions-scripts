@@ -22,19 +22,24 @@ http://stackoverflow.com/questions/10253161/efficient-graph-traversal-with-linq-
 http://stackoverflow.com/questions/11830174/how-to-flatten-tree-via-linq
 Since F# has yield!, we don't need to explicitly use Stack<'T> like in C#.
 
+
+
 ## Response by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. However, I’m declining this for the reasons given in the comments above.
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 6/9/2015 12:48:00 PM
-
 While the function is a fine thing, I don't think it fits with the current F# core library design by itself - there is no generic library of tree-traversing or tree-mapping functions - instead you write an appropriate for your tree type.
 It is also not easy to make a one-size fits all function. For example, even for this function in many cases it would be better to return the flattened tree as an array or list, rather than a on-demand sequence.
 Don Syme, F# Language and Core Library Evolution
 
-## Comment by George on 6/10/2015 10:35:00 AM
 
+## Comment by George on 6/10/2015 10:35:00 AM
 Why not bring the tree into the standard collections conversion treatment
 Seq.ofTree : (parser: 'node -> 'node seq) (root: 'node)
+

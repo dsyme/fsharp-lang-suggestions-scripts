@@ -19,3 +19,7 @@ This would be bad if I had a bunch of classes where for each one, I had to write
 Of course I replaced the above with a single subtyping constraint, but is there any reason why the compiler could not have done this automatically? Also if that is not possible, would it be possible to introduce an abbreviation feature for type constraints instead of just types. They would make structural typing a lot more palatable.
 Having recently been introduced to structural typing in F#, I am quite a fan of it and even the syntax which bothered me at the beginning does not look worse than anything you might find in Scala for example. I think this particular feature of the language could be a great selling point if it was made nicer.
 
+
+------------------------
+## Comments
+

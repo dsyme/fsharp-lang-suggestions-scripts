@@ -29,8 +29,13 @@ let array =
 [| {real = 1.0; imaginary = 0.2}
 [| {real = 0.0; imaginary = 0.3}
 
+
+
 ## Response by fslang-admin on 9/16/2014 12:00:00 AM
 
 Interesting suggestion, but removing closing brackets would be a radical departure for F# syntax. Declining for now.
 Don Syme, current BDFL F# Language/Library Evolution.
+
+------------------------
+## Comments
 

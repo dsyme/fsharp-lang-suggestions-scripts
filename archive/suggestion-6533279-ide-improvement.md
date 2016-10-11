@@ -11,17 +11,22 @@ P.S. Xamarin Studio is also a good candidate to make this functionality availabl
 Reference:
 1. F# Depth Colorizer Extension for Visual Studio 2013 //http://visualstudiogallery.msdn.microsoft.com/07636c36-52be-4dce-9f2e-3c56b8329e33
 
+
+
 ## Response by fslang-admin on 10/15/2014 12:00:00 AM
 
 Please see the Visual F# Power Tools where this feature is available, http://fsprojects.github.io/VisualFSharpPowerTools/
 Note that since this suggestion related to the Visual F# IDE Tools rather than the F# language itself, it rightly belongs in https://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-tools
 Don Syme
 
+------------------------
+## Comments
+
 
 ## Comment by Виктор Милованов on 10/13/2014 2:09:00 AM
-
 Why not just use the extension?
 
-## Comment by Alexei Odeychuk on 10/13/2014 3:41:00 AM
 
+## Comment by Alexei Odeychuk on 10/13/2014 3:41:00 AM
 Almost all modern IDEs provide syntax highlighting, but not a single IDE provides depth colorizing as a default feature. Programmers who are starting to learn F#, as a rule, do not know about F# Depth Colorizer Extension for Visual Studio. Only experienced programmers know about it. If the functionality offered by that extension were available for all F# programmers regardless of their experience of coding in F#, it would have a positive impact on the language popularity and easiness of coding.
+

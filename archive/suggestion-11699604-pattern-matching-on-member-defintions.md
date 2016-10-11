@@ -16,16 +16,21 @@ member x.Blub() = let (Test(a,b)) = x in a + b
 The benefit seems to be minor, but additionally my proposal improves uniformity of the language.
 However i fear this introduces ambiguities in the parser....
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined – see comment above
 Don Syme, F# Language Evolution
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/3/2016 10:21:00 AM
-
 Hi Harald,
 Thanks for taking the time to write this suggestion.
 We considered this in the F# design, but decided against it since we felt that code became substantially less readable when this formulation was used. I don't think we'll revisit the design decision at this point.
 Best
 Don Syme, F# Language Evolution
+

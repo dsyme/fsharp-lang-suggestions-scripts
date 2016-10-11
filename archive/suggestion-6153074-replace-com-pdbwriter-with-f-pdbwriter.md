@@ -11,20 +11,25 @@ I wrote SourceLink which is an F# project with an Apache License. It is able to 
 https://github.com/fsharp/FSharp.Compiler.Service/blob/master/src/absil/ilsupp.fs#L867
 https://github.com/ctaggart/SourceLink
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment by Don Syme
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 9/3/2014 4:58:00 AM
-
 Hi Cameron,
 That would be great - but do you know of an appropriately licensed and available F# PDB writer?
 
-## Comment by Don Syme on 9/3/2014 4:58:00 AM
 
+## Comment by Don Syme on 9/3/2014 4:58:00 AM
 (Or even a spec for the PDB format)
 
-## Comment by Don Syme on 2/3/2016 2:41:00 PM
 
+## Comment by Don Syme on 2/3/2016 2:41:00 PM
 Appropriate changes to PDB/MDB/... writing are happening as part of the CoreCLR work. I'll close this as while we will continue to use the COM PDB writer, other writers will be in managed code AFAIK
+

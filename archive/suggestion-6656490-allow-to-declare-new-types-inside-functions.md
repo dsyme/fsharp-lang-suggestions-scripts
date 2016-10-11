@@ -33,19 +33,24 @@ auto voldemont = getVoldemont();
 auto value = func(voldemont); // template func instantiation
 As for me, the main usecase for nested types is replacement for tuples as return types which would hugely increase code readability.
 
+
+
 ## Response by fslang-admin on 7/18/2015 12:00:00 AM
 
-Duplicate of http://fslang.uservoice.com/forums/245727-f-language/suggestions/5663202-allow-to-define-types-at-expression-scopes
+Duplicate of [/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes](/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
+
+------------------------
+## Comments
 
 
 ## Comment by Alexei Odeychuk on 11/8/2014 5:57:00 AM
-
 I think it is a very useful idea that is able to add more expressiveness to the language and flexibility to F# programmers in implementing their algorithms.
 
-## Comment by Isaac Abraham on 1/20/2015 8:50:00 AM
 
+## Comment by Isaac Abraham on 1/20/2015 8:50:00 AM
 So this is kind of like anonymous types (albeit nested types) except they can escape function scope?
 
-## Comment by Don Syme on 7/18/2015 11:43:00 AM
 
-This is a duplicate of this one (which has more votes so will be treated as the canonical one): [/ideas/suggestion-5663202-allow-to-define-types-at-expression-scopes](/ideas/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
+## Comment by Don Syme on 7/18/2015 11:43:00 AM
+This is a duplicate of this one (which has more votes so will be treated as the canonical one): [/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes](/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
+

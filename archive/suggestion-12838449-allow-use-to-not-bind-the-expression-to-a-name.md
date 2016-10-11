@@ -13,11 +13,15 @@ allow to make it like this:
 use CreateSomeDisposable()
 
 
-## Comment by lr on 10/6/2016 1:22:00 PM
+------------------------
+## Comments
 
+
+## Comment by lr on 10/6/2016 1:22:00 PM
 In my opinion the bigger annoyance is that a use expression can't even be bound to _ (single underscore), so if I want to use multiple uses, I need to write something like
 use _1 = CreateSomeDisposable()
 use _2 = CreateSomeDisposable()
 If I could instead bind it to the wildcard character _, then I would be happy:
 use _ = CreateSomeDisposable()
 use _ = CreateSomeDisposable()
+

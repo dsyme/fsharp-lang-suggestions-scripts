@@ -13,34 +13,38 @@ Now, there are several problems with the way it works today.
 3. It does not allow for in memory (only) compilation.
 My suggestion is to follow the Roslyn model. Build up a Compilation object consisting of SyntaxTrees, MetadataReferences and some options. And have apis for creating the assembly to a stream, instead of just to disk.
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 Duplicate, see https://github.com/fsharp/FSharp.Compiler.Service/issues/266
 which covers the ongoing work for this feature.
 
+------------------------
+## Comments
+
 
 ## Comment by Aleksander Heintz on 11/14/2014 6:35:00 AM
-
 Also, (as it seems I can't, or can't figure out how at least), would an admin kindly change the title to "Create a better compiler API"?
 
-## Comment by David Karlaš on 11/14/2014 12:34:00 PM
 
+## Comment by David Karlaš on 11/14/2014 12:34:00 PM
 If TypeScript got Roslyn support... Shouldn't F# too?
 http://blogs.msdn.com/b/typescript/archive/2014/11/12/announcing-typescript-1-3.aspx
 
-## Comment by Don Syme on 11/14/2014 5:22:00 PM
 
+## Comment by Don Syme on 11/14/2014 5:22:00 PM
 Please add suggestions about FSharp.Compiler.Service at https://github.com/fsharp/FSharp.Compiler.Service/.
 The FCS API is being improved all the time - for example recently functionality to take an AST and compile it was added by Nessos. So part of what you want is there. You can certainly implement all of the above as relatively simple improvements and simplifications to the current API.
 If you need a hand, then people (myself, Anh-Dung Phan, Tomas Petricek and others like the Nessos guys) are here to help.
 BTW adding an FCS-Roslyn bridge would be fabulous
 
-## Comment by Aleksander Heintz on 11/24/2014 6:33:00 PM
 
+## Comment by Aleksander Heintz on 11/24/2014 6:33:00 PM
 As I stated in my blog post over at http://alxandr.me/2014/11/23/f-in-asp-net-5-the-good-the-bad-and-the-really-ugly/, I think it's the completely wrong way to go about this. These APIs should be added to the compiler. Not appended on some fork of it that has to be kept in sync manually.
 
-## Comment by Don Syme on 11/25/2014 9:21:00 AM
 
+## Comment by Don Syme on 11/25/2014 9:21:00 AM
 Hi Alexsander,
 Yes, we're aware of that. It is very likely that the F# compiler (including the open edition, the Visual F# compiler and the Visual F# IDE Tools) will eventually be rebuilt on top of the FCS component.
 This is a non-trivial task for Visual F# Tools since there are very, very high stability requirements. Also, the Visual F# Tools splits the compiler DLLs into two separate instances (one for compilation, and one smaller part for the language service, to reduce memory footprint of binary sizes a little - an awkward split not needed by other tooling). We'll get there, but we don't want to block all of this: http://fsharp.github.io/FSharp.Compiler.Service/#Projects-using-the-F-Compiler-Services.
@@ -52,11 +56,12 @@ Cheers!
 Don
 p.s. Some of your criticisms of the F# compiler code are also valid - there is a lot we've been unable to cleanup because we were using a "source drop" model of open source. Applying cleanup is getting easier. And yes, there is lots to do :)
 
-## Comment by Enrico Sada on 11/17/2015 3:03:00 AM
 
+## Comment by Enrico Sada on 11/17/2015 3:03:00 AM
 work started, both in fsharp compiler service and visualfsharp
 ref https://github.com/fsharp/FSharp.Compiler.Service/issues/266
 
-## Comment by Don Syme on 2/3/2016 1:46:00 PM
 
+## Comment by Don Syme on 2/3/2016 1:46:00 PM
 This is an FSharp.Compiler.Service feature, as Enrico points out work has started towards its implementation
+

@@ -10,12 +10,15 @@ The idea here is to add support for labeled arguments in curried functions. This
 This feature is supported already in ML languages like OCaml or FB Reason.
 
 
-## Comment by Alexei Odeychuk on 5/21/2016 5:03:00 AM
+------------------------
+## Comments
 
+
+## Comment by Alexei Odeychuk on 5/21/2016 5:03:00 AM
 Bartosz, please clarify your suggestion by introducing an example of new syntax in a comment
 
-## Comment by Richard Minerich on 5/27/2016 4:38:00 PM
 
+## Comment by Richard Minerich on 5/27/2016 4:38:00 PM
 This could be neat, but I think it would at the very least require a new non-conflicting operator something like:
 let f x y = x + y
 let f' = f (y ~ 1)
@@ -23,8 +26,8 @@ or a whole new spin on partial application, you could make it look kind of like 
 let f' = (f with y = 1)
 Not really in love with any of this syntax, just throwing it out there.
 
-## Comment by Jared Hester on 6/27/2016 3:56:00 AM
 
+## Comment by Jared Hester on 6/27/2016 3:56:00 AM
 OCaml does this like
 -------
 let rec range ~first:a ~last:b =
@@ -72,3 +75,4 @@ be used for the optional arg.
 Intellisense could also aid in making it clear which argument a value is being used to satisfy
 [1] https://ocaml.org/learn/tutorials/labels.html#Usingfooinafunctioncall
 [2] https://facebook.github.io/reason/#diving-deeper-curried-functions
+

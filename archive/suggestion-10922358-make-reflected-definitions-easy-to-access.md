@@ -15,12 +15,17 @@ instead of ugly code like this (note how I had to write the method name as a str
 let fooType = foo.GetType().DeclaringType.GetMethod("foo")
 let fooExpr = Expr.TryGetReflectedDefinition(fooType)
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 See comment from Don Syme
 
+------------------------
+## Comments
+
 
 ## Comment by Don Syme on 2/3/2016 2:55:00 PM
-
 Using a quotation <@ foo @> will make it easier to accurately get the method name.
 I will decline this: the existing mechanism seems good enough considering this is relatively rare.
+

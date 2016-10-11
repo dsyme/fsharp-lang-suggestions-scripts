@@ -8,3 +8,7 @@
 
 Please support TypeProviders providing nested types with static parameters. This would be valuable for metaprogramming similar to how static parameterized method support is valuable compared to the language without them. It would allow a fluent-like construction of types and partially make up for the non-variable length static parameters on a single type. See https://github.com/fsharp/FSharpLangDesign/issues/88
 
+
+------------------------
+## Comments
+

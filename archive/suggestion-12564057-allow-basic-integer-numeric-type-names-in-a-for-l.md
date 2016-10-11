@@ -13,3 +13,7 @@ let ourList = [ for i in byte -> i ] // ourList : byte list
 for i in sbyte do printf "%A" i
 I think it's a good idea to allow basic integer numeric type names in for loops just as in Ada 2012 and treat such types by the F# compiler as types compatible with IEnumerable and having a GetEnumerator method (even if they don't). It will make the F# syntax more expressive and bolster F# competitive strengths in writing clear and concise code.
 
+
+------------------------
+## Comments
+

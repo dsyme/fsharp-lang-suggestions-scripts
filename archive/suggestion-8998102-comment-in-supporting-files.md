@@ -11,12 +11,17 @@ Additionally, a transitive, find inherited comment would be quite useful too. VS
 Perhaps a code merge as a part of the build process would suffice.
 The idea of sprinkling comments in code for automatic document generation, although useful, seems back-to-front for an actively maintained code base (assuming good tooling support). It'd be nice to separate things out and to have things flowing in the reverse direction too.
 
+
+
 ## Response by fslang-admin on 2/3/2016 12:00:00 AM
 
 zero votes, declined
 
+------------------------
+## Comments
+
 
 ## Comment by luketopia on 7/27/2015 8:18:00 PM
-
 Have you looked into F# signature files? These allow you to have your API comments in a separate file from your implementation, just as you described.
 https://msdn.microsoft.com/en-us/library/dd233196.aspx
+

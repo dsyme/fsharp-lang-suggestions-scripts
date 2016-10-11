@@ -2,6 +2,8 @@
 open System
 open System.IO
 open Newtonsoft.Json
+open Github
+open Templating
 
 module Program =
     Directory.SetCurrentDirectory __SOURCE_DIRECTORY__
@@ -22,12 +24,35 @@ module Program =
     let ideasFromJsonFile jsonfile =
         readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
         
-    let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
+
 
     let generateArchiveFiles jsonfile =
         let ideas = ideasFromJsonFile jsonfile 
         ideas |> reformatData "../archive"
         printfn "Generated %i archive files" ideas.Length
+
+
+    let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
+
+
+    let testSession (repoName:string) = async {
+        let! client = githubLogin userPasswordCreds
+
+        let! repo = setupTestRepo repoName client 
+        // create deafault labels
+        let! _ = standardLabels repo.Id client
+
+        let ideas = ideasFromJsonFile jsonfile |> List.take 5
+        let fileNames = ideas |> List.map (fun i -> ideaFileName i + ".md")
+
+        let! _ = createRepoIssues client repo.Id ideas
+
+        Threading.Thread.Sleep 5000
+
+        //let! _ = retry 5 <| uploadFiles client repo.Id fileNames
+        let! _ = retry 5 <| closeLabeledIssues client repo.Id ["declined";"completed"]
+        return ()
+    }
 
 
     [<EntryPoint>]

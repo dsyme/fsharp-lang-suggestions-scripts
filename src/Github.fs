@@ -142,11 +142,8 @@ module Github =
 
 
     //let loadIssuesInto getCredentials owner repoName ideas  = async {
-    let createRepoIssues (client:IGitHubClient) owner repoName ideas  = async {
-        // create a clean repository to store the issues
-        let! repo = setupTestRepo repoName client
-
-        return! ideas |> List.map (ideaToIssue repo.Id client) |> Async.Parallel
+    let createRepoIssues (client:IGitHubClient) repoId ideas  = async {
+        return! ideas |> List.map (ideaToIssue repoId client) |> Async.Parallel
     }
 
 
@@ -162,4 +159,68 @@ module Github =
         return! closeSqs |> Seq.map (fun i -> closeIssue repoId i.Id client) |> Async.Parallel
     }
 
+
+    /// A version of 'reraise' that can work inside computation expressions
+    let private captureAndReraise ex =
+        System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(ex).Throw()
+        Unchecked.defaultof<_>
+
+    let private isRunningOnMono = System.Type.GetType "Mono.Runtime" <> null
+
+    /// Retry the Octokit action count times
+    let rec internal retry count asyncF =
+        // This retry logic causes an exception on Mono:
+        // https://github.com/fsharp/fsharp/issues/440
+        if isRunningOnMono then asyncF else async {
+            try  return! asyncF
+            with ex ->
+            return! 
+                match (ex, ex.InnerException) with
+                | (:? AggregateException, (:? AuthorizationException as ex)) -> captureAndReraise ex
+                | _ when count > 0 -> retry (count - 1) asyncF
+                | (ex, _) -> captureAndReraise ex
+        }
+//
+//    /// Retry the Octokit action count times after input succeed
+//    let private retryWithArg count input asycnF = async {
+//        let! choice = input |> Async.Catch
+//        match choice with
+//        | Choice1Of2 input' ->
+//            return! (asycnF input') |> retry count
+//        | Choice2Of2 ex ->
+//            return captureAndReraise ex
+//    }
+
+
+//        retryWithArg 5 draft <| fun draft' -> async {
+//            let fi = FileInfo(fileName)
+//            let archiveContents = File.OpenRead(fi.FullName)
+//            let assetUpload = new ReleaseAssetUpload(fi.Name,"application/octet-stream",archiveContents,Nullable<TimeSpan>())
+//            let! asset = Async.AwaitTask <| draft'.Client.Repository.Release.UploadAsset(draft'.DraftRelease, assetUpload)
+//            printfn "Uploaded %s" asset.Name
+//            return draft'
+//
+//        System.IO.File.ReadAllText
+//        let! draft' = draft
+//        let draftW = async { return draft' }
+//        let! _ = Async.Parallel [for f in filenames -> uploadFile f draftW ]
+//        return draft'
+
+
+    let uploadFile (client:IGitHubClient) repoId (filepath:string) (contents:string) = async {
+        let contents = 
+            Text.Encoding.UTF8.GetBytes contents |> Convert.ToBase64String
+        let request = CreateFileRequest(sprintf "created %s" filepath, contents, "master" )
+        return! client.Repository.Content.CreateFile(repoId ,filepath, request)|> Async.AwaitTask
+    }
+
+
+    let uploadFiles (client:IGitHubClient) repoId filenames = async {        
+        return! Async.Parallel [
+            for file in filenames -> 
+                let repopath = Path.Combine("archive",file)
+                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
+                uploadFile  client repoId repopath (File.ReadAllText diskpath)
+        ]
+    }
 

@@ -8,10 +8,14 @@ open FslangMigration.Program
 open FslangMigration.Templating
 
  
-let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
+//let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
 //Scrape.scrapeData jsonfile
 
-Program.generateArchiveFiles jsonfile
+//Program.generateArchiveFiles jsonfile
+
+
+testSession "issueTestRepo" |> Async.RunSynchronously
+;;
 //
 //let data = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
 //let sample = data |> List.take 7

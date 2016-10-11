@@ -27,7 +27,7 @@ module Github =
     }
 
     let createLabel repoId label colorHex (client : IGitHubClient) = async {
-        let! labels = client.Issue.Labels.GetAllForRepository(repoId) |> Async.AwaitTask
+        let! labels = client.Issue.Labels.GetAllForRepository repoId |> Async.AwaitTask
         match labels |> Seq.tryFind (fun l -> l.Name.Equals(label, StringComparison.OrdinalIgnoreCase)) with
         | Some label -> return label
         | None ->
@@ -61,8 +61,8 @@ module Github =
     let standardLabels repoId (client : IGitHubClient) = async {
         return!
             labels |> List.map (fun (name,hex) ->
-                let newLabel = NewLabel(name, hex)
-                client.Issue.Labels.Create(repoId, newLabel) |> Async.AwaitTask
+                let newLabel = NewLabel (name, hex)
+                client.Issue.Labels.Create (repoId, newLabel) |> Async.AwaitTask
             )
             |> Async.Parallel
     }

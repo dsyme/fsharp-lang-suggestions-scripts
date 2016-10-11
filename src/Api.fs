@@ -151,7 +151,7 @@ module API =
     let client = UserVoice.Client("fslang", apiKey, apiSecret).LoginAsOwner()
     
     let toIdea (sugg : IdeasResponse.Suggestion) comments : Idea =
-        printfn "%O" (sugg.Response.JsonValue.ToString())
+        printfn "%s" (sugg.Response.JsonValue.ToString())
         { Number = string sugg.Id
           Submitter = sugg.Creator.Name
           Submitted = sugg.CreatedAt

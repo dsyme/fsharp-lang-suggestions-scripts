@@ -1,10 +1,10 @@
 # Idea 7119363: An attribute enforcing usage (in F# code) of named parameters at callsite #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 2/19/2015 12:00:00 AM
+### Submitted by Gauthier Segay on 2/19/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 In some code, it's critical to have function/methods called with parameter names at call site, for readability reasons, but also for correctness.
 I would like F# to enforce this using an attribute for example: [<EnforceNamedParametersAtCallSite>]

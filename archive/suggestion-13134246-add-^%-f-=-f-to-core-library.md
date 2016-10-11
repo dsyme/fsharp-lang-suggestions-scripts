@@ -1,10 +1,10 @@
 # Idea 13134246: Add (^%) f = f to core library #
 
-## Status : open
+### Status : open
 
-## Submitted by Dax Fohl on 3/25/2016 12:00:00 AM
+### Submitted by Dax Fohl on 3/25/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 This allows method chaining with sequences etc need no parens:
 http://stackoverflow.com/questions/36220283/anything-else-similar-to-haskells-in-f-other-than

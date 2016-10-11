@@ -1,10 +1,10 @@
 # Idea 5664786: dynamic -keyword support for F# #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Tuomas Hietanen on 3/21/2014 12:00:00 AM
+### Submitted by Tuomas Hietanen on 3/21/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 There are times that e.g. F# value restriction could be solved with runtime dynamic code. C# has dynamic.
 I wish F# could use dynamic as it uses mutable:
@@ -17,7 +17,8 @@ And it would also allow more dynamic actor/agent-model: how to upgrade agent's f
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declining per the comments – the combination of the “?” operator, the “obj” type is sufficient for F#, plus the FSharp.Dynamic library is a good example of how to achieve this in purely library code.
 Don Syme, BDFL F# Language/Library Evolution

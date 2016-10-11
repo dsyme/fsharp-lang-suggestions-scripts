@@ -1,10 +1,10 @@
 # Idea 12533019: Allow function names to end with a question mark. #
 
-## Status : open
+### Status : open
 
-## Submitted by Jeff Heon on 3/1/2016 12:00:00 AM
+### Submitted by Jeff Heon on 3/1/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I find it really elegant in some language where predicate functions can end with a question mark.
 Consider `odd? 5` vs `isOdd 5` or `areRelated a b` vs `related? a b`

@@ -1,10 +1,10 @@
 # Idea 6603685: Parameterized and First Class Modules #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 10/23/2014 12:00:00 AM
+### Submitted by Jared Hester on 10/23/2014 12:00:00 AM
 
-## 55 votes
+### 55 votes
 
 Extend the F# module system to allow paramaterization via functors (that's why the keyword is reserved right?)
 First class modules where a module declared with an abbreviation/alias is equal to a module declared with the original module name (unlike OCaml)
@@ -15,7 +15,8 @@ http://www.mpi-sws.org/~rossberg/papers/Rossberg,%20Russo,%20Dreyer%20-%20F-ing%
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declining per my comment below,
 Don Syme, F# Language Evolution

@@ -1,10 +1,10 @@
 # Idea 6137978: Better inlining analysis and heuristic algorithms #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Nick Palladinos on 7/5/2014 12:00:00 AM
+### Submitted by Nick Palladinos on 7/5/2014 12:00:00 AM
 
-## 22 votes
+### 22 votes
 
 It would be great if the compiler can inline away CPS compositions like the following.
 let inline f k = (fun x -> k (x + 1))
@@ -15,7 +15,8 @@ In general better inlining analysis and heuristic algorithms
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 This is automatically approved – definitely something we want to do – but not individually tracked individually here. Let’s do it… Please submit your PRs for improved inlining :)
 Don Syme, F# Language Evolution

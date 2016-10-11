@@ -1,10 +1,10 @@
 # Idea 6686290: Avoid boxing when comparing value types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Chapman on 11/8/2014 12:00:00 AM
+### Submitted by Greg Chapman on 11/8/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 When emitting code for comparison operators, the F# compiler already special-cases numeric types. I suggest that, when other value types have the appropriate operator, code is emitted to use it. I.e., the compiler should produce the equivalent of:
 let inline (<=) (x: ^a when ^a: struct) (y: ^a) =
@@ -12,7 +12,8 @@ let inline (<=) (x: ^a when ^a: struct) (y: ^a) =
 
 
 
-## Response by fslang-admin on 11/10/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/10/2014 12:00:00 AM
 
 This is effectively a duplicate of [/archive/suggestion-6098490-add-a-module-of-efficient-non-structural-equality](/archive/suggestion-6098490-add-a-module-of-efficient-non-structural-equality.md)
 Don Syme, F# Language Evolution

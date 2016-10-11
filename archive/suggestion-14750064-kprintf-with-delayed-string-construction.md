@@ -1,10 +1,10 @@
 # Idea 14750064: kprintf with delayed string construction #
 
-## Status : open
+### Status : open
 
-## Submitted by mk on 6/8/2016 12:00:00 AM
+### Submitted by mk on 6/8/2016 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Currently kprintf and friends take in a continuation function and a StringFormat and return a curried function that when applied builds the string.
 It would be nice for logging frameworks to have an overload where the continuation does not build the string rather provides a delayed function to build the string.

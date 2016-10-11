@@ -1,17 +1,18 @@
 # Idea 6236793: Allow rational units #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Johann Dirry on 7/31/2014 12:00:00 AM
+### Submitted by Johann Dirry on 7/31/2014 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 In physics and electronics, units with rational exponents are very common, specially in the CGS system. Using it is more natural and makes many formulas easier and the computations more efficient.
 Further, rational exponents are also unavoidable without changing the unit system. They are less common in the SI system, but ie. quantities with units like Watts^1/2 are common in electrical engineering.
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 Completed for F# 4.0, see https://visualfsharp.codeplex.com/SourceControl/network/forks/andrewjkennedy/fsharpcontrib/contribution/7632.
 Don Syme, F# Language and Core Library Evolution

@@ -1,17 +1,18 @@
 # Idea 6405857: Add new expression like ForIntegerRangeLoop but with step value #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alfonso Garcia-Caro on 9/7/2014 12:00:00 AM
+### Submitted by Alfonso Garcia-Caro on 9/7/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I guess there is a good reason that Expr.ForIntegerRangeLoop doesn't have a step argument, but I wonder why downto loops are not allowed in quotations. This could be also useful to optimize loops like:
 for i in 0 .. 2 .. 10 do
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 This suggestion is being declined for FSharp.Core itself because the primitive quotation forms supported are “fixed” and won’t be changed for backwards compatibility reasons.
 However it is possible to add new Expr.* and DerivedPatterns.* functions and/or active patterns to create and/or detect additional derived constructs.

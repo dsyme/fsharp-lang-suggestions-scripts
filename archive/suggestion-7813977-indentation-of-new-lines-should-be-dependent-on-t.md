@@ -1,10 +1,10 @@
 # Idea 7813977: Indentation of new lines should be dependent on the *start* of the previous line, not the end of it #
 
-## Status : declined
+### Status : declined
 
-## Submitted by George on 5/4/2015 12:00:00 AM
+### Submitted by George on 5/4/2015 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 The following layout requires that content after the 'View<' be indented beyond the endding '<' on the following lines which makes the level of indentation dependent on the type name. Which is silly.
 [<AbstractClass>]
@@ -19,7 +19,8 @@ member this.Window = window
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing in favour of [/archive/suggestion-9156844-relax-some-of-the-indentation-rules](/archive/suggestion-9156844-relax-some-of-the-indentation-rules.md) and linking back here
 

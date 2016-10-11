@@ -1,10 +1,10 @@
 # Idea 5670137: #package directive to import NuGet packages in F# interactive #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 248 votes
+### 248 votes
 
 It would be quite useful for F# interactive to support a #package directive to allow NuGet packages to be downloaded from within the REPL. I think it would be best if this directive simply downloaded the package, unpacked it, and automatically included (#I) the correct folder based on the framework version F# interactive is running under (e.g., net45). If a package doesn't include assemblies for the specific framework version F# interactive is using, we'd automatically include the folder for the latest framework version which is compatible; e.g., if running on .NET 4.5 and a package only includes a 'net40' folder, we'd include (#I) that folder. I believe this behavior is consistent with how NuGet currently works when referencing packages from a project, e.g., in Visual Studio.
 #package should not, however, automatically reference (#r) the assemblies included in the package, in case you only want to reference some of them.

@@ -1,10 +1,10 @@
 # Idea 6147144: Allow single case unions to be compiled as structs #
 
-## Status : completed
+### Status : completed
 
-## Submitted by exercitus vir on 7/8/2014 12:00:00 AM
+### Submitted by exercitus vir on 7/8/2014 12:00:00 AM
 
-## 37 votes
+### 37 votes
 
 Single case unions are often used to define domain types that just wrap another primitive type. See http://fsharpforfunandprofit.com/posts/designing-with-types-single-case-dus/ for examples.
 It would be great if we could mark these single case unions "inline" for optimized code generation. An "inline" single case union would not be converted to a class with a single "Item" property like an ordinary single case union, but instead the wrapped "Item" of the single case union would be passed directly (as is).
@@ -13,7 +13,8 @@ This would avoid the overhead of instantiating a class with the sole purpose of 
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed
 RFC here with links to implementation https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1014-struct-unions-single-case.md

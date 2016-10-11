@@ -1,16 +1,17 @@
 # Idea 5666371: F# 3.0 query expression with pipelined style #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 3/22/2014 12:00:00 AM
+### Submitted by Anonymous on 3/22/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2715068-f-3-0-query-expression-with-pipelined-style
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thank for the suggestion. Declined per my comment, please take a look
 Thanks

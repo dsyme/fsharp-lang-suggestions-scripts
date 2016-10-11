@@ -1,10 +1,10 @@
 # Idea 7006663: Revise the reserved keyword list (e.g. remove "method") #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Tomas Petricek on 1/24/2015 12:00:00 AM
+### Submitted by Tomas Petricek on 1/24/2015 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 The keyword "method" is currently reserved for future use.
 In many web programming scenarios "method" refers to the HTTP method (GET/POST) and the fact that you currently have to escape the keyword and write ``method`` is annoying. Calling function parameter "meth" instead works (though some people may find this an unfortunate naming ;-)), but it is against F# coding guidelines. And furthermore, this only helps when you're defining the API, but sometimes you need to consume C# API that already has "method" as optional argument.
@@ -12,7 +12,8 @@ I think that the F# community is quite happy with using the name "member" for de
 
 
 
-## Response by fslang-admin on 6/24/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/24/2016 12:00:00 AM
 
 Agreed the list needs revision. Marking as “approved in principle”.
 RFC at https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1016-unreserve-keywords.md

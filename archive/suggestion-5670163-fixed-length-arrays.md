@@ -1,17 +1,18 @@
 # Idea 5670163: Fixed Length Arrays #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Will Smith on 3/23/2014 12:00:00 AM
+### Submitted by Will Smith on 3/23/2014 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 Originally posted here: https://groups.google.com/forum/#!topic/fsharp-opensource/pI73-GkoxbY
 The ability to have fixed arrays would most definitely make interop easier, instead of having to calculate the size by hand and just hope for the best. I have been burned by calculating everything by hand a ton.
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing since it appears this is possible in F# – but “fixed” is missing, which is this approved issue: [/archive/suggestion-5670163-fixed-length-arrays](/archive/suggestion-5670163-fixed-length-arrays.md)
 

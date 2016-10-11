@@ -1,10 +1,10 @@
 # Idea 5683305: Allow the syntax 1<=x<10 #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jon Harrop on 3/26/2014 12:00:00 AM
+### Submitted by Jon Harrop on 3/26/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 This traditional mathematical notation is only allowed in a few elite programming languages. I would like F# to be one of them!
 At the moment you have to write 1<=x && x<10.
@@ -12,7 +12,8 @@ Of course, what I really want is 1≤x<10 but we've got to start somewhere. ;-)
 
 
 
-## Response by fslang-admin on 6/25/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/25/2014 12:00:00 AM
 
 This is a duplicate of [/archive/suggestion-5726029-support-conjunctional-operator](/archive/suggestion-5726029-support-conjunctional-operator.md)
 

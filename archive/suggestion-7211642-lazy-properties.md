@@ -1,17 +1,18 @@
 # Idea 7211642: Lazy properties #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Rosenbaum on 3/14/2015 12:00:00 AM
+### Submitted by Greg Rosenbaum on 3/14/2015 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 A big problem of records and discriminated unions is that they cannot store computed ("memoized") data. For example, you cannot have a linked list store its own length without having it as a constructor parameter (which has obvious problems). The ability to cache computed data is a big advantage of immutable objects, because the data will never change and thus never needs to be recalculated.
 A very simple and elegant solution to this problem is having lazy properties. A lazy property is backed by lazy<'a> field behind the scenes. Here is an example of syntax: https://gist.github.com/Springwight/ae423184487a1d6fc831
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

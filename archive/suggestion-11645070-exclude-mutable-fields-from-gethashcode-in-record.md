@@ -1,10 +1,10 @@
 # Idea 11645070: Exclude mutable fields from GetHashCode in record types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by amazingant on 1/29/2016 12:00:00 AM
+### Submitted by amazingant on 1/29/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 The current default implementation for GetHashCode on record types includes all fields, including those marked as mutable. While this certainly helps in testing structural equality, this violates the MSDN documentation's recommendations for how to implement the function (seen at https://msdn.microsoft.com/en-us/library/system.object.gethashcode%28v=vs.110%29.aspx under "Notes to Inheritors").
 While this is not typically an issue, as records are normally used as immutable data types, it becomes an issue in cases where the hash codes are relied upon. As an example, if a collection of record values is provided as the ItemsSource for a WPF ListView control (even stored in an ObservableCollection<T>), modifying mutable fields while elements in the list are selected renders those elements impossible to deselect.
@@ -13,7 +13,8 @@ Originally posted on GitHub as an issue, as this behavior breaks a standard WPF 
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per my comment below, though an off-by-default warning PR would be accepted.
 Don Syme, F# Language Evolution

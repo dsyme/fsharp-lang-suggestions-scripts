@@ -1,10 +1,10 @@
 # Idea 6997189: Allow us to bind names multiple times in a pattern match #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Richard Gibson on 1/22/2015 12:00:00 AM
+### Submitted by Richard Gibson on 1/22/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Why not allow us to use the same name multiple times in a pattern? I find myself writing code like this an awful lot:
 match a with
@@ -18,7 +18,8 @@ match a with
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 This was considered in F# 1.0-2.0 but was not included.
 Among other things, the various notions of equality in F# (and indeed any programming language) are sufficiently subtle that it is better if uses of equality checks are made explicit at some point in the code.

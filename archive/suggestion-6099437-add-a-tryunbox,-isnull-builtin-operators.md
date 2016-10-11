@@ -1,10 +1,10 @@
 # Idea 6099437: Add a tryUnbox, isNull builtin operators #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Dave Thomas on 6/25/2014 12:00:00 AM
+### Submitted by Dave Thomas on 6/25/2014 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 Add builtin functions:
 tryUnbox : obj -> 'T option
@@ -13,7 +13,8 @@ The first is an unbox operation which if successful would return Some<'a> on a s
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 Completed for F# 4.0, see https://visualfsharp.codeplex.com/SourceControl/network/forks/dsyme/cleanup/contribution/7672
 Don Syme, F# Language/Library Evolution

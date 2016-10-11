@@ -1,10 +1,10 @@
 # Idea 6023655: Allow passing other types of parameters to type providers #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Loic Denuziere on 6/8/2014 12:00:00 AM
+### Submitted by Loic Denuziere on 6/8/2014 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 It would be very useful to be able to pass lists, arrays, options, tuples as static parameters to type providers. Something like this:
 type Foo = FooProvider<files = ["file1.txt"; "file2.txt"]>
@@ -12,7 +12,8 @@ Note that this is different from [/archive/suggestion-5675977-allow-type-provide
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Declined per my comment below, in favour of two other suggestions
 Thanks

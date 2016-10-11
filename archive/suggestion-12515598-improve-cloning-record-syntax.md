@@ -1,10 +1,10 @@
 # Idea 12515598: Improve cloning record syntax #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 2/29/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 2/29/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 It would be great and comfortable to write: { Record with field1 = x and field2 = y and field3 = z } instead of {{{ Record with field1 = x } with field2 = y } with field3 = z }.
 I suggest to make it possible the alternative syntax { ... with ... and ... and ... and so on } for cloning records with multiple fields updated at once, and mark the current syntax {{{{ ... with ... } with ... } with ...} with ... so on } as obsolete in the language specification, but permissible for backward compatibility with the existing codebase.
@@ -13,7 +13,8 @@ Syntax "with ... and ..." here is mirroring the existing syntax for class proper
 
 
 
-## Response by fslang-admin on 2/29/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/29/2016 12:00:00 AM
 
 See reply above – use a semicolon
 

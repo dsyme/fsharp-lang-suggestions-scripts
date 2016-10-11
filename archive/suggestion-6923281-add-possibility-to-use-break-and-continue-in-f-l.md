@@ -1,10 +1,10 @@
 # Idea 6923281: Add possibility to use break and continue in f# loops. And do while loop #
 
-## Status : open
+### Status : open
 
-## Submitted by Vladimir on 1/5/2015 12:00:00 AM
+### Submitted by Vladimir on 1/5/2015 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 It very often looks better than recursion, and it would be wonderful to have this possibility
 

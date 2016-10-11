@@ -1,16 +1,17 @@
 # Idea 5663721: Add support for "fixed" #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 3/21/2014 12:00:00 AM
+### Submitted by Don Syme on 3/21/2014 12:00:00 AM
 
-## 45 votes
+### 45 votes
 
 F# 3.x doesn’t support “fixed” local variables in the style of C#. This is a missing hole in our native interop story and has been a user request. It is reasonable to lift this limitation if a quality implementation is provided.
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed. The RFC is at https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1015-support-for-fixed.md
 Don Syme, F# Language and Core Library Evolution

@@ -1,10 +1,10 @@
 # Idea 16092382: Add ofObj to Seq and Array #
 
-## Status : open
+### Status : open
 
-## Submitted by Mark Seemann on 9/15/2016 12:00:00 AM
+### Submitted by Mark Seemann on 9/15/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 The Option module defines Option.ofObj which converts a potential nullable value to an option.
 Collections (Seq and array) can be null in interop scenarios, but it'd often be natural to interpret a null collection as an empty collection.

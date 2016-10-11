@@ -1,10 +1,10 @@
 # Idea 5674080: Allow units of measure on structs without making them generic #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Braden Evans on 3/24/2014 12:00:00 AM
+### Submitted by Braden Evans on 3/24/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Currently you can create structs with a measure type argument like so:
 [<Struct>]
@@ -17,7 +17,8 @@ Since units of measure are erased at compile time and the struct does not actual
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 As far as I can tell the underlying struct type is not generic (in compiled code). Is there another issue lurking here?

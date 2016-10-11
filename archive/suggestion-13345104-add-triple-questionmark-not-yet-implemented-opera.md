@@ -1,10 +1,10 @@
 # Idea 13345104: Add triple-questionmark not yet implemented operator (???) from Scala #
 
-## Status : open
+### Status : open
 
-## Submitted by Anonymous on 4/7/2016 12:00:00 AM
+### Submitted by Anonymous on 4/7/2016 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 In Scala, there is an operator `???`, which is used as a "Convenient as a placeholder for a missing right-hand-side of a method."
 This is defined as follows:

@@ -1,10 +1,10 @@
 # Idea 6103054: add Option.ofNull to help remove nulls #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Cameron Taggart on 6/26/2014 12:00:00 AM
+### Submitted by Cameron Taggart on 6/26/2014 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 Many APIs and types support the use of null. To help remove null and promote the use of option, It would be good to add a standard function that can be used to wrap nullable types.
 May be something like:
@@ -16,7 +16,8 @@ http://stackoverflow.com/questions/24418816/in-the-f-api-is-there-something-like
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 Completed for F# 4.0, see https://visualfsharp.codeplex.com/SourceControl/network/forks/dsyme/cleanup/contribution/7672
 Don Syme, F# Language/Library Evolution

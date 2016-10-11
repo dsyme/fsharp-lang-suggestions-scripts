@@ -1,10 +1,10 @@
 # Idea 6002107: Add string interpolation to println syntax (from Swift) #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Robert Jeppesen on 6/2/2014 12:00:00 AM
+### Submitted by Robert Jeppesen on 6/2/2014 12:00:00 AM
 
-## 179 votes
+### 179 votes
 
 The new language from Apple, Swift has a really nice syntax for println:
 http://en.wikipedia.org/wiki/Swift_(programming_language)
@@ -20,7 +20,8 @@ Naturally there would be compiler errors if name does not exist.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle (and has been for a while), please see RFC FS-1001 https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1001-StringInterpolation.md
 Don Syme, F# Language Evolution

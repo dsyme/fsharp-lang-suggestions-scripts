@@ -1,17 +1,18 @@
 # Idea 6586873: Bottom type #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Janek Paw on 10/20/2014 12:00:00 AM
+### Submitted by Janek Paw on 10/20/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Bottom type
 Bottom type for all types. Allows you to implement usefull functions like unimplemented (see scala ???)
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment below.
 

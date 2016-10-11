@@ -1,10 +1,10 @@
 # Idea 5688398: Allow Unicode symbols to be used as operators #
 
-## Status : open
+### Status : open
 
-## Submitted by Jerold Haas on 3/27/2014 12:00:00 AM
+### Submitted by Jerold Haas on 3/27/2014 12:00:00 AM
 
-## 76 votes
+### 76 votes
 
 Suggestion moved from https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2314078-allow-unicode-symbols-to-be-used-as-operators
 It would be great to define mathematical operators (e.g. ∀, ∑, ∩) in F#, and be able to use other Unicode symbols (such as arrows) in operators as well. So instead of saying

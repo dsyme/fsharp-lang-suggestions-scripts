@@ -1,10 +1,10 @@
 # Idea 5666097: Remove the need for an arbitrary self-identifier (e.g. x) when declaring a member #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
+### Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 Being able to use any word or letter as self-identifier makes the code inconsistent quite easily.
 member x.MethodA() = ...
@@ -17,7 +17,8 @@ To call any other member from inside the method, we can do it the same way, eith
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, though declined per my comment below.
 Best regards

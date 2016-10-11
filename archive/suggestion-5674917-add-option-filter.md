@@ -1,10 +1,10 @@
 # Idea 5674917: Add Option.filter #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Mark Seemann on 3/24/2014 12:00:00 AM
+### Submitted by Mark Seemann on 3/24/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 It may be that I'm missing something obvious, but doesn't the Option module lack a filter function?
 let x1 = Some 1
@@ -14,7 +14,8 @@ let y2 = x2 |> Option.filter (fun i -> i = 3) // Returns Some 3
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 This is approved for F# 4.0+
 An implementation and testing has been submitted to the “fsharp4” branch of visualfsharp.codeplex.com here: http://visualfsharp.codeplex.com/SourceControl/network/forks/ploeh/optionfilter/contribution/7011

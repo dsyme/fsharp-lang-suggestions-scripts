@@ -1,10 +1,10 @@
 # Idea 5704447: Introduce public Range types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Eirik George Tsarpalis on 3/31/2014 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 3/31/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Range types exist in F#, as they manifest themselves in computation expression for loops:
 for i in 1 .. 100 do ()
@@ -15,7 +15,8 @@ Making Range types public would remedy this issue.
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined, per my comment, thanks!
 Don Syme, F# Language Evolution

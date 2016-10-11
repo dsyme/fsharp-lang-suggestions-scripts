@@ -1,17 +1,18 @@
 # Idea 9969741: Allow type providers to create and provide aliased types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Ben Lappin on 9/29/2015 12:00:00 AM
+### Submitted by Ben Lappin on 9/29/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 With SqlEnumProvider, unless I create a CLIEnum, the provided type is a module with members of the value's type (e.g. string).
 It would be nice to be able to provide a type alias for the members that would be visible from other parts of the program to make clear the association with the provided type (e.g. provided type is named "EmployeeCodes", and the members are strings with aliased type "EmployeeCode").
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Closing because this is already possible today in F# 3.0 and beyond, per my comment below
 Thanks for the suggestion.

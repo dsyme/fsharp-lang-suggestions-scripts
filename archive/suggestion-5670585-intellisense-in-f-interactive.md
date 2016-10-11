@@ -1,16 +1,17 @@
 # Idea 5670585: Intellisense in F# Interactive #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 20 votes
+### 20 votes
 
 F# Interactive can be pretty handy for prototyping code and one-off exploratory data coding. At the moment it seems like many people use it via writing code in an F# script file (e.g., in Visual Studio) and using the "Send to F# Interactive" command to evaluate the code, because F# Interactive doesn't support Intellisense. If F# Interactive did support Intellisense, it'd be much easier to stay within the REPL instead of jumping back and forth between the REPL and script files.
 
 
 
-## Response by fslang-admin on 3/27/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/27/2014 12:00:00 AM
 
 This suggestion belongs in Visual Studio user voice (for the Visual F# Tools) or the github issues for the Visual F# Power Tools. This user voice is for the F# language itself.
 

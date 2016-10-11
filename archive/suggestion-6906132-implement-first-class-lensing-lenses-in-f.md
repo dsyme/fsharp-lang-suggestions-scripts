@@ -1,10 +1,10 @@
 # Idea 6906132: Implement first-class lensing / lenses in F# #
 
-## Status : open
+### Status : open
 
-## Submitted by Bryan Edds on 12/31/2014 12:00:00 AM
+### Submitted by Bryan Edds on 12/31/2014 12:00:00 AM
 
-## 168 votes
+### 168 votes
 
 When working with complex state structures, functional programming is, without a great deal of additional tooling (tooling that does not satisfactorily exist in F#), highly inconvenient, verbose, and even error-prone. These problems are so pronounced that many cite them as a reason to label functional programming itself as inapplicable to the domains within which complex state structures are inherent!
 As functional programmers, we believe otherwise, and many even believe that it is in the domain of dealing with complex state artifacts that functional programming is especially beneficial and necessary! However, with such weak syntactic constructs such as these -

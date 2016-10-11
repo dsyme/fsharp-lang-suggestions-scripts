@@ -1,10 +1,10 @@
 # Idea 5663202: Allow to define types at expression scopes #
 
-## Status : open
+### Status : open
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 36 votes
+### 36 votes
 
 The suggestion is to allow "type X = ..." in an expression, e.g.
 let f () =

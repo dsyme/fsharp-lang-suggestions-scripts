@@ -1,10 +1,10 @@
 # Idea 9514506: Relax inference for array/list/seq literals with #subtypes #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Loic Denuziere on 8/27/2015 12:00:00 AM
+### Submitted by Loic Denuziere on 8/27/2015 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 See here for some context: http://websharper.com/question/80117/allow-doc-element-to-take-seq-doc-children
 Currently, if the context decides that a given array/list/seq literal has type seq<#T> (for example if it is passed to a function that expects that), then the exact subtype of T is decided by the first element of the sequence, and if any subsequent element is more general then it is a type error. It would be nice if the type could be generalized instead.
@@ -17,7 +17,8 @@ feed [ Dog(); Animal() ]
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Per my comment, the example works if you drop the use of # flexibility in this case
 Don Syme

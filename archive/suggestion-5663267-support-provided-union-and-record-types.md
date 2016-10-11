@@ -1,16 +1,17 @@
 # Idea 5663267: Support Provided Union and Record Types #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 108 votes
-
-
+### 108 votes
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+
+
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as “approved in principle” (it will show as “planned”).
 However, in reality it is both relatively low priority and relatively hard to implement, so I don’t expect this to happen any time soon.

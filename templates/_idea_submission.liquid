@@ -1,16 +1,17 @@
 # Idea {{ idea.Number }}: {{ idea.Title }} #
 
-## Status : {{ idea.Status }}
+### Status : {{ idea.Status }}
 
-## Submitted by {{ idea.Submitter }} on {{ idea.Submitted }}
+### Submitted by {{ idea.Submitter }} on {{ idea.Submitted }}
 
-## {{ idea.Votes }} votes
+### {{ idea.Votes }} votes
 
 {{ idea.Text }}
 
 {% if idea.Response.Exists == true %}
 
-## Response by fslang-admin on {{ idea.Response.Responded }}
+## Response 
+### by fslang-admin on {{ idea.Response.Responded }}
 
 {{ idea.Response.Text }}
 {% endif %}

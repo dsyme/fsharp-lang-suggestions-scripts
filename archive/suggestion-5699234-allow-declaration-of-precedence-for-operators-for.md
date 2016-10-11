@@ -1,10 +1,10 @@
 # Idea 5699234: Allow declaration of precedence for operators for writing internal DSLs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by mikero on 3/29/2014 12:00:00 AM
+### Submitted by mikero on 3/29/2014 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 F# has great internals for DSLs, such as DU's and pattern-matching, but the operator definition rules are restrictive and baroque.
 It would be great to be able to define operators with user-defined names, arity, fixity and precedence without restriction on what characters are in the operator for given operator class. Syntax modules with operator definitions (not behaviors) could be explicitly referenced.
@@ -22,7 +22,8 @@ I think I understand the bag of worms here, but it's worth it to me over having 
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment as part of house-keeping of old suggestions that have relatively few votes.
 That said I understand the use cases here. and that internal DSLs are sometimes unsatisfactory in F#. But equally, having parsing be free of scoped declarations is a great simplification in the language, and means the “can of worms” is not opened too far :)

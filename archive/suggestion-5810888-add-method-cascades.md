@@ -1,17 +1,18 @@
 # Idea 5810888: add method cascades #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Eduardo Cavazos on 4/21/2014 12:00:00 AM
+### Submitted by Eduardo Cavazos on 4/21/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Method cascades as implemented in Dart are described here:
 http://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declined per my comment
 Don Syme, Current BDFL F# Language/Library Evolution

@@ -1,10 +1,10 @@
 # Idea 11125137: Expand support for byref to match C# 7 #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Keith Battocchi on 12/17/2015 12:00:00 AM
+### Submitted by Keith Battocchi on 12/17/2015 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 C# is adding support for byref locals and returns (see https://github.com/dotnet/roslyn/issues/118, slated for milestone 1.3). This will result in many libraries that expose these features (which the CLR already supports), but methods with such return types aren't currently usable from F#. F# already supports byref locals, but doesn't support implementing byref-returning methods nor does it support calling byref-returning methods.
 At a minimum, F# should support calling byref-returning-methods (e.g. SomeRefReturningMethod(x,y,z) <- w), since C# users will be creating methods like these and being unable to call them will limit F#'s reach.
@@ -12,7 +12,8 @@ It would be nice if on top of that base level of support F# also supported decla
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Yes, this should be done, thanks
 Approved in primciple subject to a detailed design, resolution of any remaining issues, and an implementation, with testing. Also subject to the feature actually appearing in C# 7 :)

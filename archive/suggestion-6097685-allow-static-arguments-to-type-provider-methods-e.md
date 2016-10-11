@@ -1,10 +1,10 @@
 # Idea 6097685: Allow static arguments to Type Provider methods eg M<"ABC">() #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Dmitry Morozov on 6/25/2014 12:00:00 AM
+### Submitted by Dmitry Morozov on 6/25/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 This in addition to static arguments to types.
 Use case:
@@ -24,7 +24,8 @@ https://twitter.com/dsyme/status/430094038771843072
 
 
 
-## Response by fslang-admin on 11/12/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/12/2014 12:00:00 AM
 
 This is now completed and available in preview releases of F# 4.0.
 For an early Visual Studio preview release see here (cross platform releases will follow) – http://blogs.msdn.com/b/fsharpteam/archive/2014/11/12/announcing-a-preview-of-f-4-0-and-the-visual-f-tools-in-vs-2015.aspx

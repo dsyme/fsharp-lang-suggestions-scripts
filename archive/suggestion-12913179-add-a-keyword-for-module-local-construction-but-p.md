@@ -1,10 +1,10 @@
 # Idea 12913179: add a keyword for module-local construction but public deconstruction of types #
 
-## Status : open
+### Status : open
 
-## Submitted by Adnan Gazi on 3/12/2016 12:00:00 AM
+### Submitted by Adnan Gazi on 3/12/2016 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Similar to dependant types, except you wouldn't enforce the predicate on which the type is dependant on to be defined WITH the type.
 This keyword could stop clients of a module from constructing the type, but would allow them to 'see' that it exists, and therefore allow them to deconstruct it for their own use.

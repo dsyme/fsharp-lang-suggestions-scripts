@@ -1,10 +1,10 @@
 # Idea 5691744: Allow a single let to create multiple bindings #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Patrick Q on 3/28/2014 12:00:00 AM
+### Submitted by Patrick Q on 3/28/2014 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 Because spaces will be removed when this is posted I've used dots in their place.
 It can often clutter up code when one needs create a lot of let bindings. My suggestion would be to allow a single let to create a group of bindings.
@@ -32,7 +32,8 @@ Implementing this feature would de-clutter code without having to completely rem
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment below
 Best regards & thanks again,

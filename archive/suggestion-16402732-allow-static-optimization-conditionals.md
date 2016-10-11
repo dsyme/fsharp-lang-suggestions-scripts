@@ -1,10 +1,10 @@
 # Idea 16402732: Allow static optimization conditionals #
 
-## Status : open
+### Status : open
 
-## Submitted by lee on 9/28/2016 12:00:00 AM
+### Submitted by lee on 9/28/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 If we write the code as below, we will get a compile error: Static optimization conditionals are only for use within the F# library
 let inline toBytes (x : ^a) : byte[] =

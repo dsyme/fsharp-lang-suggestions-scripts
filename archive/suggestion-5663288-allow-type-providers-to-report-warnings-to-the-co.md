@@ -1,16 +1,17 @@
 # Idea 5663288: Allow type providers to report warnings to the compiler #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 11 votes
-
-
+### 11 votes
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+
+
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 This is approved-in-principle for F# 4.x+
 A detailed design is needed. I would prefer one that is idiom-based and doesn’t force type providers to use a later FSharp.Core.dll

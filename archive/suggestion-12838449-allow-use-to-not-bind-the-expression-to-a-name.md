@@ -1,10 +1,10 @@
 # Idea 12838449: allow use to not bind the expression to a name #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 3/7/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 3/7/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 In C#, one can use using(CreateSomeDisposable()) without binding the expression to a name.
 Same construct in F# is not allowed, forcing a workaround such as

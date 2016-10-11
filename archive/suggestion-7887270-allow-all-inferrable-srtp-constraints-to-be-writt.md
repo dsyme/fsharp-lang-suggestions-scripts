@@ -1,10 +1,10 @@
 # Idea 7887270: Allow all inferrable SRTP constraints to be written in signatures #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 5/9/2015 12:00:00 AM
+### Submitted by Don Syme on 5/9/2015 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 See https://github.com/Microsoft/visualfsharp/issues/392. Basically F# will in some situations infer statically-resolved-constraints like
 (A or ^b) : (static member X : ...)
@@ -12,7 +12,8 @@ where A is a concrete class name. However these constraints can't be written in 
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1017-fix-srtp-constraint-parsing.md
 Further comments, use cases, information and discussion welcome

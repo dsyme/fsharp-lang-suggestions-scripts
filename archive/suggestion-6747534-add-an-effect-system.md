@@ -1,17 +1,18 @@
 # Idea 6747534: Add an effect system #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 11/20/2014 12:00:00 AM
+### Submitted by Anonymous on 11/20/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 https://www.cl.cam.ac.uk/~dao29/publ/haskell14-effects.pdf
 Embed the ideas in this paper, but in F# instead of Haskell. I am pretty sure one of the authors is familiar with F#.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below
 Don Syme, F# Language Evolution

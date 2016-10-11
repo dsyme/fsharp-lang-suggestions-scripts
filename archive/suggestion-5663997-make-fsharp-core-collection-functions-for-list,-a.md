@@ -1,10 +1,10 @@
 # Idea 5663997: Make FSharp.Core collection functions for List, Array and Seq more regular #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 3/21/2014 12:00:00 AM
+### Submitted by Don Syme on 3/21/2014 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 F# 3.x is a little irregular in the functions it provides w.r.t. List, Array and Seq. For example, there is no List.groupBy.
 Lincoln Atkinson has done an excellent analysis of what’s needed to make this more regular.
@@ -14,7 +14,8 @@ You can submit comments below or as a pull request to the above file (log in to 
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 This is approved for F# 4.0+
 The work has been divided into multiple pull requests which have all been now submitted, reviewed and committed to the “fsharp4” branch, see the overall status and history at https://visualfsharp.codeplex.com/wikipage?title=Status

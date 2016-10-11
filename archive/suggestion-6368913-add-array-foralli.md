@@ -1,10 +1,10 @@
 # Idea 6368913: Add Array.foralli #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Frank A. Krueger on 8/30/2014 12:00:00 AM
+### Submitted by Frank A. Krueger on 8/30/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 I seem to be joining two arrays of varying types quite often to do comparisons.
 For example:
@@ -16,7 +16,8 @@ alphas |> Array.foralli (fun i a -> compare nums.[i] a)
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Combining with [/archive/suggestion-6952125-create-filteri-functions-for-the-various-collect](/archive/suggestion-6952125-create-filteri-functions-for-the-various-collect.md) and treating that one as canonical as it has more votes
 

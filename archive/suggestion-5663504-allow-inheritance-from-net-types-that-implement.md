@@ -1,16 +1,17 @@
 # Idea 5663504: Allow inheritance from .NET types that implement the same interface at different generic instantiations #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 60 votes
+### 60 votes
 
 http://stackoverflow.com/questions/1464109/implementing-the-same-interface-at-different-generic-instantiations
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 This has been completed for F# 4.0+
 The user voice suggestion has been renamed to reflect the feature implemented – “Allow inheritance from .NET types that implement the same interface at different generic instantiations”

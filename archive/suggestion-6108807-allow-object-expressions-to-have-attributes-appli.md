@@ -1,10 +1,10 @@
 # Idea 6108807: Allow Object expressions to have attributes applied to them #
 
-## Status : open
+### Status : open
 
-## Submitted by Dave Thomas on 6/27/2014 12:00:00 AM
+### Submitted by Dave Thomas on 6/27/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 In the simplest case something like this would be possible:
 [<MyAttribute>]

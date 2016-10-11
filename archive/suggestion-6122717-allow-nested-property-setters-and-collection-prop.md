@@ -1,10 +1,10 @@
 # Idea 6122717: Allow nested property setters and collection property setters in initializers #
 
-## Status : open
+### Status : open
 
-## Submitted by Don Syme on 7/1/2014 12:00:00 AM
+### Submitted by Don Syme on 7/1/2014 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 I suggest we consider allowing A.B=expr property setters in initializers, e.g.
 

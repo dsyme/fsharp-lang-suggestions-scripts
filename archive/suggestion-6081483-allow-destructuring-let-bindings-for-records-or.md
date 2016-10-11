@@ -1,17 +1,18 @@
 # Idea 6081483: Allow destructuring let bindings for records (or tuples with named values) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Eamon Nerbonne on 6/21/2014 12:00:00 AM
+### Submitted by Eamon Nerbonne on 6/21/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Tuples are often bug-prone and hard to read because the ordering of members is critical. However, their use is so convenient that they're often used where they're inappropriate. "Tuples" with named members would be a huge improvement, and records are almost that.
 In a similar vein, it would be helpful if this record or named-value tuple were as easy to construct as a tuple: in particular, there's no reason to require an explicitly defined type; all the relevant information about the type is present at the construction site - just like with tuples.
 
 
 
-## Response by fslang-admin on 6/24/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/24/2014 12:00:00 AM
 
 Closing this as it looks very close to being a duplicate of [/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md) -
 At least close enough that it can’t be treated independently.

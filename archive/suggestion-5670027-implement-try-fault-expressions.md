@@ -1,10 +1,10 @@
 # Idea 5670027: Implement try/fault expressions #
 
-## Status : open
+### Status : open
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 I would like F# to have try/fault expressions. It would work along the same lines as the current try/with syntax, although the 'fault' block would be constrained to a return type of 'unit'. I don't expect the usage of this to be terribly common, but it would be very handy to have for logging purposes.
 To answer the inevitable question, "Why not just use try/with and reraise()?" -- with try/with you're actually catching the exception; unless you remember to call reraise() to terminate all paths in the control flow within the 'with' block, you'll end up swallowing the exception and not getting the expected behavior. Similarly, if an inexperienced (or perhaps just inattentive) developer re-raises the exception with 'raise' instead of 'reraise', the stack trace information will be lost.

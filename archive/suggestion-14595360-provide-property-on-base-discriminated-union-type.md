@@ -1,10 +1,10 @@
 # Idea 14595360: Provide property on base Discriminated Union type if all the case constructors have the same paramater #
 
-## Status : open
+### Status : open
 
-## Submitted by Андрей Чебукин on 6/3/2016 12:00:00 AM
+### Submitted by Андрей Чебукин on 6/3/2016 12:00:00 AM
 
-## 27 votes
+### 27 votes
 
 If an each case constructor of Discriminated Union has a parameter with the same name and the same type than allow to implement a property on Discriminated Union base type to access to this parameter value.
 Now I have to write a match on every case

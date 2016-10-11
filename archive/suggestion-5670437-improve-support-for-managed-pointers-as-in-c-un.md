@@ -1,10 +1,10 @@
 # Idea 5670437: Improve support for managed pointers (as in C# unsafe code) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 33 votes
+### 33 votes
 
 It is currently quite difficult in F# to interoperate with 'unsafe' C# code due to C#'s use of managed pointers (ilsigptr<'T> in F#). At the very least, it would be handy to have a ManagedPtr module available in FSharp.Core under the Microsoft.FSharp.NativeInterop namespace, similar to the existing NativePtr module.
 If support for managed pointers were to be improved, it would be beneficial to rename them -- ilsigptr<'T> is a rather obscure name for those without a good understanding of IL and the CLR's type system. Perhaps we could rename it to managedptr<'T>, which would fit nicely alongside the existing nativeptr<'T>.
@@ -13,7 +13,8 @@ When using the (&&) operator, and the * modifier in external function signatures
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as declined pending an example where this is needed
 

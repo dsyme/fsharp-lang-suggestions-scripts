@@ -1,10 +1,10 @@
 # Idea 11356293: Allow implementation of abstract slots with generic return type instantiated at type 'unit' #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Eric Stokes on 1/8/2016 12:00:00 AM
+### Submitted by Eric Stokes on 1/8/2016 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 The behavior described here,
 http://stackoverflow.com/questions/26296401/why-is-unit-treated-differently-by-the-f-type-system-when-used-as-a-generic-i
@@ -13,7 +13,8 @@ In practice this comes up when implementing type indexed values of various sorts
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Approving this in principle, it would be great to fix this behavior.
 We will open an RFC on this in due course, https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs

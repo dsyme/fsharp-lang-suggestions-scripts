@@ -1,10 +1,10 @@
 # Idea 5670940: Syntax coloring for type identifiers in VS F# language service #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 Visual Studio supports the ability for a language service to 'tag' tokens representing type identifiers so they can be assigned custom colors by the user. C# and VB.NET both support custom coloring, which makes it trivial to tell the difference between structs and classes (for example). VB.NET supports custom colors for some other identifiers as well.
 It would be nice for F# to at least support the basic coloring types (classes, delegates, interfaces, enums, generic parameters); if possible, it would be useful to add DU and record types and modules. Type abbreviations would 'inherit' the coloration of whatever type they're abbreviating.
@@ -12,7 +12,8 @@ You can see the color options in Visual Studio by going to Tools -> Options -> G
 
 
 
-## Response by fslang-admin on 3/27/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/27/2014 12:00:00 AM
 
 This suggestion belongs in Visual Studio user voice (for the Visual F# Tools) or the github issues for the Visual F# Power Tools. This user voice is for the F# language itself.
 

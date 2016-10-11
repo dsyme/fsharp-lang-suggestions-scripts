@@ -1,10 +1,10 @@
 # Idea 16126906: Allow type annotations at the top level in fsi #
 
-## Status : open
+### Status : open
 
-## Submitted by Loic Denuziere on 9/16/2016 12:00:00 AM
+### Submitted by Loic Denuziere on 9/16/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Currently, using a type annotation at the top level in fsi results in a syntax error:
 > 1 : int;;

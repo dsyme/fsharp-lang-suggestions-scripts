@@ -1,10 +1,10 @@
 # Idea 5980924: Allow specifying subset of type arguments explicitly #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Tomas Petricek on 5/28/2014 12:00:00 AM
+### Submitted by Tomas Petricek on 5/28/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Say we have a generic type Frame<TRow, TColumn>. When using instance methods of the frame, it is possible to write a generic method that takes a single additional type parameter - for example, to get a column as a specific type:
 frame.GetColumn<float>("Value")
@@ -18,7 +18,8 @@ Interestingly, this is also problem for extension methods. When you define a C#-
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 Updating to planned to indicate this is approved in general terms. A detailed design and implementation would be needed.
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.

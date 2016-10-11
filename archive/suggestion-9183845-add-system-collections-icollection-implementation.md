@@ -1,10 +1,10 @@
 # Idea 9183845: Add System.Collections.ICollection implementations to F# list/set/map #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Eirik George Tsarpalis on 8/5/2015 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 8/5/2015 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 ICollection is a useful interface that inherits IEnumerable. Inputs implementing ICollection are utilized by libraries such as LINQ, Nessos.Streams and MBrace in order to optimize partitioning of data. Curiously, none of the F# collections (list/set/map) implement ICollection (however the latter two do implement ICollection<T>, which is a different interface designed for mutable collections). It is currently impossible to extract the length/count of a boxed list/map without performing some sort of reflection, which is not always desirable.
 I suggest that future versions of F# core implement this.
@@ -12,7 +12,8 @@ See also https://github.com/Microsoft/visualfsharp/issues/570#issuecomment-12800
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Approved in principle, see my comment below
 We will open an RFC for this in due course.

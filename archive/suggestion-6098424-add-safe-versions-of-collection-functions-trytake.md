@@ -1,10 +1,10 @@
 # Idea 6098424: Add safe versions of collection functions tryTake and trySkip. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Huw Simpson on 6/25/2014 12:00:00 AM
+### Submitted by Huw Simpson on 6/25/2014 12:00:00 AM
 
-## 0 votes
+### 0 votes
 
 The take and skip functions on the Seq module raise an error when bounds are exceeded. I suggest the following safe alternatives:
 // Safely skip n elements of a sequence, and return the rest.
@@ -16,7 +16,8 @@ If this suggestion is accepted it would make sense to implement these functions 
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Closing issue with no votes.
 

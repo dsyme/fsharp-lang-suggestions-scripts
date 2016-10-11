@@ -1,10 +1,10 @@
 # Idea 10617357: Lift parameter names from the callee #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Brandon D'Imperio on 11/9/2015 12:00:00 AM
+### Submitted by Brandon D'Imperio on 11/9/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 if I have a method with parameters, and close one of the params with another method call, I lose all parameter names unless I copy and paste them:
 ```
@@ -26,7 +26,8 @@ My suggestion is to lift the remaining parameters needed to finish the method ca
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thank you for the suggestion. I have marked it declined per my comment below
 Best wishes

@@ -1,10 +1,10 @@
 # Idea 7072844: Utilise CLR union types for discriminated unions #
 
-## Status : open
+### Status : open
 
-## Submitted by Isaac Abraham on 2/9/2015 12:00:00 AM
+### Submitted by Isaac Abraham on 2/9/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 CLR has native support for union types; these could provide optimization and performance opportunities for F# discriminated unions.
 

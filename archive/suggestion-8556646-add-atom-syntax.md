@@ -1,10 +1,10 @@
 # Idea 8556646: Add atom syntax #
 
-## Status : open
+### Status : open
 
-## Submitted by mikero on 6/26/2015 12:00:00 AM
+### Submitted by mikero on 6/26/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Add a syntax for atoms a.k.a. keywords a.k.a. self-evaluating symbols.
 :foo (or 'foo, or #foo - whichever causes the least problems)

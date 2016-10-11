@@ -1,10 +1,10 @@
 # Idea 8696917: Modify Option.map return None in case of null #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Brad Collins on 7/3/2015 12:00:00 AM
+### Submitted by Brad Collins on 7/3/2015 12:00:00 AM
 
-## 0 votes
+### 0 votes
 
 Java 8's methods on Optional return None in case any operation yields null. Case in point is Optional.map.
 Assume that a Session type has a User property that could be null. The following should return None instead of Some(null):
@@ -13,7 +13,8 @@ The use case is when interoperating with C#, where nulls are more common.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 See above response
 Don Syme, F# Language Evolution

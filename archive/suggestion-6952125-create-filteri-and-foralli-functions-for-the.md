@@ -1,10 +1,10 @@
 # Idea 6952125: Create 'filteri' and 'foralli' functions for the various collections Array, List, Seq #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Richard Dalton on 1/11/2015 12:00:00 AM
+### Submitted by Richard Dalton on 1/11/2015 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 mapi allows us to map a collection using not just the items in the collection but also the index of each item.
 Could we do something similar with filter?
@@ -15,7 +15,8 @@ atEvenPos = [0; 2; 4; 6]
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below – using Seq.indexed is enough in F# 4.0, though if necessary the user can write fresh functions explicitly.
 Don Syme, F# Language and Core Library Evolution

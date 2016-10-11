@@ -1,16 +1,17 @@
 # Idea 7063652: provide reflected definitions by default #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Carl Patenaude Poulin on 2/6/2015 12:00:00 AM
+### Submitted by Carl Patenaude Poulin on 2/6/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Having access to all code by default would greatly improve the metaprogramming story of F#.
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 This is really already done – RefelctedDefinition is allowed on modules
 

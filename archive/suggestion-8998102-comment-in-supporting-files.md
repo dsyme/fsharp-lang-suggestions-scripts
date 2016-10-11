@@ -1,10 +1,10 @@
 # Idea 8998102: comment in supporting files #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steven Taylor on 7/23/2015 12:00:00 AM
+### Submitted by Steven Taylor on 7/23/2015 12:00:00 AM
 
-## 0 votes
+### 0 votes
 
 if code is self documenting, adding comments later for API purposes gets in the way of readability. Padding out with comments also gets in the way of a well crafted level of code density. Therefore it'd be nice to be able to comment functions in supporting files, and to have a mechanism for VS / F# to both maintain these links, and link to the relevant information for intenseness purposes.
 Additionally, a transitive, find inherited comment would be quite useful too. VS could have a InheritedIntellisense tag.
@@ -13,7 +13,8 @@ The idea of sprinkling comments in code for automatic document generation, altho
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 zero votes, declined
 

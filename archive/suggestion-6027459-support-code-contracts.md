@@ -1,16 +1,17 @@
 # Idea 6027459: Support code contracts #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Onur on 6/9/2014 12:00:00 AM
+### Submitted by Onur on 6/9/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Currently Code Contracts doesn't work in F# properly, especially in the primary contructors. Although F# is null safe and functional , I still find code contracts for the public surface of the projects.
 
 
 
-## Response by fslang-admin on 6/20/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/20/2014 12:00:00 AM
 
 I’m supportive of this if we can identify what’s needed.
 Please provide more details about what would need to change with F# to make code contracts work, and reopen a new suggestion for each necessary change.

@@ -1,10 +1,10 @@
 # Idea 6427953: Expand F#'s Observable module to be more in line with Reactive Extensions #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Dave Thomas on 9/12/2014 12:00:00 AM
+### Submitted by Dave Thomas on 9/12/2014 12:00:00 AM
 
-## 29 votes
+### 29 votes
 
 With F#'s Observable module we only have:
 add, choose, filter, map, merge, pairwise, partition, scan, split, subscribe.
@@ -12,7 +12,8 @@ It would be great to expand the default F# experience along the same lines that 
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 “Completed” is not quite the right tag to close this with but it’s certainly not “Declined”.
 This topic is now in progress through the F# library https://github.com/fsprojects/FSharp.Control.Reactive/

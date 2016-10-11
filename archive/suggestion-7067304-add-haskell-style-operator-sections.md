@@ -1,10 +1,10 @@
 # Idea 7067304: Add Haskell-style operator sections #
 
-## Status : declined
+### Status : declined
 
-## Submitted by luketopia on 2/7/2015 12:00:00 AM
+### Submitted by luketopia on 2/7/2015 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 Imagine that you have a list of integers, and you want to filter it down to all the numbers greater than 10. You might erroneously try to partially apply the greater than operator as follows:
 nums |> Seq.filter ((>) 10)
@@ -22,7 +22,8 @@ https://wiki.haskell.org/Section_of_an_infix_operator
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information welcome

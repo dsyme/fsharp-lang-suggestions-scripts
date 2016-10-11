@@ -1,16 +1,17 @@
 # Idea 5691666: What do you think to add F# atom data type as it's used in Erlang? #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Martin Bodocky on 3/28/2014 12:00:00 AM
+### Submitted by Martin Bodocky on 3/28/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 I think to implement Erlang like atoms can add language more readability more precise pattern matching. More here http://www.erlang.org/doc/reference_manual/data_types.html#id66445.
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome

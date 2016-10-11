@@ -1,10 +1,10 @@
 # Idea 10800408: Add function parameter default value shorthand #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jerold Haas on 11/20/2015 12:00:00 AM
+### Submitted by Jerold Haas on 11/20/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 let add (x:int = 0) (y:int = 0) = a + b
 or
@@ -12,7 +12,8 @@ let add (?x:int = 0) (?y:int = 0) = a + b
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Duplicate of [/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m](/archive/suggestion-5663215-optional-and-named-parameters-on-let-bindings-on-m.md)
 Don Syme, F# Language Evolution

@@ -1,10 +1,10 @@
 # Idea 5663194: Extend named DUs syntax to allow to use multiple names in a name match #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Currently when I have a DU like this:
 type DU =
@@ -17,7 +17,8 @@ but I can't like this:
 
 
 
-## Response by fslang-admin on 3/21/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/21/2014 12:00:00 AM
 
 This is already in F# 3.1, as noted, closing to recycle votes
 

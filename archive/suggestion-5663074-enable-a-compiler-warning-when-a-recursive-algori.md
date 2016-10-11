@@ -1,16 +1,17 @@
 # Idea 5663074: Enable a compiler-warning when a recursive algorithm is not tail-recursive #
 
-## Status : planned
+### Status : planned
 
-## Submitted by knocte on 3/21/2014 12:00:00 AM
+### Submitted by knocte on 3/21/2014 12:00:00 AM
 
-## 311 votes
+### 311 votes
 
 Add an TailRecursiveAttribute to enable a compiler-warning when a recursive algorithm is not tail-recursive. This should ideally also cover recursive seq { .. } and async { ... } expressions.
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 I am generally in favour of addressing this in F# 4.x+. I would want seq { .. } and async { … } tailcalls to also be addressed.
 A more detailed design is needed and some trialling would be great. Jack’s work is a great start. However, this is not an easy piece of work to do in a non-invasive way and my own experiments in this area have not yet led to something I feel confident to include in the F# language design.

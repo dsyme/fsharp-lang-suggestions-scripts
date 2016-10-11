@@ -1,16 +1,17 @@
 # Idea 7814040: This user voice entry form should allow code samples #
 
-## Status : declined
+### Status : declined
 
-## Submitted by George on 5/4/2015 12:00:00 AM
+### Submitted by George on 5/4/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Suggestions are often clarified with code. The suggestion box should therefore allow code samples. consequently, it needs to support mono-space fonts and not collapse spaces from input.
 
 
 
-## Response by fslang-admin on 6/9/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 6/9/2015 12:00:00 AM
 
 Changing uservoice is not possible for us – until now please just post a gist
 

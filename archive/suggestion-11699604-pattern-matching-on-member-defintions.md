@@ -1,10 +1,10 @@
 # Idea 11699604: Pattern matching on member defintions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Harald Steinlechner on 2/3/2016 12:00:00 AM
+### Submitted by Harald Steinlechner on 2/3/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 when extending discriminated unions with member implementations we can introduce a fresh name for 'this' (usually this or x). This identifier however is syntactically not a pattern.
 It would be nice (for irrefutable patterns) to match directly on this position, .e.g.:
@@ -18,7 +18,8 @@ However i fear this introduces ambiguities in the parser....
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined – see comment above
 Don Syme, F# Language Evolution

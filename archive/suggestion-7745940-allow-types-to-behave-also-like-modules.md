@@ -1,10 +1,10 @@
 # Idea 7745940: Allow types to behave also like modules. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Brad Phelan on 4/29/2015 12:00:00 AM
+### Submitted by Brad Phelan on 4/29/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I find this kind of coding annoying
 module Foo =
@@ -23,7 +23,8 @@ So you can do
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.

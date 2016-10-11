@@ -1,10 +1,10 @@
 # Idea 5665703: Improve Record Type syntax when instantiating and another type has the same properties #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
+### Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 type UserInfo { Id: int; Name: string }
 type CompanyInfo { Id: int; Name: string }
@@ -15,7 +15,8 @@ let user = new UserInfo { Id = 1; Name = "John Doe" }
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declined at Jorge’s request
 

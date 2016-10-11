@@ -1,10 +1,10 @@
 # Idea 6153846: Make curly braces in record type definition optional #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Chojrak on 7/9/2014 12:00:00 AM
+### Submitted by Chojrak on 7/9/2014 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 Since we have indentation, the braces are not needed. It's a relict of dark ages. It'd be nice to have:
 type Person =
@@ -17,7 +17,8 @@ LastName : string }
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 See comments above
 Don Syme, BDFL F# Language Evolution

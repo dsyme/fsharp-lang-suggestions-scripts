@@ -1,10 +1,10 @@
 # Idea 8733178: Revert back to an accepted feature the delayed implementation of interfaces #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Enrique A. Casanovas Pedre on 7/6/2015 12:00:00 AM
+### Submitted by Enrique A. Casanovas Pedre on 7/6/2015 12:00:00 AM
 
-## 24 votes
+### 24 votes
 
 Please see:
 http://stackoverflow.com/questions/31248797/delay-the-implementation-of-interface-methods
@@ -26,7 +26,8 @@ This style allows for a more idiomatic and functional approach of developing in 
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Many thanks for the suggestion. I’m closing it per my comment below, and in favour of this suggestion: [/archive/suggestion-11723964-allow-types-and-modules-to-be-mutually-referential](/archive/suggestion-11723964-allow-types-and-modules-to-be-mutually-referential.md)
 Don Syme, F# Language and Core Library Evolution

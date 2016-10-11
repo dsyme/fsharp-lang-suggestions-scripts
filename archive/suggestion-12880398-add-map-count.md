@@ -1,10 +1,10 @@
 # Idea 12880398: Add Map.count #
 
-## Status : open
+### Status : open
 
-## Submitted by Zhen on 3/10/2016 12:00:00 AM
+### Submitted by Zhen on 3/10/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Implement Map.count
 

@@ -1,16 +1,17 @@
 # Idea 5676508: allow us to edit suggestions after we post them #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steven Taylor on 3/25/2014 12:00:00 AM
+### Submitted by Steven Taylor on 3/25/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 allow us to edit suggestions after we post them
 
 
 
-## Response by fslang-admin on 6/25/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/25/2014 12:00:00 AM
 
 Declining for now as this is just a limitation of uservoice.
 

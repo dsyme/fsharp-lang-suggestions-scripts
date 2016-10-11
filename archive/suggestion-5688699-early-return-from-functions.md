@@ -1,10 +1,10 @@
 # Idea 5688699: Early return from functions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Braden Evans on 3/27/2014 12:00:00 AM
+### Submitted by Braden Evans on 3/27/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 I have found that when porting code from other languages (especially optimized loopy code) the lack of early return is a real pain point. It is always possible to re-arrange code (especially with pattern matching) but it can be very time consuming and the "gist" of many algorithms can be lost.
 I don't think this is a desirable feature for general use, perhaps this could be made just ugly enough to discourage abuse - maybe require an attribute on functions that use it?
@@ -12,7 +12,8 @@ I'm sure this will be highly controversial, my own experience is that imperative
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per my comment
 Don Syme, F# Language Evolution

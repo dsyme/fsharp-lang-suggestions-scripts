@@ -1,10 +1,10 @@
 # Idea 7370455: Add `apply` function to Seq, List and Array #
 
-## Status : declined
+### Status : declined
 
-## Submitted by David Torbonof on 3/29/2015 12:00:00 AM
+### Submitted by David Torbonof on 3/29/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Simply a function a la
 let apply (mapping: 'T -> 'U) (source: seq<'T>) : seq<'T * 'U> = source |> Seq.map (fun x -> (x, mapping x))
@@ -13,7 +13,8 @@ This would for instance be useful when creating graphs like
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

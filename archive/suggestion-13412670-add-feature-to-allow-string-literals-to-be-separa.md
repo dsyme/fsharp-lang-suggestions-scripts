@@ -1,10 +1,10 @@
 # Idea 13412670: Add feature to allow string literals to be separated into text files #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jeffrey Pierson on 4/13/2016 12:00:00 AM
+### Submitted by Jeffrey Pierson on 4/13/2016 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 Often in code there is a block of meta language in a string format. Typical examples could be SQL, XML, JSON, MD, or just plain text. The choices a developer normally has is either to embed the text as a string literal or to spearate into a file. Separating into a file normally has some advantages in that the format gets better editing support (ex. MyQuery.sql has a nice editing experience than an embedded string) and it cleans up the related code. The down side is traditionally that now the file is read in at runtime and the tooling support in the code to go to the text file for a given string definition becomes more of a manual process.
 What I would like to propose is the idea of a string literal where the value can be specified in a referenced text file.
@@ -20,7 +20,8 @@ from mytable
 
 
 
-## Response by fslang-admin on 6/13/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/13/2016 12:00:00 AM
 
 Having a type provider to read string literals from files is entirely reasonable.
 I am marking this as declined for the F# language itself because the functionality can be implemented using F# type providers. My suggestion is to open an issue at https://github.com/fsprojects/FSharp.Management/issues

@@ -1,10 +1,10 @@
 # Idea 9324276: Have String.ofChars in the standard library #
 
-## Status : open
+### Status : open
 
-## Submitted by Bang Jun-young on 8/14/2015 12:00:00 AM
+### Submitted by Bang Jun-young on 8/14/2015 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Wouldn't it be convenient if String.ofChars function was part of the standard library? The implementation is quite straightforward:
 module String =

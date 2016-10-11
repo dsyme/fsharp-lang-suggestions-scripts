@@ -1,10 +1,10 @@
 # Idea 6337095: Allow use on let bindings in classes #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mårten Rånge on 8/23/2014 12:00:00 AM
+### Submitted by Mårten Rånge on 8/23/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 A common task in .NET is to implement is IDisposable.
 I find the most common task is implementing IDisposable on a class that have fields that are subclasses of IDisposable and no unmanaged resources.
@@ -12,7 +12,8 @@ Implementing IDisposable is tedious and error prone. F# supports use on local bi
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Thanks for the suggestion. it’s definitely an interesting one and it took me a long time to decline it. I’ve listed the reasons below. It is possible we might reconsider this at some point, but for now marking it declined as I don’t think we can proceed with it in the language as things stand
 Don Syme

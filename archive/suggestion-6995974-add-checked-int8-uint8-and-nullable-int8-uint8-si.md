@@ -1,10 +1,10 @@
 # Idea 6995974: Add Checked.int8/uint8 and Nullable.int8/uint8/single/double #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 1/22/2015 12:00:00 AM
+### Submitted by Don Syme on 1/22/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 This is the tracking issue for https://github.com/Microsoft/visualfsharp/pull/19
 F# defines "int8" and "uint8" as synonyms for "sbyte" and "byte", both as types and operators. While reviewing the behaviour of "open Checked" (which brings new versions of operators into scope) we noticed that new versions of the "int8" and "uint8" operators are not defined in the "Checked" module. This is inconsistent, though a simple workaround is to use the checked "sbyte" and "byte" operators instead.
@@ -13,7 +13,8 @@ The proposal is to add these.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Completed, see https://github.com/Microsoft/visualfsharp/pull/19
 

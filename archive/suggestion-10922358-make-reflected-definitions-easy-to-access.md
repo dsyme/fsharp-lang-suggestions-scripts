@@ -1,10 +1,10 @@
 # Idea 10922358: Make reflected definitions easy to access #
 
-## Status : declined
+### Status : declined
 
-## Submitted by zjv on 12/1/2015 12:00:00 AM
+### Submitted by zjv on 12/1/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Given a reflected function like this:
 [<ReflectedDefinition(true)>]
@@ -17,7 +17,8 @@ let fooExpr = Expr.TryGetReflectedDefinition(fooType)
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 See comment from Don Syme
 

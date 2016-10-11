@@ -1,10 +1,10 @@
 # Idea 7156559: modules to extend a DU #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steven Taylor on 3/1/2015 12:00:00 AM
+### Submitted by Steven Taylor on 3/1/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 If you extend a DU with a static member, there is no way to define and use Active Patterns or Partial Active Patterns from within such a member. I propose that we create a way to do this.
 Otherwise, to group such items under a similar name, we need to come up with a new area.
@@ -17,7 +17,8 @@ It'd be better to default to type safe expression that would warn you to incompl
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above. More details are needed.
 Further comments, use cases, information and discussion welcome

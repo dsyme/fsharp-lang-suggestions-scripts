@@ -1,10 +1,10 @@
 # Idea 15801949: Allow lower-case DU cases when [<RequireQualifiedAccess>] is specified #
 
-## Status : open
+### Status : open
 
-## Submitted by Alex Corrado on 8/24/2016 12:00:00 AM
+### Submitted by Alex Corrado on 8/24/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Currently, it is not allowed to declare DU cases with lower-case letters. For instance, this is not allowed:
 type Foo =

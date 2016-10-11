@@ -1,10 +1,10 @@
 # Idea 12805656: Code succinctness: Relax syntax rules for the else branch of an if expression (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Anonymous on 3/4/2016 12:00:00 AM
+### Submitted by Anonymous on 3/4/2016 12:00:00 AM
 
-## 0 votes
+### 0 votes
 
 For the sake of code succinctness, I suggest relaxing syntax rules for the else branch of an if expression in two special cases:
 1) When there is no else branch in an if expression and the type of the if expression is inferred to be bool, then the F# compiler should treat the absent else branch as equal to false, type bool (like in Ada 2012 for if expressions).

@@ -1,10 +1,10 @@
 # Idea 5663704: Copy-and-update on class types and on records of different types. #
 
-## Status : open
+### Status : open
 
-## Submitted by Don Syme on 3/21/2014 12:00:00 AM
+### Submitted by Don Syme on 3/21/2014 12:00:00 AM
 
-## 25 votes
+### 25 votes
 
 People sometimes find it hard to transition from records to class types - something which comes up when seeking to encapsulate some of the details of the record type.
 One particular reason for this is because their codebase may uses copy-and-update on record types. One approach to easing the transition would be to support copy-and-update on class types, as long as the class type follows a particular design pattern.

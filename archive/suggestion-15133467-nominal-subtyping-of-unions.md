@@ -1,10 +1,10 @@
 # Idea 15133467: Nominal subtyping of unions #
 
-## Status : open
+### Status : open
 
-## Submitted by exercitus vir on 7/9/2016 12:00:00 AM
+### Submitted by exercitus vir on 7/9/2016 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 This is basically a repost of "subtyping for discriminated unions" ([/archive/suggestion-6672490-subtyping-for-discriminated-unions),](/archive/suggestion-6672490-subtyping-for-discriminated-unions),.md) but with more details and a description of a concrete use case.
 I am reposting because I would like more discussion on this and because I think that declined requests are no longer tracked by Don Syme (and others).

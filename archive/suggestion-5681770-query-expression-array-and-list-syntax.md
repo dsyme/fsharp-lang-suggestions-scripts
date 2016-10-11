@@ -1,10 +1,10 @@
 # Idea 5681770: Query expression array and list syntax #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Phillip Trelford on 3/26/2014 12:00:00 AM
+### Submitted by Phillip Trelford on 3/26/2014 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 For brevity instead of
 query { (*... body *) } |> Seq.toList
@@ -13,7 +13,8 @@ query [ (* body *) ]
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declining per the comment from Don Syme below
 

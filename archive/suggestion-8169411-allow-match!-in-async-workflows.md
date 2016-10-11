@@ -1,10 +1,10 @@
 # Idea 8169411: Allow match! in async workflows #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 5/30/2015 12:00:00 AM
+### Submitted by Anonymous on 5/30/2015 12:00:00 AM
 
-## 32 votes
+### 32 votes
 
 Instead of writing:
 async {
@@ -20,7 +20,8 @@ match! fetch_something() with
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing per my comment below
 

@@ -1,10 +1,10 @@
 # Idea 12563118: Allow enumeration type names and discriminated union type names in a for loop (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 I suggest using enumeration type names and discriminated union type names in a for loop meaning to try every value (from Ada 2012).
 For example,

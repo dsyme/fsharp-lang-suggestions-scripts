@@ -1,10 +1,10 @@
 # Idea 6696105: Implement 'contains' functions for collections #
 
-## Status : completed
+### Status : completed
 
-## Submitted by luketopia on 11/10/2014 12:00:00 AM
+### Submitted by luketopia on 11/10/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Seems like there should be a simple 'contains' function in all the collection modules, e.g.
 List.contains
@@ -14,7 +14,8 @@ Right now we have 'exists', but it seems cumbersome to have to do Seq.exists ((=
 
 
 
-## Response by fslang-admin on 11/12/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/12/2014 12:00:00 AM
 
 See below, done in F# 4.0
 

@@ -1,10 +1,10 @@
 # Idea 6358998: Add match! (match-bang) to computation expressions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Nikon the Third on 8/28/2014 12:00:00 AM
+### Submitted by Nikon the Third on 8/28/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Often I come across code like this:
 async {
@@ -23,7 +23,8 @@ match! readValueTask with
 
 
 
-## Response by fslang-admin on 9/6/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/6/2014 12:00:00 AM
 
 Declining due to the conflict with the Joinads proposal., see comment below.
 Don Syme, BDFL F# Language Evolution

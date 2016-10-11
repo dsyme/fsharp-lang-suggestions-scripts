@@ -1,10 +1,10 @@
 # Idea 6272047: Add support for default values in record types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Ted P on 8/8/2014 12:00:00 AM
+### Submitted by Ted P on 8/8/2014 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 It would be able to define default values for fields in a record type definition so that those fields don't need to be set unless they differ from the default values.
 Simple example:
@@ -17,7 +17,8 @@ Here by explicitly saying which record type we mean, we would not need to set th
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Thanks for the suggestion. It is quite a reasonable one. However I have marked it as declined for the reason listed below.
 Don Syme

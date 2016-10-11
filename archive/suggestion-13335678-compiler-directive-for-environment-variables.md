@@ -1,10 +1,10 @@
 # Idea 13335678: Compiler directive for environment variables #
 
-## Status : open
+### Status : open
 
-## Submitted by Lenne on 4/6/2016 12:00:00 AM
+### Submitted by Lenne on 4/6/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 It would be nice to have a compiler directive for environment variables which can be used in string literals.
 This way we can pass different parameters to type providers on a build server.

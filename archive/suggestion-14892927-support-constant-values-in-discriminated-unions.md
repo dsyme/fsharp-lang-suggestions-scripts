@@ -1,10 +1,10 @@
 # Idea 14892927: Support constant values in Discriminated unions #
 
-## Status : open
+### Status : open
 
-## Submitted by Pedro Santos on 6/21/2016 12:00:00 AM
+### Submitted by Pedro Santos on 6/21/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Hi,
 While trying to model a music domain I ended up with this code:

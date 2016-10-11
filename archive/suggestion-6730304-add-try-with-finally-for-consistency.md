@@ -1,10 +1,10 @@
 # Idea 6730304: Add try-with-finally for consistency #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 11/17/2014 12:00:00 AM
+### Submitted by Anonymous on 11/17/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 F# supports try-with, try-finally, but not try-with-finally.
 I know this can be workarounded, and that it is sometimes requested, but I think that for consistency it is a *nice to have* to be on par with C#.
@@ -13,7 +13,8 @@ http://stackoverflow.com/questions/1789682/how-do-i-ignore-exceptions-in-f
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome

@@ -1,10 +1,10 @@
 # Idea 6752948: Support bind (e.g. "await") in the middle of expressions, possibly using !! operator #
 
-## Status : open
+### Status : open
 
-## Submitted by Arash Sahebolamri on 11/21/2014 12:00:00 AM
+### Submitted by Arash Sahebolamri on 11/21/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 that does the binding implicitly; so that it wouldn't be necessary to bind every monadic expression to a name. In the case of async workflows, it would behave like the C# await keyword.
 With this operator, instead of this:

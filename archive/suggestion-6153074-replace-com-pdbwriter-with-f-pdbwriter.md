@@ -1,10 +1,10 @@
 # Idea 6153074: replace COM PdbWriter with F# PdbWriter #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Cameron Taggart on 7/9/2014 12:00:00 AM
+### Submitted by Cameron Taggart on 7/9/2014 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 Please replace the COM based PdbWriter and with a fully managed F# PdbWriter that can be used on Mono on Linux too. As adoption of F# increases on Linux, it is important that debugging binaries be able to be shared. Source indexing leverages pdb files and this would be great to have on Linux as well.
 I wrote SourceLink which is an F# project with an Apache License. It is able to read the Root and Info streams of a pdb. It could be used as a starting point. I was hoping to be able to reverse engineer the entire pdb file, but it is a fairly difficult task without access to some of the legacy source code or Microsoft engineering support.
@@ -13,7 +13,8 @@ https://github.com/ctaggart/SourceLink
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment by Don Syme
 

@@ -1,10 +1,10 @@
 # Idea 8210280: Add plugable preprocesser support to compiler #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Xavier Zwirtz on 6/2/2015 12:00:00 AM
+### Submitted by Xavier Zwirtz on 6/2/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Add support for handing in a preprocessor dll to the compiler.
 A preprocessor dll would be able to receive the AST at different stages of the compile process and modify it.
@@ -31,7 +31,8 @@ It would also allow for more "simple" plugins to be made, like syntactic macros.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.

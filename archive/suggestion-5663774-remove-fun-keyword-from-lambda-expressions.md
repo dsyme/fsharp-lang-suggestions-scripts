@@ -1,10 +1,10 @@
 # Idea 5663774: Remove fun keyword from lambda expressions #
 
-## Status : open
+### Status : open
 
-## Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
+### Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
 
-## 270 votes
+### 270 votes
 
 Maybe make it optional?
 Otherwise it is more verbose than C#.

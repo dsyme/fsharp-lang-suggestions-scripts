@@ -1,10 +1,10 @@
 # Idea 5716959: Support markdown in documentation comments #
 
-## Status : open
+### Status : open
 
-## Submitted by Anonymous on 4/2/2014 12:00:00 AM
+### Submitted by Anonymous on 4/2/2014 12:00:00 AM
 
-## 19 votes
+### 19 votes
 
 F# currently supports documentation comments with either XML tags or no tags. The no tags format is convenient to write, but does not allow formatting the comments for the VS IDE. Use of XML tags allows formatting the documentation comment, but the act of writing the documentation comment becomes a heavy burden as XML is not a very convenient format for manual editing. I would like to suggest supporting some lighter-weight formatting syntax such as markdown.
 

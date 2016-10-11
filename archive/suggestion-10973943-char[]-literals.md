@@ -1,17 +1,18 @@
 # Idea 10973943: Char[] Literals #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 12/5/2015 12:00:00 AM
+### Submitted by Jared Hester on 12/5/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 @"\\server\share"B is a byte array
 @"\\server\share"C could be a char array
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Combining into one suggestion with [/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime](/archive/suggestion-11109258-allow-string-literal-formats-for-timespan-datetime.md)
 

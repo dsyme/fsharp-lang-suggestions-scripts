@@ -1,10 +1,10 @@
 # Idea 7228061: Compound types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Rosenbaum on 3/16/2015 12:00:00 AM
+### Submitted by Greg Rosenbaum on 3/16/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 This is a feature present in Scala.
 A compound type is an extension of flexible types that involves multiple type constraints on a type parameter. You specify compound types like this:
@@ -18,7 +18,8 @@ The & symbol is chosen not to conflict with the word 'and' when specifying multi
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declining – see comment below from Don Syme
 

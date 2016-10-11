@@ -1,10 +1,10 @@
 # Idea 5670335: Pure Functions - "pure" keyword #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Will Smith on 3/23/2014 12:00:00 AM
+### Submitted by Will Smith on 3/23/2014 12:00:00 AM
 
-## 116 votes
+### 116 votes
 
 I've been thinking about this one for a while.
 At the moment, it's pretty easy to make a pure function and as a long as you follow a few rules, you should be fine. There is just no guarantee. A way for the F# compiler to enforce a function to be "pure" and not allow any side effects/mutations ever would ensure that guarantee. A "pure" function will have more constraints. This may also allow for more aggressive optimizations.
@@ -12,7 +12,8 @@ A challenge with this is how do we handle existing functions that are referentia
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declining per my comment of July 18, 2015 12:16
 Don Syme, F# Language Evolution

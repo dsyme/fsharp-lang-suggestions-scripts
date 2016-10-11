@@ -1,10 +1,10 @@
 # Idea 15448122: Add a warning for new keyword used on types which are not IDisposable #
 
-## Status : open
+### Status : open
 
-## Submitted by Reed Copsey, Jr. on 7/28/2016 12:00:00 AM
+### Submitted by Reed Copsey, Jr. on 7/28/2016 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 This is an alternative to: [/archive/suggestion-15257796-remove-warning-for-new-keyword-on-idisposable](/archive/suggestion-15257796-remove-warning-for-new-keyword-on-idisposable.md)
 The idea is that the new keyword provides valuable information, but only if you do not use it on all types.

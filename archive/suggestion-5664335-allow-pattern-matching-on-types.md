@@ -1,10 +1,10 @@
 # Idea 5664335: Allow Pattern Matching on Types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Craig Stuntz on 3/21/2014 12:00:00 AM
+### Submitted by Craig Stuntz on 3/21/2014 12:00:00 AM
 
-## 20 votes
+### 20 votes
 
 I'm deserializing into abitrary record types and need to parse the deserialized values into appropriate types for the constructor. I'd like to do:
 match parameterInfo.ParameterType with
@@ -19,7 +19,8 @@ match parameterInfo.ParameterType with
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declining per my comments, and also the comments from Craig. IMHO there is an adequate workaround for this that is clear, even if a little more explicit.
 Don Syme, Current BDFL F# Language/Library Evolution

@@ -1,10 +1,10 @@
 # Idea 14795655: Support mixed F# and C# projects in order to extend F# usage #
 
-## Status : open
+### Status : open
 
-## Submitted by zjv on 6/13/2016 12:00:00 AM
+### Submitted by zjv on 6/13/2016 12:00:00 AM
 
-## 121 votes
+### 121 votes
 
 Support mixing F# and C# source files in the same project in order to support a gradual move to F# for new users/organisations and to support cases where tooling is oriented at C# (F# not supported)
 For instance I could use this feature to slowly move a C# project to F# one class at the time. Another example would be to use C# tooling to generate web infrastructure like ASP.NET 5 controllers (because F# does not currently have templates for this) and then call directly into F# from those.

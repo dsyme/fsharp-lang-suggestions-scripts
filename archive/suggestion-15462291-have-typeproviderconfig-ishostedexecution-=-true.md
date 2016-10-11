@@ -1,10 +1,10 @@
 # Idea 15462291: Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files #
 
-## Status : open
+### Status : open
 
-## Submitted by Dmitry Morozov on 7/29/2016 12:00:00 AM
+### Submitted by Dmitry Morozov on 7/29/2016 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files
 This came up in my work on FSharp.Data.SqlClient library.

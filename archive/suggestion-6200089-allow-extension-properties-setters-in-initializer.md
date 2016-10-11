@@ -1,10 +1,10 @@
 # Idea 6200089: Allow Extension properties setters in initializers #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Paul on 7/21/2014 12:00:00 AM
+### Submitted by Paul on 7/21/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 I suggest we consider allowing ExtensionProperty=expr property setters in initializers.
 For example
@@ -18,7 +18,8 @@ ChildrenInitializer = [Entry(Placeholder = “Username”);Entry()])
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 This has now been completed for F# 4.0+, see https://github.com/Microsoft/visualfsharp/pull/17 and https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/ExtensionPropertyInitializersDesignAndSpec.md
 

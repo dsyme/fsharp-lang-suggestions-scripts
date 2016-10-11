@@ -1,10 +1,10 @@
 # Idea 13476465: Update records to allow embeddable records #
 
-## Status : open
+### Status : open
 
-## Submitted by Dave Thomas on 4/19/2016 12:00:00 AM
+### Submitted by Dave Thomas on 4/19/2016 12:00:00 AM
 
-## 22 votes
+### 22 votes
 
 Update the sytax of records to allow the following:
 type Position = {X : int; Y : int}

@@ -1,10 +1,10 @@
 # Idea 5762135: Support for type classes or implicits #
 
-## Status : open
+### Status : open
 
-## Submitted by exercitus vir on 4/12/2014 12:00:00 AM
+### Submitted by exercitus vir on 4/12/2014 12:00:00 AM
 
-## 391 votes
+### 391 votes
 
 (Updated the suggestion to "type classes or implicits", and edited it)
 Please add support for type classes or implicits.

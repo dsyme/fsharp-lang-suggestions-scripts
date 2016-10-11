@@ -1,10 +1,10 @@
 # Idea 6533279: IDE improvement #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Alexei Odeychuk on 10/7/2014 12:00:00 AM
+### Submitted by Alexei Odeychuk on 10/7/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 F# Depth Colorizer Extension for Visual Studio 2013 [1] offers an entirely different, light years better quality of coding and readability of code in F# and deserves to be part of Visual Studio rather than a separate extension. Please turn the depth-colorizing functionality offered by that extension into a default IDE feature and part of the F# Language Service. The ability to write code that's VERY easy-to-read and understand (available to everyone, not only those who downloaded and installed the extension) will have a positive impact on the language popularity and improve the F# position in the TIOBE Programming Community index.
 P.S. Xamarin Studio is also a good candidate to make this functionality available as a default IDE feature.
@@ -13,7 +13,8 @@ Reference:
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 Please see the Visual F# Power Tools where this feature is available, http://fsprojects.github.io/VisualFSharpPowerTools/
 Note that since this suggestion related to the Visual F# IDE Tools rather than the F# language itself, it rightly belongs in https://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-tools

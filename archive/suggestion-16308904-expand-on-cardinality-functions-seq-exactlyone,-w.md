@@ -1,10 +1,10 @@
 # Idea 16308904: Expand on cardinality functions Seq.exactlyOne, with Seq.tryExactlyOne and add oneOrMore, zeroOrMore #
 
-## Status : open
+### Status : open
 
-## Submitted by Abel on 9/22/2016 12:00:00 AM
+### Submitted by Abel on 9/22/2016 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 While it is quite trivial to write these functions, I think they have merit. First of, it is good there's a Seq.exactlyOne, but it throws and if you want a non-throwing version, you'll have to write one your own. It's odd there's a creator function, Seq.singleton, but not a test-function.
 Since we have Seq.exactlyOne, it should have its logical cardinality counterparts for zero-or-one and one-or-more to be available too.

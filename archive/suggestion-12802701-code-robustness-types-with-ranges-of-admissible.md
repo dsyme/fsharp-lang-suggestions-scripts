@@ -1,10 +1,10 @@
 # Idea 12802701: Code robustness: Types with ranges of admissible values (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 I suggest introducing an aspect that can be applied to declarations of enumeration types, discriminated union types and user-defined numeric types with the aim of specifying the range of admissible values for subtypes derived from base types easily.
 This suggestion is an extension of my previous suggestions:

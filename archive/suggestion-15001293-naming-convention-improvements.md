@@ -1,10 +1,10 @@
 # Idea 15001293: Naming convention improvements #
 
-## Status : declined
+### Status : declined
 
-## Submitted by DonO on 6/27/2016 12:00:00 AM
+### Submitted by DonO on 6/27/2016 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 I don't think the language benefits from the use of abbreviations especially when they are not consistent. For example
 type ResizeArray<'T> = System.Collections.Generic.List<'T>
@@ -12,7 +12,8 @@ I would say that should be named ResizableArray. The current naming sounds like 
 
 
 
-## Response by fslang-admin on 7/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 7/5/2016 12:00:00 AM
 
 While the suggestion is reasonable, this decision was made as part of the F# 2.0, and the slight improvement isn’t sufficient to justify the breaking change renaming at this point
 Don Syme, F# Language Evolution

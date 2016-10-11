@@ -1,10 +1,10 @@
 # Idea 6995318: Use the default keyword instead of the [<DefaultValue>] attribute #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 1/22/2015 12:00:00 AM
+### Submitted by Alexei Odeychuk on 1/22/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Use the default keyword instead of the [<DefaultValue>] attribute
 Programming is a human activity. I think F# code has to be more elegant and readable for human programmers.
@@ -26,7 +26,8 @@ Please declare the [<DefaultValue>] attribute as an obsolete (unrecommeded to us
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

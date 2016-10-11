@@ -1,10 +1,10 @@
 # Idea 13696080: Add empty value into the String module #
 
-## Status : open
+### Status : open
 
-## Submitted by Rex Ng on 5/2/2016 12:00:00 AM
+### Submitted by Rex Ng on 5/2/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Copied from this GitHub issue: https://github.com/Microsoft/visualfsharp/issues/1139
 Right now, if I do not want to use the empty string literal "", I have to do something like

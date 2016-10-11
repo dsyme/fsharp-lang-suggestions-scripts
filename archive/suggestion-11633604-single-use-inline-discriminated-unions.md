@@ -1,10 +1,10 @@
 # Idea 11633604: Single-use / inline discriminated unions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Isaac Abraham on 1/29/2016 12:00:00 AM
+### Submitted by Isaac Abraham on 1/29/2016 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 I noticed something similar to this in Typescript and it got me thinking - there are occasions when you have a discriminated union that you only want to use as a "one off" e.g.
 type WindDirection = N | S | E | W
@@ -15,7 +15,8 @@ Almost like a "nameless DU" - similar in a way to active patterns - which might 
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined – see my comment above.
 It’s not a bad idea, but I feel the use of type names is too important in the language to justify the feature (which after all only saves a couple of lines in type definitions, which are themselves rare)

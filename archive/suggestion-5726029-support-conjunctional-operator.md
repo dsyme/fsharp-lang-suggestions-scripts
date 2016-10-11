@@ -1,17 +1,18 @@
 # Idea 5726029: Support conjunctional operator #
 
-## Status : declined
+### Status : declined
 
-## Submitted by bleis-tift on 4/3/2014 12:00:00 AM
+### Submitted by bleis-tift on 4/3/2014 12:00:00 AM
 
-## 27 votes
+### 27 votes
 
 'a < x < b' means 'a < x && x < b'. (but x is evaluate only once)
 Python implements this feature.
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 I’m declining this because I feel the added expression form doesn’t make the very high bar for adding new expression constructs to the language. See the discussion for other comments.
 Further input and discussion welcome

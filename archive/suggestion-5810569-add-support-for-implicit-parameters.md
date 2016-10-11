@@ -1,10 +1,10 @@
 # Idea 5810569: Add support for implicit parameters #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Radek Micek on 4/21/2014 12:00:00 AM
+### Submitted by Radek Micek on 4/21/2014 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 Implicit parameters in Scala are used to simulate type classes or to pass singleton values (eg. database connection) to functions without explicitly writing them.
 We will need: syntax to mark parameters as implicit, syntax to mark values eligible for use as implicit arguments and syntax to call functions with implicit arguments written explicitly. Additionally we will need to invent scoping rules for implicit values.
@@ -13,7 +13,8 @@ Cons: It can make programs harder to read.
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 This is now a duplicate of [/archive/suggestion-5762135-support-for-type-classes-or-implicits](/archive/suggestion-5762135-support-for-type-classes-or-implicits.md)
 

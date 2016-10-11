@@ -1,16 +1,17 @@
 # Idea 7640829: Allow access modifies to auto properties getters and setters #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Виктор Милованов on 4/21/2015 12:00:00 AM
+### Submitted by Виктор Милованов on 4/21/2015 12:00:00 AM
 
-## 30 votes
+### 30 votes
 
 member val Property = 10 with get, private set
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marked approved-in-principle, see comments. This won’t be high priority but is we get a quality PR for it we will accept it.
 

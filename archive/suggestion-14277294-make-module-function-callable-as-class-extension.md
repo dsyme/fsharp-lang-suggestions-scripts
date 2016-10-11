@@ -1,10 +1,10 @@
 # Idea 14277294: Make module function callable as class extension method #
 
-## Status : open
+### Status : open
 
-## Submitted by trek42 on 5/27/2016 12:00:00 AM
+### Submitted by trek42 on 5/27/2016 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Sometimes it's more convenient and succint to call a function using dot-notation (i.e., class method) than calling module functions with pipeline, yet module function is easier to be composed. I propose the compiler automatically generate class extension methods from module functions, based on a new attribute "CallByInstance" Example:
 namespace Namespace

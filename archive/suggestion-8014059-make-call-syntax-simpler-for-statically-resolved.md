@@ -1,10 +1,10 @@
 # Idea 8014059: Make call syntax simpler for statically resolved member constraints #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Andrzej Kukuła on 5/18/2015 12:00:00 AM
+### Submitted by Andrzej Kukuła on 5/18/2015 12:00:00 AM
 
-## 29 votes
+### 29 votes
 
 The idea is basically explained by the following code:
 // this works as expected
@@ -24,7 +24,8 @@ You can also view this code highlighted at http://pastebin.com/CHMj7xQG
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle. Thanks for the suggestion.
 We will add an RFC for this in due course, see https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs

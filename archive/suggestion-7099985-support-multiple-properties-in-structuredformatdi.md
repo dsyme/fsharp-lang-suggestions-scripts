@@ -1,10 +1,10 @@
 # Idea 7099985: Support Multiple Properties in StructuredFormatDisplayAttribute #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Sven Grosen on 2/15/2015 12:00:00 AM
+### Submitted by Sven Grosen on 2/15/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 There's currently a limitation in StructuredFormatDisplayAttribute whereby you can only provide a single property in the Value.
 So for a type like this: type Person = {First: string; Last: string} I have to create another property like FullName to use in StructuredFormatDisplayAttribute. The fix/enhancement should be easy to do, and something I could probably just do myself.
@@ -12,7 +12,8 @@ I first broached this subject on StackOverflow and Tomas Petricek suggested I cr
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 See comments – in F# 4.0
 

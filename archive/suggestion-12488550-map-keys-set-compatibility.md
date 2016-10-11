@@ -1,10 +1,10 @@
 # Idea 12488550: Map keys <--> set compatibility #
 
-## Status : open
+### Status : open
 
-## Submitted by mikero on 2/26/2016 12:00:00 AM
+### Submitted by mikero on 2/26/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 A map's key collection is a set and should be treatable as such. Currently (AFAIK) you must get the keys from the map like so:
 let keys = Map.toSeq >> Seq.map fst

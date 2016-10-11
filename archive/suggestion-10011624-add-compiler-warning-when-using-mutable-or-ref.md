@@ -1,10 +1,10 @@
 # Idea 10011624: Add compiler-warning when using mutable or ref #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Wael on 10/1/2015 12:00:00 AM
+### Submitted by Wael on 10/1/2015 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 add compiler flag: --warn-mutable, --warn-ref which would generate warning when using mutable (either mutable keyword or when using ref).
 This would allow pure modules to be made.
@@ -12,7 +12,8 @@ Note that F# doesn't have any "pure" tags on member methods like the "const" qua
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 See comment above. Declined since we’d prefer this to be implemented in tools such as FSharpLint.
 Don Syme, F# Language and Core Library Evolution

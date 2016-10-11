@@ -1,10 +1,10 @@
 # Idea 12560184: Use the in keyword and "|" symbol for membership tests and better readability (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 I suggest using the in keyword for membership tests (from Ada 2012).
 Example # 1:

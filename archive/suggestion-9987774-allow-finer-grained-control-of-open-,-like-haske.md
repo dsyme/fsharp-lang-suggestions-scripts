@@ -1,10 +1,10 @@
 # Idea 9987774: Allow finer-grained control of "open", like Haskell's "import hiding" #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Robin Munn on 9/30/2015 12:00:00 AM
+### Submitted by Robin Munn on 9/30/2015 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 Currently, F#'s "open" keyword imports everything from the opened namespace, which can result in unexpected shadowing. For example, if I do:
 open Foo
@@ -28,7 +28,8 @@ The Python community has had a long-standing recommendation NOT to use "from Foo
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thank you for making this suggestion. I’ve marked it as declined per my comment below.
 However I sympathise with the suggestion and would like to hear more if yo find specific situations where not having this feature has caused bugs,

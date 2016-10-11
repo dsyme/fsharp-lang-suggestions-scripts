@@ -1,10 +1,10 @@
 # Idea 10256475: Catch improper use of monadic return in async #
 
-## Status : planned
+### Status : planned
 
-## Submitted by William Blum on 10/17/2015 12:00:00 AM
+### Submitted by William Blum on 10/17/2015 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 The following code should issue a type checking error since return () should yield an Async<unit> and return 42 should yield an Async<int>.
 let f c =
@@ -23,7 +23,8 @@ return ()
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 See comment
 Approved in principle, though definitely subject to a more detailed satisfactory design (not to adhoc,not specific to “async”)

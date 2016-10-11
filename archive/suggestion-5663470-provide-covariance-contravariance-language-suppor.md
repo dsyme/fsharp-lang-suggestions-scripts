@@ -1,10 +1,10 @@
 # Idea 5663470: Provide covariance/contravariance language support with syntaxes in F# in sync with covariance/contravariance in C#/VB #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Eriawan Kusumawardhono on 3/21/2014 12:00:00 AM
+### Submitted by Eriawan Kusumawardhono on 3/21/2014 12:00:00 AM
 
-## 150 votes
+### 150 votes
 
 Covariance/contravariance has its beginning in CLR 2.0 and also with the introduction of generics in .NET 2.0 (also in F#, C# and VB)
 Then in C# 4.0 and VB 10, we have covariance/contravariance supports in the language itself. Currently we don't have support for these covariance and contravariance in F#.

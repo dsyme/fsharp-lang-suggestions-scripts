@@ -1,10 +1,10 @@
 # Idea 12564057: Allow basic integer numeric type names in a for loop (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 I suggest using basic integer numeric type names (namely, sbyte, byte, int16, uint16, int (int32), uint32, int64, uint64) in a for loop meaning to try every value of the type (from Ada 2012).
 For example,

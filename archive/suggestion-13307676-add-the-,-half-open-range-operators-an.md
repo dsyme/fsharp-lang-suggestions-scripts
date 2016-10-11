@@ -1,10 +1,10 @@
 # Idea 13307676: Add the (..<), (>..) half-open range operators and (>..<) open range operator (from Swift) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I suggest adding the (..<) and (>..) half-open range operators and (>..<) open range operator to the language in order to reduce risks of introducing off-by-one errors in code.
 There is the (..) closed range operator in F# to generate ranges of consecutive values, but now the language lacks the (..<) and (>..) half-open range operators to generate ranges of consecutive values without the first or last value specified respectively. Furthermore, there is no open range operator (>..<) to generate a range of consecutive values without both the first and last value.

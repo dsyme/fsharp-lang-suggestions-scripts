@@ -1,10 +1,10 @@
 # Idea 13412529: support flexible types in type alias #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Gauthier Segay on 4/13/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 4/13/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Ability to define
 type CreateCommand = unit -> #IDbCommand
@@ -15,7 +15,8 @@ I'm not clear if there are cases where it would create issues, but it would be n
 
 
 
-## Response by fslang-admin on 6/13/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/13/2016 12:00:00 AM
 
 Declined per my comment below
 Don Syme

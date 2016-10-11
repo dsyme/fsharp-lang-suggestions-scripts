@@ -1,10 +1,10 @@
 # Idea 13400112: Enable to use open in other scopes #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 4/12/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 4/12/2016 12:00:00 AM
 
-## 26 votes
+### 26 votes
 
 It would be nice to be able to use open in function scope and maybe other places where it currently is illegal.
 

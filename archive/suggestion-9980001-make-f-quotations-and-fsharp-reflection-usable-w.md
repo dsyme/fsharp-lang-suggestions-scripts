@@ -1,10 +1,10 @@
 # Idea 9980001: Make F# quotations and FSharp.Reflection usable with mscorlib and FSharp.Core for other target profiles #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 9/29/2015 12:00:00 AM
+### Submitted by Don Syme on 9/29/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 F# quotations have nodes related to tuple, delegate, function, union and record types. Likewise, FSharp.Reflection has helpers related to union and record types.
 When running on .NET 4.x everything works fine. But if you use ReflectionOnlyLoadFrom to get an FSharp.Core for an alternative profile, then you can't use most F# quotation nodes correctly - all sorts of things go wrong when you try to construct nodes that refer to the types stemming from this "other profile" FSharp.Core. Note you are still running .NET 4.x code, but reflecting over assemblies relevant to other profiles.
@@ -15,7 +15,8 @@ Likewise fixes should be made in FSharp.Reflection (especially FSharpUnionCase)
 
 
 
-## Response by fslang-admin on 6/17/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/17/2016 12:00:00 AM
 
 Approved, this should always have been allowed.
 Don Syme, F# Language and Core Library Evolution

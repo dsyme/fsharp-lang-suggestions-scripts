@@ -1,16 +1,17 @@
 # Idea 6803533: Support .NET Core and CoreCLR #
 
-## Status : started
+### Status : started
 
-## Submitted by Ryan Riley on 12/4/2014 12:00:00 AM
+### Submitted by Ryan Riley on 12/4/2014 12:00:00 AM
 
-## 377 votes
+### 377 votes
 
 .NET Core is the new cloud runtime model for the CLR and used in ASP.NET vNext.
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 Strictly speaking this issue is not meant for https://fslang.uservoice.com, since it is about targeting a particular platform with the tooling, rather than the F# language or core library design itself.
 However, I’m leaving it open for now since it’s getting so many votes. We may close it sometime soon to release the votes.

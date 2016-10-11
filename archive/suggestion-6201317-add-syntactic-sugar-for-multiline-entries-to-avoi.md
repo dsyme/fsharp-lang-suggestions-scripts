@@ -1,10 +1,10 @@
 # Idea 6201317: Add syntactic sugar for multiline entries to avoid hanging brackets #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Dmítrij Jevgénijevič Ačkásov on 7/22/2014 12:00:00 AM
+### Submitted by Dmítrij Jevgénijevič Ačkásov on 7/22/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Hanging brackets are bad why don't we replace those with initial opening bracket in multiline implementations and drop the closing one? The same way we use | and |> for multiline statements for the sake of symmetry? :)
 From this:
@@ -31,7 +31,8 @@ let array =
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Interesting suggestion, but removing closing brackets would be a radical departure for F# syntax. Declining for now.
 Don Syme, current BDFL F# Language/Library Evolution.

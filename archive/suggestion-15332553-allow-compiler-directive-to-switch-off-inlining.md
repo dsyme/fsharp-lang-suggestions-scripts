@@ -1,10 +1,10 @@
 # Idea 15332553: allow compiler directive to switch off inlining #
 
-## Status : open
+### Status : open
 
-## Submitted by Steven Taylor on 7/22/2016 12:00:00 AM
+### Submitted by Steven Taylor on 7/22/2016 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 to get around debugging issues with the inline macro device, this pattern creaps into the code base (taken from FsPickler):
 #if DEBUG

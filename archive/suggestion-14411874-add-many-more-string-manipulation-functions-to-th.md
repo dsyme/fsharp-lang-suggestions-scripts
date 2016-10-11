@@ -1,10 +1,10 @@
 # Idea 14411874: Add many more string manipulation functions to the Core.String module #
 
-## Status : open
+### Status : open
 
-## Submitted by TheInnerLight on 5/30/2016 12:00:00 AM
+### Submitted by TheInnerLight on 5/30/2016 12:00:00 AM
 
-## 53 votes
+### 53 votes
 
 The Core.String module does not provide nearly enough features at present, too often we have to revert to using the the standard .NET string class which both hinders tidy piping and stops us taking advantage of curried args / partial application.
 I suggest that at least the following functions be added to the string module:

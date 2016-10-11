@@ -1,10 +1,10 @@
 # Idea 6528970: The base keyword shouldn't be a keyword. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Robert Fuszenecker on 10/6/2014 12:00:00 AM
+### Submitted by Robert Fuszenecker on 10/6/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 As the 'this' pointer is not a keyword, the 'base' identifier shouldn't be, too. We could use the form i.e.
 type Derived() =
@@ -14,7 +14,8 @@ someBase.Print()
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 See comment above.
 To elaborate, the decision to make “base” a keyword as distinct from naming “this” was made in F# 1.×. We did consider allowing the naming of “base”, but decided against it, preferring to keep the OO-inheritance-base-call mechanism (which is kind of unpleasant) very syntactically distinct from the ability to name and recursively refer to “this” (which in to some extent can be used in nicely functional ways).

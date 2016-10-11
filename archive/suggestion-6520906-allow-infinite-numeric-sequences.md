@@ -1,10 +1,10 @@
 # Idea 6520906: Allow infinite numeric sequences #
 
-## Status : declined
+### Status : declined
 
-## Submitted by luketopia on 10/3/2014 12:00:00 AM
+### Submitted by luketopia on 10/3/2014 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 F# has various syntaxes for defining numeric sequences. Some examples:
 > { 0 .. 5 };;
@@ -32,7 +32,8 @@ That probably can't be changed due to backwards compatibility, and I'm not even 
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per comment below.
 Best regards

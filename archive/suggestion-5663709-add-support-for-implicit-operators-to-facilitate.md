@@ -1,10 +1,10 @@
 # Idea 5663709: Add support for implicit operators to facilitate language interop #
 
-## Status : open
+### Status : open
 
-## Submitted by Nelak on 3/21/2014 12:00:00 AM
+### Submitted by Nelak on 3/21/2014 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 Add support for implicit operators to facilitate language interop instead of having to write an explicit operator like:
 http://stackoverflow.com/questions/10719770/is-there-anyway-to-use-c-sharp-implicit-operators-from-f

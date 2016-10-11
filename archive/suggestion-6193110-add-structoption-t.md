@@ -1,17 +1,18 @@
 # Idea 6193110: Add StructOption<T> #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Demetrios Obenour on 7/19/2014 12:00:00 AM
+### Submitted by Demetrios Obenour on 7/19/2014 12:00:00 AM
 
-## 59 votes
+### 59 votes
 
 Currently, whenever a new Option is created, a heap allocation is required. This comes at a performance penalty.
 I suggest that a new type StructOption<T> be made available for performance.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle, per my comment below.
 Link to RFC to follow

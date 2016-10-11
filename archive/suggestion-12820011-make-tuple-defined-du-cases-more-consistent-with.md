@@ -1,10 +1,10 @@
 # Idea 12820011: Make tuple defined DU cases more consistent with tuple #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 3/5/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 3/5/2016 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 It is possible to pattern match tuples in a flexible way:
 let a = 1,2

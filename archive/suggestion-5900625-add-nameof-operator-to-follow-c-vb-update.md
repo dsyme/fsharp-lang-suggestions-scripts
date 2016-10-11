@@ -1,10 +1,10 @@
 # Idea 5900625: Add NameOf operator to follow C#/VB update #
 
-## Status : started
+### Status : started
 
-## Submitted by amazingant on 5/8/2014 12:00:00 AM
+### Submitted by amazingant on 5/8/2014 12:00:00 AM
 
-## 126 votes
+### 126 votes
 
 The Roslyn compiler currently (as of 2014-05-08) has a new NameOf operator listed as "Planned" for both C# and VB:
 (https://roslyn.codeplex.com/wikipage?title=Language%20Feature%20Status&referringTitle=Documentation)
@@ -12,7 +12,8 @@ Pending its arrival there, it would be awesome to get something similar in F# as
 
 
 
-## Response by fslang-admin on 6/17/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/17/2016 12:00:00 AM
 
 RFC is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1003-nameof-operator.md
 

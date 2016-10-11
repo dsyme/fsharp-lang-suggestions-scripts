@@ -1,10 +1,10 @@
 # Idea 9738327: easier interop with FSharp.Core from other .net languages #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 9/13/2015 12:00:00 AM
+### Submitted by Gauthier Segay on 9/13/2015 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 A first example is FSharpOption<T> and it's usage in C#/VB, extend FSharp.Core with this module to make it easier to use:
 http://fssnip.net/so

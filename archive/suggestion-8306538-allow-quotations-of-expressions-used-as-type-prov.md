@@ -1,10 +1,10 @@
 # Idea 8306538: Allow quotations of expressions used as Type Provider arguments #
 
-## Status : open
+### Status : open
 
-## Submitted by thinkb4coding on 6/10/2015 12:00:00 AM
+### Submitted by thinkb4coding on 6/10/2015 12:00:00 AM
 
-## 30 votes
+### 30 votes
 
 This would enable scenarios where the type provider can rewrite, or abstract at compile time F# code and emit new one.
 It could replace a macro system without the need for new syntax or tooling.

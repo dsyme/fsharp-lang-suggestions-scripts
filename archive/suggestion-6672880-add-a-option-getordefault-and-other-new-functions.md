@@ -1,16 +1,17 @@
 # Idea 6672880: Add a Option.getOrDefault and other new functions to the Option module #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 Like List.nth, defaultArgs has the parameters in the "wrong order" to be able to be used in partial application. List.item is solving that problem, we should also do the same for defaultArg
 
 
 
-## Response by fslang-admin on 2/29/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/29/2016 12:00:00 AM
 
 Approved-in-principle to make some sensible additions to the Option module
 Details about naming and exact additions will need to be finalized.

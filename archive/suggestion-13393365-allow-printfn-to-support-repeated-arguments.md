@@ -1,10 +1,10 @@
 # Idea 13393365: Allow printfn to support repeated arguments #
 
-## Status : open
+### Status : open
 
-## Submitted by Dave Thomas on 4/12/2016 12:00:00 AM
+### Submitted by Dave Thomas on 4/12/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Rather than:
 printfn "%i %x %A" mySecretNumber mySecretNumber mySecretNumber

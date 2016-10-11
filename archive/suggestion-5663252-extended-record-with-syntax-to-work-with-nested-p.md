@@ -1,10 +1,10 @@
 # Idea 5663252: Extended record with syntax to work with nested properties #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 35 votes
+### 35 votes
 
 let's say we have the following:
 type RecordA =
@@ -31,7 +31,8 @@ let a' = { a with p1 = 2 }
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Closed in favour of [/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f](/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f.md) per comment below
 Don Syme, F# Language Evolution

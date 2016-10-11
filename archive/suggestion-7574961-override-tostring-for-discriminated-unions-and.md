@@ -1,10 +1,10 @@
 # Idea 7574961: Override `ToString` for discriminated unions and records #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Vasily Kirichenko on 4/15/2015 12:00:00 AM
+### Submitted by Vasily Kirichenko on 4/15/2015 12:00:00 AM
 
-## 181 votes
+### 181 votes
 
 It's a pain and dirty to add `override x.ToString() = sprintf "%A" x` to every type in order to make `String.Format()` happy:
 type T1 =
@@ -19,7 +19,8 @@ I think it's very easy to teach the compiler generate this override automaticall
 
 
 
-## Response by fslang-admin on 6/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/23/2016 12:00:00 AM
 
 Marking as planned, though we need to work out the details
 Don Syme

@@ -1,10 +1,10 @@
 # Idea 6098490: Add a module of efficient non-structural equality/comparison operators #
 
-## Status : completed
+### Status : completed
 
-## Submitted by fsharporg-lang on 6/25/2014 12:00:00 AM
+### Submitted by fsharporg-lang on 6/25/2014 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 In F# 3.x uses of =, <>, <, >, <=, >=, compare, max and min use “structural equality and comparison”. This is the right default for a functional data-oriented language.
 However, this gives rise to problems because
@@ -14,7 +14,8 @@ In F# 4.0, it is reasonable to add a module NonStructuralOperators to FSharp.Cor
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 Completed for F# 4.0, See https://visualfsharp.codeplex.com/SourceControl/network/forks/dsyme/cleanup/contribution/7675
 Don Syme, F# Language/Library Evolution

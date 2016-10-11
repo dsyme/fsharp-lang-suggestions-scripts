@@ -1,10 +1,10 @@
 # Idea 10012488: Add anonymous modules #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alex Corrado on 10/1/2015 12:00:00 AM
+### Submitted by Alex Corrado on 10/1/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Often, I find myself writing little private modules to provide some syntactic sugar for a type that I'm using heavily in a file.
 For instance, take this method for quoting an F# function into a LINQ Expression Tree from http://stackoverflow.com/a/23146624/578190. It would be nice if I could write it like this:
@@ -22,7 +22,8 @@ The `open module =` syntax is just my random suggestion :)
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Declined per comment from requestor
 

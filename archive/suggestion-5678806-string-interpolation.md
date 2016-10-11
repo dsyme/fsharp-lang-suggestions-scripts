@@ -1,10 +1,10 @@
 # Idea 5678806: String Interpolation #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Liviu on 3/25/2014 12:00:00 AM
+### Submitted by Liviu on 3/25/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 It will be excellent to have string interpolation with intellisense support as opposed to the anacronical printf variants.
 Syntax may be:
@@ -14,7 +14,8 @@ let b = $" ${p} has $(a*2) items"
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declining as [/archive/suggestion-6002107-steal-nice-println-syntax-from-swift](/archive/suggestion-6002107-steal-nice-println-syntax-from-swift.md) is close enough to act as a “duplicate”.
 Don Syme, F# Language/Library Evolution

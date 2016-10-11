@@ -1,10 +1,10 @@
 # Idea 11723964: Allow types and modules to be mutually referential (not across files, only within a closed scope in a single file) #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 2/4/2016 12:00:00 AM
+### Submitted by Don Syme on 2/4/2016 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 Currently types and modules can't be mutually referential - a group of types can be using "type X = ... and Y = ... "
 I propose we allow a collection of types and modules within a single file to be mutually referential, either by using
@@ -19,7 +19,8 @@ Inference would be as "one big mutually referential group", just as "type Y = ..
 
 
 
-## Response by fslang-admin on 6/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/23/2016 12:00:00 AM
 
 Based on the prototypes and experiments with this feature reported at https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1009-mutually-referential-types-and-modules-single-scope.mds, I’m marking it as “approved in principle”.
 This RFC and its implementation have now been accepted.

@@ -1,10 +1,10 @@
 # Idea 10276974: Allow all declarations to be mutually referential and the compiler takes files in any order #
 
-## Status : open
+### Status : open
 
-## Submitted by Kevin Ransom on 10/19/2015 12:00:00 AM
+### Submitted by Kevin Ransom on 10/19/2015 12:00:00 AM
 
-## 39 votes
+### 39 votes
 
 With F# becoming more and more multi-editor and cross-platform, it is becoming increasingly difficult to teach all build/edit tools about F#'s file order. The F# community are currently struggling to "update" each new build/edit tool to understand that F# actually needs a file order.
 Part of the problem is that there is no standard textual way to specify this file order except as command line arguments, and these are not stored in an editable form. There is no standard way to specify the F# file order. We need an (optional) solution to this problem that is closer to home and doesn't involve modifying build/edit tools.

@@ -1,10 +1,10 @@
 # Idea 5664089: Allow argument expressions to omit parentheses #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Stephen Swensen on 3/21/2014 12:00:00 AM
+### Submitted by Stephen Swensen on 3/21/2014 12:00:00 AM
 
-## 24 votes
+### 24 votes
 
 For example, given let f x y = x + y, currently we must do
 f ("hello".ToString()) ("world".ToString())
@@ -14,7 +14,8 @@ I understand that method application was deliberately weakened in the presence o
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. It has been marked declined, please see my comment
 Don Syme, F# Language Evolution

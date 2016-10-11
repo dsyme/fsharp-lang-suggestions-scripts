@@ -1,17 +1,18 @@
 # Idea 8432340: Inherit `StructuredFormatDisplayAttribute` specified on interface #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 6/16/2015 12:00:00 AM
+### Submitted by exercitus vir on 6/16/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Annotating an interface with `StructuredFormatDisplayAttribute` should be inherited by types that implement that interface. This would safe a lot of repetitive code when an interface requires a property that is used by `StructuredFormatDisplayAttribute` is implemented by a type.
 This suggestion would require the support of the following suggestion to work this way: [/archive/suggestion-8431944-allow-to-specify-fully-qualified-name-of-property](/archive/suggestion-8431944-allow-to-specify-fully-qualified-name-of-property.md)
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per request
 

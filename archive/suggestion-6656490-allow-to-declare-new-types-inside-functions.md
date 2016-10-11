@@ -1,10 +1,10 @@
 # Idea 6656490: Allow to declare new types inside functions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Vasily Kirichenko on 11/3/2014 12:00:00 AM
+### Submitted by Vasily Kirichenko on 11/3/2014 12:00:00 AM
 
-## 23 votes
+### 23 votes
 
 The idea is inspired by "Voldemont" typed from D language http://wiki.dlang.org/Voldemort_types
 In short, you are allowed to define types inside function scope and return instances of such types from the functions. The proposing syntax is as following:
@@ -35,7 +35,8 @@ As for me, the main usecase for nested types is replacement for tuples as return
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Duplicate of [/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes](/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
 

@@ -1,10 +1,10 @@
 # Idea 6085102: Allow F# compiler directives like #nowarn to span less than an entire file. #
 
-## Status : open
+### Status : open
 
-## Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
+### Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Idea posted here:
 http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3338653-allow-f-compiler-directives-like-nowarn-to-span

@@ -1,10 +1,10 @@
 # Idea 13056630: Code clarity: Dot notation for casting objects to interfaces #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/21/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/21/2016 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 I suggest introducing the dot notation syntax for casting an object to an interface.
 It would be great to write, for example:

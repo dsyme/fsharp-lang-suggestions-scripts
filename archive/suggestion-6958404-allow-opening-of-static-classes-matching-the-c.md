@@ -1,16 +1,17 @@
 # Idea 6958404: Allow opening of static classes (matching the C# design) #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Isaac Abraham on 1/13/2015 12:00:00 AM
+### Submitted by Isaac Abraham on 1/13/2015 12:00:00 AM
 
-## 31 votes
+### 31 votes
 
 You currently can't "open" a static class e.g. System.Console - only modules or namespaces. We should be able to also open static classes as well.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thanks for the suggestion. Approved in principle.
 We will open an RFC for this in due course https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs

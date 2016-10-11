@@ -1,16 +1,17 @@
 # Idea 10575069: add Async.Choice to FSharp.Core #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Steffen Forkmann on 11/6/2015 12:00:00 AM
+### Submitted by Steffen Forkmann on 11/6/2015 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 Async.Choice is super useful (e.g. very important in Paket) but hard to implement. There are couple of implementations floating around like http://www.fssnip.net/dO but it's ahrd to decide which one is correct. We should add it to the core.
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Approved and completed, though not yet in any specific public release of F#.
 PR https://github.com/Microsoft/visualfsharp/pull/744 completed.

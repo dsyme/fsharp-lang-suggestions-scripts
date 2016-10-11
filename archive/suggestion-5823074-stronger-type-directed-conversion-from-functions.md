@@ -1,10 +1,10 @@
 # Idea 5823074: Stronger type directed conversion from functions to .Net delegates #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Christoph Rüegg on 4/23/2014 12:00:00 AM
+### Submitted by Christoph Rüegg on 4/23/2014 12:00:00 AM
 
-## 25 votes
+### 25 votes
 
 It seems in some cases type directed conversion from functions to .Net Func<_,_> delegates only works if the called method has overloads. It would be convenient if it worked the same way for methods without overloads as well.
 For example:

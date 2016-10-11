@@ -1,10 +1,10 @@
 # Idea 11462964: Introduce array spread operator for pattern matching and [<ParamArray>] #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Ryan Riley on 1/15/2016 12:00:00 AM
+### Submitted by Ryan Riley on 1/15/2016 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 Several languages have introduced a handy spread operator, ..., that can be used to pick up remaining arguments to a function call or when destructuring values. [1] This would be incredibly helpful in F# to reduce boilerplate in methods accepting a [<ParamArray>] or when trying to pattern match arrays:
 match [|1;2;3;4|] with
@@ -14,7 +14,8 @@ match [|1;2;3;4|] with
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per my comment below. We would not extend pattern matching for this one case, but Rick is right that improvements to active patterns may make sense
 Don Syme, F# Language Evolution

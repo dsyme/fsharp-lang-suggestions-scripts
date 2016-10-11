@@ -1,10 +1,10 @@
 # Idea 15133590: Multi-case unions compiled to struct #
 
-## Status : open
+### Status : open
 
-## Submitted by exercitus vir on 7/9/2016 12:00:00 AM
+### Submitted by exercitus vir on 7/9/2016 12:00:00 AM
 
-## 20 votes
+### 20 votes
 
 I am posting this idea to be able to track its status since it is already informally under consideration. Tuples, records, and single-cases unions are have already planned (implementation even nearing completoin) to be compilable to a struct:
 struct tuples: [/archive/suggestion-6148669-add-support-for-structtuple](/archive/suggestion-6148669-add-support-for-structtuple.md)

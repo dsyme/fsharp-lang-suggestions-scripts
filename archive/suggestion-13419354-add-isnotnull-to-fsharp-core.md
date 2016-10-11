@@ -1,10 +1,10 @@
 # Idea 13419354: add isNotNull to FSharp.Core #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Gauthier Segay on 4/13/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 4/13/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 Using "not (isNull a)" in conditions forces usage of parens or pipe operator and is not optimal readability compared to "a |> isNotNull" or "isNotNull a"
 let inline isNotNull a = not (isNull a)
@@ -12,7 +12,8 @@ in absence of this function, people often take the shortcut of "a <> null" which
 
 
 
-## Response by fslang-admin on 6/13/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/13/2016 12:00:00 AM
 
 Declining per my comment below.
 Don Syme

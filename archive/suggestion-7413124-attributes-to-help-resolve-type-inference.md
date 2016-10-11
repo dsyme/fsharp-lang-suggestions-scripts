@@ -1,10 +1,10 @@
 # Idea 7413124: Attributes to help resolve type inference #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM
+### Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Sometimes, you want to have a main overload for a method and then some secondary overloads that take arguments in different forms. For example, if you're writing a dictionary, you might want to have:
 AddRange (pairs : seq<'key * 'value>)
@@ -16,7 +16,8 @@ The attribute should automatically generate some documentation that specifies it
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined: see my comment below
 

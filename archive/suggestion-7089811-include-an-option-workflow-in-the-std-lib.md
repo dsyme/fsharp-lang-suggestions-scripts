@@ -1,16 +1,17 @@
 # Idea 7089811: Include an Option workflow in the std. lib #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Nils Lück on 2/13/2015 12:00:00 AM
+### Submitted by Nils Lück on 2/13/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 An Option workflow/monad is incredibly useful when working with Options, and a common enough pattern that it should be provided by default rather than in third party libraries.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment below.
 Don Syme, F# Language and Core Library Evolution

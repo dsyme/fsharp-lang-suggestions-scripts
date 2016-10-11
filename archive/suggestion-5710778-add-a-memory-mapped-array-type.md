@@ -1,16 +1,17 @@
 # Idea 5710778: add a memory-mapped array type #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steven Sagaert on 4/1/2014 12:00:00 AM
+### Submitted by Steven Sagaert on 4/1/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Add a memory mapped array similar to what is available in the Julia and Python languages. This would allow to process arrays backed by a binary file that do not fit in RAM (on a single host) transparently as if they did. This would be very useful for scientific programming / machine learning on big data on a single host. The syntax/interface of the array should be the same as a standard array/ distributed array (see my proposal concerning distributed arrays) so that one can transparently switch the implementation from standard array -> mmapped array -> distributed array to scale up from small data/single host -> large data/single host -> large data/multiple hosts to transparently scale in data size & computing power size.
 
 
 
-## Response by fslang-admin on 6/25/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/25/2014 12:00:00 AM
 
 Support for memory mapped files already exists in .NET 4.5 and can be used already.
 It’s possible that nicer support can be added for an F#-defined type too. However that should be done in an upstack library like MathNet.Numerics or FSharp.Data or Deedle or elsewhere, rather then in the language and FSharp.Core library.

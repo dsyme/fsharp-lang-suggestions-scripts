@@ -1,10 +1,10 @@
 # Idea 6672490: subtyping for discriminated unions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 11/6/2014 12:00:00 AM
+### Submitted by exercitus vir on 11/6/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 We need be able to explicitly specify (structural) subset relationships of discriminated unions (similar to polymorphic variants in OCaml but defined at type definition). There are many uses cases for this.
 For example:
@@ -31,7 +31,8 @@ This would not break backwards compatibility as it is currently possible to hack
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Many thanks for the suggestion. I’ve declined it per my comment below, please see what I wrote there
 Best wishes

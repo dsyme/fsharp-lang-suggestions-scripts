@@ -1,16 +1,17 @@
 # Idea 8899330: F# compiler should support CallerLineNumber, CallerFilePath etc #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Weirong Zhu on 7/16/2015 12:00:00 AM
+### Submitted by Weirong Zhu on 7/16/2015 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 .Net has attributes like CallerLineNumber, CallerFilePath (see MSDN https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callerlinenumberattribute(v=vs.110).aspx). These are supported by C# compiler but not F# compiler. This seems to be an important feature to have. Especially when writing service components, the logging facility normally requires a compile-time approach to populate the file path and line number. In C/C++, this can be achieved by implementing the logging API using Macros. In C#, it can be done with CallerLineNumber, CallerFilePath attributes. There seems no viable approach in F#. Moreover, if there's an existing C# logging library that used CallerLineNumber attribute, such library cannot be taken advantage easily from F# (unless we passing __LINE__, __SOURCE_DIRECTORY__ and __SOURCE_FILE__ explicitly at every call site of logging API, which is tedious)
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed. RFC and link to pull request is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1012-caller-info-attributes.md
 This is an entirely reasonable recent .NET/C# standard to implement. Certainly, .NET object-type APIs using these attributes should be respected.

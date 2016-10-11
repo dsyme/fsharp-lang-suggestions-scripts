@@ -1,10 +1,10 @@
 # Idea 10690359: Add "row polymorphism" aka "extensible records" #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Joris Morger on 11/13/2015 12:00:00 AM
+### Submitted by Joris Morger on 11/13/2015 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 In F# there is no way to write a function that can work on similar records.
 If I have two records
@@ -26,7 +26,8 @@ Purescript: https://leanpub.com/purescript/read#leanpub-auto-record-patterns-and
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Duplicate of [/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
 Don Syme, F# Language Evolution

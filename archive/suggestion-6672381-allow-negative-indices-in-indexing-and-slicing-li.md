@@ -1,10 +1,10 @@
 # Idea 6672381: Allow negative indices in indexing and slicing like python #
 
-## Status : open
+### Status : open
 
-## Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
 
-## 33 votes
+### 33 votes
 
 Example: permit usage of a.[..-2] instead of a.[..a.Length-1]
 The compiler could just do that conversion behind the scenes, so it would work with existing types that have custom indexing and slicing

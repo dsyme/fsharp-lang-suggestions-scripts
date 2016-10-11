@@ -1,17 +1,18 @@
 # Idea 9969603: Make type aliases enforceable at compile time #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Ben Lappin on 9/29/2015 12:00:00 AM
+### Submitted by Ben Lappin on 9/29/2015 12:00:00 AM
 
-## 23 votes
+### 23 votes
 
 [<Measure>] is enforced by the compiler, but adds no performance overhead and causes no issues for interop.
 It would be nice to have a similar attribute that could be applied to any type.
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Thanks for the suggestion. I’ve marked it declined with my reasons in the comments below.
 Best regards

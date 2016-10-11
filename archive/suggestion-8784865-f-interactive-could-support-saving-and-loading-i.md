@@ -1,10 +1,10 @@
 # Idea 8784865: F# interactive could support saving and loading its state to/from a file #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 7/9/2015 12:00:00 AM
+### Submitted by Anonymous on 7/9/2015 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 It would be great to be able to do something like:
 #save "CurrentState.dmp"
@@ -14,7 +14,8 @@ It would be especially useful for interactive experimentation that deals with la
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Closing per my comment below., please take a read.
 Don Syme, F# Language and Core Library Evolution

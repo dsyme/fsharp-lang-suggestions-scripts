@@ -1,10 +1,10 @@
 # Idea 13133787: Add (binary) search function to Map and Set #
 
-## Status : open
+### Status : open
 
-## Submitted by Anthony Lloyd on 3/25/2016 12:00:00 AM
+### Submitted by Anthony Lloyd on 3/25/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Often in interpolation the nearest collection items to a given value are needed. Map and Set both have a data structure that could be binary searched returning the two nearest neighbours optionally. The function should only be called something like 'nearest' so the implementation isn't exposed.
 At the moment you would have to replicate the collections to be able to do this.

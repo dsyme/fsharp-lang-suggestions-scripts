@@ -1,10 +1,10 @@
 # Idea 6148669: Add support for StructTuple #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Arbil on 7/8/2014 12:00:00 AM
+### Submitted by Arbil on 7/8/2014 12:00:00 AM
 
-## 136 votes
+### 136 votes
 
 According to my tests short struct tuples perform up to 25x faster than default ones if the cost of garbage collecting is taken into account. The code below allocates an array of default tuples/struct tuples respectively and collects it. The results are:
 1249 ms for default tuples
@@ -40,7 +40,8 @@ printfn "Took %A ms" watch.Elapsed.TotalMilliseconds
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed, see https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1006-struct-tuples.md
 Don Syme, F# Language and Core Library Evolution

@@ -1,17 +1,18 @@
 # Idea 5841349: Allow provided types to be non-nullable by specifying AllowNullLiteralAttribute(false) #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Gustavo Guerra on 4/27/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 4/27/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 As we can only generate classes in type providers and not records, it would be at least very useful to be able to tell the compiler to not allow to use the null literal.
 Currently in FSharp.Data, when using the write api for Json and Xml, there's no way to prevent the user to pass null in the constructor of a non-optional parameter, and it would be nice to be able to do that
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 This has been completed for F# 4.0+, see https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/NonNullProvidedTypesDesignAndSpec.md
 

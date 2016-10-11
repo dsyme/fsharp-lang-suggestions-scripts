@@ -1,10 +1,10 @@
 # Idea 6079342: Allow extended #if grammar #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 6/20/2014 12:00:00 AM
+### Submitted by Don Syme on 6/20/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Allow an extended grammar for #if/#elif.
 #if expr
@@ -21,7 +21,8 @@ The implementation must also provide sufficient tests.
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 Completed for F# 4.0+ see https://github.com/Microsoft/visualfsharp/pull/55
 Don Syme, F# Language Evolution

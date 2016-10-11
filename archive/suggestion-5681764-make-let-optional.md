@@ -1,16 +1,17 @@
 # Idea 5681764: Make let optional #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Phillip Trelford on 3/26/2014 12:00:00 AM
+### Submitted by Phillip Trelford on 3/26/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Make F# even more terse by removing the requirement for the let keyword, particularly on local variables.
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, though declined per my comment below
 Best regards

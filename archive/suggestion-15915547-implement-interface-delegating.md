@@ -1,10 +1,10 @@
 # Idea 15915547: Implement interface delegating #
 
-## Status : open
+### Status : open
 
-## Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM
+### Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Implement interface delegating by next syntax:
 type MyType() =

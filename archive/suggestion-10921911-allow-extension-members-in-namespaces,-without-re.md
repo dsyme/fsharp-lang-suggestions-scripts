@@ -1,16 +1,17 @@
 # Idea 10921911: Allow extension members in namespaces, without requiring an enclosing module #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 12/1/2015 12:00:00 AM
+### Submitted by Alexei Odeychuk on 12/1/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Now it's impossible to declare extension members directly in namespaces, except in the same file and namespace where the type is defined. Please consider eliminating that limitation of the language on the expression of developer's ideas. That limitation does not serve any reasonable purpose, I think. Nobody needs to create a module with [<AutoOpenAttribute>] to hold declarations of extension members only in order to circumvent that limitation of the language. I believe that if a developer needs to create an extension method for a type, he/she should be able to do it directly in any namespace of the application he/she is developing.
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Thanks for the suggestion. I’ve marked it declined, as per the comment below
 Don Syme, F# Language Evolution

@@ -1,10 +1,10 @@
 # Idea 5975797: Allow implicit quotation of expressions used as a method arguments #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Tomas Petricek on 5/27/2014 12:00:00 AM
+### Submitted by Tomas Petricek on 5/27/2014 12:00:00 AM
 
-## 27 votes
+### 27 votes
 
 In many data science scenarios, if a method can "see" what expression the caller passed as an argument. For example in R, you can write:
 prices = c(10.0, 11.0, 9.0)
@@ -23,7 +23,8 @@ This also requires extending the quotations to actually capture names of local l
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Completed in F# 4.0
 

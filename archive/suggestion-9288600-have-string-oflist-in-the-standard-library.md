@@ -1,10 +1,10 @@
 # Idea 9288600: Have String.ofList in the standard library #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Bang Jun-young on 8/12/2015 12:00:00 AM
+### Submitted by Bang Jun-young on 8/12/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Wouldn't it be convenient if String.ofList function was part of the standard library? The implementation is quite straightforward:
 module String =
@@ -13,7 +13,8 @@ list |> (System.Text.StringBuilder() |> List.fold (fun sb c -> sb.Append(c))) |>
 
 
 
-## Response by fslang-admin on 9/7/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 9/7/2015 12:00:00 AM
 
 see alternative suggestion
 

@@ -1,10 +1,10 @@
 # Idea 6062821: Add Dependent Types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 6/16/2014 12:00:00 AM
+### Submitted by Jared Hester on 6/16/2014 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 Dependent types allow types to be predicated on values. Full-spectrum dependent types would be preferable so that there is no restriction
 on which values may appear in types. An example would be declaring a type 'Vector' a list that carries its size in the type.
@@ -13,7 +13,8 @@ Functions can be defined on dependent types, for example a function 'vector_appe
 
 
 
-## Response by fslang-admin on 9/3/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/3/2014 12:00:00 AM
 
 As mentioned in the comments, this is beyond the scope of F#. It could be considered in some future derivative language (and feel free to experiment!). See the comment by Loic in particular.
 Closing this to give clarity and recycle the votes.

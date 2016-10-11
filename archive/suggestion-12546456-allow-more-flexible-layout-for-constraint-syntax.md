@@ -1,10 +1,10 @@
 # Idea 12546456: Allow more flexible layout for constraint syntax #
 
-## Status : open
+### Status : open
 
-## Submitted by George on 3/1/2016 12:00:00 AM
+### Submitted by George on 3/1/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 The following layout of constraints for a sample class should be possible.
 GroupedFixtures<'A, 'B

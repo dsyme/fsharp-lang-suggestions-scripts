@@ -1,10 +1,10 @@
 # Idea 6343928: Allow naming of member constraints #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mark Laws on 8/25/2014 12:00:00 AM
+### Submitted by Mark Laws on 8/25/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Static type constraints are rather poorly documented on MSDN; there are few examples, their limitations are not well described (even less so the workarounds), and it's not made clear that you can use them in a manner such as the following example:
 module qasd =
@@ -43,7 +43,8 @@ At any rate, there should be some way of "naming" member constraints so that you
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing in favour of suggestions [/archive/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m](/archive/suggestion-8393964-interfaces-as-simple-reusable-and-named-sets-of-m.md) and [/archive/suggestion-8509687-add-constraints-as-a-language-construct](/archive/suggestion-8509687-add-constraints-as-a-language-construct.md)
 

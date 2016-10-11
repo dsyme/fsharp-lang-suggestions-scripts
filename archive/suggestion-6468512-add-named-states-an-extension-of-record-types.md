@@ -1,10 +1,10 @@
 # Idea 6468512: Add Named States (an extension of record types) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alex Baggett on 9/21/2014 12:00:00 AM
+### Submitted by Alex Baggett on 9/21/2014 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 Essentially it would let you add a name to specific set of values in a record. and reuse that set when initializing something to a specific state or configuration.
 It would look something like this:
@@ -17,7 +17,8 @@ let Stevo = {FirstName = "Stephen"; LastName = "Rogers"; permissions = Permissio
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 Thanks for the suggestion! See comment above by me.
 Don Syme, BDFL for F# Language/Core Library evolution

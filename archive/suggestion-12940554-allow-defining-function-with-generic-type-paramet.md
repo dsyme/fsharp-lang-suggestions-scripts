@@ -1,10 +1,10 @@
 # Idea 12940554: allow defining function with generic type parameter within another function #
 
-## Status : open
+### Status : open
 
-## Submitted by Gauthier Segay on 3/15/2016 12:00:00 AM
+### Submitted by Gauthier Segay on 3/15/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I encounter cases where I'd like to define a function taking a generic type parameter within another functions.
 type Foo = {Bar: int option; Baz: string option}

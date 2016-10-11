@@ -1,10 +1,10 @@
 # Idea 6420709: Allow record-like {obj with newvals...} syntax for arbitrary classes #
 
-## Status : declined
+### Status : declined
 
-## Submitted by mikero on 9/10/2014 12:00:00 AM
+### Submitted by mikero on 9/10/2014 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 The { oldObj with newval1=x ... } syntax is great syntax - I'd like to see it available for other objects, whether they are defined in F# or not.
 I suggest:
@@ -13,7 +13,8 @@ I suggest:
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 This is a duplicate of [/archive/suggestion-5663704-copy-and-update-on-class-types](/archive/suggestion-5663704-copy-and-update-on-class-types.md)
 

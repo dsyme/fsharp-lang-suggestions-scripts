@@ -1,10 +1,10 @@
 # Idea 5665042: Allow extension interfaces #
 
-## Status : open
+### Status : open
 
-## Submitted by Ryan Riley on 3/21/2014 12:00:00 AM
+### Submitted by Ryan Riley on 3/21/2014 12:00:00 AM
 
-## 92 votes
+### 92 votes
 
 Rather than just supporting single methods or properties, provide a mechanism by which to implement interfaces on existing types. This could be similar to protocols in Clojure and Elixir.
 

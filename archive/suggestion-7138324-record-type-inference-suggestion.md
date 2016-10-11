@@ -1,10 +1,10 @@
 # Idea 7138324: Record type inference suggestion #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Steven Taylor on 2/24/2015 12:00:00 AM
+### Submitted by Steven Taylor on 2/24/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Note that if the record {a: int; b: int} is declared last, then type + argument name type inference will not work. Switching the order around resolves the issue. However, this behaviour can be a little mentally jarring.
 The lightweight syntax is very useful. It'd be great to strengthen it up.
@@ -32,7 +32,8 @@ let ab = {a=1;b=2}
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Marking this as approved-in-principle, per my comment below
 We will open an RFC for this in due course, though the change should not be large

@@ -1,10 +1,10 @@
 # Idea 12536532: Add a shorthand/literal syntax for creating Maps #
 
-## Status : open
+### Status : open
 
-## Submitted by Brad Collins on 3/1/2016 12:00:00 AM
+### Submitted by Brad Collins on 3/1/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 A shorthand/literal syntax or computation expression for building Maps would be nice—something like the following:
 let m = map ["a",97; "b",98; "c",99]

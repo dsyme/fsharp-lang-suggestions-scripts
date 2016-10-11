@@ -1,10 +1,10 @@
 # Idea 5975840: Allow "params" dictionaries as method arguments #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Tomas Petricek on 5/27/2014 12:00:00 AM
+### Submitted by Tomas Petricek on 5/27/2014 12:00:00 AM
 
-## 30 votes
+### 30 votes
 
 When interoperating with languages that are more dynamic than F# (like Python, Matlab or R), we can often get the list of available methods/functions, but we cannot always get the names and types of parameters. For example, in R provider, you sometimes have to write:
 namedParams [ ("xval", days), ("yval", prices), ("another", box 1) ]
@@ -19,7 +19,8 @@ This could really be done just by adding [Params] attribute to an IDicitionary p
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 Updating to planned to indicate this is approved in general terms. A detailed design and implementation would be needed.
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.

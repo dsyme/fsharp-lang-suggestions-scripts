@@ -1,16 +1,17 @@
 # Idea 5663965: Integrate joinads extension #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 121 votes
-
-
+### 121 votes
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+
+
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 I’ve discussed this with Tomas today and he agreed it’s best to mark this as “declined” for now.
 It wasn’t too political! Honest!!!! :)

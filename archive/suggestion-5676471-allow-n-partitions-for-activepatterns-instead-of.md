@@ -1,10 +1,10 @@
 # Idea 5676471: Allow n partitions for ActivePatterns instead of a max 7 #
 
-## Status : open
+### Status : open
 
-## Submitted by Steven Taylor on 3/25/2014 12:00:00 AM
+### Submitted by Steven Taylor on 3/25/2014 12:00:00 AM
 
-## 23 votes
+### 23 votes
 
 Active patterns can only have seven partitions (see: http://msdn.microsoft.com/en-us/library/dd233248.aspx)
 It would be good if this was a stylistic constraint that could be overridden if desired.

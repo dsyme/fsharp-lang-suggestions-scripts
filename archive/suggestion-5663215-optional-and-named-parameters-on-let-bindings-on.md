@@ -1,10 +1,10 @@
 # Idea 5663215: Optional and named parameters on let bindings on modules #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 128 votes
+### 128 votes
 
 Optional and named parameters are supported in static methods, but not in let bindings on modules. This many times forces you to use a static class instead of a module, which has some inconvenients. Ocaml has this, so I'm guessing is doable.
 

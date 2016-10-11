@@ -1,10 +1,10 @@
 # Idea 7199500: Allow nested Computation Expression for writing Builder Like DSLs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Robert Kuzelj on 3/12/2015 12:00:00 AM
+### Submitted by Robert Kuzelj on 3/12/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 type DirectionBuilder() =
 member self.Yield(()) = []
@@ -31,7 +31,8 @@ accelerate 1
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further discussion welcome

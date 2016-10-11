@@ -1,10 +1,10 @@
 # Idea 6359526: Add 'serializable' and 'blittable' constraints for types #
 
-## Status : open
+### Status : open
 
-## Submitted by Eirik George Tsarpalis on 8/28/2014 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 8/28/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 I think it would be a good idea to let the F# compiler reason about serializable types. This could be implemented along the lines of the 'comparison' constraint, i.e. based upon an assortment of criteria for deciding when it is satisfied.
 For instance, a type could be statically deemed serializable iff

@@ -1,10 +1,10 @@
 # Idea 5881657: Sealed member can be 'override' with 'member new' keyword like c# #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 5/3/2014 12:00:00 AM
+### Submitted by Anonymous on 5/3/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 C# can do it perfect
 public class ObservableBindingDictionary<TKey, TValue> : ObservableDictionary<TKey, TValue>
@@ -54,7 +54,8 @@ if base.[key]<>v then base.[key]<-v
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declining as this is by design in F#
 

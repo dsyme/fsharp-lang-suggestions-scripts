@@ -1,10 +1,10 @@
 # Idea 6690744: Properly print 'None' for option types from FSI #
 
-## Status : planned
+### Status : planned
 
-## Submitted by TeaDrivenDev _ on 11/9/2014 12:00:00 AM
+### Submitted by TeaDrivenDev _ on 11/9/2014 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 FSI output properly handles 'Some x', but often prints 'None' as 'null', apparently when the value is part of a larger type.
 let x : uint16 option = None
@@ -14,7 +14,8 @@ instead prints: val y : string * uint16 option = ("", null)
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 This should certainly be fixed, as much as possible
 Don Syme, F# Language Evolution

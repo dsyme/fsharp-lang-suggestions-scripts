@@ -1,16 +1,17 @@
 # Idea 7000134: Define a function the same way as define lambda #
 
-## Status : declined
+### Status : declined
 
-## Submitted by vanh on 1/23/2015 12:00:00 AM
+### Submitted by vanh on 1/23/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Currently the way we define function is: let add1 x = x +1 which is not consistent with the way we define lambda fun x -> x +1. More importantly this will help new learner like me easily distinguish between a function and a value. When reading code, I always find it easier to find a lambda expression because of the fun keyword and the -> than the function. Since code is read more than write it would help save time too.
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 While we appreciate the feedback, this kind of fundamental syntax change is beyond the scope of the kind of change we would consider for the F# language at version F# 4.0.
 Thanks

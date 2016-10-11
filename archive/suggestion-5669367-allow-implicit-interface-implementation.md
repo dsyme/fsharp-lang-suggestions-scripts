@@ -1,10 +1,10 @@
 # Idea 5669367: Allow Implicit Interface Implementation #
 
-## Status : open
+### Status : open
 
-## Submitted by Mastr Mastic on 3/23/2014 12:00:00 AM
+### Submitted by Mastr Mastic on 3/23/2014 12:00:00 AM
 
-## 133 votes
+### 133 votes
 
 F# only supports explicit interface implementation with the price of unnecessary and excessive casting (also causes readability issues), potential confusion when working with other languages, and causes limitation with F#'s OOP that could be resolved without any major language change.
 To expand on this, this post by Mauricio Scheffer describes the issue very well: http://bugsquash.blogspot.co.il/2009/01/implementing-interfaces-in-f.html

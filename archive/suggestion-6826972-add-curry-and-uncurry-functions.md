@@ -1,10 +1,10 @@
 # Idea 6826972: Add curry and uncurry functions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Patrick McDonald on 12/10/2014 12:00:00 AM
+### Submitted by Patrick McDonald on 12/10/2014 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 let curry f x y = f (x, y)
 let uncurry f (x, y) = f x y
@@ -13,7 +13,8 @@ As implemented in Fsharpx. I have a sample implementation here:
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

@@ -1,17 +1,18 @@
 # Idea 6672368: Do not lock type provider dlls when compiling/editing #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 11/6/2014 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 This is a huge pain in developing type providers.
 Maybe it's possible to use the same strategy used for FSI recently?
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per comment below – this belongs in Microsoft\visualfsharp or FSharp.Compiler.Service
 

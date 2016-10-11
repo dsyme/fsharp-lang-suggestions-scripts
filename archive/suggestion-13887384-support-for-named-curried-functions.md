@@ -1,10 +1,10 @@
 # Idea 13887384: Support for named curried functions #
 
-## Status : open
+### Status : open
 
-## Submitted by Bartosz Sypytkowski on 5/18/2016 12:00:00 AM
+### Submitted by Bartosz Sypytkowski on 5/18/2016 12:00:00 AM
 
-## 19 votes
+### 19 votes
 
 The idea here is to add support for labeled arguments in curried functions. This could allow to extend things like partial application to depend not only on arguments order, and also to introduce default argument values in curried functions (now it's possible only in F# type methods).
 This feature is supported already in ML languages like OCaml or FB Reason.

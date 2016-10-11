@@ -1,10 +1,10 @@
 # Idea 5664634: Provided Record Types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 3/21/2014 12:00:00 AM
+### Submitted by Anonymous on 3/21/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 The included type providers should have the option of emitting F# record types rather than class types.
 For example, when reading and writing SQL data, your F# code has to either deal with classes, which don't have the nice benefits of F# records (immutability, copy/update syntax, code that is easier to reason about, fewer bugs, etc.), or you have to map your classes to corresponding F# records, do your processing, and then convert back to classes.
@@ -13,7 +13,8 @@ Having the option to provide F# record types would really bring the power of the
 
 
 
-## Response by fslang-admin on 3/27/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/27/2014 12:00:00 AM
 
 This is covered by existing suggestion [/archive/suggestion-5663267-allow-to-generate-dus-and-records-in-type-provider](/archive/suggestion-5663267-allow-to-generate-dus-and-records-in-type-provider.md)
 Declining to allow votes to be recycled

@@ -1,10 +1,10 @@
 # Idea 5665355: Add syntactic sugar for functions ala Scala/Clojure #
 
-## Status : open
+### Status : open
 
-## Submitted by Khan Thompson on 3/21/2014 12:00:00 AM
+### Submitted by Khan Thompson on 3/21/2014 12:00:00 AM
 
-## 37 votes
+### 37 votes
 
 Add in shorthand syntax for anonymous functions, even if it is only for single argument functions.
 For example:

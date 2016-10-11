@@ -1,10 +1,10 @@
 # Idea 15257796: Remove warning for new keyword on IDisposable #
 
-## Status : open
+### Status : open
 
-## Submitted by Isaac Abraham on 7/18/2016 12:00:00 AM
+### Submitted by Isaac Abraham on 7/18/2016 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 The only time I ever use the new keyword is on Disposables, and even then only to silence the compiler warnings. I'm not sure what purpose the warning serves either, because you can still forget to bind the disposable with the use keyword instead of with let. What's more annoying is that it prevents you from effective pipelining.
 Could this be removed from the next F# release, or perhaps replaced with a warning if you bind a Disposable with let instead of use?

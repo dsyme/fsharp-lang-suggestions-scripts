@@ -1,10 +1,10 @@
 # Idea 7039406: Add a "Scripting" module to FSharp.Core.dll, including a wget function #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Don Syme on 2/1/2015 12:00:00 AM
+### Submitted by Don Syme on 2/1/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 I suggest we add a "Scripting" module to FSharp.Core.dll (.NET Framework Version) that makes F# Interactive a more fluent and connected scripting environment
 Minimally, I want enough that F# scripts can meaningfully bootstrap a connection to a package tool in a succinct header to a script. For example

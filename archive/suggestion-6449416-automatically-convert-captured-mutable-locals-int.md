@@ -1,10 +1,10 @@
 # Idea 6449416: Automatically convert captured mutable locals into refs. #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Matthew Parkinson on 9/17/2014 12:00:00 AM
+### Submitted by Matthew Parkinson on 9/17/2014 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 There are several places where refactoring code can cause it not to compile due to captured mutable locals. For instance,
 let mutable worklist = ...
@@ -23,7 +23,8 @@ The compiler could automatically insert the refs where necessary using a pretty 
 
 
 
-## Response by fslang-admin on 11/12/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/12/2014 12:00:00 AM
 
 This is now completed and available in preview releases of F# 4.0.
 For an early Visual Studio preview release see here (cross platform releases will follow) – http://blogs.msdn.com/b/fsharpteam/archive/2014/11/12/announcing-a-preview-of-f-4-0-and-the-visual-f-tools-in-vs-2015.aspx

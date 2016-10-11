@@ -1,10 +1,10 @@
 # Idea 8072277: Allow inline on functions which call private or internal union cases #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 5/21/2015 12:00:00 AM
+### Submitted by exercitus vir on 5/21/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 A lot of time you we to ensure a valid construction of union types by making its cases private or internal. E.g.
 ```F#
@@ -19,7 +19,8 @@ This restriction should be removed for cases of discriminated unions because a l
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.

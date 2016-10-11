@@ -1,16 +1,17 @@
 # Idea 6237671: add sortDescending to Seq, List and Array #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Steffen Forkmann on 7/31/2014 12:00:00 AM
+### Submitted by Steffen Forkmann on 7/31/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 http://stackoverflow.com/questions/3111448/f-seq-sortby-in-descending-order shows that there are some strange edge cases if we want to use sortBy - it should be much easier than this.
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 This proposal has been approved for inclusion in F# 4.0+.
 The sortDescending and sortByDescending functions have been added to the list here: https://github.com/fsharp/FSharpLangDesign/blob/master/CoreLibraryFunctions.md

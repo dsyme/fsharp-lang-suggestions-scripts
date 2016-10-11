@@ -1,10 +1,10 @@
 # Idea 6474950: allow more flexible construction of structs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by citykid on 9/23/2014 12:00:00 AM
+### Submitted by citykid on 9/23/2014 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 in F# it is not possible to have a constructor for a struct that sets only some fields. For structs that have an expicit field layout (low level discriminating unions so to say) this is very prohibiting.
 c#
@@ -28,7 +28,8 @@ end
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion! I’ve added links to how you can do this. Declining per my comments
 Don Syme, F# Language Evolution

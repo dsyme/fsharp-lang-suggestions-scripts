@@ -1,10 +1,10 @@
 # Idea 13302753: Code clarity: Remove Object Pascal-style for ... to|downto ... do ... loops from the language (from Swift) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 The for ... to|downto ... do ... loop appears to be a mechanical carry-over from Object Pascal rather than a genuinely F#-specific construct. The for ...to|downto ... do ... loops do not lend themselves to use with sequences and other core F# types supporting IEnumerable interface. It is rarely if ever used in pro-level apps. More F#-typical construction is already available in the language with the for ... in ... do ... loop that has much better readability and expressiveness.
 Example # 1:

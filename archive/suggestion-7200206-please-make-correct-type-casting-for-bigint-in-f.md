@@ -1,10 +1,10 @@
 # Idea 7200206: Please make correct type casting for bigint in F# #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Alexei Odeychuk on 3/12/2015 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/12/2015 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 I have been using the forward pipe to convert values and came up against the problem where the following code would work
 let IntToFloat = 10 |> float
@@ -21,7 +21,8 @@ Please make correct type casting for bigint in F# in order to eliminate the need
 
 
 
-## Response by fslang-admin on 9/7/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 9/7/2015 12:00:00 AM
 
 See Lincoln’s comment – this will work the way you want in F# 4.0
 Don Syme

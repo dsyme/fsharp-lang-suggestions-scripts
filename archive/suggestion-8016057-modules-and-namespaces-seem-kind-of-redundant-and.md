@@ -1,16 +1,17 @@
 # Idea 8016057: Modules and Namespaces seem kind of redundant and are confusing at times. Maybe it would be an idea if a module were implicitly a namespace. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Ruffian Eo on 5/18/2015 12:00:00 AM
+### Submitted by Ruffian Eo on 5/18/2015 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 The all different approaches which need to be taken for either targeting an F# only audience or a generic .NET audience cannot be entirely made invisible. Yet, when writing code in F# the question "Namespace or Module or both?" is annoying to bits. Not that anyone really cares or wants to spend time and energy pondering these questions. If a Module were internally implicitly treated as if also being a namespace, some of those quirks might go away and people could write modules by default.
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for rationale and discussion see the comments.
 Further discussion welcome.

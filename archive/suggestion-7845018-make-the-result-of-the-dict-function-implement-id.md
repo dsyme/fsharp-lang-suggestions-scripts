@@ -1,16 +1,17 @@
 # Idea 7845018: Make the result of the dict function implement IDictionary #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Richard Minerich on 5/6/2015 12:00:00 AM
+### Submitted by Richard Minerich on 5/6/2015 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 The fact that the type returned by dict doesn't implement IDictionary makes reflection difficult and inefficient, it also make this type different than all other .NET Core Dictionary implementations
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 This is approved for inclusion in a future release of the F# core library subject to an implementation and detailed design. Completion of the pull request to implement this feature will be necessary, see the link above.
 Don Syme, F# Language and Core Library Evolution.

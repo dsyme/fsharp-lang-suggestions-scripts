@@ -1,17 +1,18 @@
 # Idea 7096866: Release the F# Visual Studio plugin code #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Anonymous on 2/14/2015 12:00:00 AM
+### Submitted by Anonymous on 2/14/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 It would be very interesting to have access to the VS plugin code for F#, particularly the debugger integration.
 It would allow tools vendors (IntelliFactory, Xamarin...) to re-use and even tweak the debugger. Community contributors could work towards improving the F# debugging experience, for example by adding support for autos and "Edit and Continue".
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 see comments
 

@@ -1,10 +1,10 @@
 # Idea 12512739: Improve Discriminated Union Type Inference #
 
-## Status : open
+### Status : open
 
-## Submitted by Steven Taylor on 2/29/2016 12:00:00 AM
+### Submitted by Steven Taylor on 2/29/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Sometimes the most logical name for an element of a Discriminated Union (DU), is a common concept such as a list
 -- something that you've used before elsewhere.

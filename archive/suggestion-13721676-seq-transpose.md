@@ -1,10 +1,10 @@
 # Idea 13721676: Seq.transpose #
 
-## Status : open
+### Status : open
 
-## Submitted by James Ashwell on 5/3/2016 12:00:00 AM
+### Submitted by James Ashwell on 5/3/2016 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 It would be nice to have a function that transposes sequences:
 [ [ 00; 01; 02;... ]; [ 10; 11; 12;... ]; [ 20; 21; 22;... ];... ]

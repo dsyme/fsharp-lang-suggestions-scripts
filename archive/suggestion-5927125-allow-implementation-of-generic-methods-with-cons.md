@@ -1,10 +1,10 @@
 # Idea 5927125: Allow implementation of generic methods with constraints of the form 'T :> 'U #
 
-## Status : open
+### Status : open
 
-## Submitted by Gusty on 5/14/2014 12:00:00 AM
+### Submitted by Gusty on 5/14/2014 12:00:00 AM
 
-## 136 votes
+### 136 votes
 
 Currently this is solved as 'a = 'b.
 This limitation does not exists in C# and it makes impossible to interact with some existing libraries, as in this case http://stackoverflow.com/questions/23643989/is-it-possible-to-implement-the-idbsett-interface-in-f

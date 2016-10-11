@@ -1,10 +1,10 @@
 # Idea 9027133: Make "do" optional in for and while loops #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Phillip Trelford on 7/26/2015 12:00:00 AM
+### Submitted by Phillip Trelford on 7/26/2015 12:00:00 AM
 
-## 43 votes
+### 43 votes
 
 Currently all for and while loops must specify "do" before the statements:
 for i = 1 to 10 do
@@ -13,7 +13,8 @@ This does not feel intuitive for developers coming from Python or BASIC. The "do
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 See my comment below
 Don Syme, F# Language Evolution

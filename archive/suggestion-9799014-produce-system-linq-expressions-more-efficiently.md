@@ -1,10 +1,10 @@
 # Idea 9799014: Produce System.Linq.Expressions more efficiently #
 
-## Status : open
+### Status : open
 
-## Submitted by Eugene Tolmachev on 9/17/2015 12:00:00 AM
+### Submitted by Eugene Tolmachev on 9/17/2015 12:00:00 AM
 
-## 30 votes
+### 30 votes
 
 Most of .NET query providers are written in C# and use System.Linq.Expressions. While the conversion Expr->Expression is available it introduces significant penalty: http://stackoverflow.com/questions/32592811/why-is-f-expression-tree-generation-is-much-slower-than-c-can-it-be-made-fast
 

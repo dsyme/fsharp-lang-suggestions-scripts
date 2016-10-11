@@ -1,16 +1,17 @@
 # Idea 5663255: Allow infix notation on functions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Colin Bull on 3/21/2014 12:00:00 AM
+### Submitted by Colin Bull on 3/21/2014 12:00:00 AM
 
-## 32 votes
-
-
+### 32 votes
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+
+
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as declined per my comment below
 

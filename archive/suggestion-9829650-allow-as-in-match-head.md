@@ -1,10 +1,10 @@
 # Idea 9829650: Allow "as" in match head #
 
-## Status : declined
+### Status : declined
 
-## Submitted by mikero on 9/19/2015 12:00:00 AM
+### Submitted by mikero on 9/19/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 I always seem to be doing this, which seems natural, but isn't allowed:
 match ((fn h) as res) with
@@ -12,7 +12,8 @@ match ((fn h) as res) with
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 See comment above,
 Don Syme, F# Language and Core Library Evolution

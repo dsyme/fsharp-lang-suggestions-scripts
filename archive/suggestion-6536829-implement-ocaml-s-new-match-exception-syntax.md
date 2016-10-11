@@ -1,10 +1,10 @@
 # Idea 6536829: Implement OCaml's new match/exception syntax #
 
-## Status : open
+### Status : open
 
-## Submitted by Eirik George Tsarpalis on 10/8/2014 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 10/8/2014 12:00:00 AM
 
-## 42 votes
+### 42 votes
 
 Implement the feature that is nicely described in the following post:
 https://blogs.janestreet.com/pattern-matching-and-exception-handling-unite/

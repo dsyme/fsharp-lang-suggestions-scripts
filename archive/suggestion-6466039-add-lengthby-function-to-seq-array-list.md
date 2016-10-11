@@ -1,10 +1,10 @@
 # Idea 6466039: Add "lengthBy" function to Seq/Array/List #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Patrick Q on 9/21/2014 12:00:00 AM
+### Submitted by Patrick Q on 9/21/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Currently there is no function that returns a number representing how many elements in a specified collection satisfies a condition.
 For instance consider what we need to do to count the number of odd numbers in a list:
@@ -16,7 +16,8 @@ Getting a count based on a predicate is such a fundamental operation that I beli
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 I’m marking this as declined since it is not included in the F# 4.0 FSharp.Core design. However please feel free to continue the discussion.
 Don Syme

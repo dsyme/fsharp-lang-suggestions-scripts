@@ -1,10 +1,10 @@
 # Idea 5710458: create a standard free open source comprehensive machine learning library #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steven Sagaert on 4/1/2014 12:00:00 AM
+### Submitted by Steven Sagaert on 4/1/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Like suggested on the F#.org website, F# could be an excellent language for modern machine learning. In fact it could be one of it's killer niches. There a few C# ML libs like Accord.net that one can call from F# but there isn't a "native" F# one using those wonderful F# specific features (e.g. type providers, async & parallel,...) and exposing a functional API.
 Rather than hoping that such a library will spontaneously emerge from the open source community maybe a more structured approach should be followed and the initiative should be taken by the core team responsible for the F# platform (of course volunteers from the ML community should be able to join in and collaborate). This would ensure one large comprehensive ML library with a uniform style covering all of the modern ML models (kernel models,Bayesian models/probabilistic graphical models, deep learning, ensemble methods,...) rather than N little open source libraries each which implement a small fraction of the models and each in another style/API.
@@ -12,7 +12,8 @@ Since this is 2014 and the multicore & cloud revolution is now firmly upon us, t
 
 
 
-## Response by fslang-admin on 6/25/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/25/2014 12:00:00 AM
 
 See comment and links by Don Syme.
 

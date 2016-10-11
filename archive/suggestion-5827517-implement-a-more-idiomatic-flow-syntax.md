@@ -1,10 +1,10 @@
 # Idea 5827517: Implement a more idiomatic Flow Syntax #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Bryan Edds on 4/24/2014 12:00:00 AM
+### Submitted by Bryan Edds on 4/24/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 F#'s current FlowSyntax().WhitspaceHack() should be displaced with a more ML-style syntax -
 // Multi-line usage.
@@ -20,7 +20,8 @@ Visually tracking where the current F# flow-syntax hack is used is painful, and 
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome

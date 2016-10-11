@@ -1,17 +1,18 @@
 # Idea 5679733: Extend try with "success" or match with "failure" handling. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by let rec on 3/25/2014 12:00:00 AM
+### Submitted by let rec on 3/25/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Extend try with "success" or match with "failure" handling.
 http://ocamllabs.github.io/compiler-hacking/2014/02/04/handler-case.html
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing as duplicate of [/archive/suggestion-6536829-implement-ocaml-s-new-match-exception-syntax](/archive/suggestion-6536829-implement-ocaml-s-new-match-exception-syntax.md)
 

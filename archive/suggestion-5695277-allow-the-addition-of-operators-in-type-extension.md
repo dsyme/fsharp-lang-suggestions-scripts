@@ -1,10 +1,10 @@
 # Idea 5695277: Allow the addition of operators in type extensions, and also operators on internal types #
 
-## Status : open
+### Status : open
 
-## Submitted by Gustavo Guerra on 3/28/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/28/2014 12:00:00 AM
 
-## 80 votes
+### 80 votes
 
 This is currently not allowed:
 type Foo with

@@ -1,10 +1,10 @@
 # Idea 16476649: Record copy update should be able change the generic type #
 
-## Status : open
+### Status : open
 
-## Submitted by Marko Grdinic on 10/3/2016 12:00:00 AM
+### Submitted by Marko Grdinic on 10/3/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 type A<'a> =
 {

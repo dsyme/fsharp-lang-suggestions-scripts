@@ -1,10 +1,10 @@
 # Idea 5675548: Implement monadic getters and setters #
 
-## Status : open
+### Status : open
 
-## Submitted by Anonymous on 3/24/2014 12:00:00 AM
+### Submitted by Anonymous on 3/24/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 The get/set syntax for F# is very cool, but it has an issue: sometimes, the property we would like to get and set is only available through a workflow/monad, like the async workflow.
 Thus, I would like to alter the typechecking rules for getters and setters. This is what they are right now (pseudocode) for the Async monad:

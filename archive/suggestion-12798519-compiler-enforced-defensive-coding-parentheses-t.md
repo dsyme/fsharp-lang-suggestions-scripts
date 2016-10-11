@@ -1,10 +1,10 @@
 # Idea 12798519: Compiler-enforced defensive coding: Parentheses to surround the if or match expression within another expression (from Ada 2012) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I suggest using the if or match expression immediately surrounded by parentheses (on both sides) so long as it is used as part of another expression:
 let a = b + (if x then y else z) + c // parentheses required
@@ -17,7 +17,8 @@ I think it's a good idea of defensive coding. It can be implemented easily in th
 
 
 
-## Response by fslang-admin on 3/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 3/4/2016 12:00:00 AM
 
 Per comment, please add this to FSharpLint.
 Don Syme

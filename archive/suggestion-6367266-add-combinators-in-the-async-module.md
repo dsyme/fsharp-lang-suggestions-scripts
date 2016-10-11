@@ -1,10 +1,10 @@
 # Idea 6367266: Add combinators in the Async module #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Loic Denuziere on 8/30/2014 12:00:00 AM
+### Submitted by Loic Denuziere on 8/30/2014 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 I think the Async module could use some extra functions, such as:
 * Async.Map : ('a -> 'b) -> Async<'a> -> Async<'b>
@@ -18,7 +18,8 @@ Most functor/monadic operations are trivial to implement for yourself, but would
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declining per my comment (note, Async.Choice has been added in a separate request)
 Don Syme

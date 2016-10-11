@@ -1,10 +1,10 @@
 # Idea 13369500: Handle null values in Records gracefully instead of crashing with a NRE #
 
-## Status : open
+### Status : open
 
-## Submitted by lr on 4/9/2016 12:00:00 AM
+### Submitted by lr on 4/9/2016 12:00:00 AM
 
-## 0 votes
+### 0 votes
 
 Please see https://github.com/Microsoft/visualfsharp/issues/1044
 Currently, if a nonnull field in a record (e.g. another record, or FSharpList<'T>, ...) is null, .GetHashCode (and potentially other methods) throw a NullReferenceException.

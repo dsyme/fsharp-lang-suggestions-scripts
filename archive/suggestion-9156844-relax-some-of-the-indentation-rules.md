@@ -1,10 +1,10 @@
 # Idea 9156844: Relax some of the indentation rules #
 
-## Status : open
+### Status : open
 
-## Submitted by Tomas Petricek on 8/3/2015 12:00:00 AM
+### Submitted by Tomas Petricek on 8/3/2015 12:00:00 AM
 
-## 54 votes
+### 54 votes
 
 Currently, the general rules for indentation in F# is that the code on the next line should be indented further than the thing that determines its starting point on the previous line.
 There are a number of cases where this quite annoyingly means that you have to indent things very far (or, to avoid that, add lots of unnecessary line breaks). One example is when you have nesting in a method call. For example:

@@ -1,10 +1,10 @@
 # Idea 6987639: Extend the set of expressions supported in provided methods #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Keith Battocchi on 1/20/2015 12:00:00 AM
+### Submitted by Keith Battocchi on 1/20/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 There are some (undocumented) constraints on what kinds of quotations can be returned by a type provider's GetInvokerExpression method. In some cases (e.g. the lack of support for PropertyGet nodes) these missing expression cases have been papered over in the ProvidedTypes wrapper by translation to supported equivalents (e.g. MethodCall).
 However, for some other cases (e.g. FieldGet, FieldSet) there is no reasonable translation to supported equivalents, and for others (e.g. LetRecursive) there's only an awkward translation that is much less efficient than a real implementation would be.
@@ -12,7 +12,8 @@ Even in the cases where there is a reasonable translation (like PropertyGet ment
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined per my comment, thanks for the suggestion
 Don Syme, F# Language Evolution

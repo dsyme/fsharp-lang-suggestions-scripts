@@ -1,10 +1,10 @@
 # Idea 8220417: add a 'flatten' library function to generically flatten a tree to a sequence #
 
-## Status : declined
+### Status : declined
 
-## Submitted by lr on 6/3/2015 12:00:00 AM
+### Submitted by lr on 6/3/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 I need this function in most of my projects in one way or another, so I always copy/paste it. It's not a big hassle, but I think it is general enough to warrant inclusion in the std lib.
 The idea is to traverse a tree by passing a 'root' and a function to extract the 'children'. This works for both actual tree types and anything logically representing a tree like the directory structure.
@@ -24,7 +24,8 @@ Since F# has yield!, we don't need to explicitly use Stack<'T> like in C#.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. However, I’m declining this for the reasons given in the comments above.
 Don Syme, F# Language Evolution

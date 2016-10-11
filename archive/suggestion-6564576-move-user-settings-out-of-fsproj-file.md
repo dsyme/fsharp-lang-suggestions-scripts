@@ -1,10 +1,10 @@
 # Idea 6564576: Move user settings out of .fsproj file #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Robert Jeppesen on 10/15/2014 12:00:00 AM
+### Submitted by Robert Jeppesen on 10/15/2014 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 Command line parameters for debugging are stored in the F# project file. This makes it hard to keep your commits clean.
 My suggestion is to do the same as C#, where this information is stored in .csproj.user, which is not put in version control.
@@ -12,7 +12,8 @@ This doesn't really have anything to do with the language itself, but it *is* pa
 
 
 
-## Response by fslang-admin on 10/20/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/20/2014 12:00:00 AM
 
 Moved as discussed in the notes
 

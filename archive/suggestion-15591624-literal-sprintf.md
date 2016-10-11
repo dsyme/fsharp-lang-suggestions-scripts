@@ -1,10 +1,10 @@
 # Idea 15591624: Literal sprintf #
 
-## Status : open
+### Status : open
 
-## Submitted by Dzmitry Lahoda on 8/8/2016 12:00:00 AM
+### Submitted by Dzmitry Lahoda on 8/8/2016 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 Allow:
 ```

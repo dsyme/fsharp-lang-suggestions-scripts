@@ -1,10 +1,10 @@
 # Idea 7932663: Make numeric type conversions preserve units #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mat P on 5/13/2015 12:00:00 AM
+### Submitted by Mat P on 5/13/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Currently it's awkward to convert between numeric types and preserve the units, since we end up with a whole raft of conversion functions like:
 let i2f (x: int<'u>) : float<'u> =
@@ -14,7 +14,8 @@ Ideally, the functions int, float, decimal, etc., would preserve the units autom
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome

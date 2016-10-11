@@ -1,10 +1,10 @@
 # Idea 6713716: Extended augmentations for functional types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Chapman on 11/13/2014 12:00:00 AM
+### Submitted by Greg Chapman on 11/13/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 When working with F#'s "functional" types (e.g., records and unions), I
 have often wished that one could organize a module like:
@@ -18,7 +18,8 @@ alone without mixing in the code from augmentations.
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 Yes, this can be done today, as per the comment from Marc Sigrist
 Don Syme, F# Language Evolution

@@ -1,16 +1,17 @@
 # Idea 7916448: AddObsoleteAttribute method on ProvidedStaticParameter #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Dmitry Morozov on 5/11/2015 12:00:00 AM
+### Submitted by Dmitry Morozov on 5/11/2015 12:00:00 AM
 
-## 3 votes
-
-
+### 3 votes
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+
+
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 This is approved for inclusion in a future release of F# subject to an implementation and detailed design. A pull request
 to implement this feature will be necessary and we encourage contributors to submit one with adequate design detail and

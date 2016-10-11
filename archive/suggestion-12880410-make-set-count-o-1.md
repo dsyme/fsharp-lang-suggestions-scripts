@@ -1,10 +1,10 @@
 # Idea 12880410: Make Set.count O(1) #
 
-## Status : open
+### Status : open
 
-## Submitted by Zhen on 3/10/2016 12:00:00 AM
+### Submitted by Zhen on 3/10/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Seems easy to track items when they are added and removed
 

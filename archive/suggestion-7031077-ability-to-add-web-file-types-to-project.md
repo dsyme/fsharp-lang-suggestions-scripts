@@ -1,17 +1,18 @@
 # Idea 7031077: Ability to add web file types to project #
 
-## Status : declined
+### Status : declined
 
-## Submitted by David Crook on 1/30/2015 12:00:00 AM
+### Submitted by David Crook on 1/30/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 I am building an enterprise FSharp web application with Web API and I can't even add a simply .html page to my solution without cracking open the FSProj file every time.
 I spend more time in the FSProj file than actually writing FSharp code.
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 Since this is about the Visual F# Tools (rather than the F# language) this belongs at https://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-tools
 Please add an entry there or vote on an existing one.

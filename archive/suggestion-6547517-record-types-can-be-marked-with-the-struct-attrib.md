@@ -1,10 +1,10 @@
 # Idea 6547517: Record types can be marked with the Struct attribute #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Will Smith on 10/10/2014 12:00:00 AM
+### Submitted by Will Smith on 10/10/2014 12:00:00 AM
 
-## 64 votes
+### 64 votes
 
 A simple idea, record types can become structs; effectively, allowing record types to have the performance characteristics of structs.
 Example:
@@ -13,7 +13,8 @@ type Vector3 = { X: float32; Y: float32; Z: float32 }
 
 
 
-## Response by fslang-admin on 6/17/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/17/2016 12:00:00 AM
 
 This feature is approved for inclusion in a future revision of the F# language
 The RFC is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1008-struct-records.md

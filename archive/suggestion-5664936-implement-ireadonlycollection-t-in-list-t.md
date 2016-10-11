@@ -1,17 +1,18 @@
 # Idea 5664936: Implement IReadOnlyCollection<'T> in list<'T> #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Petr Onderka on 3/21/2014 12:00:00 AM
+### Submitted by Petr Onderka on 3/21/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 .Net 4.5 has a new type IReadOnlyCollection<'T> and list<'T> (a.k.a. FSharpList<'T>) fits this interface precisely, so I think it should implement it.
 Original on VS uservoice: http://visualstudio.uservoice.com/forums/121579/suggestions/2902147
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 This is approved for inclusion in a future release of the F# core library subject to an implementation.
 A pull request to implement this feature will be necessary and we encourage contributors to submit one with adequate design detail and testing to http://github.com/Microsoft/visualfsharp.

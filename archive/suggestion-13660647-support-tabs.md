@@ -1,17 +1,18 @@
 # Idea 13660647: Support Tabs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 4/29/2016 12:00:00 AM
+### Submitted by Anonymous on 4/29/2016 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 Don't force a code style upon users. Tabs can work perfectly well in whitespace-sensitive languages - see python or haskell - and many people prefer them.
 Forcing users to use your style just comes across as petty and picky: not the impression you should be giving. Disappointing to see a promising language hamstrung by narrow-minded design decisions.
 
 
 
-## Response by fslang-admin on 6/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/2/2016 12:00:00 AM
 
 Declined, per comments below. F# is a whitespace sensitive language and the general consensus is that TABs are not a good iddea in whitespace sensitive languages given the current status of editors
 Don Syme, F# Language Evolution

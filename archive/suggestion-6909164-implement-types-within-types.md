@@ -1,10 +1,10 @@
 # Idea 6909164: Implement types within types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexander Baggett on 1/1/2015 12:00:00 AM
+### Submitted by Alexander Baggett on 1/1/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 It would look something like this
 type Music() =
@@ -14,7 +14,8 @@ static member sixteenth = 40
 
 
 
-## Response by fslang-admin on 1/23/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2015 12:00:00 AM
 
 Duplicate, [/archive/suggestion-6085086-nested-types-for-f](/archive/suggestion-6085086-nested-types-for-f.md)
 

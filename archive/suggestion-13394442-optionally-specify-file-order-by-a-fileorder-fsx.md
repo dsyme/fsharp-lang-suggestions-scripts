@@ -1,10 +1,10 @@
 # Idea 13394442: Optionally specify file order by a fileorder.fsx (or fileorder.txt or fileorder.json) file #
 
-## Status : open
+### Status : open
 
-## Submitted by Don Syme on 4/12/2016 12:00:00 AM
+### Submitted by Don Syme on 4/12/2016 12:00:00 AM
 
-## 20 votes
+### 20 votes
 
 With F# becoming more and more multi-editor and cross-platform, it is becoming increasingly difficult to teach all build/edit tools about F#'s file order. The F# community are currently struggling to "update" each new build/edit tool to understand that F# actually needs a file order.
 Part of the problem is that there is no standard textual way to specify this file order except as command line arguments, and these are not stored in an editable form. There is no standard way to specify the F# file order. We need an (optional) solution to this problem that is closer to home and doesn't involve modifying build/edit tools.

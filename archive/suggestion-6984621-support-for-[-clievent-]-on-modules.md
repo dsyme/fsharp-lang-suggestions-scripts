@@ -1,16 +1,17 @@
 # Idea 6984621: Support for [<CLIEvent>] on modules #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Isaac Abraham on 1/19/2015 12:00:00 AM
+### Submitted by Isaac Abraham on 1/19/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 As the name suggests. You can create [<CLIEvent>]s on classes as both instance and static members but not on a module. As far as the consuming e.g. C# library, the fact we're using a module in F# is unknown; from the F# side it's a pity you have to create classes for this behaviour rather than more idiomatic modules.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

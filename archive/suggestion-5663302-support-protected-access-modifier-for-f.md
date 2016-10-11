@@ -1,10 +1,10 @@
 # Idea 5663302: Support 'protected' access modifier for F# #
 
-## Status : open
+### Status : open
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 98 votes
+### 98 votes
 
 Original item: http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2262739-support-protected-access-modifier-for-f
 

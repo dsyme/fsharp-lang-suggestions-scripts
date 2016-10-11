@@ -1,10 +1,10 @@
 # Idea 13306077: Add the do .. while loops to the language (from Java, C, C++, C#) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 4/4/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 I suggest adding the do .. while loops to F#. This feature would improve the expressiveness of the language and facilitate the migration of large codebases to F# from imperative languages such as Java, C, C++, C#.
 I suggest using time-tested and popular syntax from Java, C, C++, C# (TIOBE TOP 4 languages as of March 2016), but with F#-style indentation instead of {}:

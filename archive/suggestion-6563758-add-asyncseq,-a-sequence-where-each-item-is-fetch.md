@@ -1,10 +1,10 @@
 # Idea 6563758: Add AsyncSeq, a sequence where each item is fetched asynchronously #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Daniel Bradley on 10/15/2014 12:00:00 AM
+### Submitted by Daniel Bradley on 10/15/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Incorporate asynchronous sequences with associated module (with similar methods to the Seq module) and computation expression builder.
 Existing implementations:
@@ -13,7 +13,8 @@ ExtCore: https://github.com/jack-pappas/ExtCore/blob/master/ExtCore/Collections.
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Completed through the library linked in the comments
 

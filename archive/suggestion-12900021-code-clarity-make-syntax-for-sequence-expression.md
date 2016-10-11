@@ -1,10 +1,10 @@
 # Idea 12900021: Code clarity: Make syntax for sequence expressions as simple as syntax for lists #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/11/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/11/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 I suggest simplifying syntax for generating sequences. It would be great to make it as simple as syntax for lists in F#.
 For example,

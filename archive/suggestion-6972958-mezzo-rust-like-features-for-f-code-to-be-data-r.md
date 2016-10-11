@@ -1,10 +1,10 @@
 # Idea 6972958: Mezzo/Rust-like features for F# code to be data-race free #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Don Syme on 1/16/2015 12:00:00 AM
+### Submitted by Don Syme on 1/16/2015 12:00:00 AM
 
-## 27 votes
+### 27 votes
 
 Languages like Mezzo, Rust and the M# language (internal to Microsoft) either have or are looking at adding type system features that track the status of references that give access to shared memory.
 Shared-memory coding is less prevalent in F# because of its functional ans Async features, and because of powerful concurrency collections in the .NET class libraries.
@@ -14,7 +14,8 @@ Given the design of F#, there would likely be "back doors" to this feature, espe
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Declining per comment below – this was a placeholder and much more concrete suggestions would be needed!
 

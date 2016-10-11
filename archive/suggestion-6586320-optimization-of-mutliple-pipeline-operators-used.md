@@ -1,10 +1,10 @@
 # Idea 6586320: Optimization of mutliple pipeline operators used in single statement #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Bartosz Sypytkowski on 10/20/2014 12:00:00 AM
+### Submitted by Bartosz Sypytkowski on 10/20/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Using an example:
 ```fsharp
@@ -15,7 +15,8 @@ Second line will result with generation of IL code for intermediate classes and 
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 As per comment, please just submit a PR directly to the http://github.com/Microsoft/visualfsharp repository.
 

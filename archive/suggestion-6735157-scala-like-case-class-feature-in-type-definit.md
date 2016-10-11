@@ -1,16 +1,17 @@
 # Idea 6735157: Scala like 'case class' feature in 'type' definition #
 
-## Status : declined
+### Status : declined
 
-## Submitted by M Sheik Uduman Ali on 11/18/2014 12:00:00 AM
+### Submitted by M Sheik Uduman Ali on 11/18/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I would like to have Scala like 'case class' feature in 'type' definition. In F# 3.0, type definition is too verbose
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 F# discriminated unions play this role
 Don Syme, F# Language Evolution

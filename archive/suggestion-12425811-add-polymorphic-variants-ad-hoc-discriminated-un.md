@@ -1,10 +1,10 @@
 # Idea 12425811: Add Polymorphic Variants (ad-hoc Discriminated Unions) #
 
-## Status : open
+### Status : open
 
-## Submitted by Jared Hester on 2/21/2016 12:00:00 AM
+### Submitted by Jared Hester on 2/21/2016 12:00:00 AM
 
-## 36 votes
+### 36 votes
 
 Creating strongly typed data constructs with some level of heterogeneity is often accomplished with DUs so lets take the trivial case of wanting
 to have lists of floats & ints, ints & strings, and ints & floats & strings

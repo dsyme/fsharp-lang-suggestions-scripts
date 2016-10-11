@@ -1,17 +1,18 @@
 # Idea 6092853: Async.WaitTask for non generic Task #
 
-## Status : completed
+### Status : completed
 
-## Submitted by thinkb4coding on 6/24/2014 12:00:00 AM
+### Submitted by thinkb4coding on 6/24/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 Async.WaitTask has an overload for Task<'T> but has no support for Task.
 Adding a Task -> Async<unit> overload would make things easier when dealing with C# and BCL async methods.
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 Approved for the F# 4.0+ stream – see discussion.
 An implementation has now been submitted, reviewed and committed to the “fsharp4” branch, see https://visualfsharp.codeplex.com/SourceControl/network/forks/thinkb4coding/visualfsharp/contribution/7019

@@ -1,10 +1,10 @@
 # Idea 13380336: Code expressiveness: Add loops with test condition in the middle #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 4/11/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 4/11/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 Sometimes programmers need to first make a calculation and exit the loop when a certain condition is met. However when the condition is not met there is something else to be done. Hence we need a loop where the test condition is in the middle. That loop was first suggested in 1972 by Ole-Johan Dahl, a Norwegian computer scientist who is deemed to be one of the fathers of object-oriented programming.
 I suggest using the syntax for that loop that requires no new keywords:

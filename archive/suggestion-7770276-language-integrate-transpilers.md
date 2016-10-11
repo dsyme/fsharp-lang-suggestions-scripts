@@ -1,10 +1,10 @@
 # Idea 7770276: Language Integrate transpilers #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Nick Cooper on 4/30/2015 12:00:00 AM
+### Submitted by Nick Cooper on 4/30/2015 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Create a framework similar to computation expressions, but built using Roslyn or whatever compiler-like framework would be necessary so that subexpressions would be well-formed and type-safe.
 XML Example:
@@ -25,7 +25,8 @@ Or LaTeX, or C#, or CIL, or any other parser that one could imagine.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 The idea of allowing language embeddings is certainly not a bad one but given the success of things like embedded SQL processing in the SqlClient type provider it feels that any feature in this area would have to be based around evolving and extending the type provider mechanism. Perhaps a synthesis of ideas is what’s needed here.

@@ -1,10 +1,10 @@
 # Idea 11544387: Add filtermap to the standard library #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Dave Thomas on 1/22/2016 12:00:00 AM
+### Submitted by Dave Thomas on 1/22/2016 12:00:00 AM
 
-## 23 votes
+### 23 votes
 
 Add filtermap to the standard library
 Rust, Elixir and other functional languages have this and it would be nice to have an alternative to the option allocating choose function:
@@ -14,7 +14,8 @@ Rust: https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.filter_map
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below
 Don Syme, F# Language and Core Library Evolution

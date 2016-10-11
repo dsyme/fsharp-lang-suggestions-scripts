@@ -1,17 +1,18 @@
 # Idea 6697507: add possibility to use custom hash code generation for types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Hodza Nassredin on 11/11/2014 12:00:00 AM
+### Submitted by Hodza Nassredin on 11/11/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 Current implementation has some probems with collisions rate but fr backwards-compat reasons it couldn't be changed. https://github.com/fsharp/fsharp/issues/343
 We need some way to use custom generatior and change it at compile time.
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined per Paul’s comment: just use a custom IEqualityComparer or Equals/GetHashCode
 Don Syme, F# Language Evolution

@@ -1,10 +1,10 @@
 # Idea 6566155: Improve F# Project System #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 10/15/2014 12:00:00 AM
+### Submitted by exercitus vir on 10/15/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 I am not sure this is the right place to request this and I have no experience with the F# Project System.
 But every time some important (and obvious) feature for a tool relating to F# is requested, the developers of the tool note that it is not possible or heavily restricted because of F#'s crappy project system.
@@ -13,7 +13,8 @@ Is there something that can be done about this? C# does not seem have to this pr
 
 
 
-## Response by fslang-admin on 10/20/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/20/2014 12:00:00 AM
 
 Good suggestion (and don’t forget you can contribute to the Visual F# Tools to help improve them).
 The right place for this item is https://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-tools

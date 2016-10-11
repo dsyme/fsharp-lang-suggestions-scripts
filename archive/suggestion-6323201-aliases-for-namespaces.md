@@ -1,10 +1,10 @@
 # Idea 6323201: Aliases for namespaces #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Daniel Bradley on 8/20/2014 12:00:00 AM
+### Submitted by Daniel Bradley on 8/20/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 [ Edited by admin to apply to namespaces only, since as per comment you can already do this with module aliases ]
 When using the ‘open’ keyword, allow a namespace being imported, to be assigned to an alias rather than the imported contents being made available to the current scope e.g.
@@ -13,7 +13,8 @@ This would be useful when importing namespaces containing modules/types with the
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Thanks for the suggestion. It is quite a reasonable one and it has taken me a long time to mark this as declined. However I have now done so for the reasons listed below.
 Don Syme, F# Language Evolution

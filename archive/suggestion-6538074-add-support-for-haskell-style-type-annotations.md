@@ -1,10 +1,10 @@
 # Idea 6538074: Add support for Haskell-style type annotations #
 
-## Status : open
+### Status : open
 
-## Submitted by amazingant on 10/8/2014 12:00:00 AM
+### Submitted by amazingant on 10/8/2014 12:00:00 AM
 
-## 58 votes
+### 58 votes
 
 Although it's typically preferred to let the compiler handle types, it is often necessary to provide type annotation. Sometimes this is to help the compiler understand the types a function can take, often it is done to help other developers understand your code, and in my personal use, I frequently add type annotations to ensure the compiler will catch typos I make which change a function's return type.
 Although not as verbose as other .NET languages, the F# type annotations do add verbosity to a function definition, look cluttered compared to Haskell's syntax (personal opinion), and do not match the type format provided by the compiler or interactive environment.

@@ -1,10 +1,10 @@
 # Idea 16529041: Close User Voice in favor of GitHub issues. #
 
-## Status : open
+### Status : open
 
-## Submitted by Krzysztof Cieslak on 10/6/2016 12:00:00 AM
+### Submitted by Krzysztof Cieslak on 10/6/2016 12:00:00 AM
 
-## 285 votes
+### 285 votes
 
 I really believe we should close UserVoice in favor of using GitHub issues (maybe separate repository for it? ). Here are few reasons for it:
 * Bad UX

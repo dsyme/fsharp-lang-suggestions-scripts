@@ -1,17 +1,18 @@
 # Idea 8592088: Make records extensible a la Elm #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Boris on 6/28/2015 12:00:00 AM
+### Submitted by Boris on 6/28/2015 12:00:00 AM
 
-## 14 votes
+### 14 votes
 
 It seems very useful when types don't fully defined in advance, but I don't sure if it is possible in F#.
 http://elm-lang.org/guide/core-language#records
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing in favour of the more conrete proposal at [/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
 

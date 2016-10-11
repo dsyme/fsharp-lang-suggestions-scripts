@@ -1,10 +1,10 @@
 # Idea 6521454: Add STM (Software Transactional Memory) feature into F# as language feature and into compiler as well #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Eriawan Kusumawardhono on 10/4/2014 12:00:00 AM
+### Submitted by Eriawan Kusumawardhono on 10/4/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 STM, Software Transactional Memory is becoming not just relevant, but it's also for handling concurrency problems. Also to provide atomicity and also provide modularity in a sense of chaining functions of operations.eazily.
 Also compositional operations is easier to create and it's transparent to reason the code.
@@ -33,7 +33,8 @@ I gave this feedback to have 2 votes because this is very important but I unders
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 As Vasily (Basil) indicates, this is approachable as a library in F#. There is no need to add anything to the F# language (though arguably some things could be added to the .NET runtime implementations, though that’s a different matter).
 Don Syme, BDFL F# Language/Core Library Evolution

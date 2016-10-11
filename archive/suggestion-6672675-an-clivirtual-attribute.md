@@ -1,10 +1,10 @@
 # Idea 6672675: An CLIVirtual attribute #
 
-## Status : open
+### Status : open
 
-## Submitted by Remko Boschker on 11/6/2014 12:00:00 AM
+### Submitted by Remko Boschker on 11/6/2014 12:00:00 AM
 
-## 22 votes
+### 22 votes
 
 Just as you can use CLIMutable to store records using Entity Framework wouldn't is be nice to be able to set an CLIVirtual attribute on a record field of an ICollection type so that Entity Framework can do lazy loading. See also http://stackoverflow.com/questions/26775760/how-to-create-a-virtual-record-field-for-entity-framework-lazy-loading
 

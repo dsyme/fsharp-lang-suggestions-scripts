@@ -1,10 +1,10 @@
 # Idea 8401578: Generic `TypeWithMeasure` and `TypeWithoutMeasure` functions for adding units of measure on any type #
 
-## Status : open
+### Status : open
 
-## Submitted by exercitus vir on 6/13/2015 12:00:00 AM
+### Submitted by exercitus vir on 6/13/2015 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 Currently, the Core.LanguagePrimitives module only provides the following functions to add units of measure to decimal, double (= float) and single (=float32), respectively:
 DecimalWithMeasure : decimal -> decimal<'u>

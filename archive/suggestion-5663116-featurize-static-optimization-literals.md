@@ -1,17 +1,18 @@
 # Idea 5663116: Featurize static optimization literals #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alex Rønne Petersen on 3/21/2014 12:00:00 AM
+### Submitted by Alex Rønne Petersen on 3/21/2014 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 I understand that the inline IL feature is discouraged because it depends on compiler implementation details, but it seems like static optimization literals would be genuinely useful and also portable across (potential) compilers, yet they are currently disallowed outside of the core library.
 Would it make sense to featurize them so they're usable everywhere?
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below
 Don Syme, F# Language Evolution

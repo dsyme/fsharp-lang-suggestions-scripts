@@ -1,10 +1,10 @@
 # Idea 12839142: Allow overloads of custom keywords in computation expressions #
 
-## Status : open
+### Status : open
 
-## Submitted by Pierre Irrmann on 3/7/2016 12:00:00 AM
+### Submitted by Pierre Irrmann on 3/7/2016 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 I've been using custom keywords in computation expressions to write DSLs, and I would have loved to be able to have several signatures for the same custom keyword, in order to make some arguments optional in the expression.
 When you try do it today, there is an error message such as "The custom operation 'myOperation' refers to a method which is overloaded. The implementations of custom operations may not be overloaded"

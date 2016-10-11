@@ -1,10 +1,10 @@
 # Idea 6343892: Allow custom get/set functions when declaring auto-properties (and fix a related FSI bug) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mark Laws on 8/25/2014 12:00:00 AM
+### Submitted by Mark Laws on 8/25/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 Auto-properties are nice, but there should be a way of providing functions for the get and set methods so that e.g. setting a property can automatically call other side-effecting functions. In other words, it would be nice to be able to write this:
 type foo(?boolguy, ?settyguy) =
@@ -26,7 +26,8 @@ In FSC, the "member val x.settyguy" is flagged as an error.
 
 
 
-## Response by fslang-admin on 9/6/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/6/2014 12:00:00 AM
 
 Declining per comment. Please add additional information if you think this should be reopened.
 Don Syme, BDFL F# Language Evolution

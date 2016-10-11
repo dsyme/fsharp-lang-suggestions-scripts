@@ -1,10 +1,10 @@
 # Idea 6085086: Nested types for F# #
 
-## Status : open
+### Status : open
 
-## Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
+### Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
 
-## 45 votes
+### 45 votes
 
 I don't think F# supports nested type definitions yet.
 The idea was posted here:

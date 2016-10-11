@@ -1,10 +1,10 @@
 # Idea 5663317: Allow to use class constructors as functions #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
+### Submitted by Gustavo Guerra on 3/21/2014 12:00:00 AM
 
-## 124 votes
+### 124 votes
 
 DU case constructors can be used as standalone functions, which means I can use them in partial application:
 x |> List.map Some
@@ -14,7 +14,8 @@ For this examples is not a problem, but in some real life scenarios is annoying 
 
 
 
-## Response by fslang-admin on 11/12/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/12/2014 12:00:00 AM
 
 This is now completed and available in preview releases of F# 4.0.
 For an early Visual Studio preview release see here (cross platform releases will follow) – http://blogs.msdn.com/b/fsharpteam/archive/2014/11/12/announcing-a-preview-of-f-4-0-and-the-visual-f-tools-in-vs-2015.aspx

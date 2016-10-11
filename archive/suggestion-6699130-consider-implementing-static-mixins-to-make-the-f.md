@@ -1,10 +1,10 @@
 # Idea 6699130: Consider implementing static mixins to make the functional style more convenient in F# #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Bryan Edds on 11/11/2014 12:00:00 AM
+### Submitted by Bryan Edds on 11/11/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Here is a conversation from stackoverflow chat that provide context for this language feature idea -
 AshtonKJ -
@@ -144,7 +144,8 @@ The original conversation is also linked here - http://chat.stackoverflow.com/tr
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing as this suggestion needs to be more concrete (not just a chat log)
 Don Syme, F# Language Evolution

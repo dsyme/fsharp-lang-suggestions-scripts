@@ -1,10 +1,10 @@
 # Idea 5749571: Add support for primitive sub-types (types constrained by sub-ranges or length) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 4/9/2014 12:00:00 AM
+### Submitted by exercitus vir on 4/9/2014 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 Please add support for sub-types like Ada which are enforced by the F# compiler. A sub-type is basically just a sub-range of an existing primitive type like int.
 This is extremely useful for domain modelling and makes code much more robust.
@@ -19,7 +19,8 @@ type path = string for 1 to 256 //for-loop syntax
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below: this feature almost immediately leads you to dependent types, see the comments here: [/archive/suggestion-6062821-add-dependent-types](/archive/suggestion-6062821-add-dependent-types.md)
 

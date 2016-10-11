@@ -1,10 +1,10 @@
 # Idea 5690218: Allow open in local declarations like in Standard ML and O'Caml (>= 3.12) #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Anonymous on 3/27/2014 12:00:00 AM
+### Submitted by Anonymous on 3/27/2014 12:00:00 AM
 
-## 67 votes
+### 67 votes
 
 See e.g. http://www.mpi-sws.org/~rossberg/sml-vs-ocaml.html#localdecs
 

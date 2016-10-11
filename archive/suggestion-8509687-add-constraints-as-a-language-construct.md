@@ -1,10 +1,10 @@
 # Idea 8509687: Add constraints as a language construct #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 6/22/2015 12:00:00 AM
+### Submitted by Jared Hester on 6/22/2015 12:00:00 AM
 
-## 36 votes
+### 36 votes
 
 Allow the declaration of named constraints that can have other named constraints nested within them and are resolved at runtime or compile time based on their structure , e.g.
 constraint (^a:eatsDrinksSleeps) =
@@ -25,7 +25,8 @@ let calc (col:'a when 'a:greatData) = ....
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Thanks for the suggestion. It is entirely reasonable and it’s taken me a long time to mark it as declined. I’ve listed the reasons below – and [/archive/suggestion-5762135-support-for-type-classes-or-implicits](/archive/suggestion-5762135-support-for-type-classes-or-implicits.md) can be used as a placeholder for requests in the type-class/constraint area
 Don Syme

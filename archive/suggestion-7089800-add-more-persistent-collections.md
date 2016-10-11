@@ -1,10 +1,10 @@
 # Idea 7089800: Add more persistent collections #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Nils Lück on 2/13/2015 12:00:00 AM
+### Submitted by Nils Lück on 2/13/2015 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 Immutability is one of the large advantages of functional programming. However, in order to effectively utilize such immutability, a good set of persistent data structures are necessary.
 Other modern functional programming languages like Scala and Clojure offer a much richer set of immutable data structures, which makes F# feel lacking in this respect, and this in turn encourages developers to fall back to regular .NET collections.
@@ -15,7 +15,8 @@ But we could consider adding more efficient HAMT based maps/sets, and immutable 
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as completed – evolution will be done through additional packages like those mentioned, and there are already several good packages available.
 For discussion see the comments below. Further discussion and links to newly available libraries welcome

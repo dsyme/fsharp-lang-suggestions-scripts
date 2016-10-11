@@ -1,16 +1,17 @@
 # Idea 10964649: Importing DLL's from projects in current solution into F# interactive #
 
-## Status : completed
+### Status : completed
 
-## Submitted by zjv on 12/4/2015 12:00:00 AM
+### Submitted by zjv on 12/4/2015 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 It is currently a hassle to import references to DLL's from projects in the current solution because full paths has to be given and recursive dependencies have to be handled manually. Why not make it possible to import a "project" by name along with all dependencies into F# interactive.
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 See comment above
 

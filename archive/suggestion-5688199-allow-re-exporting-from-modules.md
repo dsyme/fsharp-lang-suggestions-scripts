@@ -1,10 +1,10 @@
 # Idea 5688199: Allow re-exporting from modules #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anton Tayanovskyy on 3/27/2014 12:00:00 AM
+### Submitted by Anton Tayanovskyy on 3/27/2014 12:00:00 AM
 
-## 60 votes
+### 60 votes
 
 OCaml, Haskell, Racket all provide mechanisms for re-exporting module bindings that the module imports from somwhere else rather than defining. This allows a simple library development startegy:
 First, you start with one module (and file):
@@ -28,7 +28,8 @@ In F#, some approximations are possible (manually re-exporting aliases, using na
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 As per my comments, I am declining this suggestion for now to allow votes to be recycled.
 I am open to continued suggestions and discussions in the area of mixins, that cover both object programming and module programming. More code examples for would be welcome to help guide the discussion.

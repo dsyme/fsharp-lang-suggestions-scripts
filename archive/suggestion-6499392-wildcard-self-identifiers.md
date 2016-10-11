@@ -1,16 +1,17 @@
 # Idea 6499392: Wildcard self identifiers #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Daniel Robinson on 9/29/2014 12:00:00 AM
+### Submitted by Daniel Robinson on 9/29/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 Two underscores are frequently used in member definitions to denote an ignored "self" identifier. This seems like a hack given that the language already provides a wildcard pattern that represents an unused value.
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 I’m marking this as approved in principle for F# 4.×. you are invited to submit a quality and tested implementation would be needed, to be submitted to http://github.com/Microsoft/visualfsharp.
 See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for details about contributing to the F# language and core library

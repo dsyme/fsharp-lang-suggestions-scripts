@@ -1,10 +1,10 @@
 # Idea 12902226: Support partial record prototypes #
 
-## Status : open
+### Status : open
 
-## Submitted by Matthew Orlando on 3/11/2016 12:00:00 AM
+### Submitted by Matthew Orlando on 3/11/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I have a case where I have several related types (categories of parameter sets for an analytics API). I want to create a set of new types such that every category is required in exactly one of the new types, and all of the other categories are optional.
 This is fairly easy to express in a variety of ways in F#, but enforcement becomes difficult. I'd prefer to use record types with a default prototype, but there are no good defaults for the required parameters. I either have to clutter up my types with bona fide classes with constructors, or use a module with a create function (as seems common in cases like this).

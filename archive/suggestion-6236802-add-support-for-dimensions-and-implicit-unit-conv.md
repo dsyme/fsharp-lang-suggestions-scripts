@@ -1,10 +1,10 @@
 # Idea 6236802: add support for dimensions and implicit unit conversions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Johann Dirry on 7/31/2014 12:00:00 AM
+### Submitted by Johann Dirry on 7/31/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Dimensions could be described as discriminated unions of a set of units (Measure's). It should also be possible to convert units explicitly to the base unit.
 // some units
@@ -28,7 +28,8 @@ match value with
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. Marking as declined as part of house keeping per my comment below. However we’re still interested in collecting more feedback over time on this issue.
 Don Syme, F# Language Evolution

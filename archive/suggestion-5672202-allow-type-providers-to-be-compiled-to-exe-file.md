@@ -1,10 +1,10 @@
 # Idea 5672202: Allow Type Providers to be compiled to *.exe file. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Sergey Tihon on 3/23/2014 12:00:00 AM
+### Submitted by Sergey Tihon on 3/23/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 http://stackoverflow.com/questions/18181906/f-type-provider-compiled-as-exe-file
 Type Provider compiled as *.exe file can have [<EntryPoint>]. Such assembly may be executed as standalone process for design-time type inference.
@@ -12,7 +12,8 @@ This feature dramatically simplify development of Interop Type Providers (R, Pyt
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Declined per my comment – this is best done by having a type provider start a proxy process, just as the R provider does.
 Don Syme

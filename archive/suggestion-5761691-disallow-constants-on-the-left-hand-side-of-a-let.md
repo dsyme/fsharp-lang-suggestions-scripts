@@ -1,10 +1,10 @@
 # Idea 5761691: Disallow constants on the left hand side of a let binding #
 
-## Status : declined
+### Status : declined
 
-## Submitted by john palmer on 4/12/2014 12:00:00 AM
+### Submitted by john palmer on 4/12/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Currently, the following code is valid
 let 1 = 1
@@ -23,7 +23,8 @@ This will actually require a change to the spec, but it is relatively minor
 
 
 
-## Response by fslang-admin on 6/20/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/20/2014 12:00:00 AM
 
 In my view, the warning is sufficient, as discussed above.
 Declining this for now to recycle votes.

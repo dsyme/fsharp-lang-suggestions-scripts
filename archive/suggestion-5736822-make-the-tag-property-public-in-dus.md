@@ -1,10 +1,10 @@
 # Idea 5736822: Make the .Tag property public in DUs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Eirik George Tsarpalis on 4/6/2014 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 4/6/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 A common problem I encounter is when I need to group a list of incuming DU values according to branch. Having the .Tag property public would make this as simple as writing
 values |> Seq.groupBy (fun v -> v.Tag)
@@ -14,7 +14,8 @@ UnionType.GetInternalBranchRepresentationValue : UnionType -> int
 
 
 
-## Response by fslang-admin on 6/25/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 6/25/2014 12:00:00 AM
 
 Merging this with [/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f](/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f.md)
 This is not actually being declined, quite the opposite, it is being approved and merged

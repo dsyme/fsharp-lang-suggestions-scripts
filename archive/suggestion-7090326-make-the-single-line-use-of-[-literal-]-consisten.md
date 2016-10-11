@@ -1,10 +1,10 @@
 # Idea 7090326: Make the single-line use of [<Literal>] consistent #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Don Syme on 2/13/2015 12:00:00 AM
+### Submitted by Don Syme on 2/13/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 See https://github.com/Microsoft/visualfsharp/issues/229
 Some declaration constructs allow attributes on the same line as the keyword for the declaration, e.g.
@@ -17,7 +17,8 @@ The suggestion is to make this consistent by allowing single-line use everywhere
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing as this idea (listed by me) as it has little support
 

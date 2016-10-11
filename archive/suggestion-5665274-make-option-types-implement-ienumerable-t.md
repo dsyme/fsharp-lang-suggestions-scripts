@@ -1,16 +1,17 @@
 # Idea 5665274: Make Option Types implement IEnumerable<'T> #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
+### Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 It's such a pain to need to manually change option types into seqs when they're already obviously perfectly fit for being a collection. It sure would be nice to just be able to collect them up, or use them with "yield!".
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 As indicated in the comments, this can’t be done because of the use of “null” as a representation for “None”.
 Don Syme, BDFL Language/Library Evolution

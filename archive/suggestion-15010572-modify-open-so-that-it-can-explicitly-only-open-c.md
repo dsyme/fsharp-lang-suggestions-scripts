@@ -1,16 +1,17 @@
 # Idea 15010572: Modify open so that it can explicitly only open certain parts #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Dave Thomas on 6/28/2016 12:00:00 AM
+### Submitted by Dave Thomas on 6/28/2016 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 e.g. open System.Reflection (Assembly)
 
 
 
-## Response by fslang-admin on 7/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 7/5/2016 12:00:00 AM
 
 Duplicate of [/archive/suggestion-9987774-allow-finer-grained-control-of-open-like-haskel](/archive/suggestion-9987774-allow-finer-grained-control-of-open-like-haskel.md)
 

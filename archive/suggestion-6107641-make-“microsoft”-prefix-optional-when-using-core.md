@@ -1,10 +1,10 @@
 # Idea 6107641: Make “Microsoft” prefix optional when using core FSharp.Core namespaces, types and modules #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Don Syme on 6/27/2014 12:00:00 AM
+### Submitted by Don Syme on 6/27/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 The modules and types from the FSharp.Core dll use the names "Microsoft.FSharp.Collections" etc.
 Since the F# language is now cross-platform and open-source, it is appropriate that source code be able to optionally use just "FSharp.Collections". This would also mean the names match the name of the DLL (FSharp.Core).
@@ -13,7 +13,8 @@ The compiled form used in FSharp.Core.dll wouldn't change, for reasons of binary
 
 
 
-## Response by fslang-admin on 1/21/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 1/21/2015 12:00:00 AM
 
 This has been completed for F# 4.0+, see https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/MicrosoftOptionalDesignAndSpec.md
 The overall status for F# 4.0+ is here: https://github.com/Microsoft/visualfsharp/wiki/F%23-4.0-Status

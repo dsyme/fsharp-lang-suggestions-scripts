@@ -1,10 +1,10 @@
 # Idea 13499082: Add support for symbolic stacktraces in computation expressions #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Eirik George Tsarpalis on 4/20/2016 12:00:00 AM
+### Submitted by Eirik George Tsarpalis on 4/20/2016 12:00:00 AM
 
-## 59 votes
+### 59 votes
 
 One of the biggest problem in async or computation expressions in general is lack of proper stacktraces when exceptions are raised. This is a major annoyance when debugging in the large, often leading to errors whose origin cannot be traced.
 I recently made a blog post arguing for the addition of language features that would make symbolic stacktraces possible for computation expression authors: https://eiriktsarpalis.wordpress.com/2015/12/27/reconciling-stacktraces-with-computation-expressions/
@@ -12,7 +12,8 @@ Symbolic stacktraces is a feature that has already appeared in languages like C#
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 See Eirik’s comment below
 

@@ -1,10 +1,10 @@
 # Idea 5664643: Add support for GADTs #
 
-## Status : open
+### Status : open
 
-## Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
+### Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
 
-## 219 votes
+### 219 votes
 
 Generalized Algebraic Data Types essentially extend standard union types to allow different generic instantiations when defined recursively.
 You can see a simple explanation of how they work in haskell here: https://en.wikibooks.org/wiki/Haskell/GADT

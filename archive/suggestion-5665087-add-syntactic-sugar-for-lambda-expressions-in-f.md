@@ -1,10 +1,10 @@
 # Idea 5665087: Add syntactic sugar for lambda expressions in F# - lambda expression C# style #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Maciej on 3/21/2014 12:00:00 AM
+### Submitted by Maciej on 3/21/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 Add syntactic sugar for lambda expressions in F# so that one can write lambda expressions in a even shorter form like in C# (no fun keyword, => symbol).
 I do understand the lambda in F# are written this way because of many reasons, on the other hand I believe C# style lambda expressions are nice and concise and see no reason no to add optional syntax to the language.
@@ -14,7 +14,8 @@ List.map (x => x > ...)
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Closed as a duplicate since it is sufficiently close to [/archive/suggestion-5663774-remove-fun-keyword-from-lambda-expressions](/archive/suggestion-5663774-remove-fun-keyword-from-lambda-expressions.md)
 

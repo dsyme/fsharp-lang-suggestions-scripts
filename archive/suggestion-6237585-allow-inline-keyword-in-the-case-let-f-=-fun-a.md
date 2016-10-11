@@ -1,16 +1,17 @@
 # Idea 6237585: Allow "inline" keyword in the case "let f = fun a -> ..." #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Yusuf Motara on 7/31/2014 12:00:00 AM
+### Submitted by Yusuf Motara on 7/31/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Currently, the code "let inline f = fun a -> ..." does not compile, but the code "let inline f a = ..." does compile. Since the two mean the same thing, "inline" should be allowed on both.
 
 
 
-## Response by fslang-admin on 7/11/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 7/11/2016 12:00:00 AM
 
 This is approved for inclusion in a future release of F# subject to completion of an RFC and implementation.
 An RFC can be submitted to https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs

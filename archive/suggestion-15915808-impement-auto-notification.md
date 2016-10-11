@@ -1,10 +1,10 @@
 # Idea 15915808: Impement auto notification #
 
-## Status : open
+### Status : open
 
-## Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM
+### Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Impement auto notification chages for classes and records when implemented INotifyPropertyChanged or custom.
 type A() =

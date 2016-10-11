@@ -1,10 +1,10 @@
 # Idea 6717137: Allow for completely in-memory compilation #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Aleksander Heintz on 11/14/2014 12:00:00 AM
+### Submitted by Aleksander Heintz on 11/14/2014 12:00:00 AM
 
-## 195 votes
+### 195 votes
 
 With the introduction of Roslyn and ASP.Net 5 code is being compiled in-memory and on demand. This allows for drastically reduced compilation times (in some cases there is no disk IO at all). I've written a provider for F# to be used in ASP.NET 5 (it can be found at https://github.com/YoloDev/YoloDev.FSharp.AspNet), which uses `FSharp.Compiler.Service` to do the compilation.
 Now, there are several problems with the way it works today.
@@ -15,7 +15,8 @@ My suggestion is to follow the Roslyn model. Build up a Compilation object consi
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Duplicate, see https://github.com/fsharp/FSharp.Compiler.Service/issues/266
 which covers the ongoing work for this feature.

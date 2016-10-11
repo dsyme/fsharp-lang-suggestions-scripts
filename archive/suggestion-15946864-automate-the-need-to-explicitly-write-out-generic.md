@@ -1,10 +1,10 @@
 # Idea 15946864: Automate the need to explicitly write out generic parameter constraints in classes #
 
-## Status : open
+### Status : open
 
-## Submitted by Marko Grdinic on 9/6/2016 12:00:00 AM
+### Submitted by Marko Grdinic on 9/6/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Given that F# already automatically tells you what member constraints the classes should have, why not go an extra step and have the compiler write them out implicitly like in normal let statements.
 I just recently had a situation where in a class I had to explicitly write a bunch of them all out like in the following:

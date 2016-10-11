@@ -1,16 +1,17 @@
 # Idea 8951176: Add namespace as a parameter to SqlDataConnection #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 7/20/2015 12:00:00 AM
+### Submitted by Anonymous on 7/20/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Right now there doesn't appear to be any way to define a namespace to be passed to SqlMetal. This is problematic when you have a database object named System as it conflicts with System imports/usings.
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Moved see below
 

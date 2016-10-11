@@ -1,10 +1,10 @@
 # Idea 5673015: Support C#-like Anonymous Types in F# #
 
-## Status : under-review
+### Status : under-review
 
-## Submitted by Howard Mansell on 3/24/2014 12:00:00 AM
+### Submitted by Howard Mansell on 3/24/2014 12:00:00 AM
 
-## 215 votes
+### 215 votes
 
 Commonly I want to return some named values, or sequence of named values, in some expression. Currently I am forced to either go through the additional effort of defining a type, or use a tuple (with its associated error-proneness if there are multiple values of the same type). Anonymous record types would be very useful and would eliminate one of the areas of additional verbosity compared to C#.
 

@@ -1,10 +1,10 @@
 # Idea 6475447: Fix ReflectedDefinition for top-level pattern-matched let bindings #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Loic Denuziere on 9/23/2014 12:00:00 AM
+### Submitted by Loic Denuziere on 9/23/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 Right now, when you do something like this:
 [<ReflectedDefinition>]
@@ -17,7 +17,8 @@ As you can see, the actual expression (1, 2) doesn't get reflected. This makes s
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 I’ve marked this as approved for F# 4.x+.
 An implementation and testing would need to be provided by someone in the F# community (possibly including Microsoft or Microsoft Research, though not limited to them). Currently, initial implementations of approved language design can be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for details on contributing to the F# language and core library.

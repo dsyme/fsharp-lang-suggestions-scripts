@@ -1,10 +1,10 @@
 # Idea 5752551: Make printf handle units of measure. #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Matthew Peacock on 4/9/2014 12:00:00 AM
+### Submitted by Matthew Peacock on 4/9/2014 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 Currently printf requires all numeric types with units of measure to have the units removed. For example:
 let years = 1<year>
@@ -14,7 +14,8 @@ This gets quite ugly in code that uses units of measure heavily.
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 This work has now been completed for the “fsharp4” branch (submitted, reviewed and committed)
 https://visualfsharp.codeplex.com/SourceControl/changeset/aa7e945db107d0baf8af8d39c2d82185213c2796

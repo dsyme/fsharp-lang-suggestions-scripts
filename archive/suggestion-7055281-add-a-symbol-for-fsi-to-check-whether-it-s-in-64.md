@@ -1,10 +1,10 @@
 # Idea 7055281: Add a symbol for FSI to check whether it's in 64 bit or 32 bit #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Max on 2/5/2015 12:00:00 AM
+### Submitted by Max on 2/5/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Often I want to reference different libraries based on whether the FSI is running in 32 bit or 64 bit mode. I often have to test two versions of an assembly, and it's enough of a pain just changing the flag every time, let alone change the references. Being able to do:
 #if 64_BIT
@@ -15,7 +15,8 @@ Often I want to reference different libraries based on whether the FSI is runnin
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 This is approved for inclusion in a future release of F# subject to an implementation and detailed design. A pull request to implement this feature will be necessary and we encourage contributors to submit one with adequate design detail and testing to http://github.com/Microsoft/visualfsharp. Discussion of the particular version for this to be included in can be made once an implementation is available.
 Design detail can also be discussed below.

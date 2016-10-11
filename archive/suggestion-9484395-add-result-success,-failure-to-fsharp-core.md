@@ -1,10 +1,10 @@
 # Idea 9484395: Add Result<'Success,'Failure> to FSharp.Core #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Oskar Gewalli on 8/25/2015 12:00:00 AM
+### Submitted by Oskar Gewalli on 8/25/2015 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 In order to be able to write code that you can easily consume that does not throw an exception have a fsharp core type with the following signature:
 type Result<'TSuccess,'TError> =
@@ -15,7 +15,8 @@ https://github.com/fsharp/fsharp/issues/479
 
 
 
-## Response by fslang-admin on 8/2/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 8/2/2016 12:00:00 AM
 
 Completed. The RFC is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1004-result-type.md
 Don Syme

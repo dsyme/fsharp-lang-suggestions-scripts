@@ -1,16 +1,17 @@
 # Idea 7031066: Ability to simply move files in the Solution Explorer #
 
-## Status : declined
+### Status : declined
 
-## Submitted by David Crook on 1/30/2015 12:00:00 AM
+### Submitted by David Crook on 1/30/2015 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 I just want to click, drag and move files around in the solution explorer. As of today I have to unload my solution, edit my fsproj file and move on. How in the world do you do enterprise development like this?
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 Since this is about the Visual F# Tools (rather than the F# language) this belongs at https://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-tools
 Please add an entry there or vote on an existing one.

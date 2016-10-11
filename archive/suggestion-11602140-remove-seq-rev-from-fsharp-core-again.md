@@ -1,10 +1,10 @@
 # Idea 11602140: remove Seq.rev from FSharp.Core again #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Steffen Forkmann on 1/27/2016 12:00:00 AM
+### Submitted by Steffen Forkmann on 1/27/2016 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 the collection regularization was a good idea. Unfortunately we introduced Seq.rev which internally converts to array. This working for most real-life sequences, but breaks laziness.
 I suggest to mark the function as obsolete and remove it later.
@@ -12,7 +12,8 @@ See also https://github.com/Microsoft/visualfsharp/issues/902
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Marking as declined per my comments below.
 That said, if you encounter situations where having Seq.rev has caused bugs, please contact me or post the details below. I’m still interested to know how often this bites in practice.

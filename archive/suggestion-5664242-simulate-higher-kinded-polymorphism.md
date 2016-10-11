@@ -1,16 +1,17 @@
 # Idea 5664242: Simulate higher-kinded polymorphism #
 
-## Status : open
+### Status : open
 
-## Submitted by Daniel Fabian on 3/21/2014 12:00:00 AM
+### Submitted by Daniel Fabian on 3/21/2014 12:00:00 AM
 
-## 492 votes
+### 492 votes
 
 F# already has to make trade-offs when doing interop, e.g. it is possible to create a null value for a DU from C#, erased type providers don't work from anywhere but F# etc. Maybe F# could allow for higher-kinded polymorphism within F# code and use dynamic casts at runtime or maybe statically resolved inlining to simulate higher-kinded polymorphism.
 
 
 
-## Response by fslang-admin on 3/21/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/21/2014 12:00:00 AM
 
 removed “until the CLR fully supports it” from title
 

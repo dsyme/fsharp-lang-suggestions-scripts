@@ -1,10 +1,10 @@
 # Idea 11109258: Richer literals: TimeSpan/DateTime/Char array/UTF8 #
 
-## Status : open
+### Status : open
 
-## Submitted by Tom Rathbone on 12/16/2015 12:00:00 AM
+### Submitted by Tom Rathbone on 12/16/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Combining several suggestions for richer literals
 - New literals for TimeSpan and DateTime. e.g.

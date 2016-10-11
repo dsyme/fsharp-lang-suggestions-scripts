@@ -1,10 +1,10 @@
 # Idea 5702281: Improve the query { ... } -syntax #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Tuomas Hietanen on 3/30/2014 12:00:00 AM
+### Submitted by Tuomas Hietanen on 3/30/2014 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 Three ideas of the new query{ ... } -syntax:
 1) Do something for the amount of white space needed for new line as the arrow "->" can't break the line!
@@ -16,7 +16,8 @@ http://msdn.microsoft.com/en-us/library/windowsazure/dd135725.aspx
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestions! Per my comment and the other comments, I’m declining this, please take a look at the links.
 One reason for declining was that some of the suggestions were not that concrete. Please open new issues if there are specific changes proposed

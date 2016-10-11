@@ -1,10 +1,10 @@
 # Idea 5668239: Allow tuples for overloaded method and constructor arguments #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mark Seemann on 3/22/2014 12:00:00 AM
+### Submitted by Mark Seemann on 3/22/2014 12:00:00 AM
 
-## 28 votes
+### 28 votes
 
 When a constructor or method isn't overloaded, you can use a tuple as arguments:
 open System
@@ -37,7 +37,8 @@ It would be nice if it also works for overloaded methods, since the tuples seem 
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per my comments below.
 

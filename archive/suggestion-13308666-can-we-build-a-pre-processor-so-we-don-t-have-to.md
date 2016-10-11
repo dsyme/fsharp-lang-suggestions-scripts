@@ -1,10 +1,10 @@
 # Idea 13308666: Can we build a pre-processor so we don't have to use the word: let ? Makes the function name standout and saves typing similar to R ? #
 
-## Status : open
+### Status : open
 
-## Submitted by Musa on 4/4/2016 12:00:00 AM
+### Submitted by Musa on 4/4/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Makes the function name standout and saves typing similar to R, ofcourse if it can be done without breaking something else ?
 f := 3 //or ... rather than

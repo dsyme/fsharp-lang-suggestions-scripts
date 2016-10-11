@@ -1,10 +1,10 @@
 # Idea 6628026: Accept integer literals like 12_345 for readability #
 
-## Status : completed
+### Status : completed
 
-## Submitted by Kai Noda on 10/28/2014 12:00:00 AM
+### Submitted by Kai Noda on 10/28/2014 12:00:00 AM
 
-## 21 votes
+### 21 votes
 
 Simple modification to lex.fsl should suffice.
 Other languages with a similar feature:
@@ -20,7 +20,8 @@ just to name a few...
 
 
 
-## Response by fslang-admin on 6/17/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/17/2016 12:00:00 AM
 
 Approved in principle, this should be simple for someone to implement
 RFC is here: https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1005-underscores-in-numeric-literals.md

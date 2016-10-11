@@ -1,10 +1,10 @@
 # Idea 9633858: Structural, extensible records like Elm (concrete proposal) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by trek42 on 9/5/2015 12:00:00 AM
+### Submitted by trek42 on 9/5/2015 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 (this is similar to [[/archive/suggestion-8592088-make-records-extensible-a-la-elm](/archive/suggestion-8592088-make-records-extensible-a-la-elm.md),]([/archive/suggestion-8592088-make-records-extensible-a-la-elm](/archive/suggestion-8592088-make-records-extensible-a-la-elm.md),.md) but more concrete).
 == Motivations ==
@@ -123,7 +123,8 @@ PS: IMHO, ideally structural record should be the default, and nominal record ty
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, I think it’s a great feature
 Unfortunately I have to decline it since I don’t think it’s possible to implement it within the constraints of the .NET nominal/generics type system, while maintaining cross-assembly type identity

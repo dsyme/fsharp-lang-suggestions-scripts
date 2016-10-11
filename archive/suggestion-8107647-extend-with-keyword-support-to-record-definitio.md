@@ -1,10 +1,10 @@
 # Idea 8107647: Extend `with` keyword support to record definitions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Dax Fohl on 5/25/2015 12:00:00 AM
+### Submitted by Dax Fohl on 5/25/2015 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 In the process of converting a large-ish Clojure app to F#, which I prefer due to the type safety, I find many situations where I have large records that differ by only an item or two.
 For instance, in Clojure, I grab a user's huge configuration record from the DB, and then append a couple of calculated fields to it before returning to the next layer. So that means in F#, I need
@@ -21,7 +21,8 @@ As to whether this would be done under the hood by inheritance or whether it's j
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. I’ve merged it with [/archive/suggestion-5673015-support-c-like-anonymous-types-in-f](/archive/suggestion-5673015-support-c-like-anonymous-types-in-f.md)
 Don Syme

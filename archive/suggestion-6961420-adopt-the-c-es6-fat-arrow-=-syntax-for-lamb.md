@@ -1,16 +1,17 @@
 # Idea 6961420: Adopt the (C#/ES6) fat arrow "=>" syntax for lambda functions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Tuomas Hietanen on 1/14/2015 12:00:00 AM
+### Submitted by Tuomas Hietanen on 1/14/2015 12:00:00 AM
 
-## 12 votes
+### 12 votes
 
 "x => x+1" is just faster to write than "fun x -> x+1"
 
 
 
-## Response by fslang-admin on 2/14/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 2/14/2015 12:00:00 AM
 
 This is a duplicate: please move your votes to [/archive/suggestion-5663774-remove-fun-keyword-from-lambda-expressions](/archive/suggestion-5663774-remove-fun-keyword-from-lambda-expressions.md)
 Don Syme, F# Language Evolution

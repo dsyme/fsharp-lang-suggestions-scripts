@@ -1,17 +1,18 @@
 # Idea 6063696: Internationalized printf formatting of numbers #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Goswin on 6/17/2014 12:00:00 AM
+### Submitted by Goswin on 6/17/2014 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 Most non-english speaking countries use "," as deciamal separator.
 it would be nice if I could write <sprintf "%,1f" 2.222> instead of <sprintf "%.1f" 2.222> to get a comma as a decimal separator.
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 This is a reasonable suggestion. From the point of view of the F# language design, I would be happy to see a well-considered set of extensions to printf added to F# 4.x or later versions.
 An implementation and testing would need to be provided by someone in the F# community (possibly including Microsoft or Microsoft Research, though not limited to them).

@@ -1,10 +1,10 @@
 # Idea 11273478: In a pattern match use the record field name as a default binding if none is provided #
 
-## Status : open
+### Status : open
 
-## Submitted by Eric Stokes on 12/31/2015 12:00:00 AM
+### Submitted by Eric Stokes on 12/31/2015 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 In OCaml we can do,
 match somrecord with

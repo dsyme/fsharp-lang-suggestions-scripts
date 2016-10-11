@@ -1,10 +1,10 @@
 # Idea 7068430: Add 'except' function to core collection modules #
 
-## Status : completed
+### Status : completed
 
-## Submitted by luketopia on 2/8/2015 12:00:00 AM
+### Submitted by luketopia on 2/8/2015 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 In C# you can do
 xs.Except(ys)
@@ -15,7 +15,8 @@ If you convert to a Set first then there's Set.difference but the problem is tha
 
 
 
-## Response by fslang-admin on 4/9/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 4/9/2015 12:00:00 AM
 
 This proposal has been accepted and completed as part of F# 4.0, see https://github.com/Microsoft/visualfsharp/pull/253#issuecomment-87232623
 Don Syme, F# Language Evolution

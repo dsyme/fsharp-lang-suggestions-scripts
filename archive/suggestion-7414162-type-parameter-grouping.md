@@ -1,10 +1,10 @@
 # Idea 7414162: Type parameter grouping #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM
+### Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Sometimes, we want to have a method or type where some of the type parameters must be specified explicitly, while others could be inferred. For example, consider:
 List.cast<'from,'to>
@@ -22,7 +22,8 @@ Of course, there is an issue with overload resolution, which is why I think type
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment
 

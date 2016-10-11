@@ -1,10 +1,10 @@
 # Idea 8140617: Extend custom numeric types to support floating point literals #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Phillip Trelford on 5/27/2015 12:00:00 AM
+### Submitted by Phillip Trelford on 5/27/2015 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 Currently you can define custom numeric types for integer values.
 It would be nice to be able to handle floating point values too, e.g.
@@ -22,7 +22,8 @@ let polar = 1.5 + 2.5I
 
 
 
-## Response by fslang-admin on 3/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 3/4/2016 12:00:00 AM
 
 Now marking as planned, which means we can move to an RFC https://github.com/fsharp/FSharpLangDesign/tree/master/RFCs
 The details remain to be worked out however

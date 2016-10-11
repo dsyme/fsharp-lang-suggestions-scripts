@@ -1,10 +1,10 @@
 # Idea 8393964: Interfaces as simple, reusable and named sets of member constraints on statically resolved type parameters #
 
-## Status : declined
+### Status : declined
 
-## Submitted by exercitus vir on 6/12/2015 12:00:00 AM
+### Submitted by exercitus vir on 6/12/2015 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 The suggestion is that any interface can be used as a named set of member constraints on statically resolved type parameters (just like generic type parameters) .
 This suggestion achieves 4 desirable properties of member constraints on statically resolved type parameters with new kind of constraint that is non-invasive and simple to use:
@@ -23,7 +23,8 @@ This suggestion subsumes this suggestion: [/archive/suggestion-6343928-allow-nam
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Per my comment, closing this as a duplicate of [/archive/suggestion-6343928-allow-naming-of-member-constraints.](/archive/suggestion-6343928-allow-naming-of-member-constraints..md)
 This isn’t an exact duplicate, I know, e.g. it also incorporates [/archive/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo,](/archive/suggestion-8014059-improve-constraints-and-make-call-syntax-easier-fo,.md) but they are close enough together that we don’t need to track them separately

@@ -1,10 +1,10 @@
 # Idea 12564486: Types with predicates to create subtypes easily (from Ada 2012) #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 I suggest introducing type predicates as an aspect that can be applied to declarations of enumeration types, discriminated union types and user-defined numeric types with the aim of creating subtypes easily.
 Suppose, we are concerned with animal species and that we have a

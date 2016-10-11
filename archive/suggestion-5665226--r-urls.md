@@ -1,16 +1,17 @@
 # Idea 5665226: #r URLs #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jon Harrop on 3/21/2014 12:00:00 AM
+### Submitted by Jon Harrop on 3/21/2014 12:00:00 AM
 
-## 18 votes
+### 18 votes
 
 Allow #r in scripts to reference on-line scripts via URLs.
 
 
 
-## Response by fslang-admin on 2/10/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/10/2016 12:00:00 AM
 
 Unfortunately as much as I like this I have to mark it declined for the reason mentioned below
 Don Syme,

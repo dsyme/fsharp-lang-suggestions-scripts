@@ -1,17 +1,18 @@
 # Idea 5665432: Make FSharp.Core collection functions for Array.Parallel more regular #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Jon Harrop on 3/21/2014 12:00:00 AM
+### Submitted by Jon Harrop on 3/21/2014 12:00:00 AM
 
-## 63 votes
+### 63 votes
 
 In F# 3.0, lots of standard functions are missing from Array.Parallel including tryFindIndex, exists, forall, filter, tryFind, reduce, minBy, maxBy and tryPick. A mapReduce function would also be useful.
 Efficient implementations of all of these have been described in the F# Journal. http://fsharpnews.blogspot.co.uk/2013/01/parallel-aggregates.html
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Approved in principle subject to RFC and well-tested implementation being submitted as PR.
 

@@ -1,10 +1,10 @@
 # Idea 16526545: Allow Object Expressions from abstract base classes without members #
 
-## Status : open
+### Status : open
 
-## Submitted by lr on 10/6/2016 12:00:00 AM
+### Submitted by lr on 10/6/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 http://stackoverflow.com/questions/8154730/object-expression-for-abstract-class-without-abstract-members
 Object Expressions are a great feature to create instances of single-use interface / abstract class instances without polluting the namespace.

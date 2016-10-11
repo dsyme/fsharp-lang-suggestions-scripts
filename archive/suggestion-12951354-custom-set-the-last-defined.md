@@ -1,10 +1,10 @@
 # Idea 12951354: custom set the 'last defined' #
 
-## Status : open
+### Status : open
 
-## Submitted by Steven Taylor on 3/15/2016 12:00:00 AM
+### Submitted by Steven Taylor on 3/15/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Say we implement something like:
 type BinaryOp =

@@ -1,10 +1,10 @@
 # Idea 11464779: Introduce a different approach for resolving ambiguity of record types #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Kevin Rood on 1/15/2016 12:00:00 AM
+### Submitted by Kevin Rood on 1/15/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 See the example here under the "Conflict Resolution" heading:
 http://davefancher.com/2012/11/27/f-record-types/
@@ -13,7 +13,8 @@ Prefixing the type on a label seems inconsistent with how types are annotated el
 
 
 
-## Response by fslang-admin on 1/23/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 1/23/2016 12:00:00 AM
 
 Yes, as noted in the comments a type annotation can already be used.
 Don Syme, F# Language Evolution

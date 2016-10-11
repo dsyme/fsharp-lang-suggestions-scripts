@@ -1,10 +1,10 @@
 # Idea 13361034: Implement implicit casts for yield #
 
-## Status : open
+### Status : open
 
-## Submitted by Francois Brodeur on 4/8/2016 12:00:00 AM
+### Submitted by Francois Brodeur on 4/8/2016 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 As described here: https://github.com/fsharp/fsharp/issues/545#event-620769998
 

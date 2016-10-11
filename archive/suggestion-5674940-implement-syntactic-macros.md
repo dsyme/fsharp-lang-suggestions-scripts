@@ -1,10 +1,10 @@
 # Idea 5674940: Implement Syntactic Macros #
 
-## Status : open
+### Status : open
 
-## Submitted by Bryan Edds on 3/24/2014 12:00:00 AM
+### Submitted by Bryan Edds on 3/24/2014 12:00:00 AM
 
-## 453 votes
+### 453 votes
 
 At least give it a try in a private branch, and upon success, enable them publicly with a compiler switch initially.
 

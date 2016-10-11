@@ -1,10 +1,10 @@
 # Idea 6124011: Easier to copy data between records of different types. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Matthew Moloney on 7/1/2014 12:00:00 AM
+### Submitted by Matthew Moloney on 7/1/2014 12:00:00 AM
 
-## 32 votes
+### 32 votes
 
 Large data projects require lots of records with 100+ fields. These records require small changes over time, e.g. a new field is added. To update the data the old records are read in and copied to the new record field by field. The proposal is to automatically copy fields from an old record of type A to a new record of Type B where both the field names and the field types match.
 type A = {x : int}
@@ -14,7 +14,8 @@ let b : B = {a with y = 2}
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing in favor of [/archive/suggestion-5663704-copy-and-update-on-class-types](/archive/suggestion-5663704-copy-and-update-on-class-types.md)
 

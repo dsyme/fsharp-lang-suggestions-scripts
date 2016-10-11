@@ -1,10 +1,10 @@
 # Idea 6555102: Add a Compare function with only three values Smaller, Equal or Greater #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Hans Rischel on 10/13/2014 12:00:00 AM
+### Submitted by Hans Rischel on 10/13/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 // The below function
 //
@@ -27,7 +27,8 @@ else Greater
 
 
 
-## Response by fslang-admin on 10/15/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 10/15/2014 12:00:00 AM
 
 Declined, see comment above
 

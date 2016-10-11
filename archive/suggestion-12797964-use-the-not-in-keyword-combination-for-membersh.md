@@ -1,10 +1,10 @@
 # Idea 12797964: Use the "not in" keyword combination for membership tests (from Ada 2012) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I suggest using the "not in" keyword combination for membership tests (from Ada 2012).
 Example # 1:
@@ -21,7 +21,8 @@ Please see it for more details. These suggestions are interdependent: [/archive/
 
 
 
-## Response by fslang-admin on 3/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 3/4/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment. Adding new syntax for “not” is not a good fit for the F# language design
 Don Syme, F# Language Evolution

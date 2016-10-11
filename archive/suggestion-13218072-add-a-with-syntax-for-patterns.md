@@ -1,10 +1,10 @@
 # Idea 13218072: Add a "with" syntax for patterns #
 
-## Status : open
+### Status : open
 
-## Submitted by Vasily Kirichenko on 3/30/2016 12:00:00 AM
+### Submitted by Vasily Kirichenko on 3/30/2016 12:00:00 AM
 
-## 26 votes
+### 26 votes
 
 See detailed OCaml RFC https://github.com/ocamllabs/compiler-hacking/wiki/Add-a-%22with%22-syntax-for-patterns
 

@@ -1,10 +1,10 @@
 # Idea 6832419: Length constraints on lists and arrays #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Isaac Abraham on 12/11/2014 12:00:00 AM
+### Submitted by Isaac Abraham on 12/11/2014 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Whilst you can pattern match on lists in order to get compiler support on the length of them, it would be great if we had compiler support for list length for e.g. arguments to functions. Things like Seq.head or even list destructuring can't be proven to not go pop except through pattern matching, but if we had the ability to add length constraints to e.g. a list passed in as an argument to a function this would simplify lots of boilerplate code e.g.
 let foo(myListOfItems:int list<3>) = () // myListOfItems must be three elements long.
@@ -14,7 +14,8 @@ Not saying that the above syntax would necessarily be the way to go - just ideas
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Further comments, use cases, information and discussion welcome

@@ -1,10 +1,10 @@
 # Idea 6098514: Add a function to concat Options #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Huw Simpson on 6/25/2014 12:00:00 AM
+### Submitted by Huw Simpson on 6/25/2014 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I suggest the following enhancement to the Option module:
 // Combines the given option-of-option into a single option.
@@ -16,7 +16,8 @@ concat : value : 'a option option -> 'a option
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 Declining as “Option.bind id” is a suitable workaround, or it is very easy to define this function in user code.
 Don Syme Current BDFL F# Language/Library Evolution

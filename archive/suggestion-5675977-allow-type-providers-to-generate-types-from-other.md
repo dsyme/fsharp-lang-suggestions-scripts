@@ -1,10 +1,10 @@
 # Idea 5675977: Allow type providers to generate types from other types #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Tracy on 3/24/2014 12:00:00 AM
+### Submitted by Tracy on 3/24/2014 12:00:00 AM
 
-## 116 votes
+### 116 votes
 
 There are occasions where it would be extremely useful to generate types from other types.
 As an example, F# interop with NHibernate is very clumsy simply because it's difficult to express types of the sort:
@@ -26,7 +26,8 @@ The feature itself would open the door to incredibly powerful metaprogramming op
 
 
 
-## Response by fslang-admin on 6/24/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 6/24/2016 12:00:00 AM
 
 Marking this as “approved in principle” per comment below.
 However it will be a difficult feature to land in practice and will be subject to very many caveats and likely limitations. There’s no certainty that this will make it into F#.

@@ -1,17 +1,18 @@
 # Idea 5663332: Allow custom equality on record types. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Isaac Abraham on 3/21/2014 12:00:00 AM
+### Submitted by Isaac Abraham on 3/21/2014 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 Record Types current support structural equality on all fields of the record, or none at all. There is no "easy" way to say "make this record structurally equal using just the ID field" etc. - you have to go back to implementing GetHashCode etc. etc. yourself.
 You should have an option of decorating fields on the Record to explicitly state which fields you want structural equality on.
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion. Declined per my comment below, please take a look
 Best regards

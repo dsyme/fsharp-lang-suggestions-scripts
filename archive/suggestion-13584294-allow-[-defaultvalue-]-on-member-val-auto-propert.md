@@ -1,10 +1,10 @@
 # Idea 13584294: Allow [<DefaultValue>] on member val auto-properties #
 
-## Status : open
+### Status : open
 
-## Submitted by Reed Adams on 4/25/2016 12:00:00 AM
+### Submitted by Reed Adams on 4/25/2016 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 This is specifically motivated by my issues with using Entity Framework and how it initializes DbSet<'T> elements. There might be other applications.
 In order to correctly interact with EF in C# I may use:

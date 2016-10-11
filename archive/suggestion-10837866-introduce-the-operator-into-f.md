@@ -1,10 +1,10 @@
 # Idea 10837866: Introduce the ?. operator into F# #
 
-## Status : open
+### Status : open
 
-## Submitted by John Azariah on 11/23/2015 12:00:00 AM
+### Submitted by John Azariah on 11/23/2015 12:00:00 AM
 
-## 16 votes
+### 16 votes
 
 Since we allow the . operator to reference fields and properties of objects in F#, we're faced with the same problem of null checking that plagued C# until C# 5.
 The C# 6 'elvis' operator propagates nulls in a succinct way, and I think that working with objects in F# will be similarly simplified if we introduce it here as well!

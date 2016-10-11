@@ -1,10 +1,10 @@
 # Idea 11149770: Automatic lazy wrapping of argument #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Anonymous on 12/19/2015 12:00:00 AM
+### Submitted by Anonymous on 12/19/2015 12:00:00 AM
 
-## 8 votes
+### 8 votes
 
 Add such that arguments are automatically wrapped in the lazy expression, if set as the type.
 for instance:
@@ -17,7 +17,8 @@ false --> 1/0 = 0 : True instead of Divide by Zero exception
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below
 Don Syme, F# Language and Core Library Evolution

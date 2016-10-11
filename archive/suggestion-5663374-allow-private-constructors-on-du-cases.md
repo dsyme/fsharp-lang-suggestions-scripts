@@ -1,10 +1,10 @@
 # Idea 5663374: Allow private constructors on DU cases #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Richard Gibson on 3/21/2014 12:00:00 AM
+### Submitted by Richard Gibson on 3/21/2014 12:00:00 AM
 
-## 6 votes
+### 6 votes
 
 Currently we can use DUs to represent several possible states. So if I want to I can have:
 type EmailAddress =
@@ -23,7 +23,8 @@ Could perhaps be combined with active patterns?
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further discussion welcome

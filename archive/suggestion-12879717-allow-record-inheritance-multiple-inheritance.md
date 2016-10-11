@@ -1,10 +1,10 @@
 # Idea 12879717: Allow record inheritance / multiple "inheritance" #
 
-## Status : open
+### Status : open
 
-## Submitted by Vasily Kirichenko on 3/10/2016 12:00:00 AM
+### Submitted by Vasily Kirichenko on 3/10/2016 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 I propose to add multiple ***fields*** inheritance into records:
 type Person =

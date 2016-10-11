@@ -1,10 +1,10 @@
 # Idea 12803943: Code robustness: Range of admissible values for class fields and record fields (from Ada 2012) #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 I suggest introducing an aspect that can be applied to declarations of classes and record types with the aim of specifying ranges of admissible values for class fields and record fields easily.
 This suggestion is an extension of my previous suggestion:

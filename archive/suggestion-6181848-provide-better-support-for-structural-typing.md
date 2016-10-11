@@ -1,10 +1,10 @@
 # Idea 6181848: Provide better support for structural typing #
 
-## Status : open
+### Status : open
 
-## Submitted by Isaac Abraham on 7/16/2014 12:00:00 AM
+### Submitted by Isaac Abraham on 7/16/2014 12:00:00 AM
 
-## 17 votes
+### 17 votes
 
 In F#3 you can declare a function which can operate on e.g. records which has no relation aside from the fact that they share e.g. field name + type. This can occasionally be useful - however, the syntax for achieving this is somewhat awkward e.g. http://codebetter.com/matthewpodwysocki/2009/06/11/f-duck-typing-and-structural-typing/
 If there were a more succinct way to achieve this, it could be a very powerful feature e.g.

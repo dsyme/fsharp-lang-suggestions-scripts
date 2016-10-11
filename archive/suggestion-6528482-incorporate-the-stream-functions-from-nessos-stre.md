@@ -1,10 +1,10 @@
 # Idea 6528482: Incorporate the Stream functions from Nessos/Streams into Core collections #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jack Fox on 10/6/2014 12:00:00 AM
+### Submitted by Jack Fox on 10/6/2014 12:00:00 AM
 
-## 28 votes
+### 28 votes
 
 Efficient functional-style pipelines on streams of data. The main design behind Streams is inspired by Java 8 Streams and is based on the observation that many functional pipelines follow the pattern
 source/generator |> lazy |> lazy |> lazy |> eager/reduce
@@ -16,7 +16,8 @@ and http://arxiv.org/abs/1406.6631
 
 
 
-## Response by fslang-admin on 7/18/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/18/2015 12:00:00 AM
 
 Declining this because AFAIK Stream can’t be used as a replacement for Seq without either some semantic or performance changes. I think it is better we promote the use of Stream as a high-quality add-on library and continue to improve it.
 More comments and input welcome though – perhaps Java 8 will gradually lead people to expect this in the core. But equally we have to be training people to select from available extra libraries.

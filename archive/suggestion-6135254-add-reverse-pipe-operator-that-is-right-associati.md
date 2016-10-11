@@ -1,10 +1,10 @@
 # Idea 6135254: Add reverse pipe operator that is right associative and low precedence. #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mårten Rånge on 7/4/2014 12:00:00 AM
+### Submitted by Mårten Rånge on 7/4/2014 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 The current reverse pipe (<|) is left-associative and same precedence.
 Left-associativity is "unnatural" for reverse pipe making it's usage harder, ie this doesn't compile: let x = abs <| abs <| 2;
@@ -15,7 +15,8 @@ I know some people disagree with reverse-piping but I personally like it as it c
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Thanks for the suggestion, though I’m declining per my comment below.
 Many thanks,

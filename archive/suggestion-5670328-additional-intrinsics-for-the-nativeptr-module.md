@@ -1,10 +1,10 @@
 # Idea 5670328: Additional intrinsics for the NativePtr module #
 
-## Status : started
+### Status : started
 
-## Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
+### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
 
-## 10 votes
+### 10 votes
 
 When interoperating with native code, it would be handy if the NativePtr module included some additional "intrinsic" functions for taking advantage of low-level IL instructions; specifically, I'd like to be able to use 'cpblk', 'initblk', 'initobj', and 'copyobj'.
 It would also be nice to have an easy way of checking for null pointer values.
@@ -44,7 +44,8 @@ let inline copy (destPtr : nativeptr<'T>) (srcPtr : nativeptr<'T>) =
 
 
 
-## Response by fslang-admin on 11/8/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 11/8/2014 12:00:00 AM
 
 I’m marking this as “approved” for F# 4.0+.
 A pull request for this feature has been submitted here:

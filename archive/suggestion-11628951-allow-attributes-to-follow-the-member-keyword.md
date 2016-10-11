@@ -1,10 +1,10 @@
 # Idea 11628951: Allow Attributes to follow the `member` keyword #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 1/28/2016 12:00:00 AM
+### Submitted by Jared Hester on 1/28/2016 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 instead of just -
 [<DebuggerStepThrough>]
@@ -17,7 +17,8 @@ member [<DebuggerStepThrough>] __.Zero () : Async<unit option> = Some () |> asyn
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declines see comment above
 Don Syme, F# Language Evolution

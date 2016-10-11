@@ -1,16 +1,17 @@
 # Idea 9129526: Add a way to prevent async execution at compiletime #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Metastatic on 8/1/2015 12:00:00 AM
+### Submitted by Metastatic on 8/1/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 There are sometimes operations such as COM that don't play very well with threading. It would be nice if there was a way to denote that a function is not threadsafe and cannot be used from within a thread. e.g. if someone tries to use parallel a compile error would show up indicating that the function cannot be used from within a thread.
 
 
 
-## Response by fslang-admin on 9/7/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 9/7/2015 12:00:00 AM
 
 Many thanks for the suggestion
 Declining this as it is not a specific design proposal, so it’s difficult to know what’s being voted on.

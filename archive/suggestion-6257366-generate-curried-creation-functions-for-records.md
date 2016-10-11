@@ -1,10 +1,10 @@
 # Idea 6257366: Generate curried creation functions for records #
 
-## Status : declined
+### Status : declined
 
-## Submitted by David Tchepak on 8/4/2014 12:00:00 AM
+### Submitted by David Tchepak on 8/4/2014 12:00:00 AM
 
-## 7 votes
+### 7 votes
 
 This suggestion is along the lines of [1], but for records.
 [1]: [/archive/suggestion-5663317-allow-to-use-class-constructors-as-functions](/archive/suggestion-5663317-allow-to-use-class-constructors-as-functions.md)
@@ -20,7 +20,8 @@ It would be great to have the compiler generate this. I don't really have a pref
 
 
 
-## Response by fslang-admin on 9/16/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 9/16/2014 12:00:00 AM
 
 I’m declining this particular suggestion because of the comment below – “It seems the natural thing in F# would be to allow the record type name to be used as an uncurried constructor allowing named arguments…”
 I will open a new suggestion for this.

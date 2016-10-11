@@ -1,10 +1,10 @@
 # Idea 12882690: Code clarity: To change the default value returned by function Unchecked.defaultof<string> to "" from null #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/10/2016 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/10/2016 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 I suggest changing the default value returned by function Unchecked.defaultof<string> to "" from null. I think the function should return a value of type string indicating an empty string "" as expected by a majority of language users who writes string processing code.
 Null indicates that there is no value at all.

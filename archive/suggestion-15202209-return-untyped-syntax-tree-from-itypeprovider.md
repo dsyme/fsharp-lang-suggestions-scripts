@@ -1,10 +1,10 @@
 # Idea 15202209: Return untyped syntax tree from ITypeProvider #
 
-## Status : open
+### Status : open
 
-## Submitted by Isak Sky on 7/13/2016 12:00:00 AM
+### Submitted by Isak Sky on 7/13/2016 12:00:00 AM
 
-## 27 votes
+### 27 votes
 
 Add the ability to *opt in* to send back an untyped syntax tree from ITypeProviders. The current type provider mechanism is good for simple data exploration use cases, but otherwise extremely limited, and will soon allow for less metaprogramming than Roslyn in some ways. Currently, some types of type providers not possible to create, because unbound generics, records, discriminated unions, and other normal language features are not supported.
 With the ability to opt in to just returning an untyped syntax tree, it would enable the creation of just about any type provider. It would also effectively give F# macros, though through an API rather than syntax.

@@ -1,10 +1,10 @@
 # Idea 12826233: Hide Obsolete warnings on record initializer not using the obsolete field. #
 
-## Status : open
+### Status : open
 
-## Submitted by Matthias Dittrich on 3/6/2016 12:00:00 AM
+### Submitted by Matthias Dittrich on 3/6/2016 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 Basically the compiler emits a warning even when a obsolete field is not used directly in the source code. Here is a code example showing what I mean:
 // def version 1

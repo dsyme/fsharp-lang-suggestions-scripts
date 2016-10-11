@@ -1,10 +1,10 @@
 # Idea 7408423: Support [<ProjectionParameter>] on non-CustomOperations, eg. for in () do #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jason K on 4/1/2015 12:00:00 AM
+### Submitted by Jason K on 4/1/2015 12:00:00 AM
 
-## 3 votes
+### 3 votes
 
 The following CE builder intends to accept a Domain which has enumerable-like members and, for this situation, return a bool. But the member of the domain being checked varies. I try to parameterize the selection of the member, rather than just expecting the member directly (which changes the type).
 This code type-checks as is, but it requires the full lambda as the `over` parameter to For.
@@ -60,7 +60,8 @@ let domainInvariants = [ invariant1; invariant2 ]
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declined per my comment below. Please contact me if you have more informaiton on this – I’m not opposed to the suggestion I just need to understand exactly what’s involved
 Don Syme, F# Language Evolution @dsyme

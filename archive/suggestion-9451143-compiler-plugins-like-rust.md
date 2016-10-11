@@ -1,10 +1,10 @@
 # Idea 9451143: Compiler Plugins like Rust #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Jared Hester on 8/23/2015 12:00:00 AM
+### Submitted by Jared Hester on 8/23/2015 12:00:00 AM
 
-## 59 votes
+### 59 votes
 
 In Rust compiler plugins are user created libraries that can extend syntax behavior with new syntax extensions, lint checks, etc.
 A compiler plugin system would enable a laboratory of experimentation with language features, giving them the potential to prove themselves trough implementation and application. There are definitely some language features that people have requested that may not seem like a worthwhile investment of resources due to their lack of relevance to a broad spectrum of users, but a compiler plugin system could remove that roadblock from their path toward reification.
@@ -13,7 +13,8 @@ http://smallcultfollowing.com/rust-int-variations/imem-umem/guide-plugin.html
 
 
 
-## Response by fslang-admin on 2/4/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/4/2016 12:00:00 AM
 
 Declining per my comment below: right now this is best registered as an FSharp.Cpmpiler.Service feature request.
 Don Syme, F# Language Evolution

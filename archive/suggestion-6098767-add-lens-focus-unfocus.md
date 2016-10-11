@@ -1,10 +1,10 @@
 # Idea 6098767: Add Lens focus unfocus #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Craig Stuntz on 6/25/2014 12:00:00 AM
+### Submitted by Craig Stuntz on 6/25/2014 12:00:00 AM
 
-## 11 votes
+### 11 votes
 
 Lenses allow you to read/write fields in a clean, generic, and extensible way. Here are a few before/after cases using made-up syntax. I'm not sure what the ideal syntax for F# would be.
 I'm deserializing XML into F# records. For application-specific reasons, I can't use an off-the-shelf framework. My code contains this:
@@ -39,7 +39,8 @@ Worth noting: If F# gets hygenic macros ( [/archive/suggestion-5674940-implement
 
 
 
-## Response by fslang-admin on 2/5/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/5/2016 12:00:00 AM
 
 Closing as duplicate of [/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f,](/archive/suggestion-6906132-implement-first-class-lensing-lenses-in-f,.md) or close enough, please see my comment
 Don Syme, F# Language Evolution

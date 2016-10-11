@@ -1,17 +1,18 @@
 # Idea 6987069: Restrict "private" for items in namespaces to mean "private to the namespace declaration group" #43 #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Don Syme on 1/20/2015 12:00:00 AM
+### Submitted by Don Syme on 1/20/2015 12:00:00 AM
 
-## 4 votes
+### 4 votes
 
 For F# 2.x-4.0, as discussed in thie GitHub thread (https://github.com/Microsoft/visualfsharp/issues/43#issuecomment-70650925), a "private" module or type in a namespace is actually accessible from anywhere in that assembly contributing to the same namespace.
 The suggestion is to emit a warning when such an item is accessed from outside the immediate namespace declaration group in which it is declared. For example, we would give a warning if it is accessed from another file in the same namespace in the same assembly.
 
 
 
-## Response by fslang-admin on 7/17/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 7/17/2015 12:00:00 AM
 
 This problem should be fixed via a warning.
 This is approved for inclusion in a future release of the F# language subject to an implementation and detailed design.

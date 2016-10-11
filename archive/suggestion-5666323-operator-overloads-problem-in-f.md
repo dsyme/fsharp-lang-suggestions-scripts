@@ -1,10 +1,10 @@
 # Idea 5666323: Operator Overloads Problem in F# #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Iris Sakura on 3/22/2014 12:00:00 AM
+### Submitted by Iris Sakura on 3/22/2014 12:00:00 AM
 
-## 5 votes
+### 5 votes
 
 When redefine an operator function, the opeartor cannot be used for other purpose.
 Example:
@@ -17,7 +17,8 @@ We can overload opeators for a class, but how about a record or a tuple? Since F
 
 
 
-## Response by fslang-admin on 3/27/2014 12:00:00 AM
+## Response 
+### by fslang-admin on 3/27/2014 12:00:00 AM
 
 This is answered by the comments and is not a concrete proposal.
 

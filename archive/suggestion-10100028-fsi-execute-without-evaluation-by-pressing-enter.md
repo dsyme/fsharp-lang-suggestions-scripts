@@ -1,10 +1,10 @@
 # Idea 10100028: FSI execute without evaluation by pressing Enter #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Yaar Hever on 10/6/2015 12:00:00 AM
+### Submitted by Yaar Hever on 10/6/2015 12:00:00 AM
 
-## 2 votes
+### 2 votes
 
 The way F# interactive is set now, code is executed when it is evaluated, i.e., when a line ends with a double semicolon and Enter.
 Evaluation is indeed important, but FSI can also be used to interact with libraries or to get something from the standard output.
@@ -28,7 +28,8 @@ This means, of course, that a non well-formed piece of code followed by pressing
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Declined per comment
 

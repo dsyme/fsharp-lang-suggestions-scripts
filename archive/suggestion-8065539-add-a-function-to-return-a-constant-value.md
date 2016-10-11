@@ -1,10 +1,10 @@
 # Idea 8065539: Add a function to return a constant value #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Mark Seemann on 5/21/2015 12:00:00 AM
+### Submitted by Mark Seemann on 5/21/2015 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 Sometimes, you have to pass a function to a higher-order function, but you want that function to always return the same value, so you may end up writing something like
 let ploeh = myHigherOrderFunction (fun _ -> 42) "Foo"
@@ -16,7 +16,8 @@ let fnaah = myHigherOrderFunction (konst 1337) "Bar"
 
 
 
-## Response by fslang-admin on 9/7/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 9/7/2015 12:00:00 AM
 
 Many thanks for the suggestion
 I’m declining this because we did explicitly consider this in F# 1.0 (and also F# 4.0) and decided against adding a function to the prelude for this. I don’t think we should revisit that decision at this point.

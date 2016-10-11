@@ -1,10 +1,10 @@
 # Idea 5683698: Make .Tag and .Is* discriminated union properties visible from F# #
 
-## Status : planned
+### Status : planned
 
-## Submitted by Loic Denuziere on 3/26/2014 12:00:00 AM
+### Submitted by Loic Denuziere on 3/26/2014 12:00:00 AM
 
-## 15 votes
+### 15 votes
 
 The .NET class that encodes a discriminated union has `.Is* : bool` properties, for example this:
 type Foo = A | B
@@ -18,7 +18,8 @@ List.filter (fun x -> x.IsA)
 
 
 
-## Response by fslang-admin on 8/3/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 8/3/2015 12:00:00 AM
 
 This proposal is “approved in principle” for F# 4.0+. It would make a good addition to F#. (I don’t think the loss of purity (e.g. wr.t. ordering of union cases) is a critical problem and I believe you can turn of the DefaultAugmentation in any case)
 Some technical issues may need to be ironed out during implementation.

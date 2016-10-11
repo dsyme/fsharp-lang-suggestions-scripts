@@ -1,10 +1,10 @@
 # Idea 9432192: Allow type abbreviation extensions #
 
-## Status : declined
+### Status : declined
 
-## Submitted by Robert Sim on 8/21/2015 12:00:00 AM
+### Submitted by Robert Sim on 8/21/2015 12:00:00 AM
 
-## 1 votes
+### 1 votes
 
 Currently this code is disallowed:
 type Statistics =
@@ -16,7 +16,8 @@ It would be very useful to be able to extend type abbreviations so we don't have
 
 
 
-## Response by fslang-admin on 9/7/2015 12:00:00 AM
+## Response 
+### by fslang-admin on 9/7/2015 12:00:00 AM
 
 Thanks for the suggestion.
 Given the way that type abbreviations are compiled (they are erased by the F# compiler), it is unlikely that we would allow extensions of abbreviations themselves – for example, would the method be available on the abbreviated type as well? How/where would the method exist in the compiled form?

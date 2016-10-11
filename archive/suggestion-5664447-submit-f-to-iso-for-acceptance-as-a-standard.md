@@ -1,16 +1,17 @@
 # Idea 5664447: Submit F# to ISO for acceptance as a standard #
 
-## Status : declined
+### Status : declined
 
-## Submitted by John Tarbox on 3/21/2014 12:00:00 AM
+### Submitted by John Tarbox on 3/21/2014 12:00:00 AM
 
-## 39 votes
+### 39 votes
 
 Most major programming languages have recognition by a standards body such as ANSI or ISO. If F# is to be recognized as more than just a "Microsoft Language" then it is important that it be codified in a standard by an independent standards body.
 
 
 
-## Response by fslang-admin on 2/3/2016 12:00:00 AM
+## Response 
+### by fslang-admin on 2/3/2016 12:00:00 AM
 
 Closing as, per most of the comments, this is premature.
 Note that C# has only been standardized up to 2.0, and it is expensive to submit to a standards org.

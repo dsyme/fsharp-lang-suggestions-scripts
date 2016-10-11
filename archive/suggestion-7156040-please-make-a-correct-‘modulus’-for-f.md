@@ -1,10 +1,10 @@
 # Idea 7156040: Please make a correct ‘modulus’ for F# #
 
-## Status : open
+### Status : open
 
-## Submitted by Alexei Odeychuk on 3/1/2015 12:00:00 AM
+### Submitted by Alexei Odeychuk on 3/1/2015 12:00:00 AM
 
-## 13 votes
+### 13 votes
 
 Please fix a bug in the F# compiler. Everybody needs correct values for negative numbers. The algorithm calculating a modulo should respect the existing math rules. For example, 11 % 5 = 1 (correct), but -11 % 5 is -1 (bug), should be 4 (correct value).
 For instance, m mod n: for integers m and n, m mod n is the integer for which 0 <= r < n and m-r is a multiple of n. For example, 11 mod 5 = 1, and -11 mod 5 = 4.

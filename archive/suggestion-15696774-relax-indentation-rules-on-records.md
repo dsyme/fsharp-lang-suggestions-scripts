@@ -1,10 +1,10 @@
 # Idea 15696774: Relax indentation rules on Records #
 
-## Status : open
+### Status : open
 
-## Submitted by Mathias Brandewinder on 8/17/2016 12:00:00 AM
+### Submitted by Mathias Brandewinder on 8/17/2016 12:00:00 AM
 
-## 9 votes
+### 9 votes
 
 The current indentation rules around records seem inconsistent, or at least counter-intuitive. Consider for instance:
 type Foo = {

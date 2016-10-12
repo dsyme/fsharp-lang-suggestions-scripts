@@ -177,10 +177,11 @@ module Github =
         )
         printfn "\nFound %i Issues to Close\n"  <| Seq.length issues
         let closed = 
-            issues |> Seq.map (fun i -> 
-            Thread.Sleep 5000
-            closeIssue repoId i client  |> Async.RunSynchronously
-            ) 
+            [| for i in issues -> 
+                Thread.Sleep 2000
+                let issue = closeIssue repoId i client |>  Async.RunSynchronously  
+                issue
+            |] 
         return closed
     }
 
@@ -201,6 +202,7 @@ module Github =
                 Thread.Sleep 5000
                 let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
                 let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
+                printfn "created blob for '%s'" file
                 client.Git.Blob.Create(repoId,blob) 
             |] |> Array.map (Async.AwaitTask >> Async.RunSynchronously)
 

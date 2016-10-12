@@ -18,11 +18,6 @@ type Microsoft.FSharp.Control.Async with
         tasks |> Seq.map Async.AwaitTask |> Async.Parallel
 
 
-
-//    member x.Bind(t:Tasks.Task<'T>,f:('T -> Async<'R>) : Async<'R> =
-//
-
-
 type Comment = 
     {   Submitter : string
         Submitted : DateTime

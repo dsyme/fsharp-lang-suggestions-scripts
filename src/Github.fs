@@ -130,6 +130,7 @@ module Github =
             return failwith <| sprintf "error polling for issue %d: %s" issueNum ex.Message 
     }
 
+
     let ideaToIssue repoId (client:IGitHubClient) idea =
         let log = logId idea.Number
         async {
@@ -215,14 +216,7 @@ module Github =
 //        let! _ = Async.Parallel [for f in filenames -> uploadFile f draftW ]
 //        return draft'
 
-
-    let uploadFile (client:IGitHubClient) repoId (filepath:string) (contents:string) = async {
-        let contents = 
-            Text.Encoding.UTF8.GetBytes contents |> Convert.ToBase64String
-        let request = CreateFileRequest(sprintf "created %s" filepath, contents, "master" )
-        return! client.Repository.Content.CreateFile(repoId ,filepath, request)
-    }
-    
+   
     let [<Literal>] mode_fileBlob = "100644"
     let [<Literal>] mode_subDir   = "040000"
 
@@ -237,88 +231,38 @@ module Github =
 
         let! sha1 = client.Repository.Commit.GetSha1(repoId,"heads/master")
 
-        let newTree = NewTree(BaseTree=sha1)
-        newTree.Tree.Add
-            (NewTreeItem
+        let! createdBlobs = 
+            [| for file in filenames ->
+                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
+                let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
+                client.Git.Blob.Create(repoId,blob) 
+            |] |> Async.Parallel
+
+        let treeItems = 
+            (filenames, createdBlobs) ||> Seq.map2 (fun filename blob ->  
+            NewTreeItem
                 (   Type = TreeType.Blob
                 ,   Mode = FileMode.File
-                ,   Path = "TESTFILE.md"
-                ,   Sha = blobResult.Sha ))
+                ,   Path = "archive/" + filename
+                ,   Sha  = blob.Sha)                
+            )
         
-        let! createdTree = client.Git.Tree.Create(repoId,newTree)
-        
+        let archiveRoot = NewTree(BaseTree=sha1)
+
+        treeItems |> Seq.iter archiveRoot.Tree.Add 
+
+        let! createdArchiveRoot = client.Git.Tree.Create(repoId,archiveRoot)
+
         let! master = client.Git.Reference.Get(repoId,"heads/master")
 
-        let newCommit = NewCommit("commit uservoice suggestion archive", createdTree.Sha, [|master.Object.Sha|])
+        let newCommit = NewCommit("added uservoice suggestions archive", createdArchiveRoot.Sha, [|master.Object.Sha|])
 
         let! createdCommit = client.Git.Commit.Create(repoId,newCommit) 
 
-        printfn "commit %s @\n%s" createdCommit.Sha createdCommit.Url
-
-        
         let reference  = ReferenceUpdate createdCommit.Sha
         let! updatedReference = client.Git.Reference.Update(repoId,"heads/master",reference)
         
-        
         printfn "Reference Update @ %s" updatedReference.Url
+    }
 
-    }        
-
-
-//
-//        let! blobrefs = 
-//            [| for file in filenames ->
-//                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
-//                let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
-//                client.Git.Blob.Create(repoId,blob) 
-//            |] |> Async.Parallel
-//
-//        let archiveBlobs = Seq.zip filenames blobrefs
-//        //let repoRoot = NewTree()
-//        let archiveRoot = NewTree()
-//        //repoRoot.t
-//        //let! archiveTrees =
-//        archiveBlobs |> Seq.iter(fun (filename,blob) ->
-//            archiveRoot.Tree.Add( 
-//                NewTreeItem(
-//                    Type = TreeType.Blob,
-//                    Mode = FileMode.File,
-//                    Path = "archive/" + filename,
-//                    Sha  = blob.Sha
-//                )
-//            )
-//        )        
-//
-//        let! treeResult = client.Git.Tree.Create(repoId,archiveRoot)
-//             
-//        let archiveCommit = NewCommit("commit uservoice suggestion archive", treeResult.Sha)
-//
-//        return! 
-//            client.Git.Commit.Create(repoId,archiveCommit) 
-
-//        let sha = masterBranch.Commit.Sha
-//        let archiveTree = NewTree()
-//        //NewBlob().
-//        let x = NewTreeItem()
-//        [ for file in filenames -> 
-//            let repopath = Path.Combine("archive",file)
-//            let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
-//            
-//            NewTreeItem(
-//                Mode = mode_fileBlob,
-//                Type = TreeType.Blob,
-//                Content = File.ReadAllText diskpath
-//                Path = Path.Combine("archive",file)
-//            )
-//
-//        ]|> ignore
-//        let archiveCommit = NewCommit("archive uservoice suggestions","",seq[sha])
-//        client.Git.Commit.Create
-//        return! Async.Parallel [
-//            for file in filenames -> 
-//                let repopath = Path.Combine("archive",file)
-//                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
-//                uploadFile  client repoId repopath (File.ReadAllText diskpath)
-//        ]
-    
 

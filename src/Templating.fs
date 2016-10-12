@@ -65,7 +65,7 @@ let ideaFileName (idea:Idea) =
 /// create a realtive md link to the associated archive document in the form
 /// "[archived comments](archive/%s.md#comments)\n" 
 let archiveCommentLink (idea:Idea) =
-    sprintf "[archived comments](archive/%s.md#comments)\n" (ideaFileName idea)
+    sprintf "[Archived Uservoice Comments](../tree/master/archive/%s.md#comments)\n" (ideaFileName idea)
 
 let formatMarkdown (idea : Idea) : string * string =
     let sanitizedName = ideaFileName idea

@@ -222,14 +222,103 @@ module Github =
         let request = CreateFileRequest(sprintf "created %s" filepath, contents, "master" )
         return! client.Repository.Content.CreateFile(repoId ,filepath, request)
     }
+    
+    let [<Literal>] mode_fileBlob = "100644"
+    let [<Literal>] mode_subDir   = "040000"
 
 
-    let uploadFiles (client:IGitHubClient) repoId filenames = async {        
-        return! Async.Parallel [
-            for file in filenames -> 
-                let repopath = Path.Combine("archive",file)
-                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
-                uploadFile  client repoId repopath (File.ReadAllText diskpath)
-        ]
-    }
+    let uploadFiles (client:IGitHubClient) repoId filenames = async {   
+        printfn "uploading archive files (later) -\n%s" (filenames |> String.concat "\n")
+
+        let testBlob = NewBlob(Content="this is a test",Encoding = EncodingType.Utf8)
+        let! blobResult = client.Git.Blob.Create(repoId,testBlob) 
+        
+        printfn "sha for blob - %s" blobResult.Sha
+
+        let! sha1 = client.Repository.Commit.GetSha1(repoId,"heads/master")
+
+        let newTree = NewTree(BaseTree=sha1)
+        newTree.Tree.Add
+            (NewTreeItem
+                (   Type = TreeType.Blob
+                ,   Mode = FileMode.File
+                ,   Path = "TESTFILE.md"
+                ,   Sha = blobResult.Sha ))
+        
+        let! createdTree = client.Git.Tree.Create(repoId,newTree)
+        
+        let! master = client.Git.Reference.Get(repoId,"heads/master")
+
+        let newCommit = NewCommit("commit uservoice suggestion archive", createdTree.Sha, [|master.Object.Sha|])
+
+        let! createdCommit = client.Git.Commit.Create(repoId,newCommit) 
+
+        printfn "commit %s @\n%s" createdCommit.Sha createdCommit.Url
+
+        
+        let reference  = ReferenceUpdate createdCommit.Sha
+        let! updatedReference = client.Git.Reference.Update(repoId,"heads/master",reference)
+        
+        
+        printfn "Reference Update @ %s" updatedReference.Url
+
+    }        
+
+
+//
+//        let! blobrefs = 
+//            [| for file in filenames ->
+//                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
+//                let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
+//                client.Git.Blob.Create(repoId,blob) 
+//            |] |> Async.Parallel
+//
+//        let archiveBlobs = Seq.zip filenames blobrefs
+//        //let repoRoot = NewTree()
+//        let archiveRoot = NewTree()
+//        //repoRoot.t
+//        //let! archiveTrees =
+//        archiveBlobs |> Seq.iter(fun (filename,blob) ->
+//            archiveRoot.Tree.Add( 
+//                NewTreeItem(
+//                    Type = TreeType.Blob,
+//                    Mode = FileMode.File,
+//                    Path = "archive/" + filename,
+//                    Sha  = blob.Sha
+//                )
+//            )
+//        )        
+//
+//        let! treeResult = client.Git.Tree.Create(repoId,archiveRoot)
+//             
+//        let archiveCommit = NewCommit("commit uservoice suggestion archive", treeResult.Sha)
+//
+//        return! 
+//            client.Git.Commit.Create(repoId,archiveCommit) 
+
+//        let sha = masterBranch.Commit.Sha
+//        let archiveTree = NewTree()
+//        //NewBlob().
+//        let x = NewTreeItem()
+//        [ for file in filenames -> 
+//            let repopath = Path.Combine("archive",file)
+//            let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
+//            
+//            NewTreeItem(
+//                Mode = mode_fileBlob,
+//                Type = TreeType.Blob,
+//                Content = File.ReadAllText diskpath
+//                Path = Path.Combine("archive",file)
+//            )
+//
+//        ]|> ignore
+//        let archiveCommit = NewCommit("archive uservoice suggestions","",seq[sha])
+//        client.Git.Commit.Create
+//        return! Async.Parallel [
+//            for file in filenames -> 
+//                let repopath = Path.Combine("archive",file)
+//                let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
+//                uploadFile  client repoId repopath (File.ReadAllText diskpath)
+//        ]
+    
 

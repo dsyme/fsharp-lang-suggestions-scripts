@@ -49,8 +49,9 @@ module Program =
 
         //Threading.Thread.Sleep 5000
 
-        let! _ = retry 5 <| uploadFiles client repo.Id fileNames
-        let! _ = retry 5 <| closeLabeledIssues client repo.Id ["declined";"completed"]
+//        let! _ = retry 5 <| uploadFiles client repo.Id fileNames
+        let! _ =  uploadFiles client repo.Id fileNames
+        //let! _ = retry 5 <| closeLabeledIssues client repo.Id ["declined";"completed"]
         return ()
     }
 

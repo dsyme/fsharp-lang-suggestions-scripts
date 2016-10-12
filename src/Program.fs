@@ -3,6 +3,7 @@ open System
 open System.IO
 open Newtonsoft.Json
 open Github
+open Octokit
 open Templating
 
 module Program =
@@ -46,12 +47,9 @@ module Program =
         let fileNames = ideas |> List.map (fun i -> ideaFileName i + ".md")
 
         let! _ = createRepoIssues client repo.Id ideas
+        let! _ = uploadFiles client repo.Id fileNames
+        let! _ = closeLabeledIssues client repo.Id ["declined";"completed"]
 
-        //Threading.Thread.Sleep 5000
-
-//        let! _ = retry 5 <| uploadFiles client repo.Id fileNames
-        let! _ =  uploadFiles client repo.Id fileNames
-        //let! _ = retry 5 <| closeLabeledIssues client repo.Id ["declined";"completed"]
         return ()
     }
 
@@ -61,10 +59,10 @@ module Program =
         printfn "%A" argv
 
         let jsonfile = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "archive-data.json")
-        let data = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
+        let data     = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd
         let statuses = data |> List.groupBy (fun i -> i.Status) |> List.map fst 
-        let sample = data |> List.take 5
-        let tiny = sample |> List.map (fun s -> {s with Text = ""; Comments = []})
+        let sample   = data |> List.take 5
+        let tiny     = sample |> List.map (fun s -> {s with Text = ""; Comments = []})
         //let tryIssue () = sample |>  Github.loadIssuesInto "cloudroutine" "fsharp-lang-suggestions" |> Async.RunSynchronously
         //let updateData () = Tasks.reformatData jsonfile data
 

@@ -58,10 +58,7 @@ module Github =
     }
 
 
-    let closeIssue repoId issueId (client : IGitHubClient) = async {
-        let closedIssue =  IssueUpdate(State = Nullable ItemState.Closed)
-        return client.Issue.Update(repoId, issueId,closedIssue) 
-    }
+
     /// get the handle of the user that started the client's session
     let getLogin (client:IGitHubClient) = async {
         let! user = client.User.Current() 
@@ -156,17 +153,27 @@ module Github =
         return! ideas |> List.map (ideaToIssue repoId client) |> Async.Parallel
     }
 
+    let closeIssue repoId (issue:Issue) (client : IGitHubClient) = async {
+        let closeUpdate = issue.ToUpdate()
+        closeUpdate.State <- Nullable ItemState.Closed        
+        let! issue = client.Issue.Update(repoId, issue.Number,closeUpdate) 
+        printfn "'%s' was closed at '%s'" issue.Title (let i = issue.ClosedAt in if i.HasValue then string i.Value else "")
+        return issue
+    }
+
 
     /// close all issues in the repository that have at least one label from the provided list
     let closeLabeledIssues (client:IGitHubClient) repoId (labels:string list)  = async {
-        let closeLabels = Set labels
-        let! repoIssues = client.Issue.GetAllForRepository repoId
-        let  closeSqs = repoIssues |> Seq.filter (fun i ->
-            let issueLabels = (i.Labels |> Seq.map (fun l -> l.Name)) |> Set
-            let intersect = Set.intersect closeLabels issueLabels
-            intersect.Count > 0
+        let! allissues = client.Issue.GetAllForRepository repoId
+        let getLabels (issue:Issue) = issue.Labels |> Seq.map (fun l -> l.Name)
+
+        let issues = allissues |> Seq.filter (fun i -> 
+            let l = getLabels i in Seq.contains "declined" l || Seq.contains "completed" l
         )
-        return! closeSqs |> Seq.map (fun i -> closeIssue repoId i.Id client) |> Async.Parallel
+        printfn "\nFound %i Issues to Close\n"  <| Seq.length issues
+
+        let! closed = issues|> Seq.map (fun i -> closeIssue repoId i client) |> Async.Parallel
+        return closed
     }
 
 
@@ -190,31 +197,6 @@ module Github =
                 | _ when count > 0 -> retry (count - 1) asyncF
                 | (ex, _) -> captureAndReraise ex
         }
-//
-//    /// Retry the Octokit action count times after input succeed
-//    let private retryWithArg count input asycnF = async {
-//        let! choice = input |> Async.Catch
-//        match choice with
-//        | Choice1Of2 input' ->
-//            return! (asycnF input') |> retry count
-//        | Choice2Of2 ex ->
-//            return captureAndReraise ex
-//    }
-
-
-//        retryWithArg 5 draft <| fun draft' -> async {
-//            let fi = FileInfo(fileName)
-//            let archiveContents = File.OpenRead(fi.FullName)
-//            let assetUpload = new ReleaseAssetUpload(fi.Name,"application/octet-stream",archiveContents,Nullable<TimeSpan>())
-//            let! asset = Async.AwaitTask <| draft'.Client.Repository.Release.UploadAsset(draft'.DraftRelease, assetUpload)
-//            printfn "Uploaded %s" asset.Name
-//            return draft'
-//
-//        System.IO.File.ReadAllText
-//        let! draft' = draft
-//        let draftW = async { return draft' }
-//        let! _ = Async.Parallel [for f in filenames -> uploadFile f draftW ]
-//        return draft'
 
    
     let [<Literal>] mode_fileBlob = "100644"

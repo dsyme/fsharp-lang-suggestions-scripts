@@ -48,16 +48,6 @@ module Github =
         return client
     }
 
-    /// create an issue on the specified repository with labels that have already
-    /// been created on that repository
-    let createIssue repoId title text labels (client : IGitHubClient) = async {
-        let newIssue = NewIssue(title, Body = text)
-        labels |> Seq.iter newIssue.Labels.Add
-        let! issue = client.Issue.Create(repoId, newIssue)
-        return issue
-    }
-
-
 
     /// get the handle of the user that started the client's session
     let getLogin (client:IGitHubClient) = async {
@@ -97,8 +87,10 @@ module Github =
         "planned", "51b7e2"
         "started", "76bf1c"
         "completed", "540977"
-        "open", "d3b47e"
+        //"open", "d3b47e"
     ]
+
+    let inline runTaskSync<'a> = Seq.map (Async.AwaitTask >> Async.RunSynchronously)
 
     /// Creates the standard set of labels based on the uservoice suggestion categories
     let standardLabels repoId (client : IGitHubClient) = async {
@@ -111,48 +103,38 @@ module Github =
 
     let logId id msg = printfn "[%s] %s" id msg
 
-    /// there's some delay to the github API, so we're going to try to fetch an issue up to times times 
-    let rec pollFetchIssue times (client:IGitHubClient) repoId issueNum = async {
-        try 
-            printfn "polling for %d" issueNum
-            let! issue = client.Issue.Get(repoId, issueNum) 
-            printfn "found %d" issueNum
-            return issue
-        with 
-        | :? AggregateException as aex when aex.InnerException.GetType() = typeof<NotFoundException> && times > 0 ->
-            printfn "%d not found, trying again in 5 seconds" issueNum 
-            do! Async.Sleep(5 * 1000)
-            return! pollFetchIssue (times - 1) client repoId issueNum
-        | ex ->
-            return failwith <| sprintf "error polling for issue %d: %s" issueNum ex.Message 
+    let getLabels (issue:Issue) = issue.Labels |> Seq.map (fun l -> l.Name)
+
+    /// create an issue on the specified repository with labels that have already
+    /// been created on that repository
+    let createIssue repoId title text labels (client : IGitHubClient) = async {
+        let newIssue = NewIssue(title, Body = text)
+        labels |> Seq.iter newIssue.Labels.Add
+        let! issue = client.Issue.Create(repoId, newIssue)
+        return issue
     }
 
 
+    /// Pings github api 1 time per function call
     let ideaToIssue repoId (client:IGitHubClient) idea =
         let log = logId idea.Number
-        async {
-            try
-                // reorder commments in chronological order
-                let idea = { idea with Comments = idea.Comments |> List.sortBy (fun c -> c.Submitted) }
-                let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
-                let! issue = createIssue repoId idea.Title text (Seq.singleton idea.Status) client
-                log "created"
-                return issue |> Some
-            with
-            | :? AggregateException as aex when not <| isNull aex.InnerException ->
-                printfn "issue '%s' transform failed\n%s" idea.Number aex.InnerException.Message
-                return None
-            | ex ->
-                printfn "issue '%s' transform failed\n%s" idea.Number ex.Message
-                return None
-        }
+        // reorder commments in chronological order
+        let idea = { idea with Comments = idea.Comments |> List.sortBy (fun c -> c.Submitted) }
+        let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
+        let label = if idea.Status = "open" then  seq[] else seq[idea.Status] 
+        let issue = createIssue repoId idea.Title text label client |> Async.RunSynchronously
+        log <| sprintf "%s :: %s" issue.Title (String.concat "" (getLabels issue))
+        issue
 
 
     //let loadIssuesInto getCredentials owner repoName ideas  = async {
-    let createRepoIssues (client:IGitHubClient) repoId ideas  = async {
-        return! ideas |> List.map (ideaToIssue repoId client) |> Async.Parallel
-    }
+    let createRepoIssues (client:IGitHubClient) repoId ideas  = 
+        ideas |> List.map (fun i -> 
+            Thread.Sleep 1000
+            ideaToIssue repoId client i 
+        ) 
 
+    /// Pings github api 1 time per function call
     let closeIssue repoId (issue:Issue) (client : IGitHubClient) = async {
         let closeUpdate = issue.ToUpdate()
         closeUpdate.State <- Nullable ItemState.Closed        
@@ -165,42 +147,17 @@ module Github =
     /// close all issues in the repository that have at least one label from the provided list
     let closeLabeledIssues (client:IGitHubClient) repoId (labels:string list)  = async {
         let! allissues = client.Issue.GetAllForRepository repoId
-        let getLabels (issue:Issue) = issue.Labels |> Seq.map (fun l -> l.Name)
-
         let issues = allissues |> Seq.filter (fun i -> 
             let l = getLabels i in Seq.contains "declined" l || Seq.contains "completed" l
         )
         printfn "\nFound %i Issues to Close\n"  <| Seq.length issues
-
-        let! closed = issues|> Seq.map (fun i -> closeIssue repoId i client) |> Async.Parallel
+        let closed = 
+            issues |> Seq.map (fun i -> 
+            Thread.Sleep 1000
+            closeIssue repoId i client  |> Async.RunSynchronously
+            ) 
         return closed
     }
-
-
-    /// A version of 'reraise' that can work inside computation expressions
-    let private captureAndReraise ex =
-        System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(ex).Throw()
-        Unchecked.defaultof<_>
-
-    let private isRunningOnMono = System.Type.GetType "Mono.Runtime" <> null
-
-    /// Retry the Octokit action count times
-    let rec internal retry count asyncF =
-        // This retry logic causes an exception on Mono:
-        // https://github.com/fsharp/fsharp/issues/440
-        if isRunningOnMono then asyncF else async {
-            try  return! asyncF
-            with ex ->
-            return! 
-                match (ex, ex.InnerException) with
-                | (:? AggregateException, (:? AuthorizationException as ex)) -> captureAndReraise ex
-                | _ when count > 0 -> retry (count - 1) asyncF
-                | (ex, _) -> captureAndReraise ex
-        }
-
-   
-    let [<Literal>] mode_fileBlob = "100644"
-    let [<Literal>] mode_subDir   = "040000"
 
 
     let uploadFiles (client:IGitHubClient) repoId filenames = async {   
@@ -213,12 +170,14 @@ module Github =
 
         let! sha1 = client.Repository.Commit.GetSha1(repoId,"heads/master")
 
-        let! createdBlobs = 
+        let createdBlobs = 
             [| for file in filenames ->
+                // throttle the calls to github to avoid the 300 call/m rate limit
+                Thread.Sleep 1000
                 let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
                 let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
                 client.Git.Blob.Create(repoId,blob) 
-            |] |> Async.Parallel
+            |] |> Array.map (Async.AwaitTask >> Async.RunSynchronously)
 
         let treeItems = 
             (filenames, createdBlobs) ||> Seq.map2 (fun filename blob ->  
@@ -228,6 +187,7 @@ module Github =
                 ,   Path = "archive/" + filename
                 ,   Sha  = blob.Sha)                
             )
+        Thread.Sleep 500
         
         let archiveRoot = NewTree(BaseTree=sha1)
 
@@ -236,6 +196,8 @@ module Github =
         let! createdArchiveRoot = client.Git.Tree.Create(repoId,archiveRoot)
 
         let! master = client.Git.Reference.Get(repoId,"heads/master")
+        
+        Thread.Sleep 500
 
         let newCommit = NewCommit("added uservoice suggestions archive", createdArchiveRoot.Sha, [|master.Object.Sha|])
 
@@ -244,6 +206,8 @@ module Github =
         let reference  = ReferenceUpdate createdCommit.Sha
         let! updatedReference = client.Git.Reference.Update(repoId,"heads/master",reference)
         
+        Thread.Sleep 500
+
         printfn "Reference Update @ %s" updatedReference.Url
     }
 

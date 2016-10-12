@@ -43,10 +43,10 @@ module Program =
         // create deafault labels
         let! _ = standardLabels repo.Id client
 
-        let ideas = ideasFromJsonFile jsonfile |> List.take 5
+        let ideas = ideasFromJsonFile jsonfile
         let fileNames = ideas |> List.map (fun i -> ideaFileName i + ".md")
 
-        let! _ = createRepoIssues client repo.Id ideas
+        let  _ = createRepoIssues client repo.Id ideas
         let! _ = uploadFiles client repo.Id fileNames
         let! _ = closeLabeledIssues client repo.Id ["declined";"completed"]
 

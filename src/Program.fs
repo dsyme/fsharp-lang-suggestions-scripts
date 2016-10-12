@@ -35,9 +35,25 @@ module Program =
 
     let jsonfile = System.IO.Path.GetFullPath "../archive-data.json"
 
+    let checkStats = async {
+        let! client = githubLogin userPasswordCreds
+        let! user = client.User.Current()
+        printfn "Stats for %s" user.Name
+        let apiInfo = client.GetLastApiInfo()
+        let limit = apiInfo.RateLimit
+        printfn "Max Requests per hour - %i" limit.Limit
+        printfn "Requests remaining this window - %i" limit.Remaining
+        printfn "Window will reset at - %A" limit.Reset.LocalDateTime
+        printfn "%M seconds remaining" <| 
+            (abs (limit.Reset.UtcDateTime - DateTime.UtcNow).Milliseconds|>decimal)/1000m
+    }
+    
+
 
     let testSession (repoName:string) = async {
         let! client = githubLogin userPasswordCreds
+
+
 
         let! repo = setupTestRepo repoName client 
         // create deafault labels

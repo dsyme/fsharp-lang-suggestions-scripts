@@ -49,6 +49,29 @@ module Github =
     }
 
 
+    let throttled (client:IGitHubClient) (fn:'a->'b) = 
+        let apiInfo = client.GetLastApiInfo()
+        if isNull apiInfo then fn 
+        else
+        let activeWindow = abs (apiInfo.RateLimit.Reset.UtcDateTime - DateTime.UtcNow).Milliseconds        
+        if apiInfo.RateLimit.Remaining <= 1 then Thread.Sleep (activeWindow + 1000)
+        let apiInfo = client.GetLastApiInfo()   
+        let interval = activeWindow / apiInfo.RateLimit.Remaining
+        Thread.Sleep interval
+        fn
+
+    let rec retry  (client:IGitHubClient) (fn:unit->'a) = 
+        try fn()
+        with 
+        | :? Octokit.RateLimitExceededException as e->
+            printfn "%s" e.Message
+            let sleeptime = abs (e.Reset.UtcDateTime - DateTime.UtcNow).Milliseconds
+            printfn "sleeping for %M seconds" (decimal sleeptime / 1000.0m)
+            Thread.Sleep sleeptime
+            retry client fn
+        | :? Octokit.ForbiddenException as e  -> 
+            retry client (throttled client fn)
+
     /// get the handle of the user that started the client's session
     let getLogin (client:IGitHubClient) = async {
         let! user = client.User.Current() 
@@ -130,8 +153,10 @@ module Github =
     //let loadIssuesInto getCredentials owner repoName ideas  = async {
     let createRepoIssues (client:IGitHubClient) repoId ideas  = 
         ideas |> List.map (fun i -> 
-            Thread.Sleep 1000
-            ideaToIssue repoId client i 
+            Thread.Sleep 4000
+            let issue = ideaToIssue repoId client i 
+            Thread.Sleep 4000
+            issue
         ) 
 
     /// Pings github api 1 time per function call
@@ -153,7 +178,7 @@ module Github =
         printfn "\nFound %i Issues to Close\n"  <| Seq.length issues
         let closed = 
             issues |> Seq.map (fun i -> 
-            Thread.Sleep 1000
+            Thread.Sleep 5000
             closeIssue repoId i client  |> Async.RunSynchronously
             ) 
         return closed
@@ -173,7 +198,7 @@ module Github =
         let createdBlobs = 
             [| for file in filenames ->
                 // throttle the calls to github to avoid the 300 call/m rate limit
-                Thread.Sleep 1000
+                Thread.Sleep 5000
                 let diskpath = Path.Combine("../archive",file) |> Path.GetFullPath
                 let blob = NewBlob(Encoding=EncodingType.Utf8, Content=File.ReadAllText diskpath)
                 client.Git.Blob.Create(repoId,blob) 
@@ -187,7 +212,6 @@ module Github =
                 ,   Path = "archive/" + filename
                 ,   Sha  = blob.Sha)                
             )
-        Thread.Sleep 500
         
         let archiveRoot = NewTree(BaseTree=sha1)
 
@@ -197,7 +221,7 @@ module Github =
 
         let! master = client.Git.Reference.Get(repoId,"heads/master")
         
-        Thread.Sleep 500
+        Thread.Sleep 5000
 
         let newCommit = NewCommit("added uservoice suggestions archive", createdArchiveRoot.Sha, [|master.Object.Sha|])
 
@@ -206,7 +230,7 @@ module Github =
         let reference  = ReferenceUpdate createdCommit.Sha
         let! updatedReference = client.Git.Reference.Update(repoId,"heads/master",reference)
         
-        Thread.Sleep 500
+        Thread.Sleep 5000
 
         printfn "Reference Update @ %s" updatedReference.Url
     }

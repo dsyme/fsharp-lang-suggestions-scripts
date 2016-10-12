@@ -15,6 +15,7 @@ open FslangMigration.Templating
 
 
 testSession "issueTestRepo" |> Async.RunSynchronously
+//checkStats |> Async.RunSynchronously
 ;;
 //
 //let data = readIdeaDataFromFile jsonfile |> Map.toList |> List.map snd

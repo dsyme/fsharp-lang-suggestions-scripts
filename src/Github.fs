@@ -145,11 +145,14 @@ module Github =
         return issue
     }
 
-    let bucket i = 
-        if i > 300 then Some "votes:300+"
-        else if i > 200 then Some "votes:201-300"
-        else if i = 0 then None
-        else 
+    let bucket i =
+        match i with
+        | i when i = 0 -> None
+        | i when i > 0 && i <= 10 -> Some "votes:1-10"
+        | i when i > 10 && i <= 50 -> Some "votes:11-50"
+        | i when i > 200 && i <= 300 -> Some "votes:200-300"
+        | i when i > 300 -> Some "votes:300+"
+        | i -> 
             let m = i / 50
             let M = (i / 50) + 1
             Some <| sprintf "votes:%d-%d" (m * 50 + 1) (M * 50)

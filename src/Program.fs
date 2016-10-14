@@ -51,7 +51,7 @@ module Program =
 
 
     let testSession (repoName:string) = async {
-        let! client = githubLogin userPasswordCreds
+        let! client = githubLogin tokenCreds
 
 
 

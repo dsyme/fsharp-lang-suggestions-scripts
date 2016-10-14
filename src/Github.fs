@@ -165,7 +165,7 @@ module Github =
             yield bucket idea.Votes
         ] 
         let issue = createIssue repoId idea.Title text labels client |> Async.RunSynchronously
-        log <| sprintf "%s :: %s" issue.Title (String.concat "" (getLabels issue))
+        log <| sprintf "%s :: [%s]" issue.Title (String.concat "][" (getLabels issue))
         issue
 
     //let loadIssuesInto getCredentials owner repoName ideas  = async {

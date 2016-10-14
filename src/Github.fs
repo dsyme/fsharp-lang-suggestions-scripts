@@ -104,6 +104,7 @@ module Github =
     }
 
 
+
     let labels = [
         "declined" , "171819"
         "under review", "cee283"
@@ -111,6 +112,13 @@ module Github =
         "started", "76bf1c"
         "completed", "540977"
         //"open", "d3b47e"
+        "votes:0-10", "333333" //TODO actual colors
+        "votes:11-50", "333333"
+        "votes:51-100", "333333"
+        "votes:101-150", "333333"
+        "votes:151-200", "333333"
+        "votes:201-300", "333333"
+        "votes:300+", "333333"
     ]
 
     let inline runTaskSync<'a> = Seq.map (Async.AwaitTask >> Async.RunSynchronously)
@@ -137,18 +145,28 @@ module Github =
         return issue
     }
 
-
+    let bucket i = 
+        if i > 300 then "votes:300+"
+        else if i > 200 then "votes:201-300"
+        else if i = 0 then ""
+        else 
+            let m = i / 50
+            let M = (i / 50) + 1
+            sprintf "votes:%d-%d" (m * 50 + 1) (M * 50)
+        
     /// Pings github api 1 time per function call
     let ideaToIssue repoId (client:IGitHubClient) idea =
         let log = logId idea.Number
         // reorder commments in chronological order
         let idea = { idea with Comments = idea.Comments |> List.sortBy (fun c -> c.Submitted) }
         let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
-        let label = if idea.Status = "open" then  seq[] else seq[idea.Status] 
-        let issue = createIssue repoId idea.Title text label client |> Async.RunSynchronously
+        let labels = [
+            if idea.Status <> "open" then yield idea.Status
+            yield bucket idea.Votes
+        ] 
+        let issue = createIssue repoId idea.Title text labels client |> Async.RunSynchronously
         log <| sprintf "%s :: %s" issue.Title (String.concat "" (getLabels issue))
         issue
-
 
     //let loadIssuesInto getCredentials owner repoName ideas  = async {
     let createRepoIssues (client:IGitHubClient) repoId ideas  = 

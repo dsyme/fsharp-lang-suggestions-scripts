@@ -146,13 +146,13 @@ module Github =
     }
 
     let bucket i = 
-        if i > 300 then "votes:300+"
-        else if i > 200 then "votes:201-300"
-        else if i = 0 then ""
+        if i > 300 then Some "votes:300+"
+        else if i > 200 then Some "votes:201-300"
+        else if i = 0 then None
         else 
             let m = i / 50
             let M = (i / 50) + 1
-            sprintf "votes:%d-%d" (m * 50 + 1) (M * 50)
+            Some <| sprintf "votes:%d-%d" (m * 50 + 1) (M * 50)
         
     /// Pings github api 1 time per function call
     let ideaToIssue repoId (client:IGitHubClient) idea =
@@ -162,7 +162,7 @@ module Github =
         let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
         let labels = [
             if idea.Status <> "open" then yield idea.Status
-            yield bucket idea.Votes
+            match bucket idea.Votes with Some s -> yield s | None -> ()
         ] 
         let issue = createIssue repoId idea.Title text labels client |> Async.RunSynchronously
         log <| sprintf "%s :: [%s]" issue.Title (String.concat "][" (getLabels issue))

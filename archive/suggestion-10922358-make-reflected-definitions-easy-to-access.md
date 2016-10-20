@@ -1,10 +1,7 @@
-# Idea 10922358: Make reflected definitions easy to access #
+# Make reflected definitions easy to access [10922358] #
 
-### Status : declined
-
-### Submitted by zjv on 12/1/2015 12:00:00 AM
-
-### 3 votes
+**Submitted by zjv on 12/1/2015 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 Given a reflected function like this:
 [<ReflectedDefinition(true)>]
@@ -17,16 +14,19 @@ let fooExpr = Expr.TryGetReflectedDefinition(fooType)
 
 
 
-## Response 
-### by fslang-admin on 2/3/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/3/2016 12:00:00 AM **
 
 See comment from Don Syme
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/10922358)**
 
 
-## Comment by Don Syme on 2/3/2016 2:55:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/3/2016 2:55:00 PM ####
 Using a quotation <@ foo @> will make it easier to accurately get the method name.
 I will decline this: the existing mechanism seems good enough considering this is relatively rare.
 

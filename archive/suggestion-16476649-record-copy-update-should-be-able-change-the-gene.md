@@ -1,10 +1,7 @@
-# Idea 16476649: Record copy update should be able change the generic type #
+# Record copy update should be able change the generic type [16476649] #
 
-### Status : open
-
-### Submitted by Marko Grdinic on 10/3/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Marko Grdinic on 10/3/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 type A<'a> =
 {
@@ -15,6 +12,9 @@ let a = {x = 1}
 Since the x field is generic and F# is type safe, it would not be bad if the above was valid.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/16476649)**
+
+
+## Comments ##
 

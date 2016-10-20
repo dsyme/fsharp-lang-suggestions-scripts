@@ -1,10 +1,7 @@
-# Idea 6972958: Mezzo/Rust-like features for F# code to be data-race free #
+# Mezzo/Rust-like features for F# code to be data-race free [6972958] #
 
-### Status : declined
-
-### Submitted by Don Syme on 1/16/2015 12:00:00 AM
-
-### 27 votes
+**Submitted by Don Syme on 1/16/2015 12:00:00 AM**  
+**27 votes on UserVoice prior to migration**  
 
 Languages like Mezzo, Rust and the M# language (internal to Microsoft) either have or are looking at adding type system features that track the status of references that give access to shared memory.
 Shared-memory coding is less prevalent in F# because of its functional ans Async features, and because of powerful concurrency collections in the .NET class libraries.
@@ -14,16 +11,19 @@ Given the design of F#, there would likely be "back doors" to this feature, espe
 
 
 
-## Response 
-### by fslang-admin on 2/10/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/10/2016 12:00:00 AM **
 
 Declining per comment below – this was a placeholder and much more concrete suggestions would be needed!
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6972958)**
 
 
-## Comment by Jonathan Protzenko on 1/17/2015 11:20:00 PM
+## Comments ##
+
+
+#### Comment by Jonathan Protzenko on 1/17/2015 11:20:00 PM ####
 Disclaimer: I am the author of Mezzo; I am also not proficient in F#, especially the internals of the type-checking algorithm.
 Such an addition would be great; however, the way I see it, there are a few difficulties.
 - There needs to be a way to easily opt-out of the extended checks. The type system may be very smart, but it will never cover all possible patterns. The user should be able to either use run-time checks (locks?) or assert statically "I know what I'm doing" and disable the extended checks, possibly locally.
@@ -34,11 +34,11 @@ François and I wrote this paper where we recount the story of Mezzo and try to 
 I'll follow this topic and I'll happily answer more technical questions, if any :).
 
 
-## Comment by Phylos on 1/18/2015 12:12:00 AM
+#### Comment by Phylos on 1/18/2015 12:12:00 AM ####
 This sounds like it would be a wonderful addition to F#, helping to make it the language of choice for writing safe and robust software for the .NET platform.
 
 
-## Comment by Don Syme on 2/10/2016 11:23:00 AM
+#### Comment by Don Syme on 2/10/2016 11:23:00 AM ####
 I'm going to decline this suggestion (which was made by me) because it is too vague.
 More concrete proposals welcome!!
 

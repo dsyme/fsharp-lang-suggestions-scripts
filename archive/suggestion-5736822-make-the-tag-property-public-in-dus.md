@@ -1,10 +1,7 @@
-# Idea 5736822: Make the .Tag property public in DUs #
+# Make the .Tag property public in DUs [5736822] #
 
-### Status : declined
-
-### Submitted by Eirik George Tsarpalis on 4/6/2014 12:00:00 AM
-
-### 3 votes
+**Submitted by Eirik George Tsarpalis on 4/6/2014 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 A common problem I encounter is when I need to group a list of incuming DU values according to branch. Having the .Tag property public would make this as simple as writing
 values |> Seq.groupBy (fun v -> v.Tag)
@@ -14,17 +11,20 @@ UnionType.GetInternalBranchRepresentationValue : UnionType -> int
 
 
 
-## Response 
-### by fslang-admin on 6/25/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 6/25/2014 12:00:00 AM **
 
-Merging this with [/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f](/archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f.md)
+Merging this with /archive/suggestion-5683698-make-is-discriminated-union-properties-visible-f
 This is not actually being declined, quite the opposite, it is being approved and merged
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5736822)**
 
 
-## Comment by Don Syme on 6/20/2014 11:57:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 6/20/2014 11:57:00 AM ####
 I generally approve of this particular suggestion and think it would make a good addition to F#. (I don't think the loss of purity (e.g. wr.t. ordering of union cases) is a critical problem and I believe you can turn of the DefaultAugmentation in any case)
 Some technical issues may need to be ironed out during implementation.
 If this is done, the Is* properties present on these types should also be revealed, that is covered by a separate item.

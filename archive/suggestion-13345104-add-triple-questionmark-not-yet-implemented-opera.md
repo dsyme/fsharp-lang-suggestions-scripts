@@ -1,10 +1,7 @@
-# Idea 13345104: Add triple-questionmark not yet implemented operator (???) from Scala #
+# Add triple-questionmark not yet implemented operator (???) from Scala [13345104] #
 
-### Status : open
-
-### Submitted by Anonymous on 4/7/2016 12:00:00 AM
-
-### 11 votes
+**Submitted by Anonymous on 4/7/2016 12:00:00 AM**  
+**11 votes on UserVoice prior to migration**  
 
 In Scala, there is an operator `???`, which is used as a "Convenient as a placeholder for a missing right-hand-side of a method."
 This is defined as follows:
@@ -19,11 +16,14 @@ Finally, an article offering more explanation as to it's value and usage can be 
 http://alvinalexander.com/scala/what-does-three-question-marks-in-scala-mean
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13345104)**
 
 
-## Comment by Alexei Odeychuk on 4/8/2016 8:52:00 AM
+## Comments ##
+
+
+#### Comment by Alexei Odeychuk on 4/8/2016 8:52:00 AM ####
 Varon, did you consider any other options, for example:
 1) Simple comment: // ??? to be done
 You can find an uncompleted code fragment in your source code file using Ctrl+F in the Visual Studio and writing: “??? to be done”.
@@ -37,12 +37,12 @@ As to maintenance of code containing "???". Code maintenance takes 50% (pro-leve
 Of course, most of the programming languages borrow new language features from others in order to survive and boost their competitive strengths. But from code readability and maintenance perspective, I see no competitive advantages for F# to borrow this syntax from Scala. I think F# has a better syntax (mentioned in point 3) in this respect as of today.
 
 
-## Comment by Gauthier Segay on 4/10/2016 7:51:00 PM
+#### Comment by Gauthier Segay on 4/10/2016 7:51:00 PM ####
 I believe a library solution is good enough:
 let undefined () = raise (System.NotImplementedException())
 
 
-## Comment by Dzmitry Lahoda on 4/12/2016 6:50:00 AM
+#### Comment by Dzmitry Lahoda on 4/12/2016 6:50:00 AM ####
 Would be good if F# to support
 ```
 let undefined () = raise NotImplemented

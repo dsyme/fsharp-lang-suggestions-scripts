@@ -1,10 +1,7 @@
-# Idea 7414162: Type parameter grouping #
+# Type parameter grouping [7414162] #
 
-### Status : declined
-
-### Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM
-
-### 1 votes
+**Submitted by Greg Rosenbaum on 4/1/2015 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 Sometimes, we want to have a method or type where some of the type parameters must be specified explicitly, while others could be inferred. For example, consider:
 List.cast<'from,'to>
@@ -22,15 +19,18 @@ Of course, there is an issue with overload resolution, which is why I think type
 
 
 
-## Response 
-### by fslang-admin on 2/3/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/3/2016 12:00:00 AM **
 
 Declined per comment
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/7414162)**
 
 
-## Comment by Don Syme on 2/3/2016 2:31:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/3/2016 2:31:00 PM ####
 I understand the proposal. We would probably do it differently, by marking some type parameters as "not required", i.e. inferable. I'll decline that since I believe that suggestion is covered elsewhere.
 

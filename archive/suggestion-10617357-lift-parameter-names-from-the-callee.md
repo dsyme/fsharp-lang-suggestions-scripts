@@ -1,10 +1,7 @@
-# Idea 10617357: Lift parameter names from the callee #
+# Lift parameter names from the callee [10617357] #
 
-### Status : declined
-
-### Submitted by Brandon D'Imperio on 11/9/2015 12:00:00 AM
-
-### 6 votes
+**Submitted by Brandon D'Imperio on 11/9/2015 12:00:00 AM**  
+**6 votes on UserVoice prior to migration**  
 
 if I have a method with parameters, and close one of the params with another method call, I lose all parameter names unless I copy and paste them:
 ```
@@ -26,21 +23,24 @@ My suggestion is to lift the remaining parameters needed to finish the method ca
 
 
 
-## Response 
-### by fslang-admin on 2/4/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/4/2016 12:00:00 AM **
 
 Thank you for the suggestion. I have marked it declined per my comment below
 Best wishes
 Don Syme, F# Core Library and Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/10617357)**
 
 
-## Comment by Sehnsucht on 11/10/2015 7:31:00 PM
+## Comments ##
+
+
+#### Comment by Sehnsucht on 11/10/2015 7:31:00 PM ####
 Aside the current suggestion ; that's a lot of parameter, maybe all those apptXXX args should be in their own type, a record for example (and that way you can "dot into" it and have the field names as a hint when the function is "lifted")
 
 
-## Comment by Don Syme on 2/4/2016 4:23:00 PM
+#### Comment by Don Syme on 2/4/2016 4:23:00 PM ####
 I don't think we will do this suggestion: the better thing is to redesign an API when there are soooo many parameters, per the comment below.
 

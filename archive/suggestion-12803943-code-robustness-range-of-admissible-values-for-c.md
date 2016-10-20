@@ -1,15 +1,12 @@
-# Idea 12803943: Code robustness: Range of admissible values for class fields and record fields (from Ada 2012) #
+# Code robustness: Range of admissible values for class fields and record fields (from Ada 2012) [12803943] #
 
-### Status : declined
-
-### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 I suggest introducing an aspect that can be applied to declarations of classes and record types with the aim of specifying ranges of admissible values for class fields and record fields easily.
 This suggestion is an extension of my previous suggestion:
 Code robustness: Types with ranges of admissible values (from Ada 2012)
-Please see: [/archive/suggestion-12802701-code-robustness-types-with-ranges-of-admissible-v](/archive/suggestion-12802701-code-robustness-types-with-ranges-of-admissible-v.md)
+Please see: /archive/suggestion-12802701-code-robustness-types-with-ranges-of-admissible-v
 Example # 1: Record type with ranges of admissible values specified for its fields.
 type Location = {
 mutable Y: float range –1.0 .. 1.0 = 1.0
@@ -25,6 +22,9 @@ The aspect should be checked (checks for admissible values should be generated i
 This change in the F# language syntax will not affect existing codebase. It requires introducing a new keyword: range. I think it's worth it. This syntax will help represent a programmer's intents in code, improve code robustness, clarity and expressiveness of the F# language.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12803943)**
+
+
+## Comments ##
 

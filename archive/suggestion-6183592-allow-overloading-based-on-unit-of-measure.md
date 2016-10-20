@@ -1,10 +1,7 @@
-# Idea 6183592: Allow overloading based on unit of measure #
+# Allow overloading based on unit of measure [6183592] #
 
-### Status : declined
-
-### Submitted by trek42 on 7/17/2014 12:00:00 AM
-
-### 1 votes
+**Submitted by trek42 on 7/17/2014 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 It will be very useful if we could e.g.,
 [<Measure>] type rad
@@ -22,12 +19,15 @@ static member Cosine(x: float<deg>) = ...
 
 
 
-## Response 
-### by fslang-admin on 9/3/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 9/3/2014 12:00:00 AM **
 
 Unfortunately limitations on compiled .NET code mean that this is not possible – .NET requires that erased signatures be distinct.
 Don Syme, Current BDFL for F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6183592)**
+
+
+## Comments ##
 

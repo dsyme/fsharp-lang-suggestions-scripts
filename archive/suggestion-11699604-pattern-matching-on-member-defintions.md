@@ -1,10 +1,7 @@
-# Idea 11699604: Pattern matching on member defintions #
+# Pattern matching on member defintions [11699604] #
 
-### Status : declined
-
-### Submitted by Harald Steinlechner on 2/3/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Harald Steinlechner on 2/3/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 when extending discriminated unions with member implementations we can introduce a fresh name for 'this' (usually this or x). This identifier however is syntactically not a pattern.
 It would be nice (for irrefutable patterns) to match directly on this position, .e.g.:
@@ -18,17 +15,20 @@ However i fear this introduces ambiguities in the parser....
 
 
 
-## Response 
-### by fslang-admin on 2/3/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/3/2016 12:00:00 AM **
 
 Declined – see comment above
 Don Syme, F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/11699604)**
 
 
-## Comment by Don Syme on 2/3/2016 10:21:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/3/2016 10:21:00 AM ####
 Hi Harald,
 Thanks for taking the time to write this suggestion.
 We considered this in the F# design, but decided against it since we felt that code became substantially less readable when this formulation was used. I don't think we'll revisit the design decision at this point.

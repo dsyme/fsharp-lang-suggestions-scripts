@@ -1,10 +1,7 @@
-# Idea 7200206: Please make correct type casting for bigint in F# #
+# Please make correct type casting for bigint in F# [7200206] #
 
-### Status : completed
-
-### Submitted by Alexei Odeychuk on 3/12/2015 12:00:00 AM
-
-### 8 votes
+**Submitted by Alexei Odeychuk on 3/12/2015 12:00:00 AM**  
+**8 votes on UserVoice prior to migration**  
 
 I have been using the forward pipe to convert values and came up against the problem where the following code would work
 let IntToFloat = 10 |> float
@@ -21,18 +18,21 @@ Please make correct type casting for bigint in F# in order to eliminate the need
 
 
 
-## Response 
-### by fslang-admin on 9/7/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 9/7/2015 12:00:00 AM **
 
 See Lincoln’s comment – this will work the way you want in F# 4.0
 Don Syme
 F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/7200206)**
 
 
-## Comment by Lincoln Atkinson on 3/16/2015 12:37:00 PM
+## Comments ##
+
+
+#### Comment by Lincoln Atkinson on 3/16/2015 12:37:00 PM ####
 This will actually work the way you want in F# 4.0, due to the "constructors as first-class functions" feature.
 `float` and `int` in your example are generic inline *functions* which are defined to facilitate casts. Here's an example of their implementation https://github.com/Microsoft/visualfsharp/blob/fsharp4/src/fsharp/FSharp.Core/prim-types.fs#L4356
 `bigint`, on the other hand, is simply a *type alias* for `System.Numerics.BigInteger` https://github.com/Microsoft/visualfsharp/blob/fsharp4/src/fsharp/FSharp.Core/math/z.fs#L336

@@ -1,10 +1,7 @@
-# Idea 6752948: Support bind (e.g. "await") in the middle of expressions, possibly using !! operator #
+# Support bind (e.g. "await") in the middle of expressions, possibly using !! operator [6752948] #
 
-### Status : open
-
-### Submitted by Arash Sahebolamri on 11/21/2014 12:00:00 AM
-
-### 10 votes
+**Submitted by Arash Sahebolamri on 11/21/2014 12:00:00 AM**  
+**10 votes on UserVoice prior to migration**  
 
 that does the binding implicitly; so that it wouldn't be necessary to bind every monadic expression to a name. In the case of async workflows, it would behave like the C# await keyword.
 With this operator, instead of this:
@@ -27,14 +24,17 @@ return (xx + yy) / zz
 }
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6752948)**
 
 
-## Comment by Wallace Kelly on 5/28/2015 12:11:00 PM
+## Comments ##
+
+
+#### Comment by Wallace Kelly on 5/28/2015 12:11:00 PM ####
 In your examples, you have `tasync`. Is that a typo? Or is `tasync` a real thing?
 
 
-## Comment by Don Syme on 2/4/2016 5:54:00 PM
+#### Comment by Don Syme on 2/4/2016 5:54:00 PM ####
 Wallace - it's a typo I think.
 

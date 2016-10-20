@@ -1,18 +1,15 @@
-# Idea 12802701: Code robustness: Types with ranges of admissible values (from Ada 2012) #
+# Code robustness: Types with ranges of admissible values (from Ada 2012) [12802701] #
 
-### Status : open
-
-### Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM
-
-### 5 votes
+**Submitted by Alexei Odeychuk on 3/4/2016 12:00:00 AM**  
+**5 votes on UserVoice prior to migration**  
 
 I suggest introducing an aspect that can be applied to declarations of enumeration types, discriminated union types and user-defined numeric types with the aim of specifying the range of admissible values for subtypes derived from base types easily.
 This suggestion is an extension of my previous suggestions:
 1) Types with predicates to create subtypes easily (from Ada 2012);
 2) Types with default initial values specified (from Ada 2012).
 Please see them for more details:
-1) [/archive/suggestion-12564486-types-with-predicates-to-create-subtypes-easily-f](/archive/suggestion-12564486-types-with-predicates-to-create-subtypes-easily-f.md)
-2) [/archive/suggestion-12800967-types-with-default-initial-values-specified-from](/archive/suggestion-12800967-types-with-default-initial-values-specified-from.md)
+1) /archive/suggestion-12564486-types-with-predicates-to-create-subtypes-easily-f
+2) /archive/suggestion-12800967-types-with-default-initial-values-specified-from
 Example # 1. Type with range of admissible values specified.
 type scores = int range 1 .. 100 // admissible values: 1, 2, 3 .. 100
 The aspect should be checked (checks for admissible values should be generated in compiled code by the F# compiler and performed) whenever an object of the type is default initialized, on assignments, on type casts, on parameter passing, in the match expressions and so on.
@@ -48,6 +45,9 @@ type temperature = float<celsius> range -80.0<celsius> .. 60.0<celsius> default 
 This change in the F# language syntax will not affect existing codebase. It requires introducing a new keyword: range. I think this syntax will help represent a programmer's intents in code and improve code robustness and expressiveness of the F# language.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12802701)**
+
+
+## Comments ##
 

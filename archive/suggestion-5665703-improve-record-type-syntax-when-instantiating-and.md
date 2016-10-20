@@ -1,10 +1,7 @@
-# Idea 5665703: Improve Record Type syntax when instantiating and another type has the same properties #
+# Improve Record Type syntax when instantiating and another type has the same properties [5665703] #
 
-### Status : declined
-
-### Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM
-
-### 3 votes
+**Submitted by Jorge Fioranelli on 3/21/2014 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 type UserInfo { Id: int; Name: string }
 type CompanyInfo { Id: int; Name: string }
@@ -15,16 +12,19 @@ let user = new UserInfo { Id = 1; Name = "John Doe" }
 
 
 
-## Response 
-### by fslang-admin on 9/16/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 9/16/2014 12:00:00 AM **
 
 Declined at Jorge’s request
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5665703)**
 
 
-## Comment by Daniel Fabian on 3/22/2014 3:03:00 AM
+## Comments ##
+
+
+#### Comment by Daniel Fabian on 3/22/2014 3:03:00 AM ####
 But this already works. Just annotate the whole record with the type and you are done.
 let user = { Id = 1; Name = "John Doe" } : UserInfo or use the annotation at the place where you
 are using user as in
@@ -32,10 +32,10 @@ myFuncThatNeedsAUser user (might already be inferred correctly now) or else
 myFuncThatNeedsAUser (user : UserInfo)
 
 
-## Comment by Jorge Fioranelli on 3/22/2014 10:04:00 AM
+#### Comment by Jorge Fioranelli on 3/22/2014 10:04:00 AM ####
 Thanks Daniel, I didn't know you can do that.
 
 
-## Comment by Jorge Fioranelli on 3/22/2014 10:05:00 AM
+#### Comment by Jorge Fioranelli on 3/22/2014 10:05:00 AM ####
 Please remove this idea.
 

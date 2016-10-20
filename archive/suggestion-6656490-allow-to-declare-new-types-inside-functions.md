@@ -1,10 +1,7 @@
-# Idea 6656490: Allow to declare new types inside functions #
+# Allow to declare new types inside functions [6656490] #
 
-### Status : declined
-
-### Submitted by Vasily Kirichenko on 11/3/2014 12:00:00 AM
-
-### 23 votes
+**Submitted by Vasily Kirichenko on 11/3/2014 12:00:00 AM**  
+**23 votes on UserVoice prior to migration**  
 
 The idea is inspired by "Voldemont" typed from D language http://wiki.dlang.org/Voldemort_types
 In short, you are allowed to define types inside function scope and return instances of such types from the functions. The proposing syntax is as following:
@@ -35,23 +32,26 @@ As for me, the main usecase for nested types is replacement for tuples as return
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
-Duplicate of [/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes](/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
-
-------------------------
-## Comments
+Duplicate of /archive/suggestion-5663202-allow-to-define-types-at-expression-scopes
 
 
-## Comment by Alexei Odeychuk on 11/8/2014 5:57:00 AM
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6656490)**
+
+
+## Comments ##
+
+
+#### Comment by Alexei Odeychuk on 11/8/2014 5:57:00 AM ####
 I think it is a very useful idea that is able to add more expressiveness to the language and flexibility to F# programmers in implementing their algorithms.
 
 
-## Comment by Isaac Abraham on 1/20/2015 8:50:00 AM
+#### Comment by Isaac Abraham on 1/20/2015 8:50:00 AM ####
 So this is kind of like anonymous types (albeit nested types) except they can escape function scope?
 
 
-## Comment by Don Syme on 7/18/2015 11:43:00 AM
-This is a duplicate of this one (which has more votes so will be treated as the canonical one): [/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes](/archive/suggestion-5663202-allow-to-define-types-at-expression-scopes.md)
+#### Comment by Don Syme on 7/18/2015 11:43:00 AM ####
+This is a duplicate of this one (which has more votes so will be treated as the canonical one): /archive/suggestion-5663202-allow-to-define-types-at-expression-scopes
 

@@ -1,10 +1,7 @@
-# Idea 12488550: Map keys <--> set compatibility #
+# Map keys <--> set compatibility [12488550] #
 
-### Status : open
-
-### Submitted by mikero on 2/26/2016 12:00:00 AM
-
-### 2 votes
+**Submitted by mikero on 2/26/2016 12:00:00 AM**  
+**2 votes on UserVoice prior to migration**  
 
 A map's key collection is a set and should be treatable as such. Currently (AFAIK) you must get the keys from the map like so:
 let keys = Map.toSeq >> Seq.map fst
@@ -21,6 +18,9 @@ For example: Map.keySetIntersect & Map.keysetDifference, or using a nested name 
 Each of these has it's own use case.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12488550)**
+
+
+## Comments ##
 

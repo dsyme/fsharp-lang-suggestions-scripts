@@ -1,10 +1,7 @@
-# Idea 15332553: allow compiler directive to switch off inlining #
+# allow compiler directive to switch off inlining [15332553] #
 
-### Status : open
-
-### Submitted by Steven Taylor on 7/22/2016 12:00:00 AM
-
-### 8 votes
+**Submitted by Steven Taylor on 7/22/2016 12:00:00 AM**  
+**8 votes on UserVoice prior to migration**  
 
 to get around debugging issues with the inline macro device, this pattern creaps into the code base (taken from FsPickler):
 #if DEBUG
@@ -15,11 +12,14 @@ let inline writeBoundedSequence
 It would be nice to be able to turn off the effect of the inline keyword for files and entire projects while compiling for debugging purposes. Also, optionally setting ignore inline for code executed in an interactive session would be useful too.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/15332553)**
 
 
-## Comment by Abel on 9/25/2016 7:38:00 AM
+## Comments ##
+
+
+#### Comment by Abel on 9/25/2016 7:38:00 AM ####
 I believe I have seen this request before. The problem is that "inline" changes the behavior and is often inevitable to create semi-polymorphic (duck-typed) functions and types. Consider:
 let f a b = a + b // a and b are ints
 let inline f a b = a + b // a and b requires member (+)

@@ -1,10 +1,7 @@
-# Idea 13394442: Optionally specify file order by a fileorder.fsx (or fileorder.txt or fileorder.json) file #
+# Optionally specify file order by a fileorder.fsx (or fileorder.txt or fileorder.json) file [13394442] #
 
-### Status : open
-
-### Submitted by Don Syme on 4/12/2016 12:00:00 AM
-
-### 20 votes
+**Submitted by Don Syme on 4/12/2016 12:00:00 AM**  
+**20 votes on UserVoice prior to migration**  
 
 With F# becoming more and more multi-editor and cross-platform, it is becoming increasingly difficult to teach all build/edit tools about F#'s file order. The F# community are currently struggling to "update" each new build/edit tool to understand that F# actually needs a file order.
 Part of the problem is that there is no standard textual way to specify this file order except as command line arguments, and these are not stored in an editable form. There is no standard way to specify the F# file order. We need an (optional) solution to this problem that is closer to home and doesn't involve modifying build/edit tools.
@@ -33,15 +30,18 @@ Advantages:
 - Single place of reference for file order.
 - Requires no changes to F# language, “it just works” with any editor
 - We could augment the F# compiler to automatically write out a fileorder.fsx if one doesn’t exist, which would allow the user to gradually switch to this model.
-Related alternative: Allow all declarations to be mutually referential and the compiler takes files in any order [/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
-Related alternative: Keep a file order, but infer it from #load/#require declarations. This is covered by [/archive/suggestion-6323146-syntactically-describe-dependencies-between-files](/archive/suggestion-6323146-syntactically-describe-dependencies-between-files.md)
+Related alternative: Allow all declarations to be mutually referential and the compiler takes files in any order /archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an
+Related alternative: Keep a file order, but infer it from #load/#require declarations. This is covered by /archive/suggestion-6323146-syntactically-describe-dependencies-between-files
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13394442)**
 
 
-## Comment by Kevin Ransom on 4/12/2016 12:43:00 PM
+## Comments ##
+
+
+#### Comment by Kevin Ransom on 4/12/2016 12:43:00 PM ####
 I’m afraid this proposal does not resonate with me. It has a number of deficiencies in my opinion:
 1. It repeats information stored elsewhere in every other build system:
 • Fake specifies a source file ordering
@@ -61,14 +61,14 @@ a. Perhaps write a tool
 Kevin
 
 
-## Comment by Gauthier Segay on 4/17/2016 8:02:00 PM
+#### Comment by Gauthier Segay on 4/17/2016 8:02:00 PM ####
 Don, have you considered that fsc now takes a response file?
 I think the tooling issue is becoming manageable, for the widespread msbuild project files there is fsprojects/forge tool, and I think support for project.json will be added when it matures.
 As for json file in your suggestion, I really don't think json is a human readable format, it is great when you have javascript on one side but that is about it, writing a json file by hand is tedious compared to a more human friendly format (see the file formats used by paket).
 A precompiler directive solution (#require) seems also like a good way to have that made explicit in the source, I think this approach could be studied (with an extra tool as Kevin mentions), but would require some tooling or compiler support (we want error message if a file doesn't exist).
 
 
-## Comment by Jared Hester on 6/27/2016 11:28:00 PM
+#### Comment by Jared Hester on 6/27/2016 11:28:00 PM ####
 JSON presents several issues for use as a configuration file
 - doesn't support comments
 - no bare keys
@@ -88,7 +88,7 @@ So really just use TOML or CSON and please not JSON
 [4] https://en.wikipedia.org/wiki/YAML#Sample_document
 
 
-## Comment by Nestor Demeure on 7/4/2016 11:51:00 AM
+#### Comment by Nestor Demeure on 7/4/2016 11:51:00 AM ####
 This post might interest you :
 http://kcieslak.io/Creating-custom-project-file-for-F
 As far as I know, that tool is currently being design :)

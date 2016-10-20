@@ -1,10 +1,7 @@
-# Idea 6135254: Add reverse pipe operator that is right associative and low precedence. #
+# Add reverse pipe operator that is right associative and low precedence. [6135254] #
 
-### Status : declined
-
-### Submitted by Mårten Rånge on 7/4/2014 12:00:00 AM
-
-### 9 votes
+**Submitted by Mårten Rånge on 7/4/2014 12:00:00 AM**  
+**9 votes on UserVoice prior to migration**  
 
 The current reverse pipe (<|) is left-associative and same precedence.
 Left-associativity is "unnatural" for reverse pipe making it's usage harder, ie this doesn't compile: let x = abs <| abs <| 2;
@@ -15,22 +12,25 @@ I know some people disagree with reverse-piping but I personally like it as it c
 
 
 
-## Response 
-### by fslang-admin on 2/5/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/5/2016 12:00:00 AM **
 
 Thanks for the suggestion, though I’m declining per my comment below.
 Many thanks,
 Don Syme, F# Language and Core Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6135254)**
 
 
-## Comment by Mårten Rånge on 7/4/2014 1:18:00 PM
+## Comments ##
+
+
+#### Comment by Mårten Rånge on 7/4/2014 1:18:00 PM ####
 For the interested I a PR as a proposal: https://visualfsharp.codeplex.com/SourceControl/network/forks/marten_range/visualfsharp/contribution/7074
 
 
-## Comment by Don Syme on 2/5/2016 5:02:00 AM
+#### Comment by Don Syme on 2/5/2016 5:02:00 AM ####
 This can always be added as an operator outside the core library.
 I must admit I'm not a fan of encouraging the widespread use of reverse piping beyond a single "f <| x" It seems to me that reverse piping supporting a single function is reasonable but the other cases tend to code obscurity.
 I will decline this since we don't plan to add such an operator to FSharp.Core, and because you can define an operator outside the core library in your own implementation code.

@@ -1,10 +1,7 @@
-# Idea 14264544: Support FSharpType and FSharpValue methods on all profiles #
+# Support FSharpType and FSharpValue methods on all profiles [14264544] #
 
-### Status : completed
-
-### Submitted by Don Syme on 5/27/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Don Syme on 5/27/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 The following functions are missing from FSharp.Core reflection support for Profile78, 259 and .NET Core. This is because the “BindingFlags” type is not available in those profiles.
 type FSharpValue =
@@ -33,17 +30,20 @@ I believe we should really make alternative versions of these available, especia
 
 
 
-## Response 
-### by fslang-admin on 6/13/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 6/13/2016 12:00:00 AM **
 
 Completed per comment
 Don Syme
 F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/14264544)**
 
 
-## Comment by Don Syme on 6/13/2016 5:48:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 6/13/2016 5:48:00 AM ####
 This has actually already been done as part of F# portable profile work https://github.com/fsharp/FSharpLangDesign/blob/master/RFCs/FS-1013-enable-reflection-functionality-on-portable-profiles.md
 

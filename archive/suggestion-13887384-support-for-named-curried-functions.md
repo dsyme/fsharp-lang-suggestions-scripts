@@ -1,24 +1,24 @@
-# Idea 13887384: Support for named curried functions #
+# Support for named curried functions [13887384] #
 
-### Status : open
-
-### Submitted by Bartosz Sypytkowski on 5/18/2016 12:00:00 AM
-
-### 19 votes
+**Submitted by Bartosz Sypytkowski on 5/18/2016 12:00:00 AM**  
+**25 votes on UserVoice prior to migration**  
 
 The idea here is to add support for labeled arguments in curried functions. This could allow to extend things like partial application to depend not only on arguments order, and also to introduce default argument values in curried functions (now it's possible only in F# type methods).
 This feature is supported already in ML languages like OCaml or FB Reason.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13887384)**
 
 
-## Comment by Alexei Odeychuk on 5/21/2016 5:03:00 AM
+## Comments ##
+
+
+#### Comment by Alexei Odeychuk on 5/21/2016 5:03:00 AM ####
 Bartosz, please clarify your suggestion by introducing an example of new syntax in a comment
 
 
-## Comment by Richard Minerich on 5/27/2016 4:38:00 PM
+#### Comment by Richard Minerich on 5/27/2016 4:38:00 PM ####
 This could be neat, but I think it would at the very least require a new non-conflicting operator something like:
 let f x y = x + y
 let f' = f (y ~ 1)
@@ -27,7 +27,7 @@ let f' = (f with y = 1)
 Not really in love with any of this syntax, just throwing it out there.
 
 
-## Comment by Jared Hester on 6/27/2016 3:56:00 AM
+#### Comment by Jared Hester on 6/27/2016 3:56:00 AM ####
 OCaml does this like
 -------
 let rec range ~first:a ~last:b =

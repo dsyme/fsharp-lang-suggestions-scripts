@@ -1,10 +1,7 @@
-# Idea 12951354: custom set the 'last defined' #
+# custom set the 'last defined' [12951354] #
 
-### Status : open
-
-### Submitted by Steven Taylor on 3/15/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Steven Taylor on 3/15/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 Say we implement something like:
 type BinaryOp =
@@ -24,6 +21,9 @@ Option<string>.None just to get the point across to the compiler. Likewise, push
 This is just a simple example where it doesn't make much difference one way or the other. I suggest we have more preferences for hints and context. Pithy code probably leads to more name clashes. Sometimes these are acceptable.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12951354)**
+
+
+## Comments ##
 

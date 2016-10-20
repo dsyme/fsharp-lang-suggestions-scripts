@@ -1,10 +1,7 @@
-# Idea 14892927: Support constant values in Discriminated unions #
+# Support constant values in Discriminated unions [14892927] #
 
-### Status : open
-
-### Submitted by Pedro Santos on 6/21/2016 12:00:00 AM
-
-### 6 votes
+**Submitted by Pedro Santos on 6/21/2016 12:00:00 AM**  
+**6 votes on UserVoice prior to migration**  
 
 Hi,
 While trying to model a music domain I ended up with this code:
@@ -40,11 +37,14 @@ let name = C.name
 let pitch = C.pitch
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/14892927)**
 
 
-## Comment by exercitus vir on 7/9/2016 12:59:00 PM
+## Comments ##
+
+
+#### Comment by exercitus vir on 7/9/2016 12:59:00 PM ####
 You could instead just do this:
 type Note = { name: string, pitch : uint }
 module Note =
@@ -55,7 +55,7 @@ let name = Note.C.name
 let pitch = Note .C.pitch
 
 
-## Comment by Isak Sky on 7/29/2016 7:56:00 PM
+#### Comment by Isak Sky on 7/29/2016 7:56:00 PM ####
 You can do this:
 type Cond = Foo | Bar | Baz
 let (|SetV|) x _ = x
@@ -75,6 +75,6 @@ https://github.com/Microsoft/visualfsharp/issues/1281
 Credit @kevin in fp slack.
 
 
-## Comment by Abel on 9/22/2016 3:37:00 PM
+#### Comment by Abel on 9/22/2016 3:37:00 PM ####
 It seems to me to make more sense to change the way you use DU for your problem domain. I am missing CFlat (C♭) and ESharp (E♯) etc, or things like DDoubleSharp (D
 

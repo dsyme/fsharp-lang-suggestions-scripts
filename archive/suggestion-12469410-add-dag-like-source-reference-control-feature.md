@@ -1,10 +1,7 @@
-# Idea 12469410: add DAG like source reference control feature #
+# add DAG like source reference control feature [12469410] #
 
-### Status : declined
-
-### Submitted by kusokuzeshiki kusokuzeshiki on 2/24/2016 12:00:00 AM
-
-### 3 votes
+**Submitted by kusokuzeshiki kusokuzeshiki on 2/24/2016 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 F# has source reference limitation feature by source order, but it should be enhanced.
 I think source references should be like DAG.
@@ -14,16 +11,19 @@ This feature increase limitations but eliminates complex source relationship and
 
 
 
-## Response 
-### by fslang-admin on 2/25/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/25/2016 12:00:00 AM **
 
-Pretty much covered by [/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an](/archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an.md)
-
-------------------------
-## Comments
+Pretty much covered by /archive/suggestion-10276974-allow-the-compiler-to-take-source-code-files-in-an
 
 
-## Comment by kusokuzeshiki kusokuzeshiki on 2/25/2016 8:45:00 AM
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12469410)**
+
+
+## Comments ##
+
+
+#### Comment by kusokuzeshiki kusokuzeshiki on 2/25/2016 8:45:00 AM ####
 It's completely different thing.
 The link one deduce limitation.
 This increse limitation.

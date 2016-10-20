@@ -1,10 +1,7 @@
-# Idea 5689176: Privatise F#'s MailboxProcessor #
+# Privatise F#'s MailboxProcessor [5689176] #
 
-### Status : completed
-
-### Submitted by Don Syme on 3/27/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Don Syme on 3/27/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 <joke>
 The UK government privatised Royal Mail for £3,000,000,000. It's basically a MailboxProcessor. F# has a MailboxProcessor type, lighter and more efficient than Royal Mail. Can we privatise the MailboxProcessor type too?
@@ -14,15 +11,18 @@ See https://twitter.com/businessBoris/status/448983711451983872
 
 
 
-## Response 
-### by fslang-admin on 3/27/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 3/27/2014 12:00:00 AM **
 
 Sold. We’ve spent the proceeds on beer.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5689176)**
 
 
-## Comment by bB on 3/27/2014 2:04:00 PM
+## Comments ##
+
+
+#### Comment by bB on 3/27/2014 2:04:00 PM ####
 Where do I sign?
 

@@ -1,10 +1,7 @@
-# Idea 12512739: Improve Discriminated Union Type Inference #
+# Improve Discriminated Union Type Inference [12512739] #
 
-### Status : open
-
-### Submitted by Steven Taylor on 2/29/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Steven Taylor on 2/29/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 Sometimes the most logical name for an element of a Discriminated Union (DU), is a common concept such as a list
 -- something that you've used before elsewhere.
@@ -24,9 +21,12 @@ let v : A = List([]) // fails : last defined is B
 let w = List([]) : A // fails : ignores hint
 let x = A.List([]) // okay : fully qualified
 let y = List([ElementA]) // fails : expects ElementA
-note: this request is similar to this accepted request [/archive/suggestion-7138324-record-based-improve-type-inference-bug?tracking_code=3364d3565b19a0c518474dccbc2a1ec0](/archive/suggestion-7138324-record-based-improve-type-inference-bug?tracking_code=3364d3565b19a0c518474dccbc2a1ec0.md)
+note: this request is similar to this accepted request /archive/suggestion-7138324-record-based-improve-type-inference-bug?tracking_code=3364d3565b19a0c518474dccbc2a1ec0
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12512739)**
+
+
+## Comments ##
 

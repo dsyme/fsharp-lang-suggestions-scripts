@@ -1,10 +1,7 @@
-# Idea 8556646: Add atom syntax #
+# Add atom syntax [8556646] #
 
-### Status : open
-
-### Submitted by mikero on 6/26/2015 12:00:00 AM
-
-### 4 votes
+**Submitted by mikero on 6/26/2015 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 Add a syntax for atoms a.k.a. keywords a.k.a. self-evaluating symbols.
 :foo (or 'foo, or #foo - whichever causes the least problems)
@@ -13,20 +10,23 @@ E.g.:
 ("fido", :is-a, :pet) is of type string*string*string
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/8556646)**
 
 
-## Comment by Shawn Hoover on 10/30/2015 2:10:00 PM
+## Comments ##
+
+
+#### Comment by Shawn Hoover on 10/30/2015 2:10:00 PM ####
 Is there a particular reason why self-evaluating symbols don't exist in a lot of statically typed languages? I've been wondering about it since hearing Rich Hickey stress in some talks the idea of using generic data (maps, vectors, lists) at subsystem boundaries. Obviously they've been around a long time in Lisp, Erlang, and Ruby, for example. Is it just that generic maps are used less in F# so whatever efficiency or syntactic gains of keywords is less useful?
 I see someone bothered to make a library in Haskell: https://hackage.haskell.org/package/hxt-9.3.1.15/docs/Data-Atom.html
 
 
-## Comment by Don Syme on 2/4/2016 5:31:00 PM
+#### Comment by Don Syme on 2/4/2016 5:31:00 PM ####
 Why wouldn't it have some new type "Atom" (e.g. a single field struct wrapping a string)
 
 
-## Comment by mikero on 2/4/2016 6:36:00 PM
+#### Comment by mikero on 2/4/2016 6:36:00 PM ####
 >Why wouldn't it have some new type "Atom" (e.g. a single field struct wrapping a string)
 That's fine too -- I was just trying to create the least amount of friction possible and make the Atom an erased type.
 They should always be interned strings so that they are object.== with an atom or a string with the same chars w/o doing a strcmp. (Wouldn't the wrapping interfere with this?)

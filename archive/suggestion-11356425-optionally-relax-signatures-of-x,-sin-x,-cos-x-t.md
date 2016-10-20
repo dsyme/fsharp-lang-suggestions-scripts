@@ -1,10 +1,7 @@
-# Idea 11356425: Optionally relax signatures of -X, sin X, cos X to allow use w.r.t. subtyping #
+# Optionally relax signatures of -X, sin X, cos X to allow use w.r.t. subtyping [11356425] #
 
-### Status : planned
-
-### Submitted by Don Syme on 1/8/2016 12:00:00 AM
-
-### 3 votes
+**Submitted by Don Syme on 1/8/2016 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 See https://github.com/Microsoft/visualfsharp/issues/799
 type Base(x : int) =
@@ -25,17 +22,20 @@ let twob = b + b // OK
 
 
 
-## Response 
-### by fslang-admin on 2/4/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/4/2016 12:00:00 AM **
 
 Marking as approved-in-principle per my comment below
 We will post an RFC for it in due course.
 Don Syme, F# Language and Core Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/11356425)**
 
 
-## Comment by Don Syme on 2/4/2016 3:56:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/4/2016 3:56:00 PM ####
 This is a reasonable request and we should accommodate this somehow. Unfortunately we will likely only be able to do it by having the user open a new module.
 

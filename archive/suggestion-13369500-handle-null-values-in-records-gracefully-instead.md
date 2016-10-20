@@ -1,10 +1,7 @@
-# Idea 13369500: Handle null values in Records gracefully instead of crashing with a NRE #
+# Handle null values in Records gracefully instead of crashing with a NRE [13369500] #
 
-### Status : open
-
-### Submitted by lr on 4/9/2016 12:00:00 AM
-
-### 0 votes
+**Submitted by lr on 4/9/2016 12:00:00 AM**  
+**0 votes on UserVoice prior to migration**  
 
 Please see https://github.com/Microsoft/visualfsharp/issues/1044
 Currently, if a nonnull field in a record (e.g. another record, or FSharpList<'T>, ...) is null, .GetHashCode (and potentially other methods) throw a NullReferenceException.
@@ -15,6 +12,9 @@ The suggestion is NOT to change anything semantically but to handle null values 
 In the case of .GetHashCode, this could be handled backwards-compatible by returning a fixed hash for a null value.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13369500)**
+
+
+## Comments ##
 

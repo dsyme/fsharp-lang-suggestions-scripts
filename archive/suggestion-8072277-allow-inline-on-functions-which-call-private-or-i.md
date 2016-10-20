@@ -1,10 +1,7 @@
-# Idea 8072277: Allow inline on functions which call private or internal union cases #
+# Allow inline on functions which call private or internal union cases [8072277] #
 
-### Status : declined
-
-### Submitted by exercitus vir on 5/21/2015 12:00:00 AM
-
-### 1 votes
+**Submitted by exercitus vir on 5/21/2015 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 A lot of time you we to ensure a valid construction of union types by making its cases private or internal. E.g.
 ```F#
@@ -19,22 +16,25 @@ This restriction should be removed for cases of discriminated unions because a l
 
 
 
-## Response 
-### by fslang-admin on 7/17/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/17/2015 12:00:00 AM **
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/8072277)**
 
 
-## Comment by Don Syme on 7/17/2015 6:50:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/17/2015 6:50:00 AM ####
 Why not just add a static member to the union type which does the validation?
 Also, allowing inlining would break the abstraction boundary defined by private/internal. Using a static member associated with the type -or using "internal" instead of "private" seems adequate.
 I will mark this one as declined because allowing inline to break abstraction boundaries would be a significant departure for F# language design.
 
 
-## Comment by exercitus vir on 7/17/2015 11:09:00 AM
+#### Comment by exercitus vir on 7/17/2015 11:09:00 AM ####
 Good point. Thanks for the explanation. I now understand the reason.
 

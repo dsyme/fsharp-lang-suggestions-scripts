@@ -1,10 +1,7 @@
-# Idea 6655318: Code Contracts support #
+# Code Contracts support [6655318] #
 
-### Status : declined
-
-### Submitted by Onur on 11/3/2014 12:00:00 AM
-
-### 24 votes
+**Submitted by Onur on 11/3/2014 12:00:00 AM**  
+**24 votes on UserVoice prior to migration**  
 
 This has been discussed but I believe it should be F# that can fix it.
 F# compiler does a lot of magic. Especially if we put Contract.Requires to the beginning of a method or a constructor, F# can (if it is a constructor it will) put additional code.
@@ -48,17 +45,20 @@ as you see it adds some magic code on top of the contract code by magic. And thi
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
 Declining this because it is the remit of the code contracts tool. I think they should make a fix in this case, or simply ignore the added F# initialization checking code.
 Further discussion and input welcome.
 Don Syme, F# Language and Core Library evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6655318)**
 
 
-## Comment by Don Syme on 7/18/2015 11:39:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/18/2015 11:39:00 AM ####
 Why doe this require a fix in F# rather than in the Code Contracts tool?
 

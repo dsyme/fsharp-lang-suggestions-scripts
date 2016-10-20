@@ -1,10 +1,7 @@
-# Idea 8210280: Add plugable preprocesser support to compiler #
+# Add plugable preprocesser support to compiler [8210280] #
 
-### Status : declined
-
-### Submitted by Xavier Zwirtz on 6/2/2015 12:00:00 AM
-
-### 4 votes
+**Submitted by Xavier Zwirtz on 6/2/2015 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 Add support for handing in a preprocessor dll to the compiler.
 A preprocessor dll would be able to receive the AST at different stages of the compile process and modify it.
@@ -31,25 +28,28 @@ It would also allow for more "simple" plugins to be made, like syntactic macros.
 
 
 
-## Response 
-### by fslang-admin on 7/17/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/17/2015 12:00:00 AM **
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments above.
 Don Syme, F# Language and Core Library Evolution.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/8210280)**
 
 
-## Comment by Xavier Zwirtz on 6/2/2015 9:44:00 PM
+## Comments ##
+
+
+#### Comment by Xavier Zwirtz on 6/2/2015 9:44:00 PM ####
 This is a different suggestion to adding syntactic macros. This is more about making the compiler pluggable and customizable. Macros would still do better as a first class language feature, however they could be iterated on quickly by the community as a preprocesser extension and pulled back into the compiler when consensus is reached by the community.
 
 
-## Comment by Don Syme on 6/9/2015 12:55:00 PM
+#### Comment by Don Syme on 6/9/2015 12:55:00 PM ####
 I believe the appropriate place for this suggestion would be FSharp.Compiler.Service. It is unlikely we would add full pluggable syntactic phase translations in the F# language specification itself.
 Don Syme, F# Language and Core Library Evolution
 
 
-## Comment by exercitus vir on 6/13/2015 1:32:00 AM
+#### Comment by exercitus vir on 6/13/2015 1:32:00 AM ####
 @Xavier: Have you already posted this as a suggestion to FSharp.Compiler.Service?
 

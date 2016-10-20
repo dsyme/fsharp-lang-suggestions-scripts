@@ -1,10 +1,7 @@
-# Idea 9626979: Nonconstant arguments for type providers #
+# Nonconstant arguments for type providers [9626979] #
 
-### Status : declined
-
-### Submitted by Semyon Grigorev on 9/4/2015 12:00:00 AM
-
-### 0 votes
+**Submitted by Semyon Grigorev on 9/4/2015 12:00:00 AM**  
+**0 votes on UserVoice prior to migration**  
 
 An idea is allow developers to use not string constants only but string expressions which can be statically calculated to regular set. It may be useful to improve sql type provider flexibility.
 An example:
@@ -21,11 +18,14 @@ Short demo of string-embedded SQL support in MS VS: https://youtu.be/P3FFg02-edc
 
 
 
-## Response 
-### by fslang-admin on 2/3/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/3/2016 12:00:00 AM **
 
 Declining as now at zero votes.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/9626979)**
+
+
+## Comments ##
 

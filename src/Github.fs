@@ -111,7 +111,7 @@ module Github =
         "planned", "51b7e2"
         "started", "76bf1c"
         "completed", "540977"
-        //"open", "d3b47e"
+        "open", "d3b47e"
         "votes:0-10", "333333" //TODO actual colors
         "votes:11-50", "333333"
         "votes:51-100", "333333"
@@ -147,8 +147,7 @@ module Github =
 
     let bucket i =
         match i with
-        | i when i = 0 -> None
-        | i when i > 0 && i <= 10 -> Some "votes:1-10"
+        | i when i >= 0 && i <= 10 -> Some "votes:0-10"
         | i when i > 10 && i <= 50 -> Some "votes:11-50"
         | i when i > 200 && i <= 300 -> Some "votes:200-300"
         | i when i > 300 -> Some "votes:300+"
@@ -164,7 +163,10 @@ module Github =
         let idea = { idea with Comments = idea.Comments |> List.sortBy (fun c -> c.Submitted) }
         let text = Templating.submissionTemplate idea + Templating.archiveCommentLink idea
         let labels = [
-            if idea.Status <> "open" then yield idea.Status
+            match idea.Status with
+            | s when s = "open" -> yield "open"
+            | s when String.IsNullOrEmpty s -> yield "open"
+            | s -> yield s
             match bucket idea.Votes with Some s -> yield s | None -> ()
         ] 
         let issue = createIssue repoId idea.Title text labels client |> Async.RunSynchronously
@@ -172,8 +174,13 @@ module Github =
         issue
 
     //let loadIssuesInto getCredentials owner repoName ideas  = async {
-    let createRepoIssues (client:IGitHubClient) repoId ideas  = 
-        ideas |> List.map (fun i -> 
+    let createRepoIssues (client:IGitHubClient) repoId ideas =
+        let existingIssues = client.Issue.GetAllForRepository(repoId).Result
+        let numExisting = existingIssues |> Seq.length
+        if numExisting <> 0 then printfn "skipping %d issues because they already exist in the repository" numExisting
+        ideas 
+        |> List.skip numExisting
+        |> List.map (fun i -> 
             Thread.Sleep 4000
             let issue = ideaToIssue repoId client i 
             Thread.Sleep 4000

@@ -1,26 +1,26 @@
-# Idea 6085102: Allow F# compiler directives like #nowarn to span less than an entire file. #
+# Allow F# compiler directives like #nowarn to span less than an entire file. [6085102] #
 
-### Status : open
-
-### Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
-
-### 7 votes
+**Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM**  
+**7 votes on UserVoice prior to migration**  
 
 Idea posted here:
 http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3338653-allow-f-compiler-directives-like-nowarn-to-span
 A possibly related issue / suggestion is listed here:
-[/archive/suggestion-5676502-disable-compiler-warnings-per-line](/archive/suggestion-5676502-disable-compiler-warnings-per-line.md)
+/archive/suggestion-5676502-disable-compiler-warnings-per-line
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6085102)**
 
 
-## Comment by exercitus vir on 6/19/2015 5:32:00 PM
+## Comments ##
+
+
+#### Comment by exercitus vir on 6/19/2015 5:32:00 PM ####
 You could use #endnowarn "[number]" to explicitely end a compiler directive.
 
 
-## Comment by Mark Seemann on 5/29/2016 2:11:00 AM
+#### Comment by Mark Seemann on 5/29/2016 2:11:00 AM ####
 In C#, this feature exists, and has the following form:
 #pragma warning disable 618
 code...

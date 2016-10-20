@@ -1,10 +1,7 @@
-# Idea 8151819: Add support for forward piping the result of an async workflow #
+# Add support for forward piping the result of an async workflow [8151819] #
 
-### Status : declined
-
-### Submitted by Wallace Kelly on 5/28/2015 12:00:00 AM
-
-### 3 votes
+**Submitted by Wallace Kelly on 5/28/2015 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 The sample code looks much better at https://gist.github.com/WallaceKelly/f146180d5946b2b004bb
 When calling an async function within an async workflow, we sometimes end up with code like the following:
@@ -70,17 +67,20 @@ In summary, we want something that works like let!, but for forward-piping.
 
 
 
-## Response 
-### by fslang-admin on 6/9/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 6/9/2015 12:00:00 AM **
 
 Declined as suggested by the author
 Don Syme, F# Language and Core Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/8151819)**
 
 
-## Comment by Wallace Kelly on 5/29/2015 9:50:00 AM
+## Comments ##
+
+
+#### Comment by Wallace Kelly on 5/29/2015 9:50:00 AM ####
 I received this suggested operator...
 let (|>>) xA x2y = async.Bind (xA, x2y >> async.Return)
 ...which works very nicely....

@@ -1,10 +1,7 @@
-# Idea 13696080: Add empty value into the String module #
+# Add empty value into the String module [13696080] #
 
-### Status : open
-
-### Submitted by Rex Ng on 5/2/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Rex Ng on 5/2/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 Copied from this GitHub issue: https://github.com/Microsoft/visualfsharp/issues/1139
 Right now, if I do not want to use the empty string literal "", I have to do something like
@@ -22,11 +19,14 @@ I think this will be useful because we already have similar empty values from ot
 This will also make the code more explicit (i.e. convey to others that 'I want an empty string here' instead of 'this can potentially be a typo').
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13696080)**
 
 
-## Comment by Reed Adams on 5/3/2016 10:10:00 AM
+## Comments ##
+
+
+#### Comment by Reed Adams on 5/3/2016 10:10:00 AM ####
 While you're waiting for an official library solution, it might be worth noting that you can extend and approximate the desired functionality in your own code for the time being, possibly giving you the expressiveness you're after.
 Example at: https://dotnetfiddle.net/rFSPQl
 Hopefully this gets you closer to where you want to be until a library solution is in place.

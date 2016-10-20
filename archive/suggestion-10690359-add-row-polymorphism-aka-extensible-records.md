@@ -1,10 +1,7 @@
-# Idea 10690359: Add "row polymorphism" aka "extensible records" #
+# Add "row polymorphism" aka "extensible records" [10690359] #
 
-### Status : declined
-
-### Submitted by Joris Morger on 11/13/2015 12:00:00 AM
-
-### 16 votes
+**Submitted by Joris Morger on 11/13/2015 12:00:00 AM**  
+**16 votes on UserVoice prior to migration**  
 
 In F# there is no way to write a function that can work on similar records.
 If I have two records
@@ -26,24 +23,27 @@ Purescript: https://leanpub.com/purescript/read#leanpub-auto-record-patterns-and
 
 
 
-## Response 
-### by fslang-admin on 1/23/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 1/23/2016 12:00:00 AM **
 
-Duplicate of [/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
+Duplicate of /archive/suggestion-9633858-structural-extensible-records-like-elm-concrete
 Don Syme, F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/10690359)**
 
 
-## Comment by Radek Micek on 11/15/2015 10:05:00 AM
+## Comments ##
+
+
+#### Comment by Radek Micek on 11/15/2015 10:05:00 AM ####
 Note that this is same as
-[/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete](/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete.md)
+/archive/suggestion-9633858-structural-extensible-records-like-elm-concrete
 and similar to
-[/archive/suggestion-6181848-provide-better-support-for-structural-typing](/archive/suggestion-6181848-provide-better-support-for-structural-typing.md)
+/archive/suggestion-6181848-provide-better-support-for-structural-typing
 
 
-## Comment by Nathan Schultz on 11/17/2015 8:59:00 PM
+#### Comment by Nathan Schultz on 11/17/2015 8:59:00 PM ####
 It might be worth noting that Elm is removing Extensible Record support as of version 0.16.
 https://github.com/elm-lang/elm-compiler/issues/985
 

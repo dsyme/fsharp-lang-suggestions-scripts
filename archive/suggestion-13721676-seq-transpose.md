@@ -1,10 +1,7 @@
-# Idea 13721676: Seq.transpose #
+# Seq.transpose [13721676] #
 
-### Status : open
-
-### Submitted by James Ashwell on 5/3/2016 12:00:00 AM
-
-### 14 votes
+**Submitted by James Ashwell on 5/3/2016 12:00:00 AM**  
+**14 votes on UserVoice prior to migration**  
 
 It would be nice to have a function that transposes sequences:
 [ [ 00; 01; 02;... ]; [ 10; 11; 12;... ]; [ 20; 21; 22;... ];... ]
@@ -13,11 +10,14 @@ to
 This is particularly useful when dealing with infinite x infinite sequences, where you want to iterate over the 'outer group' first.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13721676)**
 
 
-## Comment by Yaar Hever on 5/9/2016 7:57:00 AM
+## Comments ##
+
+
+#### Comment by Yaar Hever on 5/9/2016 7:57:00 AM ####
 I took a stab at an implementation:
 module Seq =
 (**)
@@ -39,7 +39,7 @@ module Seq =
 (**********************)inner.Current) } }
 
 
-## Comment by Reed Adams on 6/20/2016 3:56:00 PM
+#### Comment by Reed Adams on 6/20/2016 3:56:00 PM ####
 I'm quite the sucker for code golf. My solution:
 // implementation:
 let transposeInfinite seqs = Seq.initInfinite(fun i -> seqs |> Seq.map (Seq.item i))

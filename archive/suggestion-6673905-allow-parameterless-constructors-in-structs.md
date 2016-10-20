@@ -1,10 +1,7 @@
-# Idea 6673905: Allow parameterless constructors in structs #
+# Allow parameterless constructors in structs [6673905] #
 
-### Status : declined
-
-### Submitted by Daniel Robinson on 11/6/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Daniel Robinson on 11/6/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 This will simplify the somewhat arcane rules of struct initialization and provide greater parity with class definition syntax. This StackOverflow question (http://stackoverflow.com/questions/12600574/argument-validation-in-f-struct-constructor/12603786#12603786) illustrates the counterintuitiveness of validating constructor args.
 [<Struct>]
@@ -23,17 +20,20 @@ This would open the door to let/do bindings and auto-properties in structs. As n
 
 
 
-## Response 
-### by fslang-admin on 2/10/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/10/2016 12:00:00 AM **
 
 Thanks for the suggestion. See comment below about this feature being pulled from C# 6.0.
 Don Syme
 F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6673905)**
 
 
-## Comment by Don Syme on 2/10/2016 10:58:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/10/2016 10:58:00 AM ####
 C# eventually pulled this feature out of C# 6.0. I think we should not do it in F# for that reason alone.
 

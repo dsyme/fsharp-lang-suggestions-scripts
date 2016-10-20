@@ -1,10 +1,7 @@
-# Idea 5704447: Introduce public Range types #
+# Introduce public Range types [5704447] #
 
-### Status : declined
-
-### Submitted by Eirik George Tsarpalis on 3/31/2014 12:00:00 AM
-
-### 10 votes
+**Submitted by Eirik George Tsarpalis on 3/31/2014 12:00:00 AM**  
+**10 votes on UserVoice prior to migration**  
 
 Range types exist in F#, as they manifest themselves in computation expression for loops:
 for i in 1 .. 100 do ()
@@ -15,20 +12,23 @@ Making Range types public would remedy this issue.
 
 
 
-## Response 
-### by fslang-admin on 2/5/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/5/2016 12:00:00 AM **
 
 Declined, per my comment, thanks!
 Don Syme, F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5704447)**
 
 
-## Comment by Don Syme on 2/5/2016 4:13:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/5/2016 4:13:00 AM ####
 My understanding is that one way to solve this is to make sure the enclosing cloud/monadic computation has a Delay method.
 
 
-## Comment by Don Syme on 2/5/2016 4:14:00 AM
+#### Comment by Don Syme on 2/5/2016 4:14:00 AM ####
 I will close this as I don't think chasing down non-serializable sequence objects one by one is the way we will solve this?
 

@@ -1,10 +1,7 @@
-# Idea 6776696: simplify assigning a mutable DU value #
+# simplify assigning a mutable DU value [6776696] #
 
-### Status : declined
-
-### Submitted by Steven Taylor on 11/27/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Steven Taylor on 11/27/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 please provide a simplified way to work with mutable discriminated union values similar to the simplified announcement [1].
 The current scheme depends upon the ref keyword. It would be nice to replace ref with mutable, and then be able to use the cleaner <- operator rather than :=. This would then be more consistent for folk who get used to the "it just works" syntax (see [1]).
@@ -34,17 +31,20 @@ comments
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome
 Don Syme, F# Language and Core Library Evolution.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6776696)**
 
 
-## Comment by Don Syme on 7/18/2015 1:26:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/18/2015 1:26:00 PM ####
 I think it's best to just define a settable property on the DU that does what you want.
 

@@ -1,10 +1,7 @@
-# Idea 5671087: Smart constructors for DU cases #
+# Smart constructors for DU cases [5671087] #
 
-### Status : declined
-
-### Submitted by Jack Pappas on 3/23/2014 12:00:00 AM
-
-### 13 votes
+**Submitted by Jack Pappas on 3/23/2014 12:00:00 AM**  
+**13 votes on UserVoice prior to migration**  
 
 When a DU type is defined, the F# compiler creates a static method on the class for each defined, non-nullary case. The method is called NewXYZ, where XYZ is the name of the case.
 It would be useful to be able to decorate a non-nullary case with an attribute [<SmartConstructor>] which would cause the compiler to add a suffix (e.g., "Impl") to the normal factory method for the case (described above) and also mark it 'private'. The compiler would then require you to define a static NewXYZ method on the type, taking the same arguments in the same order as the case.
@@ -30,17 +27,20 @@ Invalid errMsg
 
 
 
-## Response 
-### by fslang-admin on 2/5/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/5/2016 12:00:00 AM **
 
 Thanks for the suggestion, which is definitely interesting. Declining per my comment, please take a look
 Don Syme, F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5671087)**
 
 
-## Comment by Don Syme on 2/5/2016 8:49:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/5/2016 8:49:00 AM ####
 Thanks for the suggestion.
 Enforcing invariants on union and record types is a serious issue. The recommended way is either to use a class type, or to hide the representation.
 This is an interesting midpoint, which is to intercept the construction methods for the union type. It's more difficult to design a corresponding way to do this for a record type.

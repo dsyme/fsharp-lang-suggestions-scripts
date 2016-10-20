@@ -1,10 +1,7 @@
-# Idea 11628951: Allow Attributes to follow the `member` keyword #
+# Allow Attributes to follow the `member` keyword [11628951] #
 
-### Status : declined
-
-### Submitted by Jared Hester on 1/28/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Jared Hester on 1/28/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 instead of just -
 [<DebuggerStepThrough>]
@@ -17,17 +14,20 @@ member [<DebuggerStepThrough>] __.Zero () : Async<unit option> = Some () |> asyn
 
 
 
-## Response 
-### by fslang-admin on 2/3/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/3/2016 12:00:00 AM **
 
 Declines see comment above
 Don Syme, F# Language Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/11628951)**
 
 
-## Comment by Don Syme on 2/3/2016 10:36:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/3/2016 10:36:00 AM ####
 Thanks for the suggestion
 However I will decline this: what we have works, and the proposed saving is only one line, and the lines become loooong. In balance I don't see a net benefit.
 

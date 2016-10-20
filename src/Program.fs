@@ -50,8 +50,8 @@ module Program =
     
 
 
-    let testSession (repoName:string) = async {
-        let! client = githubLogin tokenCreds
+    let testSession (repoName:string) token = async {
+        let! client = githubLogin (fun () -> Credentials(token))
 
 
 
@@ -69,6 +69,19 @@ module Program =
         return ()
     }
 
+    let continueSession (repoName:string) token = async {
+        let! client = githubLogin (fun () -> Credentials(token))
+        let! user = client.User.Current()
+        let! repo = client.Repository.Get(user.Login, repoName)
+        let ideas = ideasFromJsonFile jsonfile
+        let fileNames = ideas |> List.map (fun i -> ideaFileName i + ".md")
+
+        let  _ = createRepoIssues client repo.Id ideas
+        let! _ = uploadFiles client repo.Id fileNames
+        let! _ = closeLabeledIssues client repo.Id ["declined";"completed"]
+
+        return ()
+    }
 
     [<EntryPoint>]
     let main argv = 

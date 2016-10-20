@@ -1,10 +1,7 @@
-# Idea 6085086: Nested types for F# #
+# Nested types for F# [6085086] #
 
-### Status : open
-
-### Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM
-
-### 45 votes
+**Submitted by Robert Nielsen on 6/22/2014 12:00:00 AM**  
+**48 votes on UserVoice prior to migration**  
 
 I don't think F# supports nested type definitions yet.
 The idea was posted here:
@@ -14,14 +11,17 @@ http://msdn.microsoft.com/en-us/library/ms173120.aspx
 http://cs.hubfs.net/topic/None/57397
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6085086)**
 
 
-## Comment by James Freiwirth on 10/20/2014 3:10:00 PM
+## Comments ##
+
+
+#### Comment by James Freiwirth on 10/20/2014 3:10:00 PM ####
 This would be great. Also allowing 'open' statements in the same way that you can with nested modules would help to make large codebases more organised and easier to maintain.
 
 
-## Comment by Gauthier Segay on 8/5/2015 7:01:00 AM
+#### Comment by Gauthier Segay on 8/5/2015 7:01:00 AM ####
 I concur that we need fuller support of .net type system.
 

@@ -1,10 +1,7 @@
-# Idea 11273478: In a pattern match use the record field name as a default binding if none is provided #
+# In a pattern match use the record field name as a default binding if none is provided [11273478] #
 
-### Status : open
-
-### Submitted by Eric Stokes on 12/31/2015 12:00:00 AM
-
-### 13 votes
+**Submitted by Eric Stokes on 12/31/2015 12:00:00 AM**  
+**13 votes on UserVoice prior to migration**  
 
 In OCaml we can do,
 match somrecord with
@@ -16,6 +13,9 @@ This is quite a simple syntactic enhancement, however it's very nice to have. It
 Also, in OCaml we get a warning if we don't bind all the record fields in a pattern match, unless we include _. e.g. {foo;bar;_}. This would be a nice thing to have as well, because in a pattern match where we DO want to bind all the fields, we are now told when the record type changes that we need to consider the new field. This is very useful for large projects.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/11273478)**
+
+
+## Comments ##
 

@@ -1,10 +1,7 @@
-# Idea 15462291: Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files #
+# Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files [15462291] #
 
-### Status : open
-
-### Submitted by Dmitry Morozov on 7/29/2016 12:00:00 AM
-
-### 7 votes
+**Submitted by Dmitry Morozov on 7/29/2016 12:00:00 AM**  
+**7 votes on UserVoice prior to migration**  
 
 Have TypeProviderConfig.IsHostedExecution = true for type providers instantiated in *.fsx files
 This came up in my work on FSharp.Data.SqlClient library.
@@ -62,6 +59,9 @@ Here is my proposal:
 So type provider will able to generate diff types depending on IsHostedExecution value
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/15462291)**
+
+
+## Comments ##
 

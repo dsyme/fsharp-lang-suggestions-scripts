@@ -1,12 +1,9 @@
-# Idea 15133467: Nominal subtyping of unions #
+# Nominal subtyping of unions [15133467] #
 
-### Status : open
+**Submitted by exercitus vir on 7/9/2016 12:00:00 AM**  
+**8 votes on UserVoice prior to migration**  
 
-### Submitted by exercitus vir on 7/9/2016 12:00:00 AM
-
-### 8 votes
-
-This is basically a repost of "subtyping for discriminated unions" ([/archive/suggestion-6672490-subtyping-for-discriminated-unions),](/archive/suggestion-6672490-subtyping-for-discriminated-unions),.md) but with more details and a description of a concrete use case.
+This is basically a repost of "subtyping for discriminated unions" (/archive/suggestion-6672490-subtyping-for-discriminated-unions), but with more details and a description of a concrete use case.
 I am reposting because I would like more discussion on this and because I think that declined requests are no longer tracked by Don Syme (and others).
 Don Syme declined the feature because he likes features to be generic and symmetric for types in F#. This is a good general rule and I trust in Don's good taste, but I think that this feature request is an exception to the rule, so the decline should be reconsidered for the following reasons:
 Nominal subtyping cannot be implemented for records because records are compiled to sealed classes, which is a good thing and I see no use cases for subtyping of records anyway (there is also already ambiguity for records with the same fields that needs to be resolved manually with type annotations). So far we agree.
@@ -16,6 +13,9 @@ Unions are perfect for that except that there is no way currently to generically
 What I value about F# the most is the expressiveness of it and this is the only feature (and higher-kinded types maybe) that do not let me express something cleanly.What do you think? Any issues with this that I am overlooking?
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/15133467)**
+
+
+## Comments ##
 

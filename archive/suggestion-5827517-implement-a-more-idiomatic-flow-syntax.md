@@ -1,10 +1,7 @@
-# Idea 5827517: Implement a more idiomatic Flow Syntax #
+# Implement a more idiomatic Flow Syntax [5827517] #
 
-### Status : declined
-
-### Submitted by Bryan Edds on 4/24/2014 12:00:00 AM
-
-### 3 votes
+**Submitted by Bryan Edds on 4/24/2014 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 F#'s current FlowSyntax().WhitspaceHack() should be displaced with a more ML-style syntax -
 // Multi-line usage.
@@ -20,23 +17,26 @@ Visually tracking where the current F# flow-syntax hack is used is painful, and 
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 Further comments, use cases, information and discussion welcome
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5827517)**
 
 
-## Comment by Bryan Edds on 4/26/2014 7:19:00 AM
+## Comments ##
+
+
+#### Comment by Bryan Edds on 4/26/2014 7:19:00 AM ####
 Addendum:
 For the single-liner, I think an end token might be required -
 with person do SetName "Joe"; SetAge 35; SetHeight 6.1 end
 Otherwise the last two sections might be ambiguous to parse.
 
 
-## Comment by Don Syme on 7/18/2015 11:59:00 AM
+#### Comment by Don Syme on 7/18/2015 11:59:00 AM ####
 For better or worse, removing or deprecating the existing syntax would not be possible at this stage of the language evolution. Adding another alternative syntax probably wouldn't achieve the goals and benefits outlined.
 

@@ -1,10 +1,7 @@
-# Idea 15915547: Implement interface delegating #
+# Implement interface delegating [15915547] #
 
-### Status : open
-
-### Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by Ivan J. Simongauz on 9/3/2016 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 Implement interface delegating by next syntax:
 type MyType() =
@@ -15,6 +12,9 @@ x + y
 Special behavior when event in interface - sender substitution
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/15915547)**
+
+
+## Comments ##
 

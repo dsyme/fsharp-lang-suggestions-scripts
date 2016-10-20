@@ -1,10 +1,7 @@
-# Idea 9989010: Add blittable type constraints in order to support more robust native interop #
+# Add blittable type constraints in order to support more robust native interop [9989010] #
 
-### Status : declined
-
-### Submitted by Zoltan Podlovics on 9/30/2015 12:00:00 AM
-
-### 3 votes
+**Submitted by Zoltan Podlovics on 9/30/2015 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 Proper native interop require strict type definition where the type representation is the same both on managed and unmanaged world. This represents a subset of unmanaged types.
 Why this could be important?
@@ -34,15 +31,18 @@ let safeCall (x : 'T when 'T: blittable and 'T: struct) = nativeCall(x)
 
 
 
-## Response 
-### by fslang-admin on 2/5/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/5/2016 12:00:00 AM **
 
-Merging with [/archive/suggestion-6359526-add-serializable-and-blittable-constraints-fo](/archive/suggestion-6359526-add-serializable-and-blittable-constraints-fo.md)
-
-------------------------
-## Comments
+Merging with /archive/suggestion-6359526-add-serializable-and-blittable-constraints-fo
 
 
-## Comment by Don Syme on 2/4/2016 6:12:00 PM
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/9989010)**
+
+
+## Comments ##
+
+
+#### Comment by Don Syme on 2/4/2016 6:12:00 PM ####
 Combining with this suggestion: https://fslang.uservoice.com/admin/forums/245727-f-language/suggestions/6359526-add-serializable-constraint-for-types
 

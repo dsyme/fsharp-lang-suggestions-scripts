@@ -1,10 +1,7 @@
-# Idea 6108807: Allow Object expressions to have attributes applied to them #
+# Allow Object expressions to have attributes applied to them [6108807] #
 
-### Status : open
-
-### Submitted by Dave Thomas on 6/27/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Dave Thomas on 6/27/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 In the simplest case something like this would be possible:
 [<MyAttribute>]
@@ -15,11 +12,14 @@ And then when the code is compiled the expression thats generated would also hav
 This would interoperability with frameworks that use declarative attributes which would otherwise require adding a full type
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6108807)**
 
 
-## Comment by Vasily Kirichenko on 6/28/2014 1:44:00 AM
+## Comments ##
+
+
+#### Comment by Vasily Kirichenko on 6/28/2014 1:44:00 AM ####
 I think it's more logical to place attributes right before object expression itself, like this:
 let makeResource name =
 [<MyAttribute>]
@@ -32,11 +32,11 @@ member this.Dispose() = printfn "%s disposed" name },
 anotherArg)
 
 
-## Comment by Don Syme on 7/18/2015 1:28:00 PM
+#### Comment by Don Syme on 7/18/2015 1:28:00 PM ####
 I tend to agree that this should be supported (though the location for the attributes would be different to shown above)
 
 
-## Comment by zhonglei chen on 1/30/2016 12:29:00 PM
+#### Comment by zhonglei chen on 1/30/2016 12:29:00 PM ####
 I agree with this suggestion due to performance consideration.
 If we can add attribute to object expression, we can apply the following pattern to improve the performance of algorithms:
 let sort<'a, 'c when 'c :> System.Collection.Generic.IComparer<'a>>( array : 'a[], comparer : 'c ) = ...

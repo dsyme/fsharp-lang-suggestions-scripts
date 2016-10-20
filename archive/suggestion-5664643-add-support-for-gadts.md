@@ -1,35 +1,35 @@
-# Idea 5664643: Add support for GADTs #
+# Add support for GADTs [5664643] #
 
-### Status : open
-
-### Submitted by Richard Minerich on 3/21/2014 12:00:00 AM
-
-### 219 votes
+**Submitted by Richard Minerich on 3/21/2014 12:00:00 AM**  
+**219 votes on UserVoice prior to migration**  
 
 Generalized Algebraic Data Types essentially extend standard union types to allow different generic instantiations when defined recursively.
 You can see a simple explanation of how they work in haskell here: https://en.wikibooks.org/wiki/Haskell/GADT
 They open the door to such fantastic type safe data structures as heterogeneous lists and so can vastly improve type safety within the language.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5664643)**
 
 
-## Comment by Radek Micek on 4/21/2014 3:31:00 PM
+## Comments ##
+
+
+#### Comment by Radek Micek on 4/21/2014 3:31:00 PM ####
 I don't think that benefits of GADTs outweight how they complicate type system and type inference (you may lose principal-type property).
 BTW: you can do heterogeneous lists without GADTs.
 BTW 2: you may be interested in Guarded Algebraic Data Types - http://gallium.inria.fr/~fpottier/publis/simonet-pottier-hmg-toplas.pdf
 
 
-## Comment by Suminda Sirinath Salpitikorala Dharmasena on 5/6/2014 8:49:00 AM
+#### Comment by Suminda Sirinath Salpitikorala Dharmasena on 5/6/2014 8:49:00 AM ####
 Since OCaml has this I don't see why not F#
 
 
-## Comment by Don Syme on 7/4/2014 6:48:00 AM
-There are some relevant commments here too: [/archive/suggestion-6062821-add-dependent-types](/archive/suggestion-6062821-add-dependent-types.md)
+#### Comment by Don Syme on 7/4/2014 6:48:00 AM ####
+There are some relevant commments here too: /archive/suggestion-6062821-add-dependent-types
 
 
-## Comment by Don Syme on 2/3/2016 12:45:00 PM
+#### Comment by Don Syme on 2/3/2016 12:45:00 PM ####
 A major consideration is that GADTs are difficult to compile to .NET IL efficiently. Specifically, it is not possible to recover an existentially-hidden type variable except via virtual dispatch. For example
 type C
 type D<T> : C

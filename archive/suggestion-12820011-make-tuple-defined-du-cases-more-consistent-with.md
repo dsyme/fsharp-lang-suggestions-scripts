@@ -1,10 +1,7 @@
-# Idea 12820011: Make tuple defined DU cases more consistent with tuple #
+# Make tuple defined DU cases more consistent with tuple [12820011] #
 
-### Status : open
-
-### Submitted by Gauthier Segay on 3/5/2016 12:00:00 AM
-
-### 9 votes
+**Submitted by Gauthier Segay on 3/5/2016 12:00:00 AM**  
+**9 votes on UserVoice prior to migration**  
 
 It is possible to pattern match tuples in a flexible way:
 let a = 1,2
@@ -24,11 +21,14 @@ match pat with
 | SynPat.LongIdent foo -> () // can deconstruct foo like a normal tuple
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12820011)**
 
 
-## Comment by Gauthier Segay on 3/5/2016 2:38:00 PM
+## Comments ##
+
+
+#### Comment by Gauthier Segay on 3/5/2016 2:38:00 PM ####
 Actually found out it works with enclosing parens:
 match pat with
 | SynPat.LongIdent(_) -> ()
@@ -37,7 +37,7 @@ match pat with
 | SynPat.LongIdent(a) -> ()
 
 
-## Comment by Alexei Odeychuk on 3/5/2016 3:02:00 PM
+#### Comment by Alexei Odeychuk on 3/5/2016 3:02:00 PM ####
 I support the idea shared by Gauthier Segay in respect of "match pat with
 | SynPat.LongIdent foo -> ..."! When I developed a natural language processing application in F#, I often wrote something like: match arabicLexeme with
 | Participle(_, _, _, _, _, _, _) -> ...

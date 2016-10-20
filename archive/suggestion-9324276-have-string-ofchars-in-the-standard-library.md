@@ -1,10 +1,7 @@
-# Idea 9324276: Have String.ofChars in the standard library #
+# Have String.ofChars in the standard library [9324276] #
 
-### Status : open
-
-### Submitted by Bang Jun-young on 8/14/2015 12:00:00 AM
-
-### 10 votes
+**Submitted by Bang Jun-young on 8/14/2015 12:00:00 AM**  
+**10 votes on UserVoice prior to migration**  
 
 Wouldn't it be convenient if String.ofChars function was part of the standard library? The implementation is quite straightforward:
 module String =
@@ -17,10 +14,13 @@ which can be simplified with String.ofChars:
 String.ofSeq also can be handy for profiles like PCL where the String type is not regarded as seq<char>.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/9324276)**
 
 
-## Comment by Don Syme on 2/3/2016 12:06:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 2/3/2016 12:06:00 PM ####
 Given that this would be pretty low-performance in any case, the use of StringBuilder appears adequate to cover this case.
 

@@ -1,10 +1,7 @@
-# Idea 7119363: An attribute enforcing usage (in F# code) of named parameters at callsite #
+# An attribute enforcing usage (in F# code) of named parameters at callsite [7119363] #
 
-### Status : open
-
-### Submitted by Gauthier Segay on 2/19/2015 12:00:00 AM
-
-### 4 votes
+**Submitted by Gauthier Segay on 2/19/2015 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 In some code, it's critical to have function/methods called with parameter names at call site, for readability reasons, but also for correctness.
 I would like F# to enforce this using an attribute for example: [<EnforceNamedParametersAtCallSite>]
@@ -63,11 +60,14 @@ API design wise, some people might want to enforce that callsite will use named 
 I hope the description is clear enough.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/7119363)**
 
 
-## Comment by Don Syme on 7/17/2015 8:04:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/17/2015 8:04:00 AM ####
 I can see the rationale.
 It feels uncomfortable to add a bespoke attribute for this though I don't have specific better suggestions as yet. There's nothing quite like this in the F# language design, apart from the requirement to name record fields in the { a=1; b = 2} construction syntax, which is of course a related problem.
 

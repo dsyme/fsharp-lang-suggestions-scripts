@@ -1,10 +1,7 @@
-# Idea 13056630: Code clarity: Dot notation for casting objects to interfaces #
+# Code clarity: Dot notation for casting objects to interfaces [13056630] #
 
-### Status : open
-
-### Submitted by Alexei Odeychuk on 3/21/2016 12:00:00 AM
-
-### 5 votes
+**Submitted by Alexei Odeychuk on 3/21/2016 12:00:00 AM**  
+**5 votes on UserVoice prior to migration**  
 
 I suggest introducing the dot notation syntax for casting an object to an interface.
 It would be great to write, for example:
@@ -18,6 +15,9 @@ The syntax suggested would be especially useful in the body of methods of classe
 P.S. My suggestion does not mean a breaking change in the F# language. I think the existing syntax and the dot notation syntax for casts to interfaces can be used interchangeably.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/13056630)**
+
+
+## Comments ##
 

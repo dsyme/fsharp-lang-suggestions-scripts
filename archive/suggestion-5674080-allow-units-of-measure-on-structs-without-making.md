@@ -1,10 +1,7 @@
-# Idea 5674080: Allow units of measure on structs without making them generic #
+# Allow units of measure on structs without making them generic [5674080] #
 
-### Status : declined
-
-### Submitted by Braden Evans on 3/24/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Braden Evans on 3/24/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 Currently you can create structs with a measure type argument like so:
 [<Struct>]
@@ -17,18 +14,21 @@ Since units of measure are erased at compile time and the struct does not actual
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
 Many thanks for this suggestion. It is being marked as declined – for discussion see the comments.
 As far as I can tell the underlying struct type is not generic (in compiled code). Is there another issue lurking here?
 Further comments, use cases, information and discussion welcome
 Don Syme, F# Language and Core Library Evolution.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5674080)**
 
 
-## Comment by Don Syme on 7/18/2015 1:25:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/18/2015 1:25:00 PM ####
 The underlying struct is not generic when a measure type parameter is added.
 

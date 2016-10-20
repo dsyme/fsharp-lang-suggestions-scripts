@@ -1,10 +1,7 @@
-# Idea 12563118: Allow enumeration type names and discriminated union type names in a for loop (from Ada 2012) #
+# Allow enumeration type names and discriminated union type names in a for loop (from Ada 2012) [12563118] #
 
-### Status : open
-
-### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
-
-### 2 votes
+**Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM**  
+**2 votes on UserVoice prior to migration**  
 
 I suggest using enumeration type names and discriminated union type names in a for loop meaning to try every value (from Ada 2012).
 For example,
@@ -26,19 +23,22 @@ seq { for animal in Animals -> animal } // seq { Tiger; Cat; Lion }
 I think it's a good idea to allow enumeration type names and discriminated union type names in for loops and treat enumeration types and discriminated union types by the F# compiler as types compatible with IEnumerable and having a GetEnumerator method (even if they don't). It will make the F# syntax more expressive and bolster F# competitive strengths.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12563118)**
 
 
-## Comment by Jack Fox on 3/6/2016 11:13:00 AM
+## Comments ##
+
+
+#### Comment by Jack Fox on 3/6/2016 11:13:00 AM ####
 I see merit in this, but I'm withholding my vote as I would rather see this implemented as the having the standard collection functions (fold, map, etc.) over enumerations and discriminated unions. Then this all becomes composable. For loops are not so composable.
 
 
-## Comment by Gauthier Segay on 3/6/2016 9:33:00 PM
+#### Comment by Gauthier Segay on 3/6/2016 9:33:00 PM ####
 What is expected error message if any of the DU member has data defined for it?
 
 
-## Comment by Alexei Odeychuk on 3/10/2016 9:29:00 AM
+#### Comment by Alexei Odeychuk on 3/10/2016 9:29:00 AM ####
 Gauthier Segay, I think the situation where a discriminated union case has data associated with it should not stand in the way of the introduction of the syntax allowing the usage of discriminated union type names in a for loop. I think there is no need to raise an exception here. The discriminated union is a foundational type in functional programming. So, I suggest default initializing all data fields associated with the appropriate discriminated union case. There is function Unchecked.defaultof<'T> to generate a default value for any type in F#. The compiler can use it to generate compiled code.
 If a language user wants to change any default initialized data field associated with a particular union case, this can be done by writing the code snippet like this:
 type Animals = Tiger of age : int * name : string | Cat | Lion

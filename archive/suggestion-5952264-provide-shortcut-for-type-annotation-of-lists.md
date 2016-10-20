@@ -1,10 +1,7 @@
-# Idea 5952264: Provide shortcut for type annotation of Lists #
+# Provide shortcut for type annotation of Lists [5952264] #
 
-### Status : declined
-
-### Submitted by Gulshanur Rahman on 5/21/2014 12:00:00 AM
-
-### 4 votes
+**Submitted by Gulshanur Rahman on 5/21/2014 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 I suggest to provide a shortcut syntax ( `[<typname>]` ) for type annotation of F# Lists. Instead of this-
 let upto (a:int): int list = [1..a]
@@ -14,16 +11,19 @@ Then list of list of int will be `[[int]]` instead of `int list list`. When type
 
 
 
-## Response 
-### by fslang-admin on 9/16/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 9/16/2014 12:00:00 AM **
 
 Declining per my comment
 Don Syme, Current BDFL F# Language/Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5952264)**
 
 
-## Comment by Don Syme on 9/16/2014 5:23:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 9/16/2014 5:23:00 AM ####
 My feeling is that this is not appropriate for F#, given the existiing availability of "int[]" for arrays.
 

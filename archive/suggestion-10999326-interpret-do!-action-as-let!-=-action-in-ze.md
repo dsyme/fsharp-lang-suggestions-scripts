@@ -1,10 +1,7 @@
-# Idea 10999326: interpret `do! action` as `let! () = action in zero` when the Builder has no Return defined #
+# interpret `do! action` as `let! () = action in zero` when the Builder has no Return defined [10999326] #
 
-### Status : completed
-
-### Submitted by Max Malook on 12/7/2015 12:00:00 AM
-
-### 3 votes
+**Submitted by Max Malook on 12/7/2015 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 In general there are two types of workflows represented by computation expressions:
 1) process (async)
@@ -19,8 +16,8 @@ Original discussion: https://github.com/fsprojects/FSharp.Control.AsyncSeq/issue
 
 
 
-## Response 
-### by fslang-admin on 1/23/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 1/23/2016 12:00:00 AM **
 
 This PR has been merged, so this design item is completed, though not yet released in a specific version of F#
 This is approved for F# 4.1+. It’s the right adjustment to the language given the problem discussed in the linked gituhb thread
@@ -28,6 +25,9 @@ See also the proposed implementation here: https://github.com/Microsoft/visualfs
 Don Syme
 F# Language and Core Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/10999326)**
+
+
+## Comments ##
 

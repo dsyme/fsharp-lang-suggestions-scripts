@@ -1,10 +1,7 @@
-# Idea 12425811: Add Polymorphic Variants (ad-hoc Discriminated Unions) #
+# Add Polymorphic Variants (ad-hoc Discriminated Unions) [12425811] #
 
-### Status : open
-
-### Submitted by Jared Hester on 2/21/2016 12:00:00 AM
-
-### 36 votes
+**Submitted by Jared Hester on 2/21/2016 12:00:00 AM**  
+**36 votes on UserVoice prior to migration**  
 
 Creating strongly typed data constructs with some level of heterogeneity is often accomplished with DUs so lets take the trivial case of wanting
 to have lists of floats & ints, ints & strings, and ints & floats & strings
@@ -55,11 +52,14 @@ https://realworldocaml.org/v1/en/html/variants.html
 further reference - http://caml.inria.fr/pub/docs/manual-ocaml-400/manual006.html#toc36
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12425811)**
 
 
-## Comment by Jack Fox on 3/6/2016 11:36:00 AM
+## Comments ##
+
+
+#### Comment by Jack Fox on 3/6/2016 11:36:00 AM ####
 Would there be a single ad-hoc Discriminated Union for all polymorphic variants currently in scope? Then depending on program structure and scope different sets of polymorphic variants would be available.
 I think I like this idea...
 

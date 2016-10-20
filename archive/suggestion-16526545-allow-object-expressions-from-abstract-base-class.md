@@ -1,10 +1,7 @@
-# Idea 16526545: Allow Object Expressions from abstract base classes without members #
+# Allow Object Expressions from abstract base classes without members [16526545] #
 
-### Status : open
-
-### Submitted by lr on 10/6/2016 12:00:00 AM
-
-### 1 votes
+**Submitted by lr on 10/6/2016 12:00:00 AM**  
+**4 votes on UserVoice prior to migration**  
 
 http://stackoverflow.com/questions/8154730/object-expression-for-abstract-class-without-abstract-members
 Object Expressions are a great feature to create instances of single-use interface / abstract class instances without polluting the namespace.
@@ -21,6 +18,9 @@ The workaround is to define it like this:
 let foo = { new Foo(1) with member __.ToString() = base.ToString() }
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/16526545)**
+
+
+## Comments ##
 

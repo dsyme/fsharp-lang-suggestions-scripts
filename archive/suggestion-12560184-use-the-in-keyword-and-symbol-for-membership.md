@@ -1,10 +1,7 @@
-# Idea 12560184: Use the in keyword and "|" symbol for membership tests and better readability (from Ada 2012) #
+# Use the in keyword and "|" symbol for membership tests and better readability (from Ada 2012) [12560184] #
 
-### Status : open
-
-### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
-
-### 6 votes
+**Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM**  
+**6 votes on UserVoice prior to migration**  
 
 I suggest using the in keyword for membership tests (from Ada 2012).
 Example # 1:
@@ -34,6 +31,9 @@ I think it's a good idea to take this notation from Ada 2012 to bolster competit
 P.S. Ada 2012 is a statically typed, imperative, object-oriented programming language offering extremely strong typing, explicit concurrency, tasks (named and anonymous task types), synchronous message passing between task entries, protected (armored) objects for mutual exclusion. It designed for code readability, safety and maintainability of large, long-lived, mission-critical, safety-critical and security-critical applications. Ada 2012 is the latest version of the Ada language.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12560184)**
+
+
+## Comments ##
 

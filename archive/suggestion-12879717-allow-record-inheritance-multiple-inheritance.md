@@ -1,10 +1,7 @@
-# Idea 12879717: Allow record inheritance / multiple "inheritance" #
+# Allow record inheritance / multiple "inheritance" [12879717] #
 
-### Status : open
-
-### Submitted by Vasily Kirichenko on 3/10/2016 12:00:00 AM
-
-### 17 votes
+**Submitted by Vasily Kirichenko on 3/10/2016 12:00:00 AM**  
+**17 votes on UserVoice prior to migration**  
 
 I propose to add multiple ***fields*** inheritance into records:
 type Person =
@@ -20,6 +17,9 @@ Making the same thing with composition results with not such an elegance flat re
 This approach is used, for example, in Nitra AST DSL, see https://github.com/rsdn/Nitra-Mini-C/blob/master/Nitra-Mini-C/MiniC-ast.nitra#L94
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12879717)**
+
+
+## Comments ##
 

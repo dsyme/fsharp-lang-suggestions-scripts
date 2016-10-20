@@ -1,10 +1,7 @@
-# Idea 12564486: Types with predicates to create subtypes easily (from Ada 2012) #
+# Types with predicates to create subtypes easily (from Ada 2012) [12564486] #
 
-### Status : open
-
-### Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM
-
-### 7 votes
+**Submitted by Alexei Odeychuk on 3/2/2016 12:00:00 AM**  
+**7 votes on UserVoice prior to migration**  
 
 I suggest introducing type predicates as an aspect that can be applied to declarations of enumeration types, discriminated union types and user-defined numeric types with the aim of creating subtypes easily.
 Suppose, we are concerned with animal species and that we have a
@@ -47,17 +44,20 @@ And last but not least, types with predicates should be allowed in a for loop me
 for animal in Predators do ...
 for digit in Even do ...
 Please see my previous suggestions for more details:
-a) Allow enumeration type names and discriminated union type names in a for loop (from Ada 2012): [/archive/suggestion-12563118-allow-enumeration-type-names-and-discriminated-uni;](/archive/suggestion-12563118-allow-enumeration-type-names-and-discriminated-uni;.md)
-b) Allow basic integer numeric type names in a for loop (from Ada 2012): [/archive/suggestion-12564057-allow-basic-integer-numeric-type-names-in-a-for-lo](/archive/suggestion-12564057-allow-basic-integer-numeric-type-names-in-a-for-lo.md)
+a) Allow enumeration type names and discriminated union type names in a for loop (from Ada 2012): /archive/suggestion-12563118-allow-enumeration-type-names-and-discriminated-uni;
+b) Allow basic integer numeric type names in a for loop (from Ada 2012): /archive/suggestion-12564057-allow-basic-integer-numeric-type-names-in-a-for-lo
 The suggested syntax allows writing clear, concise and easy-to-understand code. It will not affect existing codebase.
 I think it will help bolster F# competitive strengths and improve its position in the TIOBE language popularity index.
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/12564486)**
 
 
-## Comment by NhlCrd on 3/14/2016 4:56:00 PM
+## Comments ##
+
+
+#### Comment by NhlCrd on 3/14/2016 4:56:00 PM ####
 It is not obvious to me what advantages this feature would provide over active patterns and partial active patterns.
 Syntactically speaking, (P)APs are also more concise:
 let (|Predator|Prey|) = function
@@ -65,7 +65,7 @@ let (|Predator|Prey|) = function
 |Mouse -> Prey
 
 
-## Comment by OneWingedShark on 3/14/2016 11:25:00 PM
+#### Comment by OneWingedShark on 3/14/2016 11:25:00 PM ####
 Per haps a better demonstration would be user-input or data-validation; here's a couple simple examples using Ada 2012's type-system to ensure formatting/data consistsancy:
 https://m.reddit.com/r/programming/comments/2770qx/computer_science_and_math/chz389x
 https://m.reddit.com/r/programming/comments/238v7g/three_flaws_in_software_design_part_1_writing/cgv37g7

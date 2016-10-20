@@ -1,10 +1,7 @@
-# Idea 5980924: Allow specifying subset of type arguments explicitly #
+# Allow specifying subset of type arguments explicitly [5980924] #
 
-### Status : planned
-
-### Submitted by Tomas Petricek on 5/28/2014 12:00:00 AM
-
-### 7 votes
+**Submitted by Tomas Petricek on 5/28/2014 12:00:00 AM**  
+**7 votes on UserVoice prior to migration**  
 
 Say we have a generic type Frame<TRow, TColumn>. When using instance methods of the frame, it is possible to write a generic method that takes a single additional type parameter - for example, to get a column as a specific type:
 frame.GetColumn<float>("Value")
@@ -18,18 +15,21 @@ Interestingly, this is also problem for extension methods. When you define a C#-
 
 
 
-## Response 
-### by fslang-admin on 8/3/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 8/3/2015 12:00:00 AM **
 
 Updating to planned to indicate this is approved in general terms. A detailed design and implementation would be needed.
 Implementations of approved language design can now be submitted as pull requests to the appropriate branch of http://github.com/Microsoft/visualfsharp. See http://fsharp.github.io/2014/06/18/fsharp-contributions.html for information on contributing to the F# language and core library.
 Don Syme, F# Language and Core Library Evolution
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/5980924)**
 
 
-## Comment by Don Syme on 6/20/2014 11:38:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 6/20/2014 11:38:00 AM ####
 Having seen the impact this problem has on Deedle, I'm in favour of addressing it for F# 4.0. I will mark it "approved" (using the label "planned") as a result, though the details need to be worked out.
 Another possible declaration syntax is this:
 let getCol< 'T, 'TCol, [<OptionalArgument>] 'TRow > frame = ()
@@ -39,7 +39,7 @@ The former has the downside that it could only be used with an updated FSharp.Co
 We should also now consider what the precise language/spec rules should be. Please list questions to be addressed below.
 
 
-## Comment by Gusty on 11/8/2015 2:12:00 AM
+#### Comment by Gusty on 11/8/2015 2:12:00 AM ####
 For completeness it will be nice to allow to use the underscores in the declaration as well.
 let func<_> = ()
 Currently this is allowed: let func< 'T, .. > = ()

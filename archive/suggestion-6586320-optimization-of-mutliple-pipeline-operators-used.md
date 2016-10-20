@@ -1,10 +1,7 @@
-# Idea 6586320: Optimization of mutliple pipeline operators used in single statement #
+# Optimization of mutliple pipeline operators used in single statement [6586320] #
 
-### Status : declined
-
-### Submitted by Bartosz Sypytkowski on 10/20/2014 12:00:00 AM
-
-### 5 votes
+**Submitted by Bartosz Sypytkowski on 10/20/2014 12:00:00 AM**  
+**5 votes on UserVoice prior to migration**  
 
 Using an example:
 ```fsharp
@@ -15,15 +12,18 @@ Second line will result with generation of IL code for intermediate classes and 
 
 
 
-## Response 
-### by fslang-admin on 7/18/2015 12:00:00 AM
+## Response ##
+** by fslang-admin on 7/18/2015 12:00:00 AM **
 
 As per comment, please just submit a PR directly to the http://github.com/Microsoft/visualfsharp repository.
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6586320)**
 
 
-## Comment by Don Syme on 7/18/2015 2:01:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 7/18/2015 2:01:00 PM ####
 I think a PR for this could just be submitted directly to the http://github.com/Microsoft/visualfsharp repository. It doesn't need to be tracked here as a language design item.
 

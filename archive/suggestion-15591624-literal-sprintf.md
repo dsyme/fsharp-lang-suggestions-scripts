@@ -1,10 +1,7 @@
-# Idea 15591624: Literal sprintf #
+# Literal sprintf [15591624] #
 
-### Status : open
-
-### Submitted by Dzmitry Lahoda on 8/8/2016 12:00:00 AM
-
-### 16 votes
+**Submitted by Dzmitry Lahoda on 8/8/2016 12:00:00 AM**  
+**16 votes on UserVoice prior to migration**  
 
 Allow:
 ```
@@ -13,6 +10,9 @@ let a = sprintf "%s" "string"
 ```
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/15591624)**
+
+
+## Comments ##
 

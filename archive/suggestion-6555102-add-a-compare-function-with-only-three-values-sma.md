@@ -1,10 +1,7 @@
-# Idea 6555102: Add a Compare function with only three values Smaller, Equal or Greater #
+# Add a Compare function with only three values Smaller, Equal or Greater [6555102] #
 
-### Status : declined
-
-### Submitted by Hans Rischel on 10/13/2014 12:00:00 AM
-
-### 1 votes
+**Submitted by Hans Rischel on 10/13/2014 12:00:00 AM**  
+**1 votes on UserVoice prior to migration**  
 
 // The below function
 //
@@ -27,16 +24,19 @@ else Greater
 
 
 
-## Response 
-### by fslang-admin on 10/15/2014 12:00:00 AM
+## Response ##
+** by fslang-admin on 10/15/2014 12:00:00 AM **
 
 Declined, see comment above
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/6555102)**
 
 
-## Comment by Don Syme on 10/15/2014 7:08:00 AM
+## Comments ##
+
+
+#### Comment by Don Syme on 10/15/2014 7:08:00 AM ####
 For better or for worse, the ship has sailed on this. FSharp.Core already uses three representations of comparers
 1. the "implicit" comparison semantics of the "compare" operation
 2. Curried comparison functions T -> T -> int

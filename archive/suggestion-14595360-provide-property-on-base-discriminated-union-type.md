@@ -1,10 +1,7 @@
-# Idea 14595360: Provide property on base Discriminated Union type if all the case constructors have the same paramater #
+# Provide property on base Discriminated Union type if all the case constructors have the same paramater [14595360] #
 
-### Status : open
-
-### Submitted by Андрей Чебукин on 6/3/2016 12:00:00 AM
-
-### 27 votes
+**Submitted by Андрей Чебукин on 6/3/2016 12:00:00 AM**  
+**27 votes on UserVoice prior to migration**  
 
 If an each case constructor of Discriminated Union has a parameter with the same name and the same type than allow to implement a property on Discriminated Union base type to access to this parameter value.
 Now I have to write a match on every case
@@ -24,15 +21,18 @@ member this.Data : ModuleData = base.Data
 Or automatic property implementation would also be a perfect option
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/14595360)**
 
 
-## Comment by exercitus vir on 7/9/2016 1:53:00 PM
+## Comments ##
+
+
+#### Comment by exercitus vir on 7/9/2016 1:53:00 PM ####
 This is too much magic for my taste. If I saw `base.Data` I would look for such a field or member, but would need to remember that F# magically transforms cases of tuples with common components to this.
 
 
-## Comment by Abel on 9/22/2016 3:55:00 PM
+#### Comment by Abel on 9/22/2016 3:55:00 PM ####
 You can already do generalization:
 type Test =
     | Foo of string

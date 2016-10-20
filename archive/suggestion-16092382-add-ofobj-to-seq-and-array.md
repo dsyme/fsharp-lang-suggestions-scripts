@@ -1,10 +1,7 @@
-# Idea 16092382: Add ofObj to Seq and Array #
+# Add ofObj to Seq and Array [16092382] #
 
-### Status : open
-
-### Submitted by Mark Seemann on 9/15/2016 12:00:00 AM
-
-### 6 votes
+**Submitted by Mark Seemann on 9/15/2016 12:00:00 AM**  
+**6 votes on UserVoice prior to migration**  
 
 The Option module defines Option.ofObj which converts a potential nullable value to an option.
 Collections (Seq and array) can be null in interop scenarios, but it'd often be natural to interpret a null collection as an empty collection.
@@ -16,10 +13,13 @@ Seq.ofObj
 Array.ofObj
 
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/16092382)**
 
 
-## Comment by Loic Denuziere on 9/16/2016 8:10:00 AM
+## Comments ##
+
+
+#### Comment by Loic Denuziere on 9/16/2016 8:10:00 AM ####
 Alternatively for something more general, we could have a null equivalent of `defaultArg`. So if it's called let's say `ifNull` (placeholder name, not actual proposal) then your `Seq.ofObj s` would be `ifNull s Seq.empty`, and `Array.ofObj s` would be `ifNull s [||]`.
 

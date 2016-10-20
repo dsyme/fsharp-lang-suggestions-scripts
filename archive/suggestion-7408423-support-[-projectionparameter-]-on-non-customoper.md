@@ -1,10 +1,7 @@
-# Idea 7408423: Support [<ProjectionParameter>] on non-CustomOperations, eg. for in () do #
+# Support [<ProjectionParameter>] on non-CustomOperations, eg. for in () do [7408423] #
 
-### Status : declined
-
-### Submitted by Jason K on 4/1/2015 12:00:00 AM
-
-### 3 votes
+**Submitted by Jason K on 4/1/2015 12:00:00 AM**  
+**3 votes on UserVoice prior to migration**  
 
 The following CE builder intends to accept a Domain which has enumerable-like members and, for this situation, return a bool. But the member of the domain being checked varies. I try to parameterize the selection of the member, rather than just expecting the member directly (which changes the type).
 This code type-checks as is, but it requires the full lambda as the `over` parameter to For.
@@ -60,29 +57,32 @@ let domainInvariants = [ invariant1; invariant2 ]
 
 
 
-## Response 
-### by fslang-admin on 2/4/2016 12:00:00 AM
+## Response ##
+** by fslang-admin on 2/4/2016 12:00:00 AM **
 
 Declined per my comment below. Please contact me if you have more informaiton on this – I’m not opposed to the suggestion I just need to understand exactly what’s involved
 Don Syme, F# Language Evolution @dsyme
 
-------------------------
-## Comments
+
+**[Original UserVoice Submission](https://fslang.uservoice.com/forums/245727-f-language/suggestions/7408423)**
 
 
-## Comment by Don Syme on 6/9/2015 1:51:00 PM
+## Comments ##
+
+
+#### Comment by Don Syme on 6/9/2015 1:51:00 PM ####
 Hi Jason, could you provide a link to a gist with this code? thanks
 Don Syme
 
 
-## Comment by Don Syme on 7/17/2015 7:18:00 AM
+#### Comment by Don Syme on 7/17/2015 7:18:00 AM ####
 Here's the gist: https://gist.github.com/dsyme/6623d02d1a6065a7f9e0
 
 
-## Comment by Don Syme on 7/17/2015 7:19:00 AM
+#### Comment by Don Syme on 7/17/2015 7:19:00 AM ####
 When you say "should be `for a in d.Bs do`" - where would "d" be bound?
 
 
-## Comment by Don Syme on 2/3/2016 2:58:00 PM
+#### Comment by Don Syme on 2/3/2016 2:58:00 PM ####
 This hasn't been updated in a while and there are pending questions below. I propose to decline this.
 
